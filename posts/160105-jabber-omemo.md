@@ -1,5 +1,5 @@
 title: Multi-End Message and Object Encryption. What?
-date: 2016-01-05 12:41:37 
+date: 2016-01-05 12:41:37
 slug: jabber-omemo
 tags: privacy, opensource, encryption
 files: omemo.png
@@ -15,6 +15,6 @@ I’ve been testing Conversations/OMEMO over the last week and it works great. S
 
 ![omemo](omemo.png)
 
-<hr>
+<hr />
 
 *Comments and reactions on [Diaspora](https://librenet.gr/posts/541037) or [Twitter](https://twitter.com/comzeradd/status/684297833453907968)*

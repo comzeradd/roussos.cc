@@ -12,6 +12,6 @@ So I scratched my itch and [monopati](https://github.com/comzeradd/monopati), a 
 
 Feedback and code patches are always welcomed.
 
-<hr>
+<hr />
 
 *Comments and reactions on [Diaspora](https://librenet.gr/posts/551310) or [Twitter](https://twitter.com/comzeradd/status/686564094762201089)*

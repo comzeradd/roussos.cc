@@ -2,6 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>Nikos Roussos</author>
   <title>nikos.roussos &bull; opensource</title>
+  <link href="https://www.roussos.cc/feed.xml" rel="self" />
+  <link href="https://www.roussos.cc/" />
   
     <entry>
       <title>monopati, a minimalistic static content generator</title>
@@ -10,7 +12,7 @@
 <p>I have two major requirements. Simplicity and no extra features. All I want is a simple blog and some static pages. So <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> and <a href="http://jinja.pocoo.org/">Jinja</a> should be enough. No fancy features needed. I also wanted this to be so simple that even non-tech people would use it with minimum effort. One of the things that bothers me with most generators is that they render the whole website in another folder, so it's hard to have one repository with both your posts markdown code and the rendered output so you can easily host it (eg. on <a href="https://pages.github.com/">Github pages</a>).</p>
 <p>So I scratched my itch and <a href="https://github.com/comzeradd/monopati">monopati</a>, a minimalistic static content generator, was born. As of today <a href="https://www.roussos.cc">my website</a> is rendered using my own static content generator (with all content on <a href="https://github.com/comzeradd/comzeradd.github.io">version control</a>). I promise to write a post with concrete easy steps on how to deploy your own website/blog using monopati and without paying for any hosting service.</p>
 <p>Feedback and code patches are always welcomed.</p>
-<hr>
+<hr />
 
 <p><em>Comments and reactions on <a href="https://librenet.gr/posts/551310">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/686564094762201089">Twitter</a></em></p></content>
       <pubDate>2016-01-11 17:01:12</pubDate>
@@ -24,7 +26,7 @@
 <p><a href="http://conversations.im/">Conversations</a> on Android already supports it, <a href="https://chatsecure.org/blog/chatsecure-conversations-zom/">ChatSecure</a> is implementing it too and tickets are already opened on <a href="https://developer.pidgin.im/ticket/16801">Pidgin</a> and <a href="https://www.mail-archive.com/tor-bugs@lists.torproject.org/msg84721.html">Tor Messenger</a>. <a href="https://gajim.org/">Gajim</a> is currently the only desktop app that supports it (through <a href="https://github.com/kalkin/gajim-omemo/">a plugin</a>), but if you want to have OTR too then Gajim is not an option since <a href="https://github.com/python-otr/gajim-otr">its OTR plugin is unmaintained</a>.</p>
 <p>I’ve been testing Conversations/OMEMO over the last week and it works great. So maybe in a few months we’ll have something truly secure, decentralized and usable to suggest to our friends ;) Or just suggest Conversations to the most brave of your friends.</p>
 <p><img alt="omemo" src="omemo.png" /></p>
-<hr>
+<hr />
 
 <p><em>Comments and reactions on <a href="https://librenet.gr/posts/541037">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/684297833453907968">Twitter</a></em></p></content>
       <pubDate>2016-01-05 12:41:37</pubDate>
@@ -37,7 +39,7 @@
 <p>So just to get facts straight, this is neither a Desktop nor a Web app. And just like their Android app, you need a Google account to download it.</p>
 <p>Actually this is even worse, because you also need to use Chrome to use this app. <strong>Channeling all your (meta)data through a closed source browser, built &amp; distributed by the biggest tracking ad company.</strong></p>
 <p>If you care about privacy, Signal is certainly not an option.</p>
-<hr>
+<hr />
 
 <p><em>Comments and reactions on <a href="https://librenet.gr/posts/497875">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/673940185692905476">Twitter</a></em></p></content>
       <pubDate>2015-12-05 15:45:08</pubDate>

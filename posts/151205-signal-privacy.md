@@ -12,8 +12,6 @@ Actually this is even worse, because you also need to use Chrome to use this app
 
 If you care about privacy, Signal is certainly not an option.
 
-<hr>
+<hr />
 
 *Comments and reactions on [Diaspora](https://librenet.gr/posts/497875) or [Twitter](https://twitter.com/comzeradd/status/673940185692905476)*
-
-

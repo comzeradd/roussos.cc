@@ -2,6 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>Nikos Roussos</author>
   <title>nikos.roussos &bull; webdev</title>
+  <link href="https://www.roussos.cc/feed.xml" rel="self" />
+  <link href="https://www.roussos.cc/" />
   
     <entry>
       <title>web development using git</title>
