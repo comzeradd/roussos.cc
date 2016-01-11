@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>Nikos Roussos</author>
-  <title>nikos.roussos &bull; trips</title>
+  <title>nikos.roussos - trips</title>
   <link href="https://www.roussos.cc/feed.xml" rel="self" />
   <link href="https://www.roussos.cc/" />
-  
-    <entry>
-      <title>istanbul</title>
-      <link href="https://www.roussos.cc/2010/11/16/istanbul/"/>
-      <content type="html"><p><a href="http://www.flickr.com/photos/comzeradd/5161226118/"><img alt="the canal" src="http://farm2.static.flickr.com/1317/5161226118_6ea2c52d16.jpg" /></a> <strong> the canal</strong></p>
-<p><a href="http://www.flickr.com/photos/comzeradd/5161293002/"><img alt="can't escape" src="http://farm2.static.flickr.com/1121/5161293002_c9457bc0c1.jpg" /></a> <strong> can't escape</strong></p>
-<p><a href="http://www.flickr.com/photos/comzeradd/5161259688/"><img alt="aghia sofia" src="http://farm2.static.flickr.com/1075/5161259688_18b9818022.jpg" /></a> <strong> aghia sofia</strong></p>
-<p><a href="http://www.flickr.com/photos/comzeradd/5161273542/"><img alt="towards the bosphorus" src="http://farm2.static.flickr.com/1393/5161273542_004c768eb5.jpg" /></a> <strong> towards the bosphorus</strong></p></content>
-      <pubDate>2010-11-16 00:29:26</pubDate>
-    </entry>
-  
-    <entry>
-      <title>zurich</title>
-      <link href="https://www.roussos.cc/2010/10/05/zurich/"/>
-      <content type="html"><p><a href="http://www.flickr.com/photos/comzeradd/5019819909/"><img alt="reading" src="http://farm5.static.flickr.com/4089/5019819909_da6e047b9d.jpg" /></a> <strong> reading</strong></p>
-<p><a href="http://www.flickr.com/photos/comzeradd/5019820477/"><img alt="zurich under clouds" src="http://farm5.static.flickr.com/4130/5019820477_cc4f335a49.jpg" /></a> <strong> under clouds</strong></p>
-<p><a href="http://www.flickr.com/photos/comzeradd/5020431094/"><img alt="painting" src="http://farm5.static.flickr.com/4083/5020431094_1e8f8d072f.jpg" /></a> <strong> painting</strong></p>
-<p><a href="http://www.flickr.com/photos/comzeradd/5019826315/"><img alt="central" src="http://farm5.static.flickr.com/4105/5019826315_14e5acb7ec.jpg" /></a> <strong> central</strong></p></content>
-      <pubDate>2010-10-05 17:51:18</pubDate>
-    </entry>
-  
-    <entry>
-      <title>weekend at milano</title>
-      <link href="https://www.roussos.cc/2010/05/26/weekend-at-milano/"/>
-      <content type="html"><p><a href="http://www.flickr.com/photos/comzeradd/4636375000/"><img alt="passing by" src="http://farm5.static.flickr.com/4071/4636375000_6f6a1700b4.jpg" /></a> <strong> passing by</strong></p>
-<p><a href="http://www.flickr.com/photos/comzeradd/4635745232/"><img alt="galleria by night" src="http://farm4.static.flickr.com/3384/4635745232_693a9118f6.jpg" /></a> <strong> galleria by night</strong></p>
-<p><a href="http://www.flickr.com/photos/comzeradd/4638671016/"><img alt="stairways to heaven" src="http://farm5.static.flickr.com/4047/4638671016_d05d6c553f.jpg" /></a> <strong> stairways to heaven</strong></p>
-<p><a href="http://www.flickr.com/photos/comzeradd/4638064249/"><img alt="san siro (meazza)" src="http://farm4.static.flickr.com/3410/4638064249_4eda6e22f4.jpg" /></a> <strong> san siro (meazza)</strong></p>
-<p>the full <a href="http://www.flickr.com/photos/comzeradd/sets/72157624126291976/">milano photo set</a></p></content>
-      <pubDate>2010-05-26 11:16:42</pubDate>
-    </entry>
+  <updated>2016-01-12T00:58:46Z</updated>
   
 </feed>

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>Nikos Roussos</author>
-  <title>nikos.roussos &bull; fsfe</title>
+  <title>nikos.roussos - fsfe</title>
   <link href="https://www.roussos.cc/feed.xml" rel="self" />
   <link href="https://www.roussos.cc/" />
+  <updated>2016-01-12T00:58:46Z</updated>
   
     <entry>
       <title>Free Your Android</title>
       <link href="https://www.roussos.cc/2014/05/08/free-your-android/"/>
-      <content type="html"><p>After all the recent NSA revelations, it's been even more important to use Free Software on our mobile phones. Let me express this in another way: <strong>We should be very careful about what software we use on a device that is always on and in our pocket 24h a day.</strong></p>
+      <content type="html">
+        <![CDATA[
+          <p>After all the recent NSA revelations, it's been even more important to use Free Software on our mobile phones. Let me express this in another way: <strong>We should be very careful about what software we use on a device that is always on and in our pocket 24h a day.</strong></p>
 <p>Starting from the very basic thing that makes our smartphone operate, it seems that we don't have many options. So if you are using Iphone or Windows Phone, let me remind you that both of these companies are in the <a href="https://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29#The_slides">infamous NSA slides</a> for giving access to users private data.</p>
 <p>So this post is about Android and my current setup of running only Free Software on my smartphone. I know what you are thinking.. that Google is also part of NSA's "special friends". Android is self-defined as an "Open Source Platform" (AOSP), and pretty much it is since it's released under a mix of Apache and GPL license (although mostly developed behind closed doors). But this isn't what you get when you buy a smartphone. Your device will certainly have preinstalled all of the Google's proprietary stuff (gmail, play, etc) and probably manufacturer and/or vendor applications. Things that you have no idea what they do, besides their "normal" functionality, because we don't have the code to look at.</p>
 <h3>Operating System</h3>
@@ -57,17 +60,23 @@
 <p><img src="lumicall.png" alt="" class="txt" width="32" /> <img src="ostel.png" alt="" class="txt" width="32" /><br><br></p>
 <p><img src="fya.png" alt="" width="120" /> </p>
 <p>All the software I mention here is stuff I use. I'm sure that in some cases you may find alternatives that better suit your needs. So dig deeper to F-droid for more apps and surf through <a href="https://fsfe.org/campaigns/android/liberate.en.html">FSFE's website</a>.</p>
-<p>I currently have an android smartphone that runs 100% Free Software applications. I can't think of missing any functionality so far and I certainly feel more secure ;)</p></content>
-      <pubDate>2014-05-08 11:22:03</pubDate>
+<p>I currently have an android smartphone that runs 100% Free Software applications. I can't think of missing any functionality so far and I certainly feel more secure ;)</p>
+        ]]>
+      </content>
+      <published>2014-05-08 11:22:03</published>
     </entry>
   
     <entry>
       <title>Athens Free Software Monthly Meetups</title>
       <link href="https://www.roussos.cc/2014/04/30/athens-free-software-monthly-meetups/"/>
-      <content type="html"><p>Just about a month ago <a href="http://www.roussos.cc/2012/03/06/fsfe/">my two years term</a> as FSFE community representative to the General Assembly ended.</p>
+      <content type="html">
+        <![CDATA[
+          <p>Just about a month ago <a href="http://www.roussos.cc/2012/03/06/fsfe/">my two years term</a> as FSFE community representative to the General Assembly ended.</p>
 <p>Great experience. I very much enjoyed the whole term and I have nothing but positive to keep. I met some awesome people and got in touch far more deeply with the way that FSFE works. One thing that I struggled sometimes with was to better represent the community. I mean.. the two community members sitting on GA, besides being elected for their will to participate actively at GA's decisions, are also representatives. There were many cases when I felt that I was mostly representing myself, since there was no easy way of knowing what the community feels on a certain issue. In many countries the <a href="https://fsfe.org/about/localteams.en.html">fellowship groups</a> are far more vivid (and bigger) than Greece, so I guess that participating at the local meetups gives the opportunity to discuss these things and interact with (at least the local part of) the community.</p>
-<p>With that in mind I decided that it was about time to start regular local meetups in Athens. We may not be many FSFE <del>fellows</del> members <a href="https://wiki.fsfe.org/groups/Athens">here</a>, but the fellowship meetups were never meant to be only for members. <strong>So the "Athens Free Software Monthly Meetups" were born</strong> (first Wednesday of each month, at local <a href="https://www.hackerspace.gr/">hackerspace</a>). We already had our first on April and the <a href="https://www.hackerspace.gr/wiki/Free_Software_Monthly_Meetup_0514">second one</a> is coming with a "Free Your Android" theme.</p></content>
-      <pubDate>2014-04-30 16:45:35</pubDate>
+<p>With that in mind I decided that it was about time to start regular local meetups in Athens. We may not be many FSFE <del>fellows</del> members <a href="https://wiki.fsfe.org/groups/Athens">here</a>, but the fellowship meetups were never meant to be only for members. <strong>So the "Athens Free Software Monthly Meetups" were born</strong> (first Wednesday of each month, at local <a href="https://www.hackerspace.gr/">hackerspace</a>). We already had our first on April and the <a href="https://www.hackerspace.gr/wiki/Free_Software_Monthly_Meetup_0514">second one</a> is coming with a "Free Your Android" theme.</p>
+        ]]>
+      </content>
+      <published>2014-04-30 16:45:35</published>
     </entry>
   
 </feed>

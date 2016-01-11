@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>Nikos Roussos</author>
-  <title>nikos.roussos &bull; events</title>
+  <title>nikos.roussos - events</title>
   <link href="https://www.roussos.cc/feed.xml" rel="self" />
   <link href="https://www.roussos.cc/" />
-  
-    <entry>
-      <title>FUDCon EMEA 2010 - Zurich</title>
-      <link href="https://www.roussos.cc/2010/09/19/fudcon-emea-2010-zurich/"/>
-      <content type="html"><p><a href="http://fedoraproject.org/wiki/FUDCon:Zurich_2010">FUDCon EMEA 2010</a> has just finished. It was the first international Fedora event i participated and I really enjoyed it. It was really nice meeting and talking with people from the Fedora community and getting to know more about the Fedora community mentality.</p>
-<p><a href="http://www.flickr.com/photos/comzeradd/5004227453/"><img alt="barcamp schedule" src="http://farm5.static.flickr.com/4113/5004227453_f4f32ab143.jpg" /></a></p>
-<p>The Greek "gang", always present at these events, was <a href="http://pierros.papadeas.gr/">Pierros</a>, <a href="http://ebalaskas.gr/">Vaggelis</a>, <a href="http://bacharakis.com/">Christos</a>, Vaggelis (the new Greek guy :P) and me.</p>
-<p><a href="http://www.flickr.com/photos/comzeradd/5000502319/"><img alt="arrived" src="http://farm5.static.flickr.com/4131/5000502319_4692e1a0ae.jpg" /></a></p>
-<p>The most interesting sessions were: RPM Packaging Workshop, Introduction to GIMP/Inkscape, Fedora Design Suite, Legal and License, Introduction to VoIP and most of the <a href="http://fedoraproject.org/wiki/FUDCon:Zurich_2010_BarCamp_Schedule">BarCamp sessions</a>.</p>
-<p>I've uploaded more FUDCon photos <a href="http://www.flickr.com/photos/comzeradd/sets/72157624856066299/with/5000502319/">here</a>.</p>
-<p>PS. I'm writing this post being a little in a hurry. I have to rest. We are taking an early train for Geneva in order to have a guided tour at <a href="http://en.wikipedia.org/wiki/Cern">Cern</a>. :D</p></content>
-      <pubDate>2010-09-19 18:50:38</pubDate>
-    </entry>
+  <updated>2016-01-12T00:58:46Z</updated>
   
 </feed>

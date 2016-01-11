@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>Nikos Roussos</author>
-  <title>nikos.roussos &bull; fedora</title>
+  <title>nikos.roussos - fedora</title>
   <link href="https://www.roussos.cc/feed.xml" rel="self" />
   <link href="https://www.roussos.cc/" />
+  <updated>2016-01-12T00:58:46Z</updated>
   
     <entry>
       <title>Fedora Flock 2014</title>
       <link href="https://www.roussos.cc/2014/08/13/fedora-flock-2014/"/>
-      <content type="html"><p><a href="http://www.flocktofedora.com/">Fedora Flock</a> took place last week and this is a log entry for my personal highlights.</p>
+      <content type="html">
+        <![CDATA[
+          <p><a href="http://www.flocktofedora.com/">Fedora Flock</a> took place last week and this is a log entry for my personal highlights.</p>
 <p><a href="https://www.flickr.com/photos/comzeradd/14671187430" title="Flock 2014 by Nikos Roussos, on Flickr"><img src="https://farm6.staticflickr.com/5575/14671187430_7c5c5ef531_m.jpg" class="txt" width="180" height="240" alt="Flock 2014"></a> Overall the Flock was awesome. The quality of all technical presentations/workshops was really high. It's amazing how many things currently going on at the Fedora community, not just related to our Operation System (the distribution) but also innovative things that we develop or lead that in the long run benefit the whole Free Software community. As always I had the chance to meet, talk and collaborate in person with many Fedorians and that's always motivating for my contribution to the project.</p>
 <p>So here it goes...</p>
 <p><a href="https://fedoraproject.org/wiki/Fedora.next">Fedora.next</a>: This is currently the most important thing happening regarding the distribution. We are about to release Fedora 21 in three different products (Workstation, Cloud, Server) that will make possible to offer a better user experience in each one of these user groups. Some features that pop into my mind: Server product will implement "Server roles" right on the Anaconda installer, so you can quickly deploy (for instance) a mail server. <a href="http://cockpit-project.org/">Cockpit</a> also will land on 21, an awesome server management tool. Cloud product will focus even more on containers (yes that means docker), open source infrastructure (eg. <a href="http://www.openstack.org/">OpenStack</a>) and cloud services (eg. AWS). Workstation product intended for Desktop users and will focus on developers and makers. <a href="http://devassistant.org/">DevAsistant</a> will play a key role to this. It always surprise me to see developers struggle to setup their work environment on Operating Systems that takes hours to do it, for things that it's a few minutes work on Fedora.</p>
@@ -21,14 +24,18 @@
 <p>Packaging: One way that I contribute to the project is through RPM Packaging, so I tried to participate in most of the relevant talks/workshops. Amita Sharma walked us through the Fedora QA workflow, Jan Zeleny presented the roadmap for RPM and Dnf (the yum replacement), Haïkel Guémar coordinated a review package hackfest and Cole Robinson showed how packagers can utilize Virtualization tools for testing things.</p>
 <p>Communications: New communication and collaboration tools are on the way. This is not directly related to the project, but it's Fedora people who drive the development on these. <a href="https://fedorahosted.org/hyperkitty/">Hyperkitty</a> will be the web interface for the upcoming Mailman3, <a href="https://www.waartaa.com/">Waarta</a> is a web app for IRC/WebRTC and <a href="http://www.glittergallery.net/">Glitter Gallery</a> is a collaboration platform for designers which uses git as backend and SparkleShare as the sync client (I maintain the package for Fedora, so I'm really interested to see how this will go).</p>
 <p>Novena: <a href="https://twitter.com/xobs">Sean Cross</a> gave a keynote speech about the <a href="http://www.kosagi.com/w/index.php?title=Novena_Main_Page">Novena</a> project, the fully Open Source laptop. Still in the beginning, but seems really promising.</p>
-<iframe src="https://www.flickr.com/photos/comzeradd/14842603975/in/set-72157645862758620/player/" width="500" height="383" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></content>
-      <pubDate>2014-08-13 15:51:54</pubDate>
+<iframe src="https://www.flickr.com/photos/comzeradd/14842603975/in/set-72157645862758620/player/" width="500" height="383" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+        ]]>
+      </content>
+      <published>2014-08-13 15:51:54</published>
     </entry>
   
     <entry>
       <title>Setup a home server with Fedora and BeagleBone Black</title>
       <link href="https://www.roussos.cc/2014/06/23/fedora-beaglebone-black/"/>
-      <content type="html"><p>Over the last <a href="http://www.roussos.cc/2014/04/30/athens-free-software-monthly-meetups/">Free Software Meetup</a> we discussed about the "build your own home server" movement. This is a long and complex discussion, so most likely it will expand to future meetups. In the meantime I wanted to test BeagleBone Black (BB), as the hardware platform for such a project.</p>
+      <content type="html">
+        <![CDATA[
+          <p>Over the last <a href="http://www.roussos.cc/2014/04/30/athens-free-software-monthly-meetups/">Free Software Meetup</a> we discussed about the "build your own home server" movement. This is a long and complex discussion, so most likely it will expand to future meetups. In the meantime I wanted to test BeagleBone Black (BB), as the hardware platform for such a project.</p>
 <p><img src="beagle-fedora.png" alt="fedora on beaglebone black" class="txt" /> I prefer BB over Raspeberry Pi (RaPi) because, despite what many people seem to believe, RaPi <a href="http://en.wikipedia.org/wiki/Raspberry_Pi#Driver_API">is not</a> fully Open Hardware. I also prefer armv7 hardware, since it gives me the option to use a "regular" linux distribution. I have the option for Fedora or Debian instead of Pidora or Raspbian. </p>
 <p>During the meetup we talked a lot about <a href="https://arkos.io/">Arkos</a>, which supports many arm boards and seems like a great choice for administering your home server through a well designed web interface, lowering the technical knowledge threshold for setting up services like file or mail server. I'll get back to Arkos, but at this point I wanted to experiment with a "regular" distribution. So this post is about Fedora and Beaglebone Black.</p>
 <p>Download the <a href="http://fedoraproject.org/en/get-fedora#arm">Fedora ARM image</a> extract it and rename it to <code>fedora-arm.raw</code> so it's easier to follow the steps bellow.</p>
@@ -95,98 +102,10 @@ firewall-cmd --permanent --zone=public --add-service=ssh
 <pre><code>e2fsck -f /dev/sdX3
 resize2fs /dev/sdX3
 </code></pre>
-<p>And that's all. I removed the mini sd from the adapter and inserted it on BB. All that's left is ethernet connection and power. Less than a minute later I was able to ssh to my soon-to-be home server from my laptop.</p></content>
-      <pubDate>2014-06-23 13:13:52</pubDate>
-    </entry>
-  
-    <entry>
-      <title>my linux history</title>
-      <link href="https://www.roussos.cc/2013/11/05/my-linux-history/"/>
-      <content type="html"><p>Inspired by <a href="http://ebalaskas.gr/blog/2013/11/04/my-history-of-linux/">ebal's post</a>, here is in short my linux history...</p>
-<ul>
-<li>
-<p>1997: Bought my first personal computer. Two months later I install <a href="http://en.wikipedia.org/wiki/Red_Hat_Linux">RedHat 5.2</a>. It was the first (and last) time I bought a Linux distribution from a store. Home broadband was not there yet. It came along with a nice <a href="http://upload.wikimedia.org/wikipedia/en/4/49/Redhat_5.2_box.jpg">book guide</a>, which I still have on my library along with the 5 CDs.</p>
-</li>
-<li>
-<p>2002: Just before RedHat Linux was about to be discontinued, in favor of the Enterprise version and the beginning of the Fedora project, I saw this as an opportunity to try some other distro. After playing around with <a href="http://www.linuxfromscratch.org/">LFS</a> I ended up with <a href="http://www.slackware.com/">Slackeware 8.1</a>. Kept it for several years, learned a lot.</p>
-</li>
-<li>
-<p>2007: Slackare has a very limited package collection, so you inevitable end up installing things manually. So I wanted a way to do this in a more automated way. And the choice was <a href="http://en.wikipedia.org/wiki/Gentoo_Linux">Gentoo Linux</a>. Actually I <a href="/2007/09/24/the-distro-of-my-dreams/">documented</a> that.</p>
-</li>
-<li>
-<p>2010: Over the years there was a significant change on how I dealt with my everyday work. I came to a point where I started to evaluate more the UX aspect of things. I wanted a linux distribution that would just work, but would also be open as a project for contribution. So I <a href="/2010/03/12/running-fedora/">chose</a> to join the <a href="http://fedoraproject.org/">Fedora Project</a> and never looked back. Today, besides being an Ambassador for the project i <a href="/2011/12/08/fedora-developer/">maintain some packages</a> and enjoying being part of such a great community.</p>
-</li>
-</ul></content>
-      <pubDate>2013-11-05 12:17:39</pubDate>
-    </entry>
-  
-    <entry>
-      <title>The beauty of Open Source</title>
-      <link href="https://www.roussos.cc/2012/08/20/the-beauty-of-open-source/"/>
-      <content type="html"><p><em>(read a Greek version of this post, as it was published on Linux Inside magazine, in <a href="/articles/linux%20inside%2009%20-%20openculture.pdf">pdf</a>)</em></p>
-<p>It's a well known fact that the rapid development of Free Software (and Open Source culture in general) all these years is a parallel process with internet development. If we try to map the contributors of a big project, we'll be certainly impressed by the geographical scatter. I remember using these kind of maps (like <a href="https://fedoraproject.org/membership-map/ambassadors.html">Fedora ambassadors</a> or <a href="http://www.gentoo.org/proj/en/devrel/roll-call/devmap.xml">Gentoo developers</a>) in Open Source presentations I did in the past in order to visualize this.</p>
-<p><img alt="opensource map (2009)" src="opensourcemap.png" /></p>
-<p>The reason I'm mentioning all these is to tell a true story, that would be impossible to take place without this "magic" ability of Open Source movement to bring people and communities together all over the world, beyond borders or other boundaries.</p>
-<p>About a year ago I packaged for Fedora the <a href="http://italc.sourceforge.net/">iTALC</a> software. iTALC (intelligently Teaching And Learning with Computer) is an application that can be very useful in school labs. It offers a teacher the ability to have a remote overview and control over student terminals. iTALC of course is Free Software, meaning that besides all the <a href="https://www.gnu.org/education/education.html">educational benefits</a>, teachers and students can be sure that their content doesn't get monitored (since many proprietary solutions tend to route all traffic through their servers).</p>
-<p>Following Fedora's packaging process, I opened a relevant bug and waited for someone to review it. Unfortunately the package didn't make it, mostly because it had some technical issues (iTALC bundles modified versions of libraries already packaged for Fedora, which goes against Fedora's policy), and because in the meantime I dealt with some other packages.</p>
-<p>So it was a package that I have sort of abandon it. But about 3-4 months ago I got a personal email that was asking me if I had newer packages of iTALC because it's been used on schools in Peru! Following up the communication I realized that the man talking to me was the Educational Technologies General Director of Peru's Ministry of Education, where they've started using extensively Fedora on school computers and they needed iTALC so they can offer it as a software solution to the teachers.</p>
-<p>The good thing was that at the meantime I had successfully passed through the mentorship process of Fedora and I was a Fedora Developer, having gained a bigger experience in packaging software. I also had a good knowledge on using Fedora's build servers, a fact that helped me build iTALC for all the necessary Fedora versions and archtectures that Peru's Ministry of Education was using. Long story short: I'm currently providing iTALC freely through a <a href="http://repos.fedorapeople.org/repos/comzeradd/italc/">repository</a> I maintain and the software is beeing used and tested on Peru's school labs.</p>
-<p>About a year and a half ago, when I started the process for becoming a Fedora developer, my motive was to contribute back to a project that I daily use. I surely didn't expect that such a small contribution would make a difference to a country that far away from me.</p>
-<p>This story could be yours. Don't hesitate to contribute in any way to your favourite Free Software projects. Even the smallest contribution can have a big impact on so many people. That's the beauty of Open Source, that's what motivates so many people worldwide to contribute, communicate, interact.</p></content>
-      <pubDate>2012-08-20 14:05:22</pubDate>
-    </entry>
-  
-    <entry>
-      <title>Being a Fedora Developer (aka Package Maintainer)</title>
-      <link href="https://www.roussos.cc/2011/12/08/fedora-developer/"/>
-      <content type="html"><p><img src="fedora.png" class="txt" alt="fedora" /> About a month ago I was sponsored and got accepted as a Fedora Package Maintainer. Being already a Fedora Ambassador I wanted a more technical way to contribute to the <a href="https://fedoraproject.org/">project</a>.</p>
-<p>Currently I only <a href="https://admin.fedoraproject.org/updates/user/comzeradd">maintain two packages</a>, but I hope I'll have the time in the near future to help more (I already digging around <a href="https://fedoraproject.org/wiki/Audio_Creation">Sound SIG</a> 's wishlist for new packages). It's great to contribute to such a vivid community project.</p>
-<p>Many thanks to <a href="http://www.christoph-wickert.de/">Christoph</a> who sponsored me and still helps when needed.</p></content>
-      <pubDate>2011-12-08 20:24:55</pubDate>
-    </entry>
-  
-    <entry>
-      <title>fosscomm 2011</title>
-      <link href="https://www.roussos.cc/2011/05/09/fosscomm-2011/"/>
-      <content type="html"><p><a href="http://www.flickr.com/photos/comzeradd/5703130830/"><img alt="fosscomm" src="http://farm6.static.flickr.com/5021/5703130830_783ae0a6af.jpg" /></a>
-[more photos: <a href="http://www.flickr.com/photos/comzeradd/sets/72157626556260779/with/5703130830/">fosscomm2011 album</a>]</p>
-<p>A great <a href="http://patras.fosscomm.gr/">fosscomm</a> (the annual greek foss community conference) took place the weekend at Patra. The organizing committee did a fantastic job, but besides that it seems that the Greek FOSS community has raised the bar of quality holding some very interesting technical presentations.</p>
-<p><strong>I think that fosscomm has transformed from a communities presentation conference to a community gathering/socializing/ideas-exchanging conference. And that's a good thing.</strong></p>
-<p>I had the chance to hold or participate on five presentations/workshops. Three of them were part of the <a href="https://fedoraproject.org/wiki/FAD_Fosscomm_2011">Fedora Activity Day</a>.</p>
-<ul>
-<li><a href="/presentations/roussos-how_to_make_money_from_opensource.pdf">How to make money from Open-Source</a> (along with <a href="https://ebalaskas.gr/blog/?page=about">Evaggelos Balaskas</a>) </li>
-<li>Hackerspace.gr (along with other <a href="http://hackerspace.gr/">hackerspace.gr</a> members)</li>
-<li>Surviving with Gnome 3 (along with <a href="http://pierros.papadeas.gr/">Pierros Papadeas</a>)</li>
-<li><a href="/presentations/roussos-fedora_remixes.pdf">Greek Edu: Building your own Fedora Remix</a> (along with <a href="http://bacharakis.com/">Christos Bacharakis</a>)</li>
-<li><a href="/presentations/roussos-fedora_rpm_workshop.pdf">RPM Packaging workshop</a></li>
-</ul>
-<p>And for those of you who attended fosscomm and wondering what was this strange qr code all over the conference places... just scan it ;)</p>
-<p><img alt="hsgr_qr" src="hsgr_qr.png" /></p></content>
-      <pubDate>2011-05-09 13:40:55</pubDate>
-    </entry>
-  
-    <entry>
-      <title>FUDCon EMEA 2010 - Zurich</title>
-      <link href="https://www.roussos.cc/2010/09/19/fudcon-emea-2010-zurich/"/>
-      <content type="html"><p><a href="http://fedoraproject.org/wiki/FUDCon:Zurich_2010">FUDCon EMEA 2010</a> has just finished. It was the first international Fedora event i participated and I really enjoyed it. It was really nice meeting and talking with people from the Fedora community and getting to know more about the Fedora community mentality.</p>
-<p><a href="http://www.flickr.com/photos/comzeradd/5004227453/"><img alt="barcamp schedule" src="http://farm5.static.flickr.com/4113/5004227453_f4f32ab143.jpg" /></a></p>
-<p>The Greek "gang", always present at these events, was <a href="http://pierros.papadeas.gr/">Pierros</a>, <a href="http://ebalaskas.gr/">Vaggelis</a>, <a href="http://bacharakis.com/">Christos</a>, Vaggelis (the new Greek guy :P) and me.</p>
-<p><a href="http://www.flickr.com/photos/comzeradd/5000502319/"><img alt="arrived" src="http://farm5.static.flickr.com/4131/5000502319_4692e1a0ae.jpg" /></a></p>
-<p>The most interesting sessions were: RPM Packaging Workshop, Introduction to GIMP/Inkscape, Fedora Design Suite, Legal and License, Introduction to VoIP and most of the <a href="http://fedoraproject.org/wiki/FUDCon:Zurich_2010_BarCamp_Schedule">BarCamp sessions</a>.</p>
-<p>I've uploaded more FUDCon photos <a href="http://www.flickr.com/photos/comzeradd/sets/72157624856066299/with/5000502319/">here</a>.</p>
-<p>PS. I'm writing this post being a little in a hurry. I have to rest. We are taking an early train for Geneva in order to have a guided tour at <a href="http://en.wikipedia.org/wiki/Cern">Cern</a>. :D</p></content>
-      <pubDate>2010-09-19 18:50:38</pubDate>
-    </entry>
-  
-    <entry>
-      <title>Running Fedora</title>
-      <link href="https://www.roussos.cc/2010/03/12/running-fedora/"/>
-      <content type="html"><p><img alt="fedora" src="fedora_graphic.png" /></p>
-<p>I always like to test distributions but due to lack of time i rarely do it :) I'm using <a href="http://www.gentoo.org/">Gentoo</a> for quite some time now (and <a href="http://www.debian.org/">Debian</a> on some machines I administrate), but i wanted a more desktop-oriented distribution, at least for my netbook where Gentoo compile-all philosophy was not the best way to go.</p>
-<p>I have to admit that my first thought was Ubuntu. Maybe because I'm already using an <a href="http://en.wikipedia.org/wiki/Apt-get">apt-get</a> distro and it seemed like the obvious choice. But who am I kidding? I'm an active member of Greek FOSS Communtiy, so the existence, and more important the quality and activities, of the community that inevitably grows around a distribution is very important thing to me. So I was looking for a desktop-oriented distribution with bleeding-edge technologies and vivid community. And the only name that came up to my mind was <a href="https://fedoraproject.org/">Fedora</a>!</p>
-<p>I first <a href="https://twitter.com/comzeradd/status/9186810365">installed it on my netbook</a>, where I also had the ability to test Moblin (on Fedora it's just a 'yum install @moblin-desktop' away :)) and I was so pleased by the performance that I have already <a href="https://twitter.com/comzeradd/status/9870283547">Fedorized my Desktop</a>! Did i said anything about the community? I was impressed by the quality of Fedora community last year on <a href="http://fosdem.org/2010/">Fosdem</a> and <a href="http://twitter.com/comzeradd/status/8718398909">that impression was enhanced this year</a> by Fedora's participation on the biggest FOSS European Conference. Besides that, over the last 1-2 years i have met some members of the Greek Fedora Community, the Greek Fedora Ambassadors, and i have to admit that it's one of the most active and vivid community in Greece. Being willing to contribute, as i already do in many ways for FOSS in general with mostly advocating activities, I have already apply for <a href="http://fedoraproject.org/wiki/Ambassadors">Fedora Ambassador</a> and hoping to find the time to be more involved and active inside Fedora ecosystem.</p>
-<p>PS. for those wondering, Gentoo (and secondly Debian) will still be my first choice when it comes to Systems Administration, but it was time i move over to a new Desktop Distribution.</p></content>
-      <pubDate>2010-03-12 11:33:40</pubDate>
+<p>And that's all. I removed the mini sd from the adapter and inserted it on BB. All that's left is ethernet connection and power. Less than a minute later I was able to ssh to my soon-to-be home server from my laptop.</p>
+        ]]>
+      </content>
+      <published>2014-06-23 13:13:52</published>
     </entry>
   
 </feed>

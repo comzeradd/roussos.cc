@@ -1,5 +1,5 @@
 title: Fedora Flock 2014
-date: 2014-08-13 15:51:54 
+date: 2014-08-13 15:51:54
 type: post
 slug: fedora-flock-2014
 tags: opensource, fedora, event
@@ -26,5 +26,6 @@ Communications: New communication and collaboration tools are on the way. This i
 
 Novena: [Sean Cross](https://twitter.com/xobs) gave a keynote speech about the [Novena](http://www.kosagi.com/w/index.php?title=Novena_Main_Page) project, the fully Open Source laptop. Still in the beginning, but seems really promising.
 
+<p class="text-center">
 <iframe src="https://www.flickr.com/photos/comzeradd/14842603975/in/set-72157645862758620/player/" width="500" height="383" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-
+</p>

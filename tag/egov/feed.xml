@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>Nikos Roussos</author>
-  <title>nikos.roussos &bull; egov</title>
+  <title>nikos.roussos - egov</title>
   <link href="https://www.roussos.cc/feed.xml" rel="self" />
   <link href="https://www.roussos.cc/" />
-  
-    <entry>
-      <title>Open-Source liability paradigm shift</title>
-      <link href="https://www.roussos.cc/2010/06/11/open-source-liability-paradigm-shift/"/>
-      <content type="html"><p>Just return from <a href="http://www.flickr.com/photos/comzeradd/sets/72157624250824950/">beautiful Stuttgart</a> where I participated on <a href="http://www.3049.syzefxis.gov.gr/peta_2006_06/index.php?option=com_content&amp;task=view&amp;id=182&amp;Itemid=41">Osepa</a>'s Steering Group Meeting and Study Visit. I gave a presentation about "Open Source License issues, Liability &amp; Software Public Procurement Policies". You can download it <a href="/presentations/roussos_osepa-liense_liability_procurement_(2010).pdf">here</a> (although I think the slides are a little abstract to understand without the speech).</p>
-<p>Liability seems to be a very critical issue when it comes to Public Sector. <strong>People want someone to blame if something goes wrong</strong> and that's a justified demand (at least on a certain degree). So the slide below started a really nice conversation among the participants:</p>
-<p><img alt="osepa" src="stuttgart2.jpg" /></p>
-<p>The quick answer is No indeed! Take a look at GPL (and you can find a similar disclaimer on every FSF or OSI approved licenses: </p>
-<blockquote>
-<p><strong>16. Limitation of Liability.</strong> IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
-</blockquote>
-<p>The reason for this is that an Open-Source project is potentially developed by the whole world, or a little more realistic from a large community. So the above disclaimer is a way to protect the community from legal obligations. Otherwise a user could blame every contributor of a project on a failure incident (eg. data loss). This is short of <strong>a legal protection for the community</strong>.</p>
-<p>This may seem quite reasonable, at least to Open-Source developers, but it's not to Public Sector managers, politicians and decision makers in general. As I already mention they want someone to blame. Well my next slide clarified some things:</p>
-<p><img alt="osepa" src="stuttgart1.jpg" /></p>
-<p>What I mean by "Liability depends on support contract" is that the vendor (the support contract owner) has now the legal responsibility. He is the one who guarantees that the software solution he'll deploy and support is reliable.</p>
-<p>Many things have been written about the Open-Source <strong>paradigm shift</strong> on business model, moving from Software as a Product to Software as a Service logic. Well here is yet another paradigm shift. Software Liability is not upon copyright/left holder or developers, but the Vendor that supports and deploys it. In other words <strong>the legal obligations are moving from the product developers to the service provider</strong>.</p>
-<p>As we would expect the "service" is again the keyword. Now the hard part is to convince the politicians about that :)</p>
-<p>PS. What "Liability depends on users modifications" means is that if the user (eg. municipality employees) alter the software (it's open-source after all) it's difficult, if not impossible, to have legal demands against the vendor. This is something that we have to keep in mind.</p></content>
-      <pubDate>2010-06-11 17:47:43</pubDate>
-    </entry>
+  <updated>2016-01-12T00:58:46Z</updated>
   
 </feed>
