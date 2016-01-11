@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>Nikos Roussos</author>
+  <title>nikos.roussos &bull; music</title>
+  
+    <entry>
+      <title>csound</title>
+      <link href="https://www.roussos.cc/2007/04/17/opensource, music/"/>
+      <content type="html"><p>one of the things that occupy much of my time (besides women) is music. i don't mean listening to my favourite musicians. i mean (computer aided) music synthesis.</p>
+<p>the reason that i'm mentioning all these is to talk about my (almost) exclusive synthesis tool. It's free (as free speech) and many people refer to it as a programming language more than a tool.</p>
+<p>so <a href="http://csounds.com/">csound</a> (written in c) is the compiler and <em>csd</em> is the source file. every <em>csd</em> file has 3 parts:
+<em> <em>options</em>: command line options for the compilation</em> <em>orchestra</em>: the track structure (instruments)
+* <em>score</em>: the way (duration &amp; other attributes) instruments are played</p>
+<p>i'll be back with more info about all these in future posts. For now just enjoy a small track of electronic music by luis maurette.</p>
+<p>the track contains three instruments:</p>
+<pre><code>instr   106 ; NOISE
+ idur   =       p3
+ iamp   =       ampdb(p4)
+ ifrq   =       cpspch(p5)
+ iatk   =       p6
+ irel   =       p7
+ iflut1 =       p8
+ iflut2 =       p9
+ iharm  =       p10
+ kenv   linen   iamp,iatk, idur, irel
+ asig1  buzz    iamp, ifrq, iharm, 2
+ kenv2  line    iflut1, p3, iflut2
+ ktick  oscil   50, kenv2*.1, 1
+ alfo   oscil   10, 1*ktick, 1
+ afil   tone    asig1, 1000*alfo
+ out        afil
+endin
+
+instr   206 ; NOISE
+ idur   =       p3
+ iamp   =       ampdb(p4)
+ iamp2  =       ampdb(p5)
+ ifrq1  =       cpspch(p6)
+ ifrq2  =       cpspch(p7)
+ iatk   =       p8
+ irel   =       p9
+ iflut1 =       p10
+ iflut2 =       p11
+ iharm  =       p12
+ kfrenv line    ifrq1, idur, ifrq2
+ kamp   line    iamp, idur, iamp2
+ kenv   linen   kamp,iatk, idur, irel
+ asig1  buzz    kamp, kfrenv, iharm, 2
+ kenv2  line    iflut1, p3, iflut2
+ ktick  oscil   50, kenv2*.1, 1
+ alfo   oscil   10, 1*ktick, 1
+ afil   tone    asig1, 1000*alfo
+ out        afil
+endin
+
+instr   108 ; FM
+ idur   =       p3
+ iamp   =       ampdb(p4)
+ ifrq   =       cpspch(p5)
+ ifun   =       p6
+ iatk   =       p7
+ irel   =       p8
+ icar   =       p9
+ imod   =       p10
+ index  =       p11
+ irep   =       p12
+ kenv   linseg  0, iatk, 1, irel, 0
+ kenv2  oscil   iamp, 1/idur*irep, ifun
+ asig1  foscil  kenv, ifrq, icar, imod, index, ifun
+ out        asig1*kenv2
+endin
+</code></pre>
+<p>if you don't believe me... compile it :)</p>
+<p>you can also find a vim syntax highlighting package for vim. is this open source music or what?</p></content>
+      <pubDate>2007-04-17 23:31:59</pubDate>
+    </entry>
+  
+</feed>

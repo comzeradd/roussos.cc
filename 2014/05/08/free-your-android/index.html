@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>nikos.roussos </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/lib/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/static/css/app.css">
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="nikos.roussos">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+
+  </head>
+
+  <body>
+    <div id="wrapper">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="avatar">
+              <a href="/">
+                <img src="/static/img/me.jpg" alt="Nikos Roussos" class="avatar img-circle" />
+              </a>
+            </p>
+            <h3 >
+              <a href="/index.html">About</a> &bull;
+              <a href="/blog.html">Blog</a> &bull;
+              <a href="/contact.html">Contact</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 post-title">
+        <h3>
+          <a href="/2014/05/08/free-your-android/">Free Your Android</a>
+        </h3>
+        <small>
+          
+            <a href="/tag/opensource/">#opensource</a>
+          
+            <a href="/tag/android/">#android</a>
+          
+            <a href="/tag/fsfe/">#fsfe</a>
+          
+            <a href="/tag/privacy/">#privacy</a>
+          
+        </small>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 post">
+        <p>After all the recent NSA revelations, it's been even more important to use Free Software on our mobile phones. Let me express this in another way: <strong>We should be very careful about what software we use on a device that is always on and in our pocket 24h a day.</strong></p>
+<p>Starting from the very basic thing that makes our smartphone operate, it seems that we don't have many options. So if you are using Iphone or Windows Phone, let me remind you that both of these companies are in the <a href="https://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29#The_slides">infamous NSA slides</a> for giving access to users private data.</p>
+<p>So this post is about Android and my current setup of running only Free Software on my smartphone. I know what you are thinking.. that Google is also part of NSA's "special friends". Android is self-defined as an "Open Source Platform" (AOSP), and pretty much it is since it's released under a mix of Apache and GPL license (although mostly developed behind closed doors). But this isn't what you get when you buy a smartphone. Your device will certainly have preinstalled all of the Google's proprietary stuff (gmail, play, etc) and probably manufacturer and/or vendor applications. Things that you have no idea what they do, besides their "normal" functionality, because we don't have the code to look at.</p>
+<h3>Operating System</h3>
+<p><img src="cyanogenmod.png" alt="" class="txt" /> If you happen to be on <a href="http://redmine.replicant.us/projects/replicant/wiki/ReplicantStatus">Replicant's short list</a> of supported devices then this is the way to go. But since this applies to very few people <a href="http://www.cyanogenmod.org/">CyanogenMod</a> is the next best thing.</p>
+<p>That's the part that is most difficult, since you have to flash your phone with the right CyanogenMod's ROM. The <a href="http://wiki.cyanogenmod.org/w/Devices">instructions on the wiki</a> are very detailed, but I know that this should look like a difficult process to non-geeks. At FSFE we run a campaign on how to <a href="https://fsfe.org/campaigns/android/liberate.en.html">free you Android</a>, so if you ever happen to find out about a "Free your Android" workshop near you location go and people will love to help you.</p>
+<p>Still, if flashing your phone seems too complex skip to the next section, but at least stop using the pre-installed proprietary apps and remove any Google account you may have entered during initial phone setup (a factory reset may help).</p>
+<p>CyanogenMod is not perfect. It contains <a href="https://github.com/CyanogenMod/android_device_semc_iyokan/blob/gingerbread/extract-files.sh">scripts that extract</a> proprietary code necessary for some phone components (eg. camera) to work. The good thing is that these parts are firmware, thus non-executable code. You may also need to tweak it a bit:</p>
+<ul>
+<li>Remove Google analytics from CyanogenMod by flashing <a href="https://github.com/mar-v-in/freecyngn">freecygn</a>.</li>
+<li>Stop CyanogenMod from reporting tethering usage to your provider, by <a href="https://pmf.silvrback.com/fixing-tethering-on-android-kitkat">changing the "tether dun required" setting</a>.</li>
+<li><a href="http://blog.varunkumar.me/2010/09/how-to-change-dns-server-on-android.html">Change DNS settings</a> so that CyanogenMod stops using Google's DNS servers, that has a permanent log policy.</li>
+<li>Choose to fully encrypt your device with a pin (Settings -&gt; Security -&gt; Encrypt phone).</li>
+</ul>
+<h3>Apps</h3>
+<p><img src="fdroid.png" alt="" class="txt" width="130" /> Since we got rid Google apps, one way or another, we need a way to install software to our phone. Free Software. <a href="https://f-droid.org/">F-droid</a> comes to the rescue, an app for accessing software repositories for android and that comes preconfigured with its own repository containing only Free Software apps. Install it and then head over to <a href="https://guardianproject.info/2012/03/15/our-new-f-droid-app-repository/">Guardian project</a> to add its repository to F-droid. I won't provide links for the apps below, since you can easily install them through F-droid.
+<br><br></p>
+<h4>Contacts / Calendar</h4>
+<p><em>DavDroid</em> is an app for synchronizing Contacts and Calendar. It supports both CalDAV and CardDAV, so you will be able to set it with your provider or self hosted service.</p>
+<p><img src="davdroid.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Email</h4>
+<p><em>K9</em> is the ultimate email client for Android. It has all the features you would expect from a mail client. You can combine it with <em>AGP</em> or <em>OpenKeychain</em> for PGP (I prefer the second, since AGP doesn't support subkeys yet).</p>
+<p><img src="k9.png" alt="" class="txt" width="32" /> <img src="apg.png" alt="" class="txt" width="32" /> <img src="keychain.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Browser</h4>
+<p>Well... <em>Firefox</em>. You can add some of the usual privacy Add-ons. <em>Orweb</em> is a browser preconfigured for anonymous access to the web through the Tor network.</p>
+<p><img src="firefox.png" alt="" class="txt" width="32" /> <img src="orweb.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Files / Photos</h4>
+<p>I have an <a href="http://owncloud.org/">Owncloud</a> instance and although I use it mostly for Contacts/Calendar (I prefer <a href="http://sparkleshare.org/">Sparkleshare</a> for files) I find it really handy that my photos can be synced automatically with OwnCloud and accessed directly from my laptop. <a href="http://seafile.com/">Seafile</a> also seems like a great choice, but haven't tested it yet.</p>
+<p><img src="owncloud.png" alt="" class="txt" width="32" /> <img src="seafile.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Maps</h4>
+<p><em>OsmAnd</em> is the best maps android application (yes better than Google maps), mostly due to its great offline feature. Map data come straight from the work of <a href="http://www.openstreetmap.org/">OpenStreetMap</a> contributors. I always install <em>OSMTracker</em> to my phone to be able to contribute myself and GPSLogger to log <a href="http://ridewithgps.com/users/80721">my bike rides</a>.</p>
+<p><img src="osmand.png" alt="" class="txt" width="32" /> <img src="osmtracker.png" alt="" class="txt" width="32" /> <img src="gpslogger.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>News</h4>
+<p><em>TTRSS-Reader</em> is the android version of the well known Free Software RSS reader <a href="http://tt-rss.org/">TinyTinyRSS</a>. It will play along with both self hosted and 3rd party instances. <em>Poche</em> helps saving articles to "Read them later" on a <a href="https://www.wallabag.org/">Wallabag</a> instance.</p>
+<p><img src="ttrssreader.png" alt="" class="txt" width="32" /> <img src="wallabag.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Chat</h4>
+<p>XMPP (Jabber) is the obvious choice for instance messaging. <em>ChatSecure</em> and <em>Xabber</em> are the best android apps for that job. Both support OTR for encrypted communication, but ChatSecure is better on this field since it can be combined with <a href="https://guardianproject.info/apps/keysync/">KeySync</a> and sync your OTR keys with the ones you keep on your desktop client.</p>
+<p><img src="chatsecure.png" alt="" class="txt" width="32" /> <img src="xabber.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Documents / Ebooks</h4>
+<p>I prefer reading on my Kobo, but in case you want an epub reader <em>FBReader</em> will be a good choice. <em>Document Viewer</em> opens pdf documents (plays well with mail attachments).</p>
+<p><img src="fbreader.png" alt="" class="txt" width="32" /> <img src="documentviewer.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Social / Microblogging</h4>
+<p>I use <em>Twidere</em> for Twitter. Great app. Supports StatusNet too. There is also a <em>Diaspora Webclient</em> app, that seems to just wrap Diaspora's mobile web interface.</p>
+<p><img src="twidere.png" alt="" class="txt" width="32" /> <img src="diaspora.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>VoIP</h4>
+<p>Guardian project has setup an SIP provider (<a href="https://ostel.co/">Ostel.co</a>) that just works, encrypting calls by default (aka <a href="https://en.wikipedia.org/wiki/ZRTP">ZRTP</a>). They suggest <em>CSipSimple</em> for using this android, but I've tried <em>Lumicall</em> and works great.</p>
+<p><img src="lumicall.png" alt="" class="txt" width="32" /> <img src="ostel.png" alt="" class="txt" width="32" /><br><br></p>
+<p><img src="fya.png" alt="" width="120" /> </p>
+<p>All the software I mention here is stuff I use. I'm sure that in some cases you may find alternatives that better suit your needs. So dig deeper to F-droid for more apps and surf through <a href="https://fsfe.org/campaigns/android/liberate.en.html">FSFE's website</a>.</p>
+<p>I currently have an android smartphone that runs 100% Free Software applications. I can't think of missing any functionality so far and I certainly feel more secure ;)</p>
+
+        <div class="post-share">
+          Share:
+          <a href="https://sharetodiaspora.github.io/?title=Free Your Android&amp;url=https://www.roussos.cc/2014/05/08/free-your-android/" target="_blank">
+            <img src="https://sharetodiaspora.github.io/favicon.png" alt="diaspora*"> diaspora*
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    </div>
+
+    <div id="footer" >
+      <div class="container">
+        powered by <a href="https://github.com/comzeradd/monopati" target="_blank">monopati</a> &bull;
+       <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike</a>
+      </div>
+    </div>
+
+    <script src="/static/js/lib/jquery-1.11.2.min.js"></script>
+    <script src="/static/js/lib/bootstrap.min.js"></script>
+    
+    
+  </body>
+</html>

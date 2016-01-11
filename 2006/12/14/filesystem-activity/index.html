@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>nikos.roussos </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/lib/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/static/css/app.css">
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="nikos.roussos">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+
+  </head>
+
+  <body>
+    <div id="wrapper">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="avatar">
+              <a href="/">
+                <img src="/static/img/me.jpg" alt="Nikos Roussos" class="avatar img-circle" />
+              </a>
+            </p>
+            <h3 >
+              <a href="/index.html">About</a> &bull;
+              <a href="/blog.html">Blog</a> &bull;
+              <a href="/contact.html">Contact</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 post-title">
+        <h3>
+          <a href="/2006/12/14/filesystem-activity/">filesystem activity</a>
+        </h3>
+        <small>
+          
+            <a href="/tag/opensource/">#opensource</a>
+          
+            <a href="/tag/sysadm/">#sysadm</a>
+          
+        </small>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 post">
+        <p>so... you 're sitting in front of your pc, but you are not really doing something. in fact you are doing absolutely nothing.</p>
+<p>despite that you can hear from time to time the hard disk spinning up just for a very short period of time.</p>
+<p>don't you have the slightly curiosity to find out why? which process access your hard disk in the background?</p>
+<p>i had that curiosity so here is what i did (i think that it requires kernel&gt;2.6.1):</p>
+<pre><code>cat /proc/sys/vm/block_dump
+</code></pre>
+<p>i got 0. this is a feature that helps you monitor filesystem activity. so i activated it:</p>
+<pre><code>echo 1 &gt; /proc/sys/vm/block_dump
+</code></pre>
+<p>i set the value to 1, so as i can watch which process is making use of the disk. now it should start logging the activity into your syslog files:</p>
+<pre><code>tail -f /var/log/debug
+</code></pre>
+<p>there are two main types of entries that block_flush generates: dirty inodes and block read/writes. dirty inode entries just mean that something altered the inode for that file, most commonly it's due to an update to that files atime (access) or mtime (modification). if you look at the beginning of the output above, you'll see a lot of dirtied library inodes. these are the libraries linked against the tail command that was just executed, so their atime was just updated. the remainder, block reads and writes, are just normal reads and writes to the hard disk.</p>
+<p>of course this procedure generates a lot of filesystem activity, so remember to deactivate it afterwards:</p>
+<pre><code>echo 0 &gt; /proc/sys/vm/block_dump
+</code></pre>
+
+        <div class="post-share">
+          Share:
+          <a href="https://sharetodiaspora.github.io/?title=filesystem activity&amp;url=https://www.roussos.cc/2006/12/14/filesystem-activity/" target="_blank">
+            <img src="https://sharetodiaspora.github.io/favicon.png" alt="diaspora*"> diaspora*
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    </div>
+
+    <div id="footer" >
+      <div class="container">
+        powered by <a href="https://github.com/comzeradd/monopati" target="_blank">monopati</a> &bull;
+       <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike</a>
+      </div>
+    </div>
+
+    <script src="/static/js/lib/jquery-1.11.2.min.js"></script>
+    <script src="/static/js/lib/bootstrap.min.js"></script>
+    
+    
+  </body>
+</html>

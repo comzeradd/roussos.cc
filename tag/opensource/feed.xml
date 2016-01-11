@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>Nikos Roussos</author>
+  <title>nikos.roussos &bull; opensource</title>
+  
+    <entry>
+      <title>monopati, a minimalistic static content generator</title>
+      <link href="https://www.roussos.cc/2016/01/11/monopati/"/>
+      <content type="html"><p>I have tried many static content generators in the past. This site/blog is rendered to static since a couple of years ago. So this post is about writing yet another static content generator.</p>
+<p>I have two major requirements. Simplicity and no extra features. All I want is a simple blog and some static pages. So <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> and <a href="http://jinja.pocoo.org/">Jinja</a> should be enough. No fancy features needed. I also wanted this to be so simple that even non-tech people would use it with minimum effort. One of the things that bothers me with most generators is that they render the whole website in another folder, so it's hard to have one repository with both your posts markdown code and the rendered output so you can easily host it (eg. on <a href="https://pages.github.com/">Github pages</a>).</p>
+<p>So I scratched my itch and <a href="https://github.com/comzeradd/monopati">monopati</a>, a minimalistic static content generator, was born. As of today <a href="https://github.com/comzeradd/comzeradd.github.io">this website</a> is rendered using my own static content generator. I promise to write a post with concrete easy steps on how to deploy your own website/blog using monopati and without paying for any hosting service.</p>
+<p>Feedback and code patches are always welcomed.</p></content>
+      <pubDate>2016-01-11 17:01:12</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Multi-End Message and Object Encryption. What?</title>
+      <link href="https://www.roussos.cc/2016/01/05/jabber-omemo/"/>
+      <content type="html"><p>So, many people promoting Signal over Jabber/OTR for its usability and security features (besides all <a href="https://librenet.gr/posts/497875">caveats</a>). Most of these features are offered due the <a href="https://github.com/trevp/axolotl/wiki">Axolotl Ratchet</a> protocol.</p>
+<p>What if this protocol was implemented as an extension to Jabber? This would combine all best things from both worlds. Offline (encrypted) messages, multiple devices, better mobile integration but on the same time decentralized federated service. Well it’s done. Meet <a href="http://conversations.im/omemo/">OMEMO</a>.</p>
+<p><a href="http://conversations.im/">Conversations</a> on Android already supports it, <a href="https://chatsecure.org/blog/chatsecure-conversations-zom/">ChatSecure</a> is implementing it too and tickets are already opened on <a href="https://developer.pidgin.im/ticket/16801">Pidgin</a> and <a href="https://www.mail-archive.com/tor-bugs@lists.torproject.org/msg84721.html">Tor Messenger</a>. <a href="https://gajim.org/">Gajim</a> is currently the only desktop app that supports it (through <a href="https://github.com/kalkin/gajim-omemo/">a plugin</a>), but if you want to have OTR too then Gajim is not an option since <a href="https://github.com/python-otr/gajim-otr">its OTR plugin is unmaintained</a>.</p>
+<p>I’ve been testing Conversations/OMEMO over the last week and it works great. So maybe in a few months we’ll have something truly secure, decentralized and usable to suggest to our friends ;) Or just suggest Conversations to the most brave of your friends.</p>
+<p><img alt="omemo" src="omemo.png" /></p>
+<hr>
+
+<p><em>Comments and reactions on <a href="https://librenet.gr/posts/541037">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/684297833453907968">Twitter</a></em></p></content>
+      <pubDate>2016-01-05 12:41:37</pubDate>
+    </entry>
+  
+    <entry>
+      <title>If you care about privacy, Signal is certainly not an option</title>
+      <link href="https://www.roussos.cc/2015/12/05/signal-privacy/"/>
+      <content type="html"><p>Whisper Systems failed big once again. They just <a href="https://whispersystems.org/blog/signal-desktop/">announced</a> their "Desktop" version of Signal, which is actually a Chrome app.</p>
+<p>So just to get facts straight, this is neither a Desktop nor a Web app. And just like their Android app, you need a Google account to download it.</p>
+<p>Actually this is even worse, because you also need to use Chrome to use this app. <strong>Channeling all your (meta)data through a closed source browser, built &amp; distributed by the biggest tracking ad company.</strong></p>
+<p>If you care about privacy, Signal is certainly not an option.</p>
+<hr>
+
+<p><em>Comments and reactions on <a href="https://librenet.gr/posts/497875">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/673940185692905476">Twitter</a></em></p></content>
+      <pubDate>2015-12-05 15:45:08</pubDate>
+    </entry>
+  
+    <entry>
+      <title>post-vacations map editing</title>
+      <link href="https://www.roussos.cc/2015/08/07/post-vacations-map-editing/"/>
+      <content type="html"><p><a data-flickr-embed="true" href="https://www.flickr.com/photos/comzeradd/20180006889/in/datetaken-public/" title="the view"><img src="https://farm1.staticflickr.com/274/20180006889_6fe3ecbe77_b.jpg" width="1024" height="438" alt="the view"></a></p>
+<p>Greek islands are a great place for summer vacations. This year I visited <a href="https://en.wikipedia.org/wiki/Amorgos">Amorgos</a>, part of the Cyclades island group, and had a short visit at <a href="https://en.wikipedia.org/wiki/Koufonisia">Pano Koufonisi</a>.</p>
+<p>Being in a new place means you need some kind of map to guide you through the endless number of beaches, paths and villages. I've been using <a href="https://www.openstreetmap.org/">OpenStreetMap</a> as a map source for a long time and occasionally I contribute back. OpenStreetMap is a collaborative project to create a free editable map of the world. Many people call it the Wikipedia of maps, and it is in some extent. In contrary with all the major industry map services, which utilize free labor from volunteer contributors and give nothing back, OpenStreetMap data are freely distributed to be used by anyone for any purpose.</p>
+<p>You can find many places where OpenStreetMap has more rich data than other sources or read <a href="http://www.wired.com/2015/05/the-open-source-maps-that-made-rescues-in-nepal-possible/">stories</a> on how targeted mapping on specific incidents saved thousand of lives. But there are also many places where it lacks reliable data. Amorgos (and unfortunately many other Greek islands) is one of these cases.</p>
+<p>During my vacations there I used the only equipment available (my phone) to keep notes that would help me later to enrich OpenStreetMap. I extensivly use <a href="http://osmand.net/">Osmand</a> as my main navigation tool so this was my first option of keeping notes. You can either add favorites to mark any <a href="https://en.wikipedia.org/wiki/Point_of_interest">POIs</a> or use the notes plugin to take photos or record audio notes. Osmand has also an editing plugin that can help you edit data on the fly, but I prefer to do this later. If you are searching for a more simple app <a href="http://wiki.openstreetmap.org/wiki/OSMtracker_%28Android%29">OSMtracker</a> is a better choice, for tracking routes and keeping notes. If you don't have a smartphone during your vacations you can just use paper and pen. <a href="http://fieldpapers.org/">Field Papers</a> will help you print the map area you are interested in and you can keep notes with a pen.</p>
+<p>Getting back home I had many notes and plenty of work to do. OpenStretMap has a great <a href="http://wiki.openstreetmap.org/wiki/ID">in-browser editor</a> and the <a href="http://wiki.openstreetmap.org/wiki/Map_Features">Map Features</a> (really long) wiki page can guide you through the supported map elements. I added/changed around 90 map elements (beaches, paths, roads, buildings, etc) and it took me about an hour. Less than a day later the changes were rendered to the live website and I could feel proud about my contributions :)</p>
+<p>So did you enjoyed your vacations? Now start contributing to OpenStreetMap so more people can enjoy the travel to all the places you visited. Happy mapping :)</p>
+<p><img alt="OSM editing" src="osm-editing.jpg" /></p></content>
+      <pubDate>2015-08-07 13:48:52</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Fedora Flock 2014</title>
+      <link href="https://www.roussos.cc/2014/08/13/fedora-flock-2014/"/>
+      <content type="html"><p><a href="http://www.flocktofedora.com/">Fedora Flock</a> took place last week and this is a log entry for my personal highlights.</p>
+<p><a href="https://www.flickr.com/photos/comzeradd/14671187430" title="Flock 2014 by Nikos Roussos, on Flickr"><img src="https://farm6.staticflickr.com/5575/14671187430_7c5c5ef531_m.jpg" class="txt" width="180" height="240" alt="Flock 2014"></a> Overall the Flock was awesome. The quality of all technical presentations/workshops was really high. It's amazing how many things currently going on at the Fedora community, not just related to our Operation System (the distribution) but also innovative things that we develop or lead that in the long run benefit the whole Free Software community. As always I had the chance to meet, talk and collaborate in person with many Fedorians and that's always motivating for my contribution to the project.</p>
+<p>So here it goes...</p>
+<p><a href="https://fedoraproject.org/wiki/Fedora.next">Fedora.next</a>: This is currently the most important thing happening regarding the distribution. We are about to release Fedora 21 in three different products (Workstation, Cloud, Server) that will make possible to offer a better user experience in each one of these user groups. Some features that pop into my mind: Server product will implement "Server roles" right on the Anaconda installer, so you can quickly deploy (for instance) a mail server. <a href="http://cockpit-project.org/">Cockpit</a> also will land on 21, an awesome server management tool. Cloud product will focus even more on containers (yes that means docker), open source infrastructure (eg. <a href="http://www.openstack.org/">OpenStack</a>) and cloud services (eg. AWS). Workstation product intended for Desktop users and will focus on developers and makers. <a href="http://devassistant.org/">DevAsistant</a> will play a key role to this. It always surprise me to see developers struggle to setup their work environment on Operating Systems that takes hours to do it, for things that it's a few minutes work on Fedora.</p>
+<blockquote class="twitter-tweet" lang="en"><p>People running <a href="https://twitter.com/hashtag/Docker?src=hash">#Docker</a> inside <a href="https://twitter.com/hashtag/Vagrant?src=hash">#Vagrant</a> over OsX. A new level of masochism.</p>&mdash; Nikos Roussos (@comzeradd) <a href="https://twitter.com/comzeradd/statuses/468398793894133760">May 19, 2014</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Docker, docker, docker: <a href="https://twitter.com/adityapatawari">Aditya</a> did a great introductory workshop during Flock. Fedora is definitely the leading platform for Docker. Next release will improve even better Docker's integration.</p>
+<p>Ansible: Another DepOps area where Fedora community has given a lot of time and effort. Again Aditya did an introductory talk, since recently the Infrastructure team migrated <a href="http://infrastructure.fedoraproject.org/cgit/ansible.git">everything</a> from Puppet to Ansbile. The last day <a href="https://twitter.com/kumar_pravin">Praveen</a> did a workshop demonstrating in practice how Ansible can be combined with Jenkins for Continuous Integration.</p>
+<p>Packaging: One way that I contribute to the project is through RPM Packaging, so I tried to participate in most of the relevant talks/workshops. Amita Sharma walked us through the Fedora QA workflow, Jan Zeleny presented the roadmap for RPM and Dnf (the yum replacement), Haïkel Guémar coordinated a review package hackfest and Cole Robinson showed how packagers can utilize Virtualization tools for testing things.</p>
+<p>Communications: New communication and collaboration tools are on the way. This is not directly related to the project, but it's Fedora people who drive the development on these. <a href="https://fedorahosted.org/hyperkitty/">Hyperkitty</a> will be the web interface for the upcoming Mailman3, <a href="https://www.waartaa.com/">Waarta</a> is a web app for IRC/WebRTC and <a href="http://www.glittergallery.net/">Glitter Gallery</a> is a collaboration platform for designers which uses git as backend and SparkleShare as the sync client (I maintain the package for Fedora, so I'm really interested to see how this will go).</p>
+<p>Novena: <a href="https://twitter.com/xobs">Sean Cross</a> gave a keynote speech about the <a href="http://www.kosagi.com/w/index.php?title=Novena_Main_Page">Novena</a> project, the fully Open Source laptop. Still in the beginning, but seems really promising.</p>
+<iframe src="https://www.flickr.com/photos/comzeradd/14842603975/in/set-72157645862758620/player/" width="500" height="383" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></content>
+      <pubDate>2014-08-13 15:51:54</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Setup a home server with Fedora and BeagleBone Black</title>
+      <link href="https://www.roussos.cc/2014/06/23/fedora-beaglebone-black/"/>
+      <content type="html"><p>Over the last <a href="http://www.roussos.cc/2014/04/30/athens-free-software-monthly-meetups/">Free Software Meetup</a> we discussed about the "build your own home server" movement. This is a long and complex discussion, so most likely it will expand to future meetups. In the meantime I wanted to test BeagleBone Black (BB), as the hardware platform for such a project.</p>
+<p><img src="beagle-fedora.png" alt="fedora on beaglebone black" class="txt" /> I prefer BB over Raspeberry Pi (RaPi) because, despite what many people seem to believe, RaPi <a href="http://en.wikipedia.org/wiki/Raspberry_Pi#Driver_API">is not</a> fully Open Hardware. I also prefer armv7 hardware, since it gives me the option to use a "regular" linux distribution. I have the option for Fedora or Debian instead of Pidora or Raspbian. </p>
+<p>During the meetup we talked a lot about <a href="https://arkos.io/">Arkos</a>, which supports many arm boards and seems like a great choice for administering your home server through a well designed web interface, lowering the technical knowledge threshold for setting up services like file or mail server. I'll get back to Arkos, but at this point I wanted to experiment with a "regular" distribution. So this post is about Fedora and Beaglebone Black.</p>
+<p>Download the <a href="http://fedoraproject.org/en/get-fedora#arm">Fedora ARM image</a> extract it and rename it to <code>fedora-arm.raw</code> so it's easier to follow the steps bellow.</p>
+<p>Flashing Fedora to BB is not that difficult. The tricky part is that Fedora comes with an "initial setup" screen, which requires an hdmi monitor and a keyboard at least on first run so you can set some basic things (like root password). I wanted to do some modifications to the Fedora image, and get through this "initial setup" screen prior to flashing it on the BB. Inspired by <a href="http://ebalaskas.gr/blog/2013/03/25/raspberry-pi-with-archlinux-under-qemu/">Ebal's post</a>, I thought Qemu as a perfect tool for this job.</p>
+<pre><code>sudo yum install qemu-system-arm
+</code></pre>
+<p>With qemu-system-arm tool I can emulate arm and run the image on my laptop. In order to boot the image qemu needs a kernel and what better place of finding a kernel than the image itself. You can either mount the image and copy kernel and initrd out or use libguestfs (kernel and Initrd version will obviously vary on future releases).</p>
+<pre><code>sudo yum install -y libguestfs-tools
+virt-copy-out -a fedora-arm.raw /boot/vmlinuz-3.11.10-301.fc20.armv7hl .
+virt-copy-out -a fedora-arm.raw /boot/initramfs-3.11.10-301.fc20.armv7hl.img .
+</code></pre>
+<p>Finally run it. (you may have to add your user to kvm group)</p>
+<pre><code>sudo usermod -aG kvm username
+newgrp kvm
+qemu-system-arm -machine vexpress-a9 -m 1024 -nographic -net nic -net user \
+ -append "console=ttyAMA0,115200n8 rw root=/dev/mmcblk0p3 rootwait physmap.enabled=0" \
+ -kernel vmlinuz-3.11.10-301.fc20.armv7hl \
+ -initrd initramfs-3.11.10-301.fc20.armv7hl.img \
+ -sd fedora-arm.raw
+</code></pre>
+<p>Booting up I reached to the "initial setup" screen I mentioned before. I created a new user with administrator (aka sudo) privileges. First things I did when finally got a prompt was to disable root account:</p>
+<pre><code>sudo passwd -l root
+</code></pre>
+<p>set a hostname</p>
+<pre><code>vi /etc/sysconfig/network
+</code></pre>
+<p>disable Network Manger</p>
+<pre><code>systemctl disable NetworkManager.service
+</code></pre>
+<p>setup static networking</p>
+<pre><code>echo "
+ HWADDR="D8:D3:85:AE:DD:4C"
+ BOOTPROTO="static"
+ DEVICE="eth0"
+ ONBOOT="yes"
+ IPADDR=192.168.1.2
+ NETMASK=255.255.255.0
+ BROADCAST=192.168.1.255
+ NETWORK=192.168.1.0
+ GATEWAY=192.168.1.1
+"&gt;/etc/sysconfig/network-scripts
+</code></pre>
+<p>add DNS settings</p>
+<pre><code>echo "
+ nameserver 208.67.222.222
+ nameserver 208.67.222.222
+"&gt;/etc/resolv.conf
+</code></pre>
+<p>disable selinux (<a href="http://stopdisablingselinux.com/">sorry Dan</a>)</p>
+<pre><code>setenforce 0
+sed -i s/=enforcing/=disabled/ /etc/selinux/config
+</code></pre>
+<p>Enable ssh</p>
+<pre><code>systemctl enable sshd
+firewall-cmd --permanent --zone=public --add-service=ssh
+</code></pre>
+<p>Fedora image is around 2G. I had a 4G SDcard so I expanded it by 2G</p>
+<pre><code>qemu-img resize fedora-arm.raw +2G
+</code></pre>
+<p>Important to remember that this will expand the image but not the root filesystem inside. Flash it to an SDcard</p>
+<pre><code>dd if=fedora-arm.raw of=/dev/sdX
+</code></pre>
+<p>This a destructive command so make sure that sdX refers to your SDcard and not some disk. Now mount the card and resize the root filesystem, that probably would be on sdX3</p>
+<pre><code>e2fsck -f /dev/sdX3
+resize2fs /dev/sdX3
+</code></pre>
+<p>And that's all. I removed the mini sd from the adapter and inserted it on BB. All that's left is ethernet connection and power. Less than a minute later I was able to ssh to my soon-to-be home server from my laptop.</p></content>
+      <pubDate>2014-06-23 13:13:52</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Our privacy is interdependent</title>
+      <link href="https://www.roussos.cc/2014/05/14/our-privacy-is-interdependent/"/>
+      <content type="html"><p>Last week I gave a presentation at <a href="http://commonsfest.info/">CommonsFest</a> in the spirit of my <a href="http://www.roussos.cc/2014/05/08/free-your-android/">Free Your Android</a> post, trying to educate people on simple steps they can make to have better privacy on their mobile devices.</p>
+<p>A couple of days before my presentation I watched <a href="https://www.youtube.com/watch?v=BBgZyV4iltw">this great speech</a> from Jillian York and Jacob Appelbaum (please go and watch this). At some point Jacob mentions that <em>"our security is interdependent"</em>.</p>
+<p>Few days later Benjamin Mako Hill came to confirm this remark, but with <a href="http://mako.cc/copyrighteous/google-has-most-of-my-email-because-it-has-all-of-yours">real evidence</a>. He analyzed his emails to find out that despite self-hosting his own mail server, 57% of his emails endup on Google's servers. I ran <a href="http://projects.mako.cc/source/?p=gmail-maildir-counter">the code</a> on my emails and I got pretty much the same percentage (and a bit higher if I include all three big providers).</p>
+<p>This was how I ended my presentation (not aware of Benjamin's work at the moment):</p>
+<blockquote>
+<p>"I have made a personal choice not to host my email on Google, Microsoft or Yahoo. But if the majority of my contacts use one of these providers then most of my outgoing emails end up to their servers. It's important to understand that <strong>our privacy depends on the privacy of our social network</strong>."</p>
+</blockquote></content>
+      <pubDate>2014-05-14 12:51:29</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Free Your Android</title>
+      <link href="https://www.roussos.cc/2014/05/08/free-your-android/"/>
+      <content type="html"><p>After all the recent NSA revelations, it's been even more important to use Free Software on our mobile phones. Let me express this in another way: <strong>We should be very careful about what software we use on a device that is always on and in our pocket 24h a day.</strong></p>
+<p>Starting from the very basic thing that makes our smartphone operate, it seems that we don't have many options. So if you are using Iphone or Windows Phone, let me remind you that both of these companies are in the <a href="https://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29#The_slides">infamous NSA slides</a> for giving access to users private data.</p>
+<p>So this post is about Android and my current setup of running only Free Software on my smartphone. I know what you are thinking.. that Google is also part of NSA's "special friends". Android is self-defined as an "Open Source Platform" (AOSP), and pretty much it is since it's released under a mix of Apache and GPL license (although mostly developed behind closed doors). But this isn't what you get when you buy a smartphone. Your device will certainly have preinstalled all of the Google's proprietary stuff (gmail, play, etc) and probably manufacturer and/or vendor applications. Things that you have no idea what they do, besides their "normal" functionality, because we don't have the code to look at.</p>
+<h3>Operating System</h3>
+<p><img src="cyanogenmod.png" alt="" class="txt" /> If you happen to be on <a href="http://redmine.replicant.us/projects/replicant/wiki/ReplicantStatus">Replicant's short list</a> of supported devices then this is the way to go. But since this applies to very few people <a href="http://www.cyanogenmod.org/">CyanogenMod</a> is the next best thing.</p>
+<p>That's the part that is most difficult, since you have to flash your phone with the right CyanogenMod's ROM. The <a href="http://wiki.cyanogenmod.org/w/Devices">instructions on the wiki</a> are very detailed, but I know that this should look like a difficult process to non-geeks. At FSFE we run a campaign on how to <a href="https://fsfe.org/campaigns/android/liberate.en.html">free you Android</a>, so if you ever happen to find out about a "Free your Android" workshop near you location go and people will love to help you.</p>
+<p>Still, if flashing your phone seems too complex skip to the next section, but at least stop using the pre-installed proprietary apps and remove any Google account you may have entered during initial phone setup (a factory reset may help).</p>
+<p>CyanogenMod is not perfect. It contains <a href="https://github.com/CyanogenMod/android_device_semc_iyokan/blob/gingerbread/extract-files.sh">scripts that extract</a> proprietary code necessary for some phone components (eg. camera) to work. The good thing is that these parts are firmware, thus non-executable code. You may also need to tweak it a bit:</p>
+<ul>
+<li>Remove Google analytics from CyanogenMod by flashing <a href="https://github.com/mar-v-in/freecyngn">freecygn</a>.</li>
+<li>Stop CyanogenMod from reporting tethering usage to your provider, by <a href="https://pmf.silvrback.com/fixing-tethering-on-android-kitkat">changing the "tether dun required" setting</a>.</li>
+<li><a href="http://blog.varunkumar.me/2010/09/how-to-change-dns-server-on-android.html">Change DNS settings</a> so that CyanogenMod stops using Google's DNS servers, that has a permanent log policy.</li>
+<li>Choose to fully encrypt your device with a pin (Settings -&gt; Security -&gt; Encrypt phone).</li>
+</ul>
+<h3>Apps</h3>
+<p><img src="fdroid.png" alt="" class="txt" width="130" /> Since we got rid Google apps, one way or another, we need a way to install software to our phone. Free Software. <a href="https://f-droid.org/">F-droid</a> comes to the rescue, an app for accessing software repositories for android and that comes preconfigured with its own repository containing only Free Software apps. Install it and then head over to <a href="https://guardianproject.info/2012/03/15/our-new-f-droid-app-repository/">Guardian project</a> to add its repository to F-droid. I won't provide links for the apps below, since you can easily install them through F-droid.
+<br><br></p>
+<h4>Contacts / Calendar</h4>
+<p><em>DavDroid</em> is an app for synchronizing Contacts and Calendar. It supports both CalDAV and CardDAV, so you will be able to set it with your provider or self hosted service.</p>
+<p><img src="davdroid.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Email</h4>
+<p><em>K9</em> is the ultimate email client for Android. It has all the features you would expect from a mail client. You can combine it with <em>AGP</em> or <em>OpenKeychain</em> for PGP (I prefer the second, since AGP doesn't support subkeys yet).</p>
+<p><img src="k9.png" alt="" class="txt" width="32" /> <img src="apg.png" alt="" class="txt" width="32" /> <img src="keychain.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Browser</h4>
+<p>Well... <em>Firefox</em>. You can add some of the usual privacy Add-ons. <em>Orweb</em> is a browser preconfigured for anonymous access to the web through the Tor network.</p>
+<p><img src="firefox.png" alt="" class="txt" width="32" /> <img src="orweb.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Files / Photos</h4>
+<p>I have an <a href="http://owncloud.org/">Owncloud</a> instance and although I use it mostly for Contacts/Calendar (I prefer <a href="http://sparkleshare.org/">Sparkleshare</a> for files) I find it really handy that my photos can be synced automatically with OwnCloud and accessed directly from my laptop. <a href="http://seafile.com/">Seafile</a> also seems like a great choice, but haven't tested it yet.</p>
+<p><img src="owncloud.png" alt="" class="txt" width="32" /> <img src="seafile.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Maps</h4>
+<p><em>OsmAnd</em> is the best maps android application (yes better than Google maps), mostly due to its great offline feature. Map data come straight from the work of <a href="http://www.openstreetmap.org/">OpenStreetMap</a> contributors. I always install <em>OSMTracker</em> to my phone to be able to contribute myself and GPSLogger to log <a href="http://ridewithgps.com/users/80721">my bike rides</a>.</p>
+<p><img src="osmand.png" alt="" class="txt" width="32" /> <img src="osmtracker.png" alt="" class="txt" width="32" /> <img src="gpslogger.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>News</h4>
+<p><em>TTRSS-Reader</em> is the android version of the well known Free Software RSS reader <a href="http://tt-rss.org/">TinyTinyRSS</a>. It will play along with both self hosted and 3rd party instances. <em>Poche</em> helps saving articles to "Read them later" on a <a href="https://www.wallabag.org/">Wallabag</a> instance.</p>
+<p><img src="ttrssreader.png" alt="" class="txt" width="32" /> <img src="wallabag.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Chat</h4>
+<p>XMPP (Jabber) is the obvious choice for instance messaging. <em>ChatSecure</em> and <em>Xabber</em> are the best android apps for that job. Both support OTR for encrypted communication, but ChatSecure is better on this field since it can be combined with <a href="https://guardianproject.info/apps/keysync/">KeySync</a> and sync your OTR keys with the ones you keep on your desktop client.</p>
+<p><img src="chatsecure.png" alt="" class="txt" width="32" /> <img src="xabber.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Documents / Ebooks</h4>
+<p>I prefer reading on my Kobo, but in case you want an epub reader <em>FBReader</em> will be a good choice. <em>Document Viewer</em> opens pdf documents (plays well with mail attachments).</p>
+<p><img src="fbreader.png" alt="" class="txt" width="32" /> <img src="documentviewer.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Social / Microblogging</h4>
+<p>I use <em>Twidere</em> for Twitter. Great app. Supports StatusNet too. There is also a <em>Diaspora Webclient</em> app, that seems to just wrap Diaspora's mobile web interface.</p>
+<p><img src="twidere.png" alt="" class="txt" width="32" /> <img src="diaspora.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>VoIP</h4>
+<p>Guardian project has setup an SIP provider (<a href="https://ostel.co/">Ostel.co</a>) that just works, encrypting calls by default (aka <a href="https://en.wikipedia.org/wiki/ZRTP">ZRTP</a>). They suggest <em>CSipSimple</em> for using this android, but I've tried <em>Lumicall</em> and works great.</p>
+<p><img src="lumicall.png" alt="" class="txt" width="32" /> <img src="ostel.png" alt="" class="txt" width="32" /><br><br></p>
+<p><img src="fya.png" alt="" width="120" /> </p>
+<p>All the software I mention here is stuff I use. I'm sure that in some cases you may find alternatives that better suit your needs. So dig deeper to F-droid for more apps and surf through <a href="https://fsfe.org/campaigns/android/liberate.en.html">FSFE's website</a>.</p>
+<p>I currently have an android smartphone that runs 100% Free Software applications. I can't think of missing any functionality so far and I certainly feel more secure ;)</p></content>
+      <pubDate>2014-05-08 11:22:03</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Athens Free Software Monthly Meetups</title>
+      <link href="https://www.roussos.cc/2014/04/30/athens-free-software-monthly-meetups/"/>
+      <content type="html"><p>Just about a month ago <a href="http://www.roussos.cc/2012/03/06/fsfe/">my two years term</a> as FSFE community representative to the General Assembly ended.</p>
+<p>Great experience. I very much enjoyed the whole term and I have nothing but positive to keep. I met some awesome people and got in touch far more deeply with the way that FSFE works. One thing that I struggled sometimes with was to better represent the community. I mean.. the two community members sitting on GA, besides being elected for their will to participate actively at GA's decisions, are also representatives. There were many cases when I felt that I was mostly representing myself, since there was no easy way of knowing what the community feels on a certain issue. In many countries the <a href="https://fsfe.org/about/localteams.en.html">fellowship groups</a> are far more vivid (and bigger) than Greece, so I guess that participating at the local meetups gives the opportunity to discuss these things and interact with (at least the local part of) the community.</p>
+<p>With that in mind I decided that it was about time to start regular local meetups in Athens. We may not be many FSFE <del>fellows</del> members <a href="https://wiki.fsfe.org/groups/Athens">here</a>, but the fellowship meetups were never meant to be only for members. <strong>So the "Athens Free Software Monthly Meetups" were born</strong> (first Wednesday of each month, at local <a href="https://www.hackerspace.gr/">hackerspace</a>). We already had our first on April and the <a href="https://www.hackerspace.gr/wiki/Free_Software_Monthly_Meetup_0514">second one</a> is coming with a "Free Your Android" theme.</p></content>
+      <pubDate>2014-04-30 16:45:35</pubDate>
+    </entry>
+  
+    <entry>
+      <title>building and running Popcorn Time from source</title>
+      <link href="https://www.roussos.cc/2014/03/21/building-running-popcorn-time/"/>
+      <content type="html"><p>If you are not living in a cave then you probably already know everything about <a href="http://en.wikipedia.org/wiki/Popcorn_time">Popcorn Time</a>, so I'll skip any intro. This is a quick guide for building Popcorn Time from source code. Either because you don't want to wait for a new "official" build to get a feature (in my case <a href="https://github.com/popcorn-official/popcorn-app/pull/211">Greek subtitles</a>), or because you just don't trust their binary builds.</p>
+<p>These steps are working perfectly on my system (Fedora), but with small modifications these should also work on any Linux box.</p>
+<h3>Install system dependencies</h3>
+<p><code>sudo yum install nodejs rubygem-compass wget git</code></p>
+<h3>Get the source code</h3>
+<p>Clone from the <a href="https://github.com/popcorn-official/popcorn-app/">repository</a>:</p>
+<p><code>git clone https://github.com/popcorn-official/popcorn-app.git</code></p>
+<p>or if you have a github account you can fork it, if there is any chance you might contribute back to the project.</p>
+<h3>Install project dependencies</h3>
+<p>Popcorn Time is written in javascript so we'll need grunt and the rest of the project dependencies.
+We change into the project directory, that we just pulled with git, so all of these get installed locally under node_modules.</p>
+<pre><code>cd popcorn-app
+npm install grunt-cli bower
+npm install
+</code></pre>
+<h3>Build</h3>
+<p><code>node_modules/grunt-cli/bin/grunt build --platforms=linux64</code></p>
+<p>If everything works you should get a "Done, without errors." message at the end.</p>
+<h3>Install</h3>
+<p>Now let's move the build to a place where we can launch it easily</p>
+<pre><code>sudo cp build/releases/Popcorn-Time/linux64/Popcorn-Time/ /opt/
+sudo ln -s /opt/Popcorn-Time/Popcorn-Time /usr/bin/
+</code></pre>
+<p>and create a Desktop entry</p>
+<pre><code>sudo wget https://avatars0.githubusercontent.com/u/6956202?s=140 -O /usr/share/pixmaps/popcorntime.png
+sudo echo "[Desktop Entry]
+    Name=Popcorn Time
+    Comment=Watch movies in streaming with P2P.
+    Exec=/usr/bin/Popcorn-Time
+    Categories=AudioVideo;
+    StartupNotify=false
+    Type=Application
+    Icon=popcorntime" &gt; /usr/share/applications/popcorn-time.desktop
+</code></pre>
+<p>Popcorn Time now is available as a Desktop shortcut.</p>
+<p><img alt="popcorn time desktop icon" src="popcorndesktop.jpg" /></p>
+<p>All you have to do is prepare some popcorn :)</p>
+<p><img alt="popcorn time screenshot" src="popcornshot.jpg" /></p></content>
+      <pubDate>2014-03-21 17:37:19</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Making things distributed is hard</title>
+      <link href="https://www.roussos.cc/2014/03/12/making-things-distributed-is-hard/"/>
+      <content type="html"><p>One of the most interesting rants I have ever read, by Maciej Cegłowski.</p>
+<blockquote>
+<p>Technology concentrates power.</p>
+<p>In the 90's, it looked like the Internet might be an exception, that it could be a decentralizing, democratizing force. No one controlled it, no one designed it, it was just kind of assembling itself in an appealing, anarchic way. The companies that first tried to centralize the Internet, like AOL and Microsoft, failed risibly. And open source looked ready to slay any dragon.</p>
+<p>But those days are gone. We've centralized the bejesus out of the Internet now. There's <a href="http://www.lycos.com/">one search engine</a> (plus the one no one uses), <a href="http://myspace.com/">one social network</a> (plus the one no one uses), one Twitter. We use one ad network, one analytics suite. Anywhere you look online, one or two giant American companies utterly dominate the field.</p>
+<p>And there's the cloud. What a brilliant name! The cloud is the future of online computing, a friendly, fluffy abstraction that we will all ascend into, swaddled in light. But really the cloud is just a large mess of servers somewhere, the property of one American company (plus the clouds no one uses).</p>
+<p>Orwell imagined a world with a <a href="http://www.theorwellreader.com/excerpt.shtml">telescreen in every room</a>, always on, always connected, always monitored. An <a href="http://au.ign.com/wikis/xbox-one/Xbox_One_Kinect">Xbox One</a> vision of dystopia.</p>
+<p>But we've done him one better. Nearly everyone here carries in their pocket a tracking device that knows where you are, who you talk to, what you look at, all these intimate details of your life, and sedulously reports them to private servers where the data is stored in perpetuity.</p>
+<p>I know I sound like a conspiracy nut framing it like this. I'm not saying we live in an Orwellian nightmare. I love New Zealand! But we have the technology.</p>
+<p>When I was in grade school, they used to scare us with something called the permanent record. If you threw a spitball at your friend, it would go in your permanent record, and prevent you getting a good job, or marrying well, until eventually you'd die young and friendless and be buried outside the churchyard wall.</p>
+<p>What a relief when we found out that the permanent record was a fiction. Except now we've gone and implemented the damned thing. Each of us leaves an indelible, comet-like trail across the Internet that cannot be erased and that we're not even allowed to see.</p>
+<p>The things we really care about seem to disappear from the Internet immediately, but post a stupid YouTube comment (now linked to your real identity) and it will live forever.</p>
+<p>And we have to track all this stuff, because the economic basis of today's web is advertising, or the promise of future advertising. The only way we can convince investors to keep the money flowing is by keeping the most detailed records possible, tied to people's real identities. Apart from a few corners of anonymity, which not by accident are the <a href="http://chrishateswriting.com/post/76431353368/the-anonymity-i-know">most culturally vibrant parts</a> of the Internet, everything is tracked and has to be tracked or the edifice collapses.</p>
+<p>What upsets me isn't that we created this centralized version of the Internet based on permanent surveillance.</p>
+<p>What upsets me, what really gets my goat, is that we did it because it was the easiest thing to do. There was no design, forethought, or analysis involved. No one said "hey, this sounds like a great world to live in, let's make it". It happened because we couldn't be bothered.</p>
+<p>Making things ephemeral is hard.</p>
+<p>Making things distributed is hard.</p>
+<p>Making things anonymous is hard.</p>
+<p>Coming up with a sane business model is really hard—I get tired just thinking about it.</p>
+<p>So let's take people's data, throw it on a server, link it to their Facebook profiles, keep it forever, and if we can't raise another round of venture funding we'll just slap Google ads on the thing.</p>
+<p>"High five, Chad!"</p>
+<p>"High five, bro!"</p>
+<p>That is the design process that went into building the Internet of 2014.</p>
+<p>And of course now we are shocked—shocked!—when, for example, the Ukrainian government uses cell tower data to send scary text messages to protesters in Kiev, in order to try to keep them off the streets. Bad people are using the global surveillance system we built to do something mean! Holy crap! Who could have imagined this?</p>
+<p>Or when we learn that the American government is reading the email that you send unencrypted to the ad-supported mail service in another country where it gets archived forever. Inconceivable!</p>
+<p>I'm not saying these abuses aren't serious. But they're the opposite of surprising. People will always abuse power. That's not a new insight. There are cuneiform tablets complaining about it. Yet here we are in 2014, startled because unscrupulous people have started to use the powerful tools we created for them.</p>
+<p>We put so much care into making the Internet resilient from technical failures, but make no effort to make it resilient to political failure. We treat freedom and the rule of law like inexhaustible natural resources, rather than the fragile and precious treasures that they are.</p>
+<p>And now, of course, it's time to make the Internet of Things, where we will connect everything to everything else, and build cool apps on top, and nothing can possibly go wrong. </p>
+<p>Not long ago before I flew here, Google announced it was acquiring Nest, a luxury thermostat maker. I never thought I would use those two words together. Nest has sensors that detect who is in a room and when, so naturally there was concern that Google would now learn all this extra information about you, and know how hot your house is.</p>
+<p>Google quickly deployed the Nest CEO, who promised that there would be safeguards and a privacy policy, and all kinds limits to make sure everything stayed kosher. And I have no reason to disbelieve the guy.</p>
+<p>But I shouldn't need his word, or Google's corporate motto, or Magna Carta, or the <a href="http://www.nzhistory.net.nz/politics/treaty/the-treaty-in-brief">Treaty of Waitangi</a> to protect me from my thermostat. My old thermostat wasn't that scary! It was too dumb to snitch. And no one could hear it scream.</p>
+<p>This new thermostat, on the other hand, has lawyers, PR people, a privacy policy, it's off writing blog posts somewhere, possibly eating my leftover pizza. It more like a sketchy roommate than a thermostat.</p>
+<p>Let me make it clear what I'm worried about here. I'm not afraid of my appliances. I'm not afraid that Google is going to send me to the Googlag to mine bitcoins.</p>
+<p>Nor am I afraid of a Greater New Zealand, grown drunk with electronic surveillance, aggressively expanding to control the Pacific Rim. That might be a nice change! If it happens, I will be waiting on the docks of San Francisco, bearing a basket of avocados, ready to welcome our Kiwi overlords.</p>
+<p>What I'm afraid of is the society we already live in. Where people like you and me, if we stay inside the lines, can enjoy lives of comfort and relative ease, but God help anyone who is declared out of bounds. Those people will feel the full might of the high-tech modern state.</p>
+<p>Consider your neighbors across the Tasman, stewards of an empty continent, who have <a href="http://en.wikipedia.org/wiki/Pacific_Solution">set up internment camps in the remotest parts of the Pacific</a> for fear that a few thousand indigent people might come in on boats, take low-wage jobs, and thereby destroy their society.</p>
+<p>Or the country I live in, where we have a bipartisan consensus that the only way to preserve our freedom is to fly remote controlled planes that <a href="http://en.wikipedia.org/wiki/Drone_attacks_in_Pakistan#Civilian_casualties">occasionally drop bombs on children</a>. It's <a href="http://classiclit.about.com/od/brotherskaramazov/a/aa_brothersqut.htm">straight out of Dostoevski</a>.</p>
+<p>Except Dostoevski needed a doorstop of a book to grapple with the question: “Is it ever acceptable for innocents to suffer for the greater good?” And the Americans, a more practical people, have answered that in two words: “Of course!”</p>
+<p>Erika Hall in <a href="http://www.webstock.org.nz/14/programme/presentations/#hall">her talk yesterday</a> wondered what Mao or Stalin could have done with the resources of the modern Internet. It's a good question. If you look at the history of the KGB or Stasi, they consumed enormous resources just maintaining and cross-referencing their mountains of paperwork. There's a throwaway line in Huxley's Brave New World where he mentions "800 cubic meters of card catalogs" in the eugenic baby factory. Imagine what Stalin could have done with a decent MySQL server.</p>
+<p>We haven't seen yet what a truly bad government is capable of doing with modern information technology. What the good ones get up to is terrifying enough.</p>
+<p>I'm not saying we can't have the fun next-generation Internet, where everyone wears stupid goggles and has profound conversations with their refrigerator. I'm just saying we can't slap it together like we've been doing so far and expect everything to work itself out.</p>
+<p>The good news is, it's a design problem! You're all designers here - we can make it fun! We can build an Internet that's distributed, resilient, irritating to governments everywhere, and free in the best sense of the word, like we dreamed of in the 90's. But it will take effort and determination. It will mean scrapping permanent mass surveillance as a business model, which is going to hurt. It will mean pushing laws through a sclerotic legal system. There will have to be some nagging.</p>
+<p>But if we don't design this Internet, if we just continue to build it out, then eventually it will attract some remarkable, visionary people. And we're not going to like them, and it's not going to matter.</p>
+</blockquote>
+<p>You can read the <a href="https://static.pinboard.in/webstock_2014.htm">full transcript</a> of the presentation (which actually is about the life of <a href="https://en.wikipedia.org/wiki/L%C3%A9on_Theremin">Lev Sergeyevich Termen</a>).</p></content>
+      <pubDate>2014-03-12 14:41:16</pubDate>
+    </entry>
+  
+    <entry>
+      <title>A short story about mass surveillance</title>
+      <link href="https://www.roussos.cc/2014/02/13/a-story-about-mass-surveillance/"/>
+      <content type="html"><p>So imagine you have a camera in your house. In your living room. A surveillance camera, like those you see in a metro station. In fact not just in your house (because hey, after all you are not that important), but in everyone's house. Image there is a surveillance camera on every living room. Creepy right? Would you just let it there staring and watching at you? Every movement you make in your own house? Well this is what is going on right now. No seriously. This is what is happening; but in the digital world. You see a physical camera is so easy to spot and get you frustrated. But on the digital world, which is as real as the physical one, the surveillance mechanisms are not so easy to spot.</p>
+<p>So I'm having this camera in my living room watching every move I make. and the other day Maria, a friend of mine, comes for a cup of coffee in my house. She comes from another country, with different surveillance methods and she's surprised to see the camera. <em>"You know you have a camera in your house? Over there in that corner of the ceiling."</em>. There are plenty of ways I could react to this remark. The obvious one would be to look her finger and not where it's pointing, pretending there is nothing there. Or I could start yelling at her <em>"Oh, come on. I know you people, all you do is scare people off. There is no camera! Don't try to terrorize us"</em>. Another approach would be that I actually get scared, censor myself and act as "normal" as I can. You know just sit there quietly and open my tv. Because that's what normal people do, right? I don't want to look suspicious and draw any attention on me from whoever is behind this camera. Until of course I really believe this and become that man who watches tv all day doing nothing out of the ordinary. Or... I could just thank Maria for stating the obvious and start thinking about what we can do about it.</p>
+<p>A couple of hours later George, another friend, joins our company. He is more into technology than the average people. Actually a lot more. You know, these people that you can watch for hours talking only with acronyms and unknown words. So the discussion comes up again at this disturbing surveillance thing and he points out that there is a way to protect myself. A technical way to hide and obfuscate my movements inside my house, so they can't see what I'm doing (or at least make their job a lot harder). Well again there are various ways I could react to this. I could deny taking any measures to protect myself because that would make me look suspicious. I'm not that important. Let them focus on those who have something to hide. Or I could claim that this is a political problem and the only solution would be a political one. No technical measures can help us, so I refuse even to bother about them. Or... I could just thank George for having the patience to educate me about these things, and yes I would acknowledge the fact that this is a political problem and in the long term the solution should be political. But in the meantime I'm going to make their job a hell of a lot difficult. I'm going to help everyone look suspicious.</p></content>
+      <pubDate>2014-02-13 11:50:16</pubDate>
+    </entry>
+  
+    <entry>
+      <title>my linux history</title>
+      <link href="https://www.roussos.cc/2013/11/05/my-linux-history/"/>
+      <content type="html"><p>Inspired by <a href="http://ebalaskas.gr/blog/2013/11/04/my-history-of-linux/">ebal's post</a>, here is in short my linux history...</p>
+<ul>
+<li>
+<p>1997: Bought my first personal computer. Two months later I install <a href="http://en.wikipedia.org/wiki/Red_Hat_Linux">RedHat 5.2</a>. It was the first (and last) time I bought a Linux distribution from a store. Home broadband was not there yet. It came along with a nice <a href="http://upload.wikimedia.org/wikipedia/en/4/49/Redhat_5.2_box.jpg">book guide</a>, which I still have on my library along with the 5 CDs.</p>
+</li>
+<li>
+<p>2002: Just before RedHat Linux was about to be discontinued, in favor of the Enterprise version and the beginning of the Fedora project, I saw this as an opportunity to try some other distro. After playing around with <a href="http://www.linuxfromscratch.org/">LFS</a> I ended up with <a href="http://www.slackware.com/">Slackeware 8.1</a>. Kept it for several years, learned a lot.</p>
+</li>
+<li>
+<p>2007: Slackare has a very limited package collection, so you inevitable end up installing things manually. So I wanted a way to do this in a more automated way. And the choice was <a href="http://en.wikipedia.org/wiki/Gentoo_Linux">Gentoo Linux</a>. Actually I <a href="/2007/09/24/the-distro-of-my-dreams/">documented</a> that.</p>
+</li>
+<li>
+<p>2010: Over the years there was a significant change on how I dealt with my everyday work. I came to a point where I started to evaluate more the UX aspect of things. I wanted a linux distribution that would just work, but would also be open as a project for contribution. So I <a href="/2010/03/12/running-fedora/">chose</a> to join the <a href="http://fedoraproject.org/">Fedora Project</a> and never looked back. Today, besides being an Ambassador for the project i <a href="/2011/12/08/fedora-developer/">maintain some packages</a> and enjoying being part of such a great community.</p>
+</li>
+</ul></content>
+      <pubDate>2013-11-05 12:17:39</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Mozilla growing community (and reps)</title>
+      <link href="https://www.roussos.cc/2013/10/30/mozilla-growing-community-and-reps/"/>
+      <content type="html"><p><a href="http://www.flickr.com/photos/dougbelshaw/10136415166/"><img alt="champions of the web" src="http://farm4.staticflickr.com/3712/10136415166_51b1cfa6c0.jpg" /></a></p>
+<p><br />
+No more that a month ago, around 1800 Mozillians got together in 3 different locations around the globe for the <a href="https://wiki.mozilla.org/Summit2013">Mozilla Summit</a>. It's a huge number and it's getting bigger. I don't consider myself a long-time Mozilla contributor (I started actively contributing about 3 years ago), but I was always close to the project. Close enough to know that we came a long way over the last couple of years.</p>
+<p><em>We grew as a project.</em> Exploring new directions (<a href="https://webmaker.org/">Webmaker</a>, <a href="http://opennews.org/">Journalism</a>, <a href="http://openbadges.org/">Education</a>) and trying once again to save the Open Web building new cool products that people love to use (<a href="https://www.mozilla.org/en-US/firefox/os/">Firefox OS</a>).</p>
+<p><em>We grew as a community.</em> Last Summit (about 3 years ago) had around <a href="https://blog.lizardwrangler.com/2013/03/31/mozilla-summit/">600 participants</a>. Today <strong>we are a community of nearly 2000 Mozillians</strong>, both paid and volunteer contributors. And these two aspects are inseparable. None of these new adventures would have been possible without this rapid growth of the community.</p>
+<p>There are many reasons for this, but one of the most important accelerators was the fact that we had <strong>contributors engagement on the ground</strong>. 2.5 years ago Mozilla Reps was born, a programme to empower people and give them the ability and the necessary means to engage with potential contributors, to build and support local communities, to inspire people and spread the word about Mozilla's mission.</p>
+<p>I can still remember the time where the local communities where contributing almost exclusively on localization. Which is important of course, but doesn't help alone on shaping the future of Mozilla project in the way that it's happening today. <strong>We opened up contribution paths and opportunities</strong> that changed the nature of Mozilla project for ever.</p>
+<p>It wasn't even that common for people to organize events back then, or get support. Today Reps are organizing (or helping other Mozillians organize) <a href="https://reps.mozilla.org/events/">events</a> in a rate of 3 events per day! We managed to streamline the budget and swag requests, resulting in awesome events, like <a href="https://hacks.mozilla.org/2013/01/join-us-for-firefox-os-app-days/">Firefox OS App Days</a>. Something that would be impossible 3 years ago.</p>
+<p>Today Mozilla Reps, <a href="https://reps.mozilla.org/people/">spread around the world</a>, are keep doing awesome community building work facing the challenge of keeping up to speed with the a vastly growing community. Always trying to inspire even more people, engage more contributors and serve Mozilla's mission for an Open Web.</p>
+<p><br />
+<a href="http://www.flickr.com/photos/gen/9643441237/"><img alt="mozilla reps" src="http://farm8.staticflickr.com/7385/9643441237_00b4c8aff0.jpg" /></a></p></content>
+      <pubDate>2013-10-30 13:27:03</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Kickstarting a static website with ember.js and handlebars.js</title>
+      <link href="https://www.roussos.cc/2013/10/20/kickstarting-a-static-website-emberjs-handlebarsjs/"/>
+      <content type="html"><p>Sometimes you want to build quickly a static website. No need for a backend or a static content generator. But you come to a point where you want to introduce some simple features and you get annoyed mostly because you have to duplicate things. You have the same footer copied on every page or you have a list of items (pages) and you wish you could have the same template for all of them and get these items serialized in some way (the only way: json).</p>
+<p><a href="http://emberjs.com/">Ember.js</a> (which includes <a href="http://handlebarsjs.com/">handlebars.js</a>) can really come in handy in these situations. I started using it for the first time when I wanted to build a simple static website for archiving Athens Friday night bike rides, known as <a href="http://freedayride.gr/">freeday</a>. And since it proved to be the right choice I'm keep using it every time I want to design something similar.</p>
+<p>So in order to minimize the time I spend kickstarting such a website, I pushed a few bits of code that can serve as a starting point. Just check the <a href="https://github.com/comzeradd/static-ember">repo</a> and see how it <a href="http://comzeradd.github.io/static-ember/">looks like</a>.</p>
+<p>PS. Of course ember.js is much more than this. If you are interested for more see this <a href="https://www.youtube.com/watch?v=1QHrlFlaXdI">video</a> and then dive into the <a href="http://emberjs.com/guides/">documentation</a>.</p></content>
+      <pubDate>2013-10-20 22:59:13</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Hacking Firefox OS Developer Phone</title>
+      <link href="https://www.roussos.cc/2013/05/17/hacking-firefox-os-developer-phone/"/>
+      <content type="html"><p><img src="geeksphone.png" alt="keon" class="txt" /> Probably you already know about <a href="http://www.geeksphone.com/">Geeksphone</a>'s Firefox OS Developer Phones. A couple of days ago I received mine (the Keon version) as a <a href="https://reps.mozilla.org/">Mozilla Rep</a> for testing and showcasing Firefox OS on upcoming events.</p>
+<p>Keon comes with an old Firefox OS build, which means that it misses many cool features already landed on the current release branch (for instance most of the contacts import options), but also makes bug reporting difficult since you have to determine if a bug you’ve found has already been resolved before reporting it.</p>
+<p>So with a little help from <a href="http://adamkalis.github.io/">(Flash)Fredy</a> here are some quick steps to get your Keon device updated :-)</p>
+<p>Flash a new Firefox OS build</p>
+<p>At Geeksphone forum you’ll find a <a href="http://forum.geeksphone.com/index.php?topic=4834">relevant thread</a> with unofficial recent builds and detailed guidelines on how to flash it on your device. Nothing else to add here, besides the fact that flashing a build comes with a certain amount of risk :-)</p>
+<h2>Update Gaia</h2>
+<p>If you are feeling less adventurous you could just update Firefox OS UI (<a href="https://wiki.mozilla.org/Gaia">Gaia</a>). The steps are really easy. Plug your device and run:</p>
+<pre><code>git clone https://github.com/mozilla-b2g/gaia.git
+git checkout v1-train
+make reset-gaia
+</code></pre>
+<p>This will restart your device and when it comes back you’ll have the new Gaia.</p>
+<h2>The tools you need</h2>
+<p>In order for all the above steps to work you need adb, which stands for <a href="https://developer.android.com/tools/help/adb.html">Android Debug Bridge</a> and it’s a simple command line tool that helps you communicate with a connected Androd/Linux phone device.</p>
+<p>Here are the steps needed to have adb working (at least on <a href="https://fedoraproject.org/">Fedora</a>). First download the <a href="https://developer.android.com/sdk/index.html">SDK tools</a> from Android. Let’s assume that you uncompressed the archive on ~/android-sdk/.</p>
+<pre><code>cd ~/android-sdk/tools
+./android
+</code></pre>
+<p>Then you check to install the “Tools”, that would probably have a “Not Installed” status on your system. This will download and install everything you need under ~/android-sdk/platform-tools.</p>
+<p><img alt="adb" src="adb.jpg" /></p>
+<p>If you want to use adb from everywhere you have to add it on your system’s PATH. In this case:</p>
+<pre><code>export PATH=$PATH:~/android-sdk/platform-tools
+</code></pre>
+<p>You can add this to your ~/.bash_profile for permanent effect.</p>
+<p>One last step is to add a udev rule for the specific device. Running lsusb on a terminal gives you the vendor identifier. For Keon this is “05c6″. So you have to add the line below at /etc/udev/rules.d/51-android.rules</p>
+<pre><code>SUBSYSTEM=="usb", ATTR{idVendor}=="05c6", MODE="0666", GROUP="plugdev"
+</code></pre>
+<p>and tell udev to re-read the rules:</p>
+<pre><code>sudo udevadm control --reload-rules
+</code></pre>
+<p>If you did everything correctly then plug your Keon device and run:</p>
+<pre><code>adb devices
+</code></pre>
+<p>You should see a line for keon.</p>
+<h2>Hack</h2>
+<p>If you are developing an Open Web App then you could just use Firefox OS Simulator to push it on the Keon device. See how <a href="https://hacks.mozilla.org/2013/05/pushing-firefox-os-apps-to-the-geeksphone/">simple that is</a>. The only thing you’ll need for this to work is the udev rule above. You won’t need adb, since the simulator comes with it’s own copy.</p>
+<p>If you want to hack around Gaia and the core apps, then just fork the code, do all the changes you want and use your repo to flash Gaia on the phone as described above.</p>
+<p>Happy Hacking :-)</p>
+<p><em>Important: Don’t ever choose to reset your phone to Factory defaults. It seems that currently you get stuck if you do it and the only way to undo it is by flashing a new build (I speak from experience :P).</em></p></content>
+      <pubDate>2013-05-17 12:37:19</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Libre Graphics Meeting 2013</title>
+      <link href="https://www.roussos.cc/2013/04/29/libre-graphics-meeting-2013/"/>
+      <content type="html"><p><a href="http://www.flickr.com/photos/comzeradd/8659115880/"><img alt="open design" src="https://farm9.staticflickr.com/8100/8659115880_f3708afc66.jpg" /></a>
+<div align="center"><em>"Fuck commitees, I believe in lunatics" ~ Tibor Kalman</em></div>
+<br /></p>
+<p><a href="http://www.flickr.com/photos/comzeradd/8659179138/" target="_blank"><img src="https://farm9.staticflickr.com/8122/8659179138_13bf29e8a8_q.jpg" class="txt" /></a> The <a href="http://libregraphicsmeeting.org/2013/"><strong>Libre Graphics Meeting</strong></a> (LGM) is an annual gathering for the discussion of free and open source software used for design, illustration, typography, lay-out, art, photography, publishing, cartography, animation and video.</p>
+<p>For years I wanted to participate and this year I finally did it. I had a presentation about <a href="http://popcorn.webmaker.org/">Popcorn Maker</a> and how people can use it to remix videos and teach others how to be web makers.</p>
+<p>Check out my full Popcorn Maker presentation below and the full <a href="https://secure.flickr.com/photos/comzeradd/sets/72157633271119214/">photo album</a>.</p>
+<iframe src="http://www.rvl.io/comzeradd/make-popcorn/embed" height="420" width="576" allowfullscreen="" frameborder="0" scrolling="no"></iframe>
+
+<p><br /></p>
+<p>On the front wall of the Medialab Prado (the host venue) there was a 15-meter wide LED facade displaying processing.js artworks. A special <a href="http://programalaplaza.medialab-prado.es/">online editor</a> was created for people to submit "code" for this installation. Below is my simple humble contribution (inspired by <a href="https://www.youtube.com/watch?v=H4Kgzn3tDQU">similar music scene</a> from a favorite movie :P). </p>
+<pre><code>void setup() {
+  size(192, 157); 
+  background(0); 
+  frameRate(7);
+
+  noStroke();
+  colorMode(HSB); //HSB mode to have beautiful random colors
+}
+
+void draw () {
+  x = Math.round(random(192)/16);
+  y = Math.round(random(160)/16);
+  fill(random(255), 200, 200);
+  rect(x*16, y*16, 16, 16);
+}
+</code></pre>
+<p>See the video below for more cool creations.</p>
+<iframe src="http://player.vimeo.com/video/64292342?portrait=0" height="310" width="550" allowfullscreen="" frameborder="0"></iframe></content>
+      <pubDate>2013-04-29 15:13:28</pubDate>
+    </entry>
+  
+    <entry>
+      <title>zero inbox</title>
+      <link href="https://www.roussos.cc/2013/04/05/zero-inbox/"/>
+      <content type="html"><p>After many years of drowning in unread emails, I changed the way I deal with my mailbox. I managed to have 0 unread emails (most of the times) and being more productive on dealing with emails and real tasks.</p>
+<p>Here is how I did it: </p>
+<ul>
+<li><strong>Your mailbox is not a task management tool.</strong> Most likely you have plenty of unread emails. I guess that most of them are not really unread. You've opened them, read them and then marked them again as unread because they include an action that you don't want to deal with at the moment. Postponing it's ok. Having your tasks living inside your mailbox is not. Choose a task management tool. It may be your email's client embedded task management, it may be a dedicated tool, a <a href="https://en.wikipedia.org/wiki/Hipster_pda">hipster pda</a>, or just a .txt file on a <del>dropbox/</del><a href="https://owncloud.org/">owncloud</a>/<a href="http://sparkleshare.org/">sparkleshare</a> folder. Create a task. If this involves replying to the initial email, don't worry. It will be there waiting for you.</li>
+<li><strong>Archive.</strong> Create an Archive folder where you move all the emails that you want to keep. Emails that you think are important and you may need them in the future. On your filter folders leave only emails for current stuff and on-going discussions. It's easier to have to search only one folder when you're looking something from the past.</li>
+<li><strong>Your mailbox is not a storage service.</strong> Say for instance that I sent you an email, attaching a pdf. If you want to keep that pdf for future reference, then keep it. But not inside your mailbox. Create an archive folder, or a more detailed (eg. per project) file structure, on your <del>dropbox/</del>owncloud/sparkleshare, save the attachment and delete the email.</li>
+<li><strong>It's ok to delete emails.</strong> I know. Shocking. But why do you need keeping all these emails that you'll never going to read again. Searching and "browsing" through your emails would be mush faster and easier. Just let go.</li>
+<li><strong>Don't postpone quick replies.</strong> Many emails require just a quick reply. You don't have to create a task for something that needs no more than 10 seconds of your time. And don't you dare mark it as unread.</li>
+<li><strong>Email is a mean for things.</strong> This is a general productivity rule. The goal is to keep your projects and tasks going. Don't look at your email every five minutes and don't use notifications for every incoming email. Make a personal rule that you'll check your mailbox once per hour (or any other time arrangement seems reasonable to you). Checking constantly at your mailbox is a distraction and it will cost plenty of minutes to concentrate again on what you are working.</li>
+</ul>
+<p>My current setup begins with <a href="http://projects.gnome.org/evolution/">Evolution</a> desktop client. Since I moved away from Google less than a year ago (I leave that story for another post) I had to use a desktop client (although I have a <a href="http://roundcube.net/">roundcube</a> instance just in case) and surprisingly it seems that this also helped me in being more productive at processing emails. I like Evolution because it comes ready with all the basic things I want (email, contacts, calendar) and it integrates great with my desktop envireoment (<a href="https://fedoraproject.org/">Fedora</a>/<a href="https://www.gnome.org/">Gnome</a>). It also has some simple task management functionality, that syncs fine with <a href="https://owncloud.org/">OwnCloud</a> (where I also keep contacts and calendar), but for now I'm using Evernote because it works also on my Android tablet and I like that i can easily create a note or task by simply forwarding an email to a unique evernote email alias.</p></content>
+      <pubDate>2013-04-05 19:00:53</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Making is Learning (Hive Athens & more)</title>
+      <link href="https://www.roussos.cc/2013/03/21/making-is-learning-hive-athens-more/"/>
+      <content type="html"><blockquote>
+<p>"If children have interest, then education happens" ~ Arthur Clarke</p>
+</blockquote>
+<p>First week of March was dedicated on teaching, learning and learning to teach :)</p>
+<p><a href="http://www.flickr.com/photos/comzeradd/8523352849/"><img alt="pop-up" src="https://farm9.staticflickr.com/8229/8523352849_6e903f2e07.jpg" /></a></p>
+<p><strong>Hive Athens Pop-Up event</strong></p>
+<p>We had the first Pop-Up event of <a href="http://hiveathens.org/">Hive Athens</a>. A great overall experience. See here the <a href="https://secure.flickr.com/photos/comzeradd/sets/72157632897101432/detail/">photo album</a> and a <a href="http://vimeo.com/comzeradd/hiveathens-popup1">mashup video</a>.</p>
+<p>Personally I dedicated most of my time helping the WWF workshop about the "Earth Hour", where Popcorn Maker was used to make some great videos, but I found the time to have a quick pass through all activities.</p>
+<p>It was a crash test for both Hive and local Mozilla community and I think it went pretty well. The facilitators did a great job and we may succeeded on planting the seed for a new generation of webmakers :) </p>
+<p>Most of the workshops worked really well. I have the feeling that there was an engagement problem with the most physical ones. The facilitators were actually making more things than the participants. Just a reminder for future events. Connecting the activities with the web really helps, since the kids are getting in the process of <em>creating something that would be out there in public for ever</em>.</p>
+<p>Additionally I think that one of the most important things about these types of events is that you must make sure that the <em>kids will have the chance for following up with the activity</em>. For instance the kids that created a comic strip using Thimble can keep hacking on that when they get home, or try to tell another story with other tools or other means. The point is that <em>they got in the process of storytelling</em>, learning (and realizing) that we live in a read/right world. I don't think that this level of learning process took place (for instance) at the Lego Mindstorms workhsop, since it's almost impossible for the kids to take or just publish what they made and there is not an easy way for a follow up (Legos are expensive and there is no relevant community that can help them after the event).</p>
+<p>My personal rules/advice for these learning activities would be: </p>
+<ul>
+<li>Open-Source. In the broader sense, not just about software itself. <em>Openness is about removing barriers</em>. If a kid has to buy some expensive equipment or software, or has to give away some privacy rights and agree to some commercial service "Terms of Use" in order to keep hacking with what he/she learned, then you have a barrier.</li>
+<li>Web. All this process and all these activities are <em>not about Web per se, is about <a href="https://wiki.mozilla.org/Learning/WebLiteracyStandard">Literacy</a></em>. Web has probably become the largest public resource and the almost de facto medium for telling stories and sharing them with the rest of the world. Tying these activities with the web help all the participants better understand that they can be more than a consumer. Having your side of the story public out there makes that clear. And just like Wikipedia, even the slightest contribution is making a difference.</li>
+<li>Ability to follow up. Well... if you manage to keep the first two rules, this would be easier. Also don't do this alone. Find cultural and educational organizations in your area that already create content or have youth activities. Find relevant communities.</li>
+</ul>
+<p><strong>Training Days</strong></p>
+<p>I don't have words to describe that :) 40 Reps for all around the world <a href="https://plus.google.com/photos/117312389370621956919/albums/5854744512187304609?banner=pwa">gathered in one place</a> to exchange ideas and gain experience on how to teach the web, organize similar events, inspire more mentors, etc. Great to meet all these energetic people in person. I surely now feel more confident on running more learning and webmaking activities. </p>
+<p><a href="https://plus.google.com/photos/117312389370621956919/albums/5854744512187304609/5854745447613665746?banner=pwa"><img alt="training days" src="https://lh4.googleusercontent.com/-Vt1G6glwsv8/UUA79v9ZEdI/AAAAAAAAGTE/Wjb1riAAPWU/s969/IMG_2339.JPG" /></a></p>
+<p><strong>British Council School Lab</strong></p>
+<p>The final day we got the chance of testing our skills in another event at the British Council, where kids (at an age range of 12-17) were given the challenge of creating a video about a (scientific) topic using the web (and thus Popcorn Maker). It's amazing how kids can always find a way to surprise you and hack the whole process in to a more creative path :)</p>
+<p><strong>Upcoming activities</strong></p>
+<p>Following the momentum of these events we (the <a href="http://mozilla-greece.org">Greek Mozillians</a>) already started organizing the first Webmaker events during April. Just <a href="http://webmaker.org">join the movement</a> :)</p>
+<iframe src="//player.vimeo.com/video/62336537?portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></content>
+      <pubDate>2013-03-21 18:30:48</pubDate>
+    </entry>
+  
+    <entry>
+      <title>FirefoxOSAppDays - hold your breath</title>
+      <link href="https://www.roussos.cc/2012/12/10/firefoxosappdays-hold-your-breath/"/>
+      <content type="html"><p><strong>Firefox OS Apps Days</strong> are coming... A series of events which will take place in <strong>~20 locations around the world</strong> during the <strong>last week of January</strong>.</p>
+<p>But.. </p>
+<p><a href="http://www.flickr.com/photos/comzeradd/8258007623/"><img alt="first things first" src="https://farm9.staticflickr.com/8199/8258007623_4bc8fe4cbd_z.jpg" /></a></p>
+<p>...on Saturday we had a taste of what these events will be about, since we organized a small hackathon at <a href="http://hackerspace.gr/">Athens Hackerspace</a>. Around 40 developers showed up, willing to learn about <strong>Mozilla's new effort to liberate the mobile ecosystem through Open Web Apps and Firefox OS</strong> and of course <strong>contribute to that cause</strong>.</p>
+<p>Some observations and remarks from the event and the feedback we got: </p>
+<ul>
+<li>Most of the attendees already knew their way around web technologies and they realized why using them for mobile apps makes sense</li>
+<li>Many people don't know that web apps are functional on Android <strong>today</strong> (or even <a href="status-hsgr.jpg">Desktop</a>) and really get impressed when they find out.</li>
+<li>Android developers got interested on using web as a platform.</li>
+<li>It seems that the 5h hacking session is not enough to create a super wow app, but enough time to have some prototypes and working code.</li>
+<li>Lack of thorough documentation on some <a href="https://wiki.mozilla.org/WebAPI">WebAPIs</a> and on WebActivities. We really need to improve that.</li>
+<li>We have to emphasize the fact that Firefox Marketplace is not just another mobile application ecosystem.</li>
+<li>A 20% of people tend to register for the event and not attending. Need to remember that when setting a cap on registration.</li>
+<li>The fact that we had several devices really helped during the hacking session for testing code.</li>
+<li><a href="https://hacks.mozilla.org/2012/11/announcing-the-prototype-firefox-os-simulator/">Firefox OS Simulator</a> is awesome! It just needs support for touch events ;)</li>
+<li>Maybe some mini talks during the hacking session for minor subjects would be nice (eg. <a href="https://developer.mozilla.org/en-US/docs/Apps/Manifest">Manifest</a> walk through, WebActivites, more info on some specific Web APIs, intro to <a href="https://en.wikipedia.org/wiki/Responsive_web_design">responsive design</a> principles, <a href="git-basics.png">git basics</a>).</li>
+</ul>
+<p><a href="http://www.flickr.com/photos/comzeradd/8259015218/"><img alt="demo: mapwire overview" src="https://farm9.staticflickr.com/8358/8259015218_2759d2d771_z.jpg" /></a></p>
+<p>So hold your breath people for the big event. It's less than 2 months away. Help us liberate the mobile ecosystem using open web technologies. The only requirement for participation will be just endless love for freedom and the web. <strong>Let's make history again in the same way we did with Firefox.</strong></p>
+<p>(full photo album from the event: <a href="https://secure.flickr.com/photos/comzeradd/sets/72157632205640335/">here</a>)</p></content>
+      <pubDate>2012-12-10 00:52:24</pubDate>
+    </entry>
+  
+    <entry>
+      <title>The beauty of Open Source</title>
+      <link href="https://www.roussos.cc/2012/08/20/the-beauty-of-open-source/"/>
+      <content type="html"><p><em>(read a Greek version of this post, as it was published on Linux Inside magazine, in <a href="/articles/linux%20inside%2009%20-%20openculture.pdf">pdf</a>)</em></p>
+<p>It's a well known fact that the rapid development of Free Software (and Open Source culture in general) all these years is a parallel process with internet development. If we try to map the contributors of a big project, we'll be certainly impressed by the geographical scatter. I remember using these kind of maps (like <a href="https://fedoraproject.org/membership-map/ambassadors.html">Fedora ambassadors</a> or <a href="http://www.gentoo.org/proj/en/devrel/roll-call/devmap.xml">Gentoo developers</a>) in Open Source presentations I did in the past in order to visualize this.</p>
+<p><img alt="opensource map (2009)" src="opensourcemap.png" /></p>
+<p>The reason I'm mentioning all these is to tell a true story, that would be impossible to take place without this "magic" ability of Open Source movement to bring people and communities together all over the world, beyond borders or other boundaries.</p>
+<p>About a year ago I packaged for Fedora the <a href="http://italc.sourceforge.net/">iTALC</a> software. iTALC (intelligently Teaching And Learning with Computer) is an application that can be very useful in school labs. It offers a teacher the ability to have a remote overview and control over student terminals. iTALC of course is Free Software, meaning that besides all the <a href="https://www.gnu.org/education/education.html">educational benefits</a>, teachers and students can be sure that their content doesn't get monitored (since many proprietary solutions tend to route all traffic through their servers).</p>
+<p>Following Fedora's packaging process, I opened a relevant bug and waited for someone to review it. Unfortunately the package didn't make it, mostly because it had some technical issues (iTALC bundles modified versions of libraries already packaged for Fedora, which goes against Fedora's policy), and because in the meantime I dealt with some other packages.</p>
+<p>So it was a package that I have sort of abandon it. But about 3-4 months ago I got a personal email that was asking me if I had newer packages of iTALC because it's been used on schools in Peru! Following up the communication I realized that the man talking to me was the Educational Technologies General Director of Peru's Ministry of Education, where they've started using extensively Fedora on school computers and they needed iTALC so they can offer it as a software solution to the teachers.</p>
+<p>The good thing was that at the meantime I had successfully passed through the mentorship process of Fedora and I was a Fedora Developer, having gained a bigger experience in packaging software. I also had a good knowledge on using Fedora's build servers, a fact that helped me build iTALC for all the necessary Fedora versions and archtectures that Peru's Ministry of Education was using. Long story short: I'm currently providing iTALC freely through a <a href="http://repos.fedorapeople.org/repos/comzeradd/italc/">repository</a> I maintain and the software is beeing used and tested on Peru's school labs.</p>
+<p>About a year and a half ago, when I started the process for becoming a Fedora developer, my motive was to contribute back to a project that I daily use. I surely didn't expect that such a small contribution would make a difference to a country that far away from me.</p>
+<p>This story could be yours. Don't hesitate to contribute in any way to your favourite Free Software projects. Even the smallest contribution can have a big impact on so many people. That's the beauty of Open Source, that's what motivates so many people worldwide to contribute, communicate, interact.</p></content>
+      <pubDate>2012-08-20 14:05:22</pubDate>
+    </entry>
+  
+    <entry>
+      <title>mozilla at fosscomm2012</title>
+      <link href="https://www.roussos.cc/2012/05/17/mozilla-fosscomm/"/>
+      <content type="html"><p><a href="http://serres.fosscomm.gr">Fosscomm</a>, the annual conference of the Greek Free Software community, took place last weekend and Mozilla had a big presence with talks and workshops the whole Sunday.</p>
+<p><img src="moz.png" alt="mozilla" class="txt" /> Starting early in the morning, along with <a href="https://reps.mozilla.org/u/pierros/">Pierros</a>, we had the opportunity to talk about "<strong>Firefox on 2012</strong>" and the new features that are developed and will land sometime during this year. We started with a quick summary of the things that came on 2011, as a direct result of rapid release process, and then we got through all the cool new features that are about to come. See the <a href="/presentations/fosscomm2012-firefox%20on%202012.html">Presentation</a> and the <a href="https://hacks.mozilla.org/2012/03/firefox-in-2011-firefox-plans-for-2012/">Firefox Roadmap</a>.</p>
+<p>Right after this I had the opportunity to do a hands-on presentation of all the <strong>Firefox developer tools</strong>, that really help the productivity of a web developer (without any need of 3rd party add-ons). In a nutshell: <a href="https://developer.mozilla.org/en/Using_the_Web_Console">Web Console</a>, <a href="https://developer.mozilla.org/en/Tools/Page_Inspector">Inspector</a>, <a href="https://developer.mozilla.org/en/Tools/Scratchpad">Scratchpad</a>, <a href="https://developer.mozilla.org/en/Tools/Style_Editor">Style Editor</a>.</p>
+<p>Right after it was <a href="https://reps.mozilla.org/u/fredy/">Fredy</a>'s turn to give a hands-on presentation. This time about <strong>Add-Ons</strong> and how you can use the <a href="https://addons.mozilla.org/en-US/developers/builder">SDK Builder</a>. Nice in depth presentation.</p>
+<p>Then we moved to the main conference room where Pierros and Fredy gave a speech about <a href="https://www.mozilla.org/en-US/b2g/">B2G</a>. Seems that a lot of people were aware (or at least fully aware) about this huge project. The presentation ended with a demo of <strong>B2G</strong> running on a smartphone, that really impressed the audience.</p>
+<p>Back to the hands-on presentations with an <strong>Apps &amp; Marketplace</strong> overview by Pierros and Fredy. It was a good opportunity to clarify why web apps are important and <a href="https://hacks.mozilla.org/2012/03/html5-the-difference-between-an-app-and-a-page/">what's the dereference with simple web pages</a>. In the end there was a joint effort to create a web app for Wikipedia, which currently is under review on <a href="https://marketplace.mozilla.org/">Mozilla Marketplace</a>.</p>
+<p><a href="http://www.sealabs.net/seadog/">Giorgos</a> and me did a presentation about "<strong>Identity on the Web</strong>", talking mostly about BrowserID and what changes on the way we identify ourselves on the web sites we need to login or register. We did a quick demo using an <a href="http://theopenphotoproject.org/">OpenPhoto</a> instance and talked a lot about the technical aspects of it. See the <a href="/presentations/fosscomm2012-identity%20on%20the%20web.html">presentation</a> and especially the video on the last slide.</p>
+<p>Last presentation by Giorgos, who did a nice motivating presentation of the <strong>WebDev workflow</strong> he's using on Mozilla, and which steps you have to do in order to contribute.</p>
+<p>Then we moved to the workshop room, where we did a nearly 2h <strong>workshop on B2G</strong> and show in what areas any community member can contribute. I think it was a great overall  presence of Greek Mozillians, we had the chance to talk with many people, and hopefully we'll keep up on the same spirit :)</p></content>
+      <pubDate>2012-05-17 14:20:36</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Τα ζητήματα ψηφιακών δικαιωμάτων μας αφορούν όλους...</title>
+      <link href="https://www.roussos.cc/2012/04/25/digital-rights/"/>
+      <content type="html"><p>Περπατώντας στον δρόμο, τουλάχιστον στο κέντρο της Αθήνας και στις περισσότερες Ευρωπαϊκές πρωτεύουσες, αν σηκώσουμε το βλέμμα μας πολύ πιθανόν να εντοπίσουμε σε κάποια κολόνα κάποια κάμερα παρακολούθησης. Είτε έχουν τοποθετηθεί για τη ρύθμιση της κυκλοφορίας είτε για λόγους ασφαλείας, έχουμε μια άμεση αντίληψη της διαδικασίας παρακολούθησης ακριβώς επειδή η κάμερα είναι ένα απτό αντικείμενο, και σίγουρα οι περισσότεροι άνθρωποι είναι αρκετά ευαίσθητοι σε τέτοια ζητήματα.</p>
+<p>Παρόμοιες τεχνικές χρησιμοποιούνται και στον ψηφιακό κόσμο. Πολλές φορές αρκετά πιο “επιθετικές”. Παρόλα αυτά οι περισσότεροι άνθρωποι δεν δείχνουν το ίδιο επίπεδο ευαισθησίας. Είτε γιατί οι μέθοδοι παρακολούθησης δεν είναι τόσοι απτοί και παρατηρήσιμοι όσο μια κάμερα είτε γιατί εμείς δεν έχουμε καταφέρει να τους ευαισθητοποιήσουμε. Κι όταν λέω “εμείς”, εννοώ όλους εμάς που αντιλαμβανόμαστε αυτές τις μεθόδους και ξέρουμε στις περισσότερες των περιπτώσεων και πως να τις αποφύγουμε. Δεν έχουμε καταφέρει δυστυχώς να εξηγήσουμε με απλό και κατανοητό τρόπο αυτούς τους κινδύνους και να προσφέρουμε εύκολες στη χρήση τεχνικές ή υπηρεσίες προστασίας.</p>
+<p>Εδώ και σχεδόν ένα χρόνο έχει ψηφιστεί και στην Ελλάδα ο περίφημος νόμος για data retention, δηλαδή παρακράτηση δεδομένων. Με απλά λόγια όλοι οι πάροχοι ψηφιακών υπηρεσιών, είτε μιλάμε για τους παρόχους internet είτε για τους παρόχους κινητών και σταθερών τηλεπικοινωνιών, είναι υποχρεωμένοι να καταγράφουν την κίνηση μας και να συντηρούν τα αρχεία αυτά για ένα χρόνο. Τα δεδομένα που παρακρατούνται είναι ουσιαστικά τα πάντα, εκτός του περιεχομένου. Δηλαδή οι διευθύνσεις IPs με τις οποίες επικοινωνούμε, τα websites που μπαίνουμε, οι τηλεφωνικοί αριθμοί που καλούμε ή μας καλούν και τα στοιχεία ώρας και τοποθεσίας απ' όπου τα κάνουμε όλα αυτά. Αρκετά τρομακτικό ε; Κι όμως συμβαίνει (διάβασε το <a href="retention.pdf">ΦΕΚ</a>). </p>
+<p>Τι μπορούμε να κάνουμε για να προστατευτούμε; Μια λύση είναι να κρυπτογραφούμε όλη μας την κίνηση (πχ. μέσω vpn ή ssh tunel), χρησιμοποιώντας έναν server σε κάποια άλλη χώρα, που ιδανικά δεν θα υπάρχει παρόμοια νομοθεσία. Αυτό φυσικά είναι μια λύση που για κάποιον απλό χρήστη είναι μάλλον ανέφικτη. Μια πιο απλή λύση είναι η χρήση του δικτύου <a href="https://en.wikipedia.org/wiki/Tor_%28anonymity_network%29">tor</a>. </p>
+<p>Πρόσφατα είχαμε τις παγκόσμιες αντιδράσεις για το SOPA, ένα νομοσχέδιο που θα έδινε το δικαίωμα να εξαφανίζεται ένα site απ' το internet με συνοπτικές διαδικασίες αν κάποιος έκρινε πως προσβάλλεται απ' το περιεχόμενο του. Το νομοσχέδιο αυτό προορίζονταν μόνο για τις ΗΠΑ και απ' ότι φαίνεται οι αντιδράσεις απέδωσαν καθώς πλέον έχει παγώσει η ψήφιση του. Στην Ευρώπη παρόμοιες δράσεις είχαμε για την ACTA, μια εμπορική συμφωνία, που δυστυχώς την υπέγραψε η Ελλάδα. Μια συμφωνία που συντάχτηκε εν κρυπτώ μετά από πιέσεις των εταιρειών παραγωγής περιεχομένου (κινηματογραφικού και μουσικού) και στην πράξη καταπατά στοιχειώδη ανθρώπινα δικαιώματα προς όφελος της προστασίας πνευματικών δικαιωμάτων. Μέχρι την ώρα που γράφονταν αυτές οι γραμμές δεν έχει καθοριστεί ακριβή ημερομηνία συζήτησης της συμφωνίας στο Ευρωκοινοβούλιο (διάβασε το <a href="acta-crc_apr15-2011_gr.pdf">πλήρες κείμενο</a>). </p>
+<p>Η ACTA είναι απλώς το αποτέλεσμα πρακτικών ελέγχου που βλέπουμε ήδη σιγά-σιγά στο διαδίκτυο, όπως ήταν η περίπτωση κλεισίματος του Megaupload, απ' τα πιο δημοφιλή site διαμοιρασμού αρχείων. Η ευθύνη της κοινότητας μας είναι να αναδεικνύει τέτοια θέματα και να συμβάλει ώστε να γίνεται κατανοητό απ' τον περισσότερο κόσμο πως όλα αυτά τους αφορούν άμεσα. Ακόμα κι αν το μόνο πράγμα που κάνουν στο internet είναι να διαβάζουν το mail τους ή να επικοινωνούν με τους φίλους τους. Ας ενημερωνόμαστε λοιπόν όσο καλύτερα μπορούμε κι ας παρακολουθούμε ή συμμετέχουμε σε δράσεις φορέων που ασχολούνται με τέτοια ζητήματα, είτε στο εξωτερικό (<a href="http://www.eff.org">eff</a>) είτε στην Ελλάδα (<a href="http://dln.gr">dln</a>).</p></content>
+      <pubDate>2012-04-25 12:35:50</pubDate>
+    </entry>
+  
+    <entry>
+      <title>The Osepa project</title>
+      <link href="https://www.roussos.cc/2012/03/20/the-osepa-project/"/>
+      <content type="html"><p>A small video presentation about the <a href="http://osepa.eu/">Osepa</a> (Open-Source for European Public Administrations) project. Currently I participate in the project as an Open-Source expert on behalf of the leading partner <a href="http://www.kedke.gr/?page_id=2447">KEDE</a> (the Greek Central Association of Municipalities).</p>
+<p>On March 28-29 the <a href="http://osepa.kr-vysocina.cz/">2nd Osepa conference</a> will take place on Jihlava (~130km from Prague) of Czech Republic.</p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/Vo8rTO9IH24" frameborder="0" allowfullscreen></iframe></content>
+      <pubDate>2012-03-20 12:54:08</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Elected at FSFE General Assembly</title>
+      <link href="https://www.roussos.cc/2012/03/06/fsfe/"/>
+      <content type="html"><p><img src="fsfe.png" alt="fsfe" class="txt" /> As <a href="https://fsfe.org/news/2012/news-20120303-01.en.html">officially announced today</a> I got elected on <strong>Free Software Foundation Europe's General Assembly</strong> as a representative of the FSFE's <a href="http://fellowship.fsfe.org/">Fellowship community</a>.</p>
+<p>I hope I can help as much as I can on FSFE's causes and represent worthily the community on the General Assembly.</p></content>
+      <pubDate>2012-03-06 21:31:27</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Hackerspace.gr, Creative Hacking</title>
+      <link href="https://www.roussos.cc/2012/02/16/hackerspace-gr-creative-hacking/"/>
+      <content type="html"><iframe width="560" height="315" src="//www.youtube.com/embed/q549zJE8d84" frameborder="0" allowfullscreen></iframe></content>
+      <pubDate>2012-02-16 12:03:30</pubDate>
+    </entry>
+  
+    <entry>
+      <title>The birth story of Athens Hackerspace</title>
+      <link href="https://www.roussos.cc/2011/12/26/the-birth-story-of-athens-hackerspace/"/>
+      <content type="html"><p><a href="http://hackerspace.gr/wiki/Hackerspace_photos"><img alt="hsgr" src="http://hackerspace.gr/wiki/images/Hackerspace_1.JPG" /></a></p>
+<p>[you can read this story in greek, published on linux inside magazine: <a href="/articles/li04-openculture.pdf">pdf</a>]</p>
+<p>A few months ago <a href="http://hackerspace.gr/wiki/Vision_en">Athens Hackerspace</a> (HSGR) opened its doors for the <strong>Open-Source, Open-Hardware, Open-Content Communities</strong>. Hackerspace is not a new term, but it's not many years ago that become a standard way of these Open communities to create a physical meeting space. Just check the <a href="http://hackerspaces.org">official hackerspace site</a>. You'll see many spaces across Europe and USA.</p>
+<p>The first seed for HSGR planted at Zurich about a year ago. We were there for a few days with <a href="http://ebalaskas.gr/blog/?page=about">Ebal</a> and <a href="http://pierros.papadeas.gr/">Pierros</a> for an Open-Source Conference. We were standing in the middle of the central train station and we had to split in 15 minutes since we had different flights to catch up. <strong>These 15 minutes were some of the most creative minutes of my life.</strong> I can't even recall how the conversation started, but ended with the conclusion that we don't want just to work on our projects isolated on our desks. We constantly share ideas on the things we work, why not do this more often and in personal? Why not create a space especially for this process? For people to gather and work, <strong>people who having already join the Open Culture, are willing to share their work, share their source code, exchange ideas.</strong></p>
+<p>The first step was to organize some events (we called them hackfests), mostly because we wanted to find out if more people shared the same dream. There was always a chance we were three lunatics. Fortunately more lunatics happened to be out there. While waiting at Zurich Airport lounge, about an hour later from the initial brainstorming conversation, I registered the hackfest.gr domain and published a website. Later the same night, Pierros was doing pretty much the same with hackerspace.gr domain name, while Ebal had gathered together a document full of ideas and todo things for both the events and the space. <strong>In less than 24h we have launched what we were dreaming for many years</strong> and happen to discuss at a train station between a weiss bier and a curry wurst.</p>
+<p>One month later the first hackfest took place with 30 people participating. People showed so much interest on the idea of a physical space, that five joyful hackfests later we started searching for a place to host our hackerspace.</p>
+<p>Today HSGR, after so much effort by so many people, is a place full of energy. <strong>A 120sq.m. place dedicated to creative hacking.</strong> 22 members currently, who operate the space on a daily basis and financially support it. Many events have already been hosted on space and projects have been incubated during these few months.</p>
+<p><a href="http://hackerspace.gr/wiki/Vision_en">Athens Hackerspace</a> is open (almost 24/7) for all Open communities, for every each one of us, to fill it with ideas and projects. It may be too soon to tell, but <strong>HSGR could be the most important thing and the most important asset for the Greek Open-Source community.</strong></p>
+<p>UPDATE: See the <a href="/2012/02/16/hackerspace-gr-creative-hacking/">video</a></p></content>
+      <pubDate>2011-12-26 11:41:00</pubDate>
+    </entry>
+  
+    <entry>
+      <title>πλανήτης ελληνικής κοινότητας ΕΛ/ΛΑΚ</title>
+      <link href="https://www.roussos.cc/2011/12/19/planet-ellak/"/>
+      <content type="html"><p>Μετά από αρκετά χρόνιας γκρίνιας οι πλανήτες ενοποιήθηκαν. Πολλοί θα αγνοείτε τους λόγους που είχαν οδηγήσει στην ύπαρξη δύο πλανητών και ακόμα περισσότεροι να μην έχετε κανένα ενδιαφέρον να μάθετε αυτούς τους λόγους. Γι' αυτό δεν θα μπω στη διαδικασία να κάνω ιστορική αναδρομή.</p>
+<p>Είχε τύχει πολλές φορές στο παρελθόν να είμαι παρών σε συζητήσεις ανθρώπων απ' την ελληνική κοινότητα ΕΛ/ΛΑΚ, που απορούσαν γι' αυτή την κατάσταση. Πολλοί μάλιστα bloggers δεν ήξεραν αν ήταν "πολιτικά ορθό" να στείλουν το feed τους και στα δύο planets! Φανταστείτε τι σύγχιση δημουργούσε αυτή η κατάσταση στους αναγνώστες, που δεν ήξεραν ποιον πλανήτη να παρακολουθούν, καθώς κατά 80% είχαν το ίδιο περιεχόμενο.</p>
+<p>Η ουσία είναι πως τόσο ο Hellug όσο και η Εταιρία ΕΛ/ΛΑΚ, αφουγκράστηκαν αυτή την ανάγκη της κοινότητας και προχώρησαν στην ενοποίηση του πλανήτη. <strong>Ως κοινότητα και ως φορείς ας αποδείξουμε στην πράξη πως έχουμε την ωριμότητα να δουλεύουμε αρμονικά όλοι μαζί.</strong> Ο πλανήτης της ελληνικής κοινότητας ΕΛ/ΛΑΚ έχει πλέον νέο design, "ακούει" στο <a href="http://planet.hellug.gr">planet.hellug.gr</a> και στο <a href="http://planet.ellak.gr">planet.ellak.gr</a> και έχει <strong>ανοιχτή διαδικασία διαχείρισης</strong> για όποιον επιθυμεί να συμμετάσχει. Αν συμμετέχεις σε κάποια κοινότητα ΕΛ/ΛΑΚ, αν είσαι developer, μεταφραστής, sysadmin, αν είσαι μέλος ή φίλος του Hellug, αν γράφεις για θέματα Ανοιχτού Λογισμικού ή θες να διαβάζεις γι αυτά, τότε <strong>πέρνα μια βόλτα απ' τον νέο πλανήτη :)</strong></p></content>
+      <pubDate>2011-12-19 10:07:13</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Being a Fedora Developer (aka Package Maintainer)</title>
+      <link href="https://www.roussos.cc/2011/12/08/fedora-developer/"/>
+      <content type="html"><p><img src="fedora.png" class="txt" alt="fedora" /> About a month ago I was sponsored and got accepted as a Fedora Package Maintainer. Being already a Fedora Ambassador I wanted a more technical way to contribute to the <a href="https://fedoraproject.org/">project</a>.</p>
+<p>Currently I only <a href="https://admin.fedoraproject.org/updates/user/comzeradd">maintain two packages</a>, but I hope I'll have the time in the near future to help more (I already digging around <a href="https://fedoraproject.org/wiki/Audio_Creation">Sound SIG</a> 's wishlist for new packages). It's great to contribute to such a vivid community project.</p>
+<p>Many thanks to <a href="http://www.christoph-wickert.de/">Christoph</a> who sponsored me and still helps when needed.</p></content>
+      <pubDate>2011-12-08 20:24:55</pubDate>
+    </entry>
+  
+    <entry>
+      <title>MozCamp 2011 recap</title>
+      <link href="https://www.roussos.cc/2011/11/16/mozcamp-2011-recap/"/>
+      <content type="html"><p><img src="Mozcamp_2011.png" class="txt" /> This weekend the <a href="https://wiki.mozilla.org/EU_MozCamp_2011/">Mozcamp 2011</a> took place at Berlin. This was actually the first Mozilla event I participated and I really had a great time, meeting a lot of mozillians, exchanging ideas, talking about the future of the web we are to trying to build.</p>
+<p>Some of the highlights of this Mozcamp:</p>
+<p><strong>ReMo project</strong></p>
+<p>Being a Mozilla Rep myself, I should start from this one. If you aren't already aware of what that is, go to the <a href="https://wiki.mozilla.org/ReMo">relevant wiki page</a> and dig around. The Mozcamp was a great chance to get more familiar with the <a href="https://wiki.mozilla.org/ReMo/SIGs">SIGs</a> (Special Interested Groups) inside Mozilla and of course socialize with other Mozilla Reps.</p>
+<p><strong>Mozspaces</strong></p>
+<p>This is fairly new (I think). It's an effort of <a href="https://etherpad.mozilla.org/mozspaces-usage">building spaces</a> all around the globe for Mozillians to meet and work together.</p>
+<p><strong>Mozilla IT</strong></p>
+<p>Wouldn't be nice if the Mozilla IT infrastructure was so open that community members could participate? Check out how you can do it on this <a href="http://people.mozilla.org/~mrz/blog/4.html">blog post</a>.</p>
+<p><strong>Open Web Apps</strong></p>
+<p>I've <a href="/2011/08/05/open-web-apps-its-not-just-the-future-its-also-cool/">written before</a> about that. In Mozcamp I had the chance to see the current state of <a href="https://apps.mozillalabs.com/">open web apps</a> and watch a live demo of the <a href="https://apps.mozillalabs.com/appdir/">apps place</a>.</p>
+<p><strong>Boot to Gecko</strong> One of the hottest Mozilla <a href="https://wiki.mozilla.org/B2G">projects</a> right now. Many WebAPIs have already been implemented and we actually had the chance to see a live demo of phone/sms web apps. So.. <a href="http://arewemobileyet.com/">are we mobile yet?</a></p>
+<p><strong>PDF.js</strong></p>
+<p>Getting HTML5 technologies to their limits. I attended the presentation, and really got impressed by the work been <a href="https://github.com/mozilla/pdf.js">made so far</a>. It's good to know that Adobe Reader it's one of the <a href="https://www.csis.dk/en/csis/news/3321/">most vulnerable programmes</a> on the web.</p>
+<p><strong>Developer engagement &amp; Browser ID</strong></p>
+<p>Great talks by <a href="http://christianheilmann.com/">Christian Heilmann</a>, on how to become an ass kick public speaker (!) and on the current state of <a href="https://browserid.org/">browserid</a>. I learned about a cool tracking page of <a href="https://developer.mozilla.org/en-US/events">Mozilla public speeches</a>, about the browserid <a href="https://wiki.mozilla.org/Engagement/Developer_Engagement/BrowserIDPlan">future plans</a> and discovered a <a href="https://wiki.mozilla.org/Identity/BrowserID/FieldGuide">detailed browserid guide</a>.</p>
+<p><strong>Amo builder</strong></p>
+<p>Finally a great discussion about the new Add-ons Builder (aka <a href="https://wiki.mozilla.org/Jetpack">Jetpack</a>). It seems that the most difficult job there is to convience the old-school add-on developers about the neccessity of migrating to Jetpack. Some benefits: Easier coding (you don't need to know much about XUL), Restartless add-ons, Firefox version independent. <a href="https://addons.mozilla.org/en-US/developers/">Get a ride</a>.</p>
+<p><a href="http://www.flickr.com/photos/comzeradd/6347861402/"><img alt="q&amp;a" src="https://farm7.static.flickr.com/6106/6347861402_3082969cf8.jpg" /></a> more photos: <a href="https://secure.flickr.com/photos/comzeradd/sets/72157628134486968/">mozcamp album</a></p></content>
+      <pubDate>2011-11-16 11:07:03</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Δράσεις της Εταιρίας ΕΛ/ΛΑΚ για τη Δημόσια (Τοπική) Αυτοδιοίκηση</title>
+      <link href="https://www.roussos.cc/2011/11/08/draseis-eellak-gia-topiki-autodioikisi/"/>
+      <content type="html"><p>Στο πλαίσιο του Polis, μιας έκθεσης για την Τοπική Αυτοδιοίκηση στη Helexpo της Θεσσαλονίκης, συμμετείχα στην <a href="http://www.helexpo.gr/default.aspx?lang=el-GR&amp;loc=1&amp;page=2215">ημερίδα</a> του e-ΤΕΕ και του Συλλόγου Μηχανικών Η/Υ και Πληροφορικών Βορείου Ελλάδος. Παρουσίασα συνοπτικά τις πρόσφατες δράσεις της Εταιρίας ΕΛ/ΛΑΚ για την αξιοποίηση Ανοιχτού Λογισμικού και Ανοιχτού Περιεχομένου στη Δημόσια (Τοπική) Αυτοδιοίκηση.</p>
+<p><strong>Μελέτη χρήσης ΕΛ/ΛΑΚ στον Δημόσιο Τομέα</strong></p>
+<p>Η πρωτοβουλία ξεκίνησε κατόπιν αρκετών συζητήσεων στη Ελληνική κοινότητα Ανοιχτού Λογισμικού, ώστε να παρουσιαστεί μια ρεαλιστική στρατηγική μετάβασης σε Ανοιχτό Λογισμικό, συνοδευόμενη απ' την αντίστοιχη μελέτη τεκμηρίωσης και λαμβάνοντας υπόψη τις ιδιαιτερότητες της Ελληνικής πραγματικότητας αλλά και τις διεθνείς πρακτικές.</p>
+<p>Ήδη έχει ολοκληρωθεί <a href="http://advisory.ellak.gr/?p=184">η πρώτη φάση της διαβούλευσης</a>, ενώ το παρόμοια διαδικασία θα ακολουθηθεί και όταν είναι έτοιμο το πρώτο προσχέδιο της μελέτης.</p>
+<p><strong>Εφαρμογή Ηλεκτρονικού Πρωτοκόλλου &amp; Ανάθεσης Εργασιών</strong></p>
+<p>Το Scriptum, που προσφάτως <a href="www.osor.eu/news/gr-scriptum-open-source-application-enhances-the-management-of-public-sector-services">παρουσιάστηκε κι απ Ευρωπαϊκό Παρατηρητήριο για το Ανοιχτό Λογισμικό</a>, βρίσκεται ήδη στην έκδοση 1.0 και χρησιμοποιείται σε παραγωγικό περιβάλλον στην Αντιπροεδρία της Κυβέρνησης. Παράλληλα αρκετοί φορείς έχουν δείξει ενδιαφέρον να χρησιμοποιήσουν την εφαρμογή, αρκετοί εκ των οποίων βρίσκονται στη φάση των δοκιμών.</p>
+<p>Η εφαρμογή αναπτύχθηκε κατόπιν ανοιχτού διαγωνισμού και διατίθεται ελεύθερα, μαζί φυσικά με τον πηγαίο κώδικα, απ' την<a href="http://scriptum.gr/"> επίσημη ιστοσελίδα του project</a>, ενώ έχει αρχίσει η ανάπτυξη του συστήματος ανάθεσης εργασιών, που θα αποτελέσει μέρος του Scriptum.</p>
+<p><strong>Εφαρμογή Οργανογράμματος</strong></p>
+<p>Με βάση το νέο νομικό πλαίσιο οι <a href="http://diavgeia.gov.gr/syxnes-erothseis">Δημόσιοι φορείς υποχρεούνται</a> να έχουν αναρτημένο στην ιστοσελίδα τους το οργανόγραμμα τους. Αυτό υπήρξε η αφορμή και το έναυσμα για την ανάπτυξη μιας εφαρμογής για την ψηφιοποίηση και συντήρηση οργανογράμματος ενός οργανισμού. Η εφαρμογή, που είναι συμβατή με LibreOffice, διατίθεται ελεύθερα <a href="http://projects.ellak.gr/projects/orgchart">απ' το αποθετήριο εφαρμογών</a> της Εταιρίας ΕΛ/ΛΑΚ.</p>
+<p><strong>OpenWifi</strong></p>
+<p>Αξιοποιώντας την τεχνολογία <a href="open-mesh.com">Open-Mesh</a> και κατόπιν ενός <a href="http://ellak.gr/index.php?option=com_openwiki&amp;Itemid=103&amp;id=eellak:openmesh">ανοιχτού καλέσματος</a>, έχει δημιουργηθεί ένα δίκτυο ελεύθερης ασύρματης πρόσβασης στο διαδίκτυο από τοπικούς φορείς και δήμους, το οποίο αξιοποιείται καθημερινά από χιλιάδες πολίτες, επισκέπτες και τουρίστες. Συνολικά η δράση καταγράφεται στο <a href="http://openwifi.gr/">openwifi.gr</a>.</p>
+<p><strong>Wikipedia και Τοπικές κοινωνίες</strong></p>
+<p>Στο πλαίσιο της <a href="http://www.mywikipedia.gr/">πρωτοβουλίας για τον εμπλουτισμό της Wikpedia</a>, δημοσιεύτηκε προσφάτως μια <a href="http://www.ellak.gr/index.php?option=com_openwiki&amp;Itemid=103&amp;id=eellak:wikipedia_ta">ανοιχτή πρόσκληση</a> για τον εμπλουτισμό της Wikipedia με περιεχόμενο από τον πολιτιστικό, φυσικό, λαογραφικό, αρχαιολογικό αλλά και ευρύτερα τουριστικό πλούτο της Ελλάδας.</p>
+<p>Ξεχνάμε συνήθως πως η Wikipedia είναι το 7ο πιο δημοφιλές site παγκοσμίως, γεγονός που σημαίνει πως ένας επισκέπτης ή τουρίστας μιας περιοχής είναι πιθανότερο να αναζητήσει πληροφορίες, είτε για την ίδια την περιοχή είτε για κάποιο μνημείο ή αξιοθέατο, στη Wikipedia παρά στο πανάκριβο portal του αντίστοιχου δήμου.</p>
+<p>Ως αποτέλεσμα της πρόσκλησης ήδη ομάδες από δύο δήμους έχουν αρχίσει να συγκεντρώνουν το απαραίτητο υλικό για την περιοχή τους, αλλά παράλληλα να παράγουν και τους σχετικούς οδηγούς που στη συνέχεια θα μπορούν να αξιοποιηθούν και από άλλες περιοχές για τον εμπλουτισμό της Wikipedia στα Ελληνικά και σε 4-5 βασικές γλώσσες. </p>
+<p><strong>Αξιοποίηση αδειών Creative Commons</strong></p>
+<p>Οι άδειες Creative Commons αρχίζουν σιγά-σιγά να έχουν της ενδεδειγμένης αναγνώρισης και στην Ελλάδα, γεγονός που αποδεικνύεται τόσο απ' την αδειοδότηση <a href="http://geodata.gov.gr/geodata/">δημόσιων δεδομένων</a> είτε απ' τον αυξανόμενο αριθμό Ελλήνων μουσικών στο <a href="www.jamendo.com/en/artists?order=id_desc&amp;location_country=GRC">Jamendo</a>. Η Εταιρία ΕΛ/ΛΑΚ αποτελεί τον <a href="http://wiki.creativecommons.org/Greece">επίσημο αντιπρόσωπο</a> του οργανισμού Creative Commons στην Ελλάδα, με δράσεις που συντονίζει μέσα απ' το <a href="http://creativecommons.gr">creativecommons.gr</a>.</p>
+<p>Οι Δημόσιοι φορείς, οι Δήμοι και οι Περιφέρειες μπορούν να αξιοποιήσουν τις άδειες ώστε να διανέμουν ελεύθερα δεδομένα και υπηρεσίες προς τους πολίτες (πχ. γεωχωρικά δεδομένα, αποφάσεις δημοτικών συμβουλίων, κλπ.</p>
+<p>Παράλληλα συνεχίζει να μεγαλώνει το ενδιαφέρον από καταστήματα, καφετέριες, ξενοδοχεία για αναπαραγωγή μουσικής που διατίθεται ελεύθερα με άδειες Creative Commons και άρα δεν καλύπτεται από φορείς συλλογικής διαχείρισης πνευματικών δικαιωμάτων. Γλυτώνοντας μ’ αυτό τον τρόπο ένα σημαντικό οικονομικό βάρος. Σύντομα θα έχουμε <a href="http://ccradio.ellak.gr">περισσότερα νέα</a> πάνω σ’ αυτό.</p>
+<p><strong>Προτάσεις Πολιτικής για την Τοπική Αυτοδιοίκηση</strong></p>
+<p>Τέλος στο wiki του <a href="http://ellak.gr">ellak.gr</a> έχει αναπτυχθεί ένα κείμενο με <a href="http://ellak.gr/index.php?option=com_openwiki&amp;Itemid=103&amp;id=ellak:oss_loc_gov">προτάσεις πολιτικής για την Τοπική Αυτοδιοίκηση</a>, που αξίζει να επικοινωνηθεί με δημοτικούς ή περιφερειακούς συμβούλους.</p></content>
+      <pubDate>2011-11-08 10:47:15</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Wikimania 2011 Recap</title>
+      <link href="https://www.roussos.cc/2011/08/18/wikimania-2011-recap/"/>
+      <content type="html"><p>Last week I participated on <a href="http://wikimania2011.wikimedia.org/wiki/Main_Page">Wikimania (2-7 August)</a>, the annual event of <a href="http://wikimediafoundation.org/wiki/Home">Wikimedia Foundation</a>. This year the event was held in Haifa of Israel. I joined the event from the beginning starting from the Developers Days, two days before the main event.</p>
+<p><a href="http://www.flickr.com/photos/comzeradd/6001445036/"><img alt="dev room" src="http://farm7.static.flickr.com/6010/6001445036_40b70b2021_m.jpg" /></a></p>
+<p>So this post is about documenting the personal highlights from this event. Starting from the <a href="https://secure.flickr.com/photos/comzeradd/6001445526/in/set-72157627213794851">hackathon</a> that took place on Tuesday and Wednesday. I can totally claim that now I'm feeling more confident of playing with <a href="http://www.mediawiki.org/">Mediawiki</a>'s source code and extensions.</p>
+<p>At the end of these two days there was this awesome <a href="https://secure.flickr.com/photos/comzeradd/6008123000/in/set-72157627213794851">roof party</a> somewhere at Haifa downtown :)</p>
+<p>So some things that got my attention during the whole event, although I'm surely missing something now that I'm writing this post, are:</p>
+<ul>
+<li>
+<p>The <a href="https://secure.wikimedia.org/wikipedia/outreach/wiki/Wikipedia_Ambassador_Program">Wikimedia Ambassadors</a> project. It started as a Campus Ambassadors project, and now they're trying to generalize it. Although it still seems tight to education. <a href="http://www.flickr.com/photos/comzeradd/6008123000/"><img alt="dance" src="http://farm7.static.flickr.com/6128/6008123000_6bdab701b0_m.jpg" /></a> But it's a good thing that they call it Wikimedia and not Wikipedia, because this movement is a lot more than just a digital Encyclopedia. (Actually the Wikimania itself and the people participating is a living proof of that fact.)</p>
+</li>
+<li>
+<p><a href="https://secure.wikimedia.org/wikipedia/en/wiki/Wikipedia:WikiLove">Wikilove</a>. It's cool way of showing your appreciation to a Wikipedia editor. Currently implemented on very few Wikipedias (I think only English and German).</p>
+</li>
+<li>
+<p>Google Translate toolkit. It seems that many people, although they're using Google Translate they're not aware of this feature. Go to the <a href="http://translate.google.com/toolkit/list?hl=en#translations/active">Google Translator Toolkit</a> and hit upload and then Wikpedia article from the tabs. It's not that user friendly, but it's a nice way of translating articles from one Wikipedia to another.</p>
+</li>
+<li>
+<p><a href="https://secure.flickr.com/photos/comzeradd/6028235083/in/set-72157627213794851">Sparklez</a>. Well.. Just hold your breath :) <a href="http://www.flickr.com/photos/comzeradd/6028243977/"><img alt="attitude" src="http://farm7.static.flickr.com/6181/6028243977_88d42b29c4_m.jpg" /></a></p>
+</li>
+<li>
+<p><a href="https://secure.flickr.com/photos/comzeradd/6056383767/in/photostream">Contributors Cheatsheet</a>. That was a nice one. We got it shared during <a href="https://secure.flickr.com/photos/comzeradd/6028782176/in/set-72157627213794851">Sue's speech</a>. It's a really nice aggregation of 10 ways you can contribute to Wikipedia or Mediawiki. I think some Open-Source projects should mimic this cheatsheet.</p>
+</li>
+<li>
+<p>Editors issue. Well this is not a secret. Wikipedia is having problem of increasing its editors. <a href="https://secure.flickr.com/photos/comzeradd/6028243631/in/set-72157627213794851">Jimmy Wells on the closing speech</a> tried to addressed some reasons why this happens. He even implied that he's getting feedback about Wikipedia being "clubby", and too hard for newbies to join the community. See the chart on the photo aside to see why. But Jimmy focused his speech mostly on usability issues. And of course he's right. We don't want just geeks to write on a free digital encyclopedia. He made some (seemed random) suggestions for improvement, but the truth is that Mediawiki needs some serious changes in order to attract more people.</p>
+</li>
+<li>
+<p>Mozilla. It was my first big event as a Mozilla Representative, and I had the chance meeting with <a href="https://secure.flickr.com/photos/comzeradd/6028245563/in/set-72157627213794851">other Mozillians</a> (and <a href="http://www.youtube.com/watch?v=x7b4JiKST-k">have fun</a>). <a href="http://www.flickr.com/photos/comzeradd/6028782380/"><img alt="id" src="http://farm7.static.flickr.com/6135/6028782380_c09ac10805_m.jpg" /></a>But the most interesting part about this this was the feedback we get from Wikimania people about Firefox and how we can help <a href="https://secure.flickr.com/photos/comzeradd/6028238157/in/set-72157627213794851">making better their life or web</a> in general. Besides the fight for an open web and free knowledge share common ground. </p>
+</li>
+</ul>
+<p>So Wikimania was an awesome event. The organizers did a great job. I met a lot of interesting people, especially from the Wikimedia Foundation. (I even had a passionate conversation with a Facebook guy about the value of a <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Diaspora_%28software%29">decentralized Social Networking service</a> :P). And got the chance to take <a href="https://secure.flickr.com/photos/comzeradd/sets/72157627213794851/">a lot of photos</a> :)</p></content>
+      <pubDate>2011-08-18 22:01:58</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Open Web Apps, it's not just the future, it's also cool.</title>
+      <link href="https://www.roussos.cc/2011/08/05/open-web-apps-its-not-just-the-future-its-also-cool/"/>
+      <content type="html"><p>If you're following news about web technologies, and not living in a cave, you'd probably heard about <a href="https://apps.mozillalabs.com/">Open Web Apps</a>. An initiative of <a href="https://www.mozilla.org/">Mozilla Foundation</a>.</p>
+<p>I could try to prove why this is this the future, but currently I'd like to show you how cool this future is. Let's call this a glimpse of the future.</p>
+<p>First of all install the web app <a href="https://people.mozilla.com/~anarayanan/openwebapps_bundle_0.3.xpi">add-on</a>. Now go to <a href="https://www.nytimes.com/">New York Times</a> website. You'll see a notification that this site has a web app. All you have to do is choose to install it. This will create a nytimes app tab on your firefox and a whole new experience on navigating to the newspaper.</p>
+<p><img alt="nytimes" src="nytimes.jpg" /></p>
+<p>This specific web app is taking advantage of touch gestures, so try it on your tablet as well.</p>
+<p>So here is a cool thing, we discover along with <a href="http://pierros.papadeas.gr/">Pierros</a>. If you have a tablet that doesn't still support open web apps (nudge nudge say no more) you can still test this one. All you have to do is find the correct url. This web app doesn't manfest an address bar (because it doesn't need one) so type:</p>
+<p><code>about:apps</code></p>
+<p><img alt="about:apps" src="aboutapps.jpg" /></p>
+<p>select "View Manifest" and spot the "launch_path".</p>
+<p><img alt="appmanifest" src="appmanifest.jpg" /></p>
+<p>So go to your tablet and type: <a href="http://nytimes.com/skimmer/">http://nytimes.com/skimmer/</a>. Enjoy :)</p></content>
+      <pubDate>2011-08-05 00:16:24</pubDate>
+    </entry>
+  
+    <entry>
+      <title>web development using git</title>
+      <link href="https://www.roussos.cc/2011/06/21/web-development-using-git/"/>
+      <content type="html"><p>I think that the title says everything. This post describes how I'm using git for version controlling my web apps.</p>
+<p>The scheme I use is very simple. There is the live web root, that serves the app to the public, and the local copy where the actual development takes place.</p>
+<p>Those of you familiar with git may find the above setup a little bit strange. Git is a  decentralized version control system and it seems that I'm trying to centralize it. But hey, this what I wanted to do and this is why I'm writing this post.</p>
+<p><strong>Initial Setup</strong></p>
+<p>The key here is that we need a bare repository on our server in order to push the updates. A bare repository does not contain a working copy of our files, but the git index, objects reflecting updates to that index. That is why we can't actually work there, and it simply serves as a collection point for all the developers working on the project that it contains.</p>
+<p>So lets go where we have our web app on the server (in my case this usually is a django project). We initialize a git repository:</p>
+<pre><code>cd /var/www/myproject
+git init git add .
+git commit -am "Initial commit"
+</code></pre>
+<p>So we made a git repository out of my project webroot. I'm guessing you already know how to use .gitignore (for instance I want to exclude django's settings.py, because I want different settings on my local copy) and git config, to set you name, etc.</p>
+<p>Now let's clone it to a bare repository:</p>
+<pre><code>cd ..
+git clone --bare myproject myproject.git
+</code></pre>
+<p>It's a good convention to create the bare repository with .git extension, if you want to serve your code through gitweb.</p>
+<p><strong>Local Repo</strong></p>
+<p>Now let's setup our local repository:</p>
+<pre><code>cd /home/me/dev/
+git clone ssh://mydomain.net/var/www/myproject.git
+</code></pre>
+<p>Now we have a complete local copy of the server version of our website.</p>
+<p><strong>Live Web Root</strong></p>
+<p>Remember the key repository on the server is the myproject.git, not the myproject. So we need to swap them out.</p>
+<pre><code>mv myproject tmpbackup
+git clone myproject.git
+</code></pre>
+<p>This puts a clone of our myproject.git directory in the current directory, which will be named myproject.</p>
+<p>So let's sum up. As I said in the beggining all the development process is taking place on my local repo. If this project has more than one collaboratos, each one must clone locally the myproject.git repository as we did earlier.</p>
+<p>The live webroot is permantly checked out on the master branch. Locally I use as many branches as my development proccess requires and I'm merging to the master all the code changes I believe are stable to go live.</p>
+<p><strong>Auto-Update</strong></p>
+<p>So what happens when I push? First of all I don't just push the master branch, because I want to have a copy of my code on the server. Remember: when I push it's the myproject.git that gets synced. I wanted my live webroot to sync automatically when I push a change. So we create a post-update script that will do the trick:</p>
+<pre><code>cd /var/www/myproject.git/hooks
+touch post-update
+chmod +x post-update
+</code></pre>
+<p>And edit post-update with:</p>
+<pre><code>#!/bin/bash
+#
+WEB_DIR="/var/www/myproject"
+export GIT_DIR="$WEB_DIR/.git"
+pushd $WEB_DIR &gt; /dev/null
+git pull popd &gt; /dev/null
+</code></pre>
+<p><strong>Every Day Developing</strong></p>
+<p>Now I keep developing on my local repository, and pushing the changes.</p>
+<pre><code> git commit -a -m "Another update"; git push
+</code></pre>
+<p>If a change is merged on the master branch, the live web root would be automatically updated (thanx to the post-update script above).</p></content>
+      <pubDate>2011-06-21 11:03:17</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Επίσημη διανομή Linux; Ναι, αλλά ποια;</title>
+      <link href="https://www.roussos.cc/2011/06/01/episimi-dianomi-linux-alla-poia/"/>
+      <content type="html"><p>Θέλω να επιχειρήσω να συνεχίσω τη σκέψη που ξεκίνησα σε <a href="/2011/04/20/%CE%B5%CF%80%CE%AF%CF%83%CE%B7%CE%BC%CE%B7-%CF%80%CE%B9%CF%83%CF%84%CE%BF%CF%80%CE%BF%CE%B9%CE%B7%CE%BC%CE%AD%CE%BD%CE%B7-%CE%B4%CE%B9%CE%B1%CE%BD%CE%BF%CE%BC%CE%AE-linux-%CE%B3%CE%B9%CE%B1-%CF%84/">προηγούμενο post</a> για δημιουργία μιας επίσημης διανομής Linux για την Ελλάδα. Σίγουρα μια τέτοια διανομή δεν θα φτιαχτεί απ' το μηδέν, αλλά θα βασιστεί σε κάποια απ' τις ήδη γνωστές, που χρησιμοποιούμε όλοι στους υπολογιστές μας. Θα προσπαθήσω λοιπόν να εξετάσω ψύχραιμα τα χαρακτηριστικά των γνωστών διανομών ώστε να δούμε ποια τελικά είναι η πιο κατάλληλη για ένα τέτοιο εγχείρημα.</p>
+<p>Καταρχήν θα αποκλείσω διανομές όπως το Gentoo, το Arch ή το Slackware (παρόλο που τους έχω μεγάλη συμπάθεια), λόγω του μεγάλου διαχειριστικού φόρτου που έχουν. Τις θεωρώ εξαιρετικές διανομές για πειραματισμό, και θα συνιστούσα κυρίως σε φοιτητές να τις δοκιμάσουν σε κάποιο partition του υπολογιστή τους, αλλά για το σκοπό που συζητάμε μάλλον δεν προσφέρονται.</p>
+<p>Θα ήθελα να επικεντρωθώ στις 3 πιο δημοφιλείς διανομές, προσπαθώντας να σκιαγραφήσω τα υπέρ και τα κατά τους. Γνωρίζοντας πως πιθανόν να είστε οπαδός ή φίλος κάποιας απ' αυτές, θα συνιστούσα να διαβάζεται τα παρακάτω έχοντας πάντα υπόψη σας τον τίτλο αυτού του άρθρου. Τα στοιχεία που θεωρώ σημαντικά σε ποια διανομή είναι οι τεχνικές δυνατότητες που προσφέρει, ειδικά στο κομμάτι της παραμετροποίησης, η γενικότερη σχέση της με την κοινότητα ΕΛ/ΛΑΚ και φυσικά η ύπαρξη μιας σημαντικής και ενεργής (ελληνικής) κοινότητας.</p>
+<p><a href="http://www.debian.org/">Debian</a>: Είναι απ' τις πιο παλιές διανομές, αναπτύσσεται από μια μεγάλη κοινότητα developers (χωρίς φυσικά να λείπει και το sponshorship από μεγάλες εταιρείες) και το σημαντικότερο χαρακτηριστικό της είναι η σταθερότητα. Δεν είναι τυχαίο πως για πολλούς χρήστες του Debian, είναι μια διανομή που προορίζεται περισσότερο για servers παρά για desktop, γεγονός που καθρεφτίζεται και στην έλλειψη κάποιων desktop “αυτοματισμών” που σε άλλες διανομές είναι αυτονόητοι. Έχει όμως ακόμα ένα μεγάλο μειονέκτημα. Η ανάπτυξη της διανομής γίνεται με πάρα πολύ αργό ρυθμό. Πάρα πολλές εφαρμογές βρίσκονται αρκετά πίσω σε εκδόσεις απ' την τρέχουσα έκδοση που θα βρούμε σε άλλες διανομές. Σίγουρα στα desktop μιας δημόσιας υπηρεσίας δεν παίζει σημαντικό ρόλο αν ο Firefox είναι στην τελευταία έκδοση, αλλά εκεί που έχει πραγματικά σημασία είναι στον πυρήνα (kernel). Συνήθως είναι 2 με 3 εκδόσεις πιο πίσω από άλλες διανομές, που πρακτικά σημαίνει λιγότερες υποστηριζόμενες συσκευές. Αρκετά σημαντικό για τις ανάγκες του Δημοσίου.</p>
+<p><a href="http://www.ubuntu.com/">Ubuntu</a>: Είναι η διανομή με τους περισσότερους χρήστες παγκοσμίως, αναπτύσσεται απ' την Canonical και το χαρακτηριστικό που την έκανε πιο γνωστή ήταν η φιλικότητα της. Γράφω “ήταν” γιατί πλέον η διαφορά δεν είναι τόσο μεγάλη με άλλες διανομές (ακόμα και συγκριτικά με το Debian). Δυστυχώς όμως το μοντέλο ανάπτυξης του Ubuntu έχει αρκετά μειονεκτήματα. Καταρχήν δεν είναι βιώσιμο. Η εταιρεία που το αναπτύσσει δεν έχει καταφέρει ακόμα να βγάλει κέρδη απ' το Ubuntu, γεγονός που από μόνο του καθιστά αμφίβολη ακόμα και την ύπαρξη της διανομής σε μερικά χρόνια. Η κοινότητα του Ubuntu παγκοσμίως δεν φημίζεται για την ενεργητικότητα της. Και ο λόγος είναι κυρίως πως οι περισσότεροι φίλοι του Ubuntu είναι χρήστες και όχι contributors. Εδώ έχουν παίξει ρόλο και κάποιες κινήσεις της Canonical, οι οποίες έχουν τύχει αρκετών επικρίσεων. Καταρχήν όποιος θέλει να δώσει στο Ubuntu έστω και την παραμικρή βελτίωση κώδικα θα πρέπει <a href="http://www.canonical.com/contributors">να υπογράψει μια συμφωνία με την Canonical</a> με βάση την οποία αποποιείται το copyright στον κώδικα του. Αυτή είναι μια πρακτική που αποθαρρύνει αρκετούς developers να συνεισφέρουν στο Ubuntu και έχει δημιουργήσει αρκετές τριβές με την κοινότητα ΕΛ/ΛΑΚ. Είναι η ίδια εσφαλμένη πολιτική που ακολουθεί και η Oracle, γεγονός που συνέβαλε στο fork του LibreOffice. Ένα δεύτερο στοιχείο είναι η προσθήκη κλειστού λογισμικού στα επίσημα repositories (πχ. Skype) και η δυνατότητα αγοράς (!) κλειστού λογισμικού μέσα απ' το Software Center που θα προστεθεί στις επόμενες εκδόσεις. Αυτό έχει οδηγήσει αρκετούς επικριτές της Canonical, μεταξύ αυτών και το Free Software Foundation, <a href="http://www.ebb.org/bkuhn/blog/2010/10/17/shuttleworth-admits-it.html">να χαρακτηρίσουν το Ubuntu Open-Core και όχι Open-Source</a>.</p>
+<p><a href="http://fedoraproject.org/en/about-fedora">Fedora</a>: Είναι μια διανομή που αναπτύσσεται, όπως και το Debian, από μια μεγάλη κοινότητα. Η μεγαλύτερη διαφορά στο μοντέλο ανάπτυξης του Fedora έχει να κάνει με την επίσημη σχέση sponsorship που έχει με τη RedHat, ένα μοντέλο που έχει αποδειχτεί βιώσιμο. Είναι ίσως η διανομή με τους περισσότερους non-technical contributors (πχ. Ambassadors, Designers) γεγονός που έχει συμβάλει στη δημιουργία μιας ενεργής κοινότητας, με μεγάλη παρουσία και στην Ελλάδα (κάτι που το θεωρώ εξαιρετικά σημαντικό για τον σκοπό που συζητάμε). Σε τεχνικό επίπεδο είναι απ’ τις διανομές με τον πιο γρήγορο ρυθμό υιοθέτησης νέων τεχνολογιών. Είναι χαρακτηριστικό πως είναι η πρώτη διανομή με Gnome 3, με 3D support με ανοιχτούς drivers για τις κάρτες γραφικών και το πρώτο λειτουργικό σύστημα (όχι απλώς διανομή) που έχει Global Colour Managment.</p>
+<p>Αν και νομίζω πως είναι αρκετά σαφές προς πια διανομή συγκλίνω και θεωρώ ιδανική για χρήση σε Desktop υπολογιστές του Δημοσίου, θα παραμείνω απλώς στις παραπάνω συνοπτικές αναλύσεις. Σε επόμενο post  ίσως μπούμε σε πιο τεχνικά μονοπάτια.</p></content>
+      <pubDate>2011-06-01 11:34:44</pubDate>
+    </entry>
+  
+    <entry>
+      <title>fosscomm 2011</title>
+      <link href="https://www.roussos.cc/2011/05/09/fosscomm-2011/"/>
+      <content type="html"><p><a href="http://www.flickr.com/photos/comzeradd/5703130830/"><img alt="fosscomm" src="http://farm6.static.flickr.com/5021/5703130830_783ae0a6af.jpg" /></a>
+[more photos: <a href="http://www.flickr.com/photos/comzeradd/sets/72157626556260779/with/5703130830/">fosscomm2011 album</a>]</p>
+<p>A great <a href="http://patras.fosscomm.gr/">fosscomm</a> (the annual greek foss community conference) took place the weekend at Patra. The organizing committee did a fantastic job, but besides that it seems that the Greek FOSS community has raised the bar of quality holding some very interesting technical presentations.</p>
+<p><strong>I think that fosscomm has transformed from a communities presentation conference to a community gathering/socializing/ideas-exchanging conference. And that's a good thing.</strong></p>
+<p>I had the chance to hold or participate on five presentations/workshops. Three of them were part of the <a href="https://fedoraproject.org/wiki/FAD_Fosscomm_2011">Fedora Activity Day</a>.</p>
+<ul>
+<li><a href="/presentations/roussos-how_to_make_money_from_opensource.pdf">How to make money from Open-Source</a> (along with <a href="https://ebalaskas.gr/blog/?page=about">Evaggelos Balaskas</a>) </li>
+<li>Hackerspace.gr (along with other <a href="http://hackerspace.gr/">hackerspace.gr</a> members)</li>
+<li>Surviving with Gnome 3 (along with <a href="http://pierros.papadeas.gr/">Pierros Papadeas</a>)</li>
+<li><a href="/presentations/roussos-fedora_remixes.pdf">Greek Edu: Building your own Fedora Remix</a> (along with <a href="http://bacharakis.com/">Christos Bacharakis</a>)</li>
+<li><a href="/presentations/roussos-fedora_rpm_workshop.pdf">RPM Packaging workshop</a></li>
+</ul>
+<p>And for those of you who attended fosscomm and wondering what was this strange qr code all over the conference places... just scan it ;)</p>
+<p><img alt="hsgr_qr" src="hsgr_qr.png" /></p></content>
+      <pubDate>2011-05-09 13:40:55</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Επίσημη (πιστοποιημένη) διανομή Linux για την Ελλάδα</title>
+      <link href="https://www.roussos.cc/2011/04/20/episimi-dianomi-linux-gia-tin-ellada/"/>
+      <content type="html"><p>Σε <a href="/2011/02/11/%ce%b3%ce%b9%ce%b1%cf%84%ce%af-%ce%b1%ce%bd%ce%bf%ce%b9%cf%87%cf%84%cf%8c-%ce%bb%ce%bf%ce%b3%ce%b9%cf%83%ce%bc%ce%b9%ce%ba%cf%8c-%cf%83%cf%84%ce%bf-%ce%b4%ce%b7%ce%bc%cf%8c%cf%83%ce%b9%ce%bf/">προηγούμενο post κατέγραψα</a> συνοπτικά τους λόγους για τους οποίους το Ανοιχτό Λογισμικό πρέπει να είναι μέσα στις επιλογές της Δημόσιας Διοίκησης. Ελπίζω να ήταν αρκετά πειστικό το άρθρο, ώστε η αμέσως επόμενη ερώτηση να είναι: <strong>“Ωραία! Και πως το κάνουμε αυτό;”</strong></p>
+<p>Τώρα μπορεί να βλέπετε τον τίτλο και να αναρωτιέστε που το πάω. Γι' αυτό το λόγο θα μπω κατευθείαν στο ψητό παραθέτοντας τρία διεθνή (ευρωπαϊκά) παραδείγματα. Τρία παραδείγματα χρήσης Ανοιχτού Λογισμικού στον Δημόσιο Τομέα. Και μάλιστα στο Desktop, εκεί που φαίνεται να υπάρχει η μεγαλύτερη δυσκολία.</p>
+<p><img src="mux3.gif" class="txt" /><strong>Limux-Μόναχο:</strong> Σταδιακή μετάβαση 14.000 desktops στο <a href="http://www.muenchen.de/Rathaus/dir/limux/english/147197/index.html">LiMux</a>. Το LiMux είναι μια διανομή Linux που δημιουργήθηκε για τις ανάγκες της συγκεκριμένης πόλης της Γερμανίας. Έχει πιστοποιηθεί απ' το <a href="http://en.wikipedia.org/wiki/Technischer_%C3%9Cberwachungsverein">TÜV</a> IT (Technical Inspection Association), που σε ελεύθερη μετάφραση είναι κάτι σαν Ινστιτούτο Πληροφορικής. Αν και πλέον το LiMux έχει ταυτιστεί με το συνολικό project μετάβασης και όχι μόνο με τη διανομή Linux.</p>
+<p><img src="gnulinex.png" class="txt" /><strong>Linex-Εξτρεμαδούρα:</strong> Η τοπική κυβέρνηση της συγκεκριμένης περιφέρειας της Ισπανίας αποφάσισε την υιοθέτηση Ελεύθερου Λογισμικού αρχικά στα Σχολεία και στη συνέχεια σε όλες τις πληροφοριακές υποδομές της. Τη μετάβαση έχει αναλάβει το <a href="http://www.fundecyt.es/">Fundecyt</a>, ένα μη-κερδοσκοπικό ίδρυμα, το οποίο ανέπτυξε το <a href="http://en.wikipedia.org/wiki/LinEx">LinEx</a> μια διανομή Linux προσαρμοσμένη στις ανάγκες της Εξτρεμαδούρας. Αυτή τη στιγμή θα δυσκολευτείτε αρκετά να βρείτε Desktop PC στις δημόσιες υπηρεσίες της Εξτρεμαδούρας που να τρέχει κάτι διαφορετικό από Linex.</p>
+<p><img src="pardus.png" class="txt" /><strong>Pardus-Τουρκία:</strong> Το <a href="http://www.pardus.org.tr/eng/about/">Pardus</a> είναι μια διανομή Linux που χρησιμοποιείται προς το παρόν από το Υπουργεί Εθν. Άμυνας της Τουρκίας και εν μέρη απ' το Υπουργείο Εξωτερικών και απ' την Τουρκική Αστυνομία. Η διανομή αναπτύσσεται από το Scientific and Technological Research Council of Turkey, που σε ελεύθερη μετάφραση είναι κάτι σαν το δικό μας Εθνικό Δίκτυο Έρευνας και Τεχνολογίας.</p>
+<p>Υπάρχουν κι άλλα παραδείγματα (OpenAmsterdam, Wienux, AZLinux) που κινούνται στο ίδιο μήκος κύματος. Ο κοινός άξονας σε όλες αυτές τις περιπτώσεις είναι η δημιουργία μιας πλήρης διανομή Linux ώστε να καλύπτει όσο το δυνατόν καλύτερα τις εκάστοτε τοπικές ανάγκες.</p>
+<p>Θα ήθελα να δω κάτι τέτοιο στην Ελλάδα. Και θα μπορούσαμε να πρωτοτυπήσουμε δημιουργώντας ένα τέτοιο project σε εθνικό επίπεδο, σε αντίθεση με τα περισσότερα παραπάνω που έχουν ξεκινήσει τοπικά (με εξαίρεση ίσως την Τουρκία). Ανάμεσα στα διάφορα "μοντέλα" που έχουν αναπτυχθεί σ' αυτές τις περιπτώσεις θα προτιμούσα κάτι πιο κοντά στο παράδειγμα της Εξτρεμαδούρας. Να αναλάβει δηλαδή ένας μη-κερδοσκοπικός φορέας ή ένα ερευνητικό ίδρυμα τη δημιουργία μιας επίσημης διανομής Linux για τις ανάγκες της Δημόσιας Διοίκησης και της Εκπαίδευσης. Αυτό πρακτικά σημαίνει, πέρα απ' το αυτονόητο να είναι πλήρως εξελληνισμένη, πως θα έχουμε τελικά <strong>μια διανομή προσαρμοσμένη στην Ελληνική πραγματικότητα και έτοιμη με όλες τις εφαρμογές που είναι απαραίτητες</strong> (πχ. για την εκπαίδευση θα μπορούσαν να ενσωματωθούν οι εφαρμογές του Παιδαγωγικού Ινστιτούτου).</p>
+<p>Συνοψίζοντας, τι καλύτερο απ' το <strong>να αξιοποιηθούν κρατικοί πόροι</strong> (δηλαδή χρήματα των φορολογουμένων) <strong>και να παραχθεί κάτι με πολλαπλασιαστική αξία για την κοινωνία.</strong> Ένα έργο, που αν αξιοποιηθεί σωστά, θα μπορούσε τόσο να εκσυγχρονίσει τις πληροφοριακές υποδομές του Δημοσίου Τομέα, όσο και να αναδείξει όλα αυτά τα πλεονέκτημα που καταγράψαμε στο <a href="/2011/02/11/%ce%b3%ce%b9%ce%b1%cf%84%ce%af-%ce%b1%ce%bd%ce%bf%ce%b9%cf%87%cf%84%cf%8c-%ce%bb%ce%bf%ce%b3%ce%b9%cf%83%ce%bc%ce%b9%ce%ba%cf%8c-%cf%83%cf%84%ce%bf-%ce%b4%ce%b7%ce%bc%cf%8c%cf%83%ce%b9%ce%bf/">προηγούμενο post</a>.</p></content>
+      <pubDate>2011-04-20 11:23:27</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Osor.eu Workshop, Open Source and its place in a cross-border environment</title>
+      <link href="https://www.roussos.cc/2011/04/11/osor-eu-workshop-open-source-and-its-place-in-a-cross-border-environment/"/>
+      <content type="html"><p>Last Thursday I participated at the <a href="http://www.epractice.eu/en/events/2011-open-source-software-public-administrations">Osor.eu workshop at Brussels</a>. Almost running from airport to airport after the <a href="/2011/04/07/osepa-sheffield-workshop/">Osepa Sheffield Workshop</a>.</p>
+<p>Below some highlights from the notes I kept:</p>
+<p><strong>Osor.eu</strong>
+- 2006: initiated on as IDABC project
+- 2008: Osor.eu site is launched
+- 2010: Osor.eu is part of ISA programme
+- Current state: 200 projects, federates national forges, 30% og hosted projects use EUPL</p>
+<p><strong>EUPL</strong>
+- 2007: EUPL is approved by European Commission
+- Available on all official EU languages
+- Uses European copyright law and terminology
+- OSI/FSF approved
+- Impact: Estonia, Spain, Malta, Netherlands examples
+- EUPL is part of the European Interoperability Framework (EIF v2)</p>
+<p><strong>Interesting Projects</strong>
+- OpenPublic: Open-Source e-gov platform based on drupal
+- Eyepea: Open-Source VoIP intergrator with big Asterisk deployments (European EURid .eu Registar and European Commission among them)</p>
+<p><a href="http://www.flickr.com/photos/comzeradd/5606890287/"><img alt="relaxing" src="http://farm6.static.flickr.com/5269/5606890287_9712249bd4.jpg" /></a></p></content>
+      <pubDate>2011-04-11 10:15:29</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Osepa Sheffield Workshop</title>
+      <link href="https://www.roussos.cc/2011/04/07/osepa-sheffield-workshop/"/>
+      <content type="html"><p>I can't recall if I have mention the Osepa Project before. It stands for <strong>Open-Source for European Public Administrations</strong> and you can find out more at its <a href="http://osepa.eu/">official site</a>.</p>
+<p>For the past two days I was at Sheffield University participating at the Osepa workshop, on behalf of the Central Union Municipalities &amp; Communities of Greece (KEDKE) as their Open-Source expert. Exchanging interesting ideas with people from all around Europe.</p>
+<p>Below are my notes, directly from my tablet. Talks and round table discussions.</p>
+<p><img alt="osepa" src="sheffield01.jpg" /></p>
+<p><img alt="osepa" src="sheffield02.jpg" /></p>
+<p>And of course a group photo :)</p>
+<p><a href="sheffield-b.jpg"><img alt="osepa sheffield workshop" src="sheffield.jpg" /></a></p></content>
+      <pubDate>2011-04-07 10:05:55</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Γιατί Ανοιχτό Λογισμικό στο Δημόσιο;</title>
+      <link href="https://www.roussos.cc/2011/02/11/giati-anoixto-logismiko-sto-dimosio/"/>
+      <content type="html"><p><img alt="bart" src="bart_open_source.gif" /></p>
+<p>Είμαι σίγουρος πως οι περισσότεροι άνθρωποι που συμμετέχουν στην κοινότητα ΕΛ/ΛΑΚ έχουν αρκετές απαντήσεις να δώσουν σ' αυτό το ερώτημα. Θα προσπαθήσω όμως να καταγράψω τους σημαντικότερους λόγους, κυρίως για όλους τους υπόλοιπους. Καλώς ή κακώς όλοι αυτοί οι λόγοι, που παραθέτονται παρακάτω δεν είναι αυτονόητοι.</p>
+<p><strong>Οικονομικός:</strong> Αν και δεν προβάλλεται ως το σημαντικότερο πλεονέκτημα του Ανοιχτού Λογισμικού, δεν παύει να είναι κάτι σημαντικό. Το κόστος απόκτησης του λογισμικού (δηλαδή της Άδειας Χρήσης) είναι ακριβώς μηδέν ευρώ, γεγονός που στην παρούσα οικονομική συγκυρία αποκτά ακόμα μεγαλύτερη βαρύτητα. Το συνολικό κόστος βέβαια δεν είναι μηδέν. Υπάρχει καταρχήν κόστος υποστήριξης, όπως άλλωστε και στο κλειστό λογισμικό. Ένα αντί-επιχείρημα είναι το migration cost. Το κόστος που απαιτείται για να μεταβεί μια Δημόσια Υπηρεσία απ' το υπάρχον κλειστό σύστημα σε κάποια λύση Ανοιχτού Λογισμικού. Εδώ θα πρέπει να το δούμε λίγο πιο μακροπρόθεσμα και μάλιστα θα πρότεινα κάτι πιο ριζοσπαστικό. Στις προκηρύξεις των έργων πληροφορικής για το Δημόσιο <strong>να λαμβάνεται υπόψη το exit migration cost</strong>. Όχι δηλαδή το κόστος μετάβασης σε αυτή την πλατφόρμα, αλλά το κόστος εξόδου απ' αυτή. Αυτό θα μας βοηθήσει να αποφύγουμε το “κλείδωμα” σε συγκεκριμένες πλατφόρμες. Παράδειγμα που συναντάμε αρκετά: Το κόστος μετάβασης από το Microsoft Office σε οποιαδήποτε άλλη πλατφόρμα είναι υψηλό γιατί απαιτείται μετατροπή εγγραφών από .doc σε κάποιο Ανοιχτό Πρότυπο. Αντιθέτως το κόστος μετάβασης από OpenOffice σε άλλη πλατφόρμα είναι πολύ χαμηλό γιατί το OpenDocument format υποστηρίζεται σχεδόν από όλες τις σουίτες γραφείου. Αξίζει να προσθέσουμε πως λόγω των περιορισμών του copyright, όπως χρησιμοποιείται απ' το κλειστό λογισμικό, <strong>πρακτικά το Δημόσιο αγοράζει ξανά και ξανά το ίδιο λογισμικό</strong>.</p>
+<p><strong>Επιχειρηματικός:</strong> Αυτό το σημείο είναι ίσως αυτό που θέλει μεγαλύτερη έμφαση. Από ανθρώπους που δεν έχουν μεγάλη επαφή με το Ανοιχτό Λογισμικό και δεν έχουν ίσως αντιληφθεί την φιλοσοφία του, ακούμε συχνά την απορία “Μα πώς μπορεί να κερδίσει κάποιος χρήματα από το Ανοιχτό Λογισμικό;” (βλ. συνέντευξη του ιδρυτή του Drupal <a href="http://mashable.com/2010/11/01/dries-buytaert-interview/">"Why Open Source is Good for Business"</a>). Είναι κοινό μυστικό πως <strong>οι μεγαλύτερες εταιρείες πληροφορικής στην Ελλάδα έχουν περισσότερους πωλητές από προγραμματιστές</strong>. Και ο λόγος είναι πως δεν αναπτύσσουν λογισμικό, αλλά μεταπωλούν κλειστό λογισμικό. Οι περισσότερες Δημόσιες Υπηρεσίες, όπως είπαμε και πριν, θέλουν υποστήριξη. Φανταστείτε λοιπόν η Περιφέρεια Θράκης να αποφασίσει να αναβαθμίσει τις πληροφοριακές της υποδομές ανεξάρτητα απ' τις επιλογές της “κεντρικής κυβέρνησης” (στη μετά Καλλικράτη εποχή μια τέτοια απόφαση είναι πιο εύκολη). Ποια λύση θα λειτουργούσε πιο αποτελεσματικά και πιο αναπτυξιακά για την τοπική οικονομία; Να προμηθευτεί μια κλειστή πλατφόρμα από μια μεγάλη (Αθηναϊκή) εταιρεία ή να μεταβεί σε λύσεις Ανοιχτού Λογισμικού, που μπορούν να υποστηριχτούν από τοπικές μικρομεσαίες επιχειρήσεις; <strong>Το δίλημμα είναι αν θέλουμε να συντηρούμε μια παρασιτική αγορά πληροφορικής</strong>, όπως είναι η Ελληνική αυτή τη στιγμή, <strong>ή να δώσουμε την ευκαιρία να δημιουργηθεί μια αποκεντρωμένη αγορά</strong>, που είτε θα αναπτύσσει είτε απλώς θα παραμετροποιεί και θα υποστηρίζει λύσεις Ανοιχτού Λογισμικού. <strong>Δημιουργώντας ταυτόχρονα θέσεις εργασίες και φυσικά πραγματική ανάπτυξη</strong>.</p>
+<p><strong>Κοινωνικός:</strong> Το Ανοιχτό Λογισμικό δημιουργεί γύρω του μια ευρεία κοινότητα ανθρώπων, η οποία σε μεγάλο βαθμό λειτουργεί σε εθελοντική βάση. Αποτελεί λοιπόν μία εστία γύρω απ' την οποία αναπτύσσεται συμμετοχικότητα. Η κινητήρια δύναμη βρίσκεται στην πεποίθηση πως (και) το λογισμικό αποτελεί ένα δημόσιο κοινωνικό αγαθό. <strong>Έχουμε λοιπόν μια αλλαγή παραδείγματος περνώντας απ' το καταναλωτικό μοντέλο του κλειστού λογισμικού, στην έννοια των “κοινών αγαθών”, του ελεύθερου λογισμικού και του ελεύθερου περιεχομένου</strong>.</p>
+<p><strong>Τεχνικός:</strong> Το οικοσύστημα του Ανοιχτού Λογισμικού περιλαμβάνει όλους τους άμεσα εμπλεκόμενους (developers, διανομείς, χρήστες) σε <strong>μια ενιαία κοινότητα που αλληλεπιδρά</strong>. Αυτό το γεγονός, περισσότερο ίσως και απ’ την ύπαρξη του κώδικα, είναι που <strong>οδηγεί το Ανοιχτό Λογισμικό σε πολύ πιο γρήγορη ανάπτυξη</strong>. Ειδικά για το θέμα που συζητάμε υπάρχει και <strong>το πρόσθετο όφελος προσαρμογής του λογισμικού στις εκάστοτε ανάγκες</strong> μιας Δημόσιας υπηρεσίας.</p>
+<p>Ελπίζω μέσα απ’ τους παραπάνω άξονες να αποσαφήνισα γιατί <strong>το Ανοιχτό Λογισμικό αποτελεί μια μεγάλη ευκαιρία για τον Δημόσιο Τομέα</strong>. Στο χέρι μας είναι να ενημερώσουμε και τους εκπροσώπους μας, κυρίως σε τοπικό επίπεδο, για να κατανοήσουν αυτά τα οφέλη.</p></content>
+      <pubDate>2011-02-11 11:28:25</pubDate>
+    </entry>
+  
+    <entry>
+      <title>the Dead Drops project</title>
+      <link href="https://www.roussos.cc/2010/11/11/the-dead-drops-project/"/>
+      <content type="html"><p>Το '<strong>Dead Drops</strong>' είναι ένα <strong>δίκτυο ανώνυμου και offline διαμοιρασμού αρχείων στο δημόσιο χώρο</strong>. USB στικάκια ενσωματώνονται σε τοίχους και κτίρια, προσβάσιμα από οποιονδήποτε. Όλοι μπορούν να συμμετέχουν και να συνεισφέρουν αρχεία που θέλουν να μοιράσουν και αντιστοιχα να πάρουν όποια αρχεία υπάρχουν ήδη στα στικάκια από άλλους ανθρώπους.</p>
+<p>Το project είναι ανοιχτό, που σημαίνει πως οποισδήποτε μπορεί να "εγκαταστήσει" ένα τέτοιο στικάκι σε όποιο δημόσιο σημείο θέλει. Δείτε τις <a href="http://deaddrops.com/participate">οδηγίες συμμετοχής</a> και φυσικά το παρακάτω video.</p>
+<p>Ώρα να προσθέσουμε και την Αθήνα στον <a href="http://deaddrops.com/dead-drops/db-map/">χάρτη του δικτύου</a>!</p>
+<iframe src="//player.vimeo.com/video/16620712" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></content>
+      <pubDate>2010-11-11 10:27:32</pubDate>
+    </entry>
+  
+    <entry>
+      <title>FUDCon EMEA 2010 - Zurich</title>
+      <link href="https://www.roussos.cc/2010/09/19/fudcon-emea-2010-zurich/"/>
+      <content type="html"><p><a href="http://fedoraproject.org/wiki/FUDCon:Zurich_2010">FUDCon EMEA 2010</a> has just finished. It was the first international Fedora event i participated and I really enjoyed it. It was really nice meeting and talking with people from the Fedora community and getting to know more about the Fedora community mentality.</p>
+<p><a href="http://www.flickr.com/photos/comzeradd/5004227453/"><img alt="barcamp schedule" src="http://farm5.static.flickr.com/4113/5004227453_f4f32ab143.jpg" /></a></p>
+<p>The Greek "gang", always present at these events, was <a href="http://pierros.papadeas.gr/">Pierros</a>, <a href="http://ebalaskas.gr/">Vaggelis</a>, <a href="http://bacharakis.com/">Christos</a>, Vaggelis (the new Greek guy :P) and me.</p>
+<p><a href="http://www.flickr.com/photos/comzeradd/5000502319/"><img alt="arrived" src="http://farm5.static.flickr.com/4131/5000502319_4692e1a0ae.jpg" /></a></p>
+<p>The most interesting sessions were: RPM Packaging Workshop, Introduction to GIMP/Inkscape, Fedora Design Suite, Legal and License, Introduction to VoIP and most of the <a href="http://fedoraproject.org/wiki/FUDCon:Zurich_2010_BarCamp_Schedule">BarCamp sessions</a>.</p>
+<p>I've uploaded more FUDCon photos <a href="http://www.flickr.com/photos/comzeradd/sets/72157624856066299/with/5000502319/">here</a>.</p>
+<p>PS. I'm writing this post being a little in a hurry. I have to rest. We are taking an early train for Geneva in order to have a guided tour at <a href="http://en.wikipedia.org/wiki/Cern">Cern</a>. :D</p></content>
+      <pubDate>2010-09-19 18:50:38</pubDate>
+    </entry>
+  
+    <entry>
+      <title>speed up firefox (reloaded)</title>
+      <link href="https://www.roussos.cc/2010/06/23/speed-up-firefox-reloaded/"/>
+      <content type="html"><p>I've posted before about<a href="/2009/04/23/speed-firefox/"> this little hack on speeding up firefox</a>. The key is that you actually <strong>move the entire .mozilla folder from disk to memory</strong>. First you have to mount /tmp to memory (some linux distributions may do this by default) adding this line to /etc/fstab and rebooting:</p>
+<p><code>none /tmp tmpfs size=512M,nr_inodes=200k,mode=01777 0 0</code></p>
+<p>Then it's safe to do:</p>
+<pre><code>cp -R /home/user/.mozilla /home/user/.mozilla_save
+mv /home/user/.mozilla /tmp/mozilla
+ln -s /tmp/mozilla /home/user/.mozilla
+</code></pre>
+<p>I updated the script so I can use it as a system init script:</p>
+<pre><code>#!/bin/bash
+
+start() {
+    mkdir -p /tmp/mozilla
+    rsync -avi --delete /home/user/.mozilla_save/ /home/user/.mozilla/
+}
+
+stop() {
+    size=`du -xs /home/user/.mozilla/ | awk '{print $1}'`
+    digits=`expr length $size`
+    if [ $digits -gt 4 ]; then
+        rsync -avi --delete /home/user/.mozilla/ /home/user/.mozilla_save/
+    else
+        echo 'no!'
+        exit 0
+    fi
+}
+
+case "$1" in
+start)
+     start
+     ;;
+stop)
+     stop
+     ;;
+*)
+     echo $"Usage: $0 {start|stop}"
+     exit 1;;
+esac
+</code></pre>
+<p>So I placed this script at /etc/init.d/, made it executable and created a link inside /etc/rc.5/</p>
+<p><code>ln -s /etc/init.d/ffsync.sh /etc/rc5.d/S99ffsync</code></p>
+<p>rc5 because the default runlevel on Fedora is 5. You can see yours from /etc/inittab. So every time my system boots the above script runs with the start option (executing the start function) and every time it halts/reboots it runs with the stop option (stop function). In order to be sure that no data loss will occur in the unlikely event of sudden shutdown, I have a cronjob that saves the mozilla folder every 15 minutes.</p>
+<p><code>*/15 * * * * /etc/init.d/ffsync.sh stop</code></p>
+<p>Trust me. With the above hack you'll see <strong>a significant difference on firefox's speed</strong>. Especially if you're you using <a href="http://blog.mozilla.com/blog/2008/04/21/a-little-something-awesome-about-firefox-3/">firefox's awesome address bar</a> to search through your browser's history.</p></content>
+      <pubDate>2010-06-23 14:30:06</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Open-Source liability paradigm shift</title>
+      <link href="https://www.roussos.cc/2010/06/11/open-source-liability-paradigm-shift/"/>
+      <content type="html"><p>Just return from <a href="http://www.flickr.com/photos/comzeradd/sets/72157624250824950/">beautiful Stuttgart</a> where I participated on <a href="http://www.3049.syzefxis.gov.gr/peta_2006_06/index.php?option=com_content&amp;task=view&amp;id=182&amp;Itemid=41">Osepa</a>'s Steering Group Meeting and Study Visit. I gave a presentation about "Open Source License issues, Liability &amp; Software Public Procurement Policies". You can download it <a href="/presentations/roussos_osepa-liense_liability_procurement_(2010).pdf">here</a> (although I think the slides are a little abstract to understand without the speech).</p>
+<p>Liability seems to be a very critical issue when it comes to Public Sector. <strong>People want someone to blame if something goes wrong</strong> and that's a justified demand (at least on a certain degree). So the slide below started a really nice conversation among the participants:</p>
+<p><img alt="osepa" src="stuttgart2.jpg" /></p>
+<p>The quick answer is No indeed! Take a look at GPL (and you can find a similar disclaimer on every FSF or OSI approved licenses: </p>
+<blockquote>
+<p><strong>16. Limitation of Liability.</strong> IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+</blockquote>
+<p>The reason for this is that an Open-Source project is potentially developed by the whole world, or a little more realistic from a large community. So the above disclaimer is a way to protect the community from legal obligations. Otherwise a user could blame every contributor of a project on a failure incident (eg. data loss). This is short of <strong>a legal protection for the community</strong>.</p>
+<p>This may seem quite reasonable, at least to Open-Source developers, but it's not to Public Sector managers, politicians and decision makers in general. As I already mention they want someone to blame. Well my next slide clarified some things:</p>
+<p><img alt="osepa" src="stuttgart1.jpg" /></p>
+<p>What I mean by "Liability depends on support contract" is that the vendor (the support contract owner) has now the legal responsibility. He is the one who guarantees that the software solution he'll deploy and support is reliable.</p>
+<p>Many things have been written about the Open-Source <strong>paradigm shift</strong> on business model, moving from Software as a Product to Software as a Service logic. Well here is yet another paradigm shift. Software Liability is not upon copyright/left holder or developers, but the Vendor that supports and deploys it. In other words <strong>the legal obligations are moving from the product developers to the service provider</strong>.</p>
+<p>As we would expect the "service" is again the keyword. Now the hard part is to convince the politicians about that :)</p>
+<p>PS. What "Liability depends on users modifications" means is that if the user (eg. municipality employees) alter the software (it's open-source after all) it's difficult, if not impossible, to have legal demands against the vendor. This is something that we have to keep in mind.</p></content>
+      <pubDate>2010-06-11 17:47:43</pubDate>
+    </entry>
+  
+    <entry>
+      <title>με αφορμή το gamato.info + σύντομος οδηγός επιβίωσης</title>
+      <link href="https://www.roussos.cc/2010/03/24/gamato.info/"/>
+      <content type="html"><p>Μάθαμε όλοι τις εξελίξεις σχετικά με το κλείσιμο του gamato.info, είτε <a href="http://www.enet.gr/?i=news.el.article&amp;id=140199">από ειδησιογραφικά sites</a> (ακόμα <a href="http://torrentfreak.com/six-bittorrent-admins-arrested-interpol-chase-two-more-100310/">και διεθνή)</a> είτε από <a href="http://www.astynomia.gr/index.php?option=ozo_content&amp;perform=view&amp;id=3033&amp;Itemid=520&amp;lang=">την επίσημη ανακοίνωση της αστυνομίας</a>.</p>
+<p>Δεν θα σταθώ (προς το παρόν) στο θέμα της πνευματικής ιδιοκτησίας. Είμαι θεμελιακά αντίθετος, αλλά θα αδικήσω το θέμα αν αναπτύξω τη σκέψη μου με αφορμή το κλείσιμο ενός torrent tracker. Δεν θα σταθώ ούτε στο γεγονός πως η αστυνομία με την ανακοίνωση της έγραψε στα παλιότερα των υποδημάτων της το τεκμήριο της αθωότητας, ούτε στο γεγονός πως οι τελευταίοι παράγραφοι είναι προφανές πως τις έχουν υπαγορεύσει οι εταιρίες δικαιωμάτων. Θα σταθω κυρίως στο τι ακριβώς είναι ένας torrent tracker.</p>
+<p>Θυμίζω πως στην περιβόητη δίκη του pirate bay <a href="http://torrentfreak.com/50-of-charges-against-pirate-bay-dropped-090217/">οι μισές κατηγορίες κατέπεσαν</a> μόλις την δεύτερη μέρα επειδή οι κατήγοροι δεν γνώριζαν πως οι ταινίες, που μοιράζοντας οι χρήστες του συγκερκιμένου torrent tracker, δεν ήταν πάνω στο site αλλά στον δίσκο αυτών των χρηστών. Ένας torrent tracker  παρέχει απλώς ένα αρχείο (.<a href="http://el.wikipedia.org/wiki/Torrent">torrent</a>) το οποίο περιέχει <a href="http://el.wikipedia.org/wiki/%CE%9C%CE%B5%CF%84%CE%B1%CE%B4%CE%B5%CE%B4%CE%BF%CE%BC%CE%AD%CE%BD%CE%B1">μεταδεδομένα</a> που είναι απαραίτητα ώστε να γίνει αυτός ο διαμοιρασμός (πχ. το όνομα του αρχείου/ταινίας). Όποιος χρήστης έχει κατεβάσει αυτό το αρχείο γίνεται μέλος ενός "δικτύου" που μοιράζει το αρχείο που περιγράφεται απ' το .torrent αρχείο. (Παρένθεση: Οι πιο περίεργοι ας ψάξουν να βρουν πως χρησιμοποιείται και η τεχνολογία <a href="http://en.wikipedia.org/wiki/Distributed_hash_table">DHT</a> στα torrents. Διαδικασία που εξηγήθηκε και στη δίκη του Pirate Bay απ' τους διαχειριστές του, και που πρακτικά στερεί απ' τον tracker ακόμα και αυτή την απλή συμμετοχή στον διαμοιρασμό των αρχείων, καθιστώντας την όλη διαδικασία πλήρως αποκεντρωμένη.) Ο torrent tracker (pirate bay, gamato.info, κλπ) δεν κατέχει λοιπόν παράνομο υλικό, συνεπώς δεν μπορεί να κατηγορηθεί για διακίνηση του. Αυτό για το οποίο θα μπορούσαν να κατηγορηθούν τέτοια sites είναι για παρακινηση και διευκόλυνση των χρηστών τους σε παράνομες δραστηριότητες. Αμφιβάλλω βέβαια κατά πόσο υπάρχει στην Ελλάδα το αντίστοιχο νομικό πλαίσιο για να στηριχθεί μια τέτοια κατηγορία. Ήδη <a href="http://sxoliastesxwrissynora.wordpress.com/2010/03/18/%CF%84%CE%BF-%CE%B9%CF%83%CF%80%CE%B1%CE%BD%CE%B9%CE%BA%CF%8C-gamato-%CE%BA%CE%B1%CE%B9-%CE%B7-p2p-%CE%BF%CE%B9%CE%BA%CE%BF%CE%BD%CE%BF%CE%BC%CE%AF%CE%B1/">διαβάζουμε πως στην Ισπανία είχαμε μια θετική δικαστική απόφαση</a> σχετικά με αυτό το θέμα, που πρακτικά αθοώνει sites τύπου gamato.info με το αιτιολογικό πως πρόκειται για απλούς μεταγωγούς δεδομένων και άρα δεν καταπατούν τους νόμους περί πνευματικής ιδιοκτησίας. (Παρένθεση: Ειδικά στην υπόθεση του gamato.info έχει ενδιαφέρον να δούμε πως οι αρχές βρήκαν τις διευθύνσεις και λοιπά στοιχεία των διαχειριστών, καθώς τίθεται θέμα παραβίασης <a href="http://el.wikisource.org/wiki/%CE%A3%CF%8D%CE%BD%CF%84%CE%B1%CE%B3%CE%BC%CE%B1_%CF%84%CE%B7%CF%82_%CE%95%CE%BB%CE%BB%CE%AC%CE%B4%CE%B1%CF%82#.CE.86.CF.81.CE.B8.CF.81.CE.BF_19">του απορρήτου των επικοινωνιών</a>.)</p>
+<p>Οδηγός Επιβίωσης</p>
+<p>Με βάση το δελτίο τύπου της αστυνομίας φαίνεται πως κατασχέθηκαν οι προσωπικοί υπολογιστές των συλληφθέντων. Δύο μικρά tips ώστε να είστε σίγουροι πως ο δίσκος σας δεν θα σας "προδώσει".</p>
+<ol>
+<li>Καταρχήν χρησιμοποιείστε κρυπτογραφημένο filesystem. Η διαδικασία είναι πάρα πολύ απλή (τουλάχιστον στο Linux) και συνήθως είναι ένα απλό checkbox κατά τη διάρκεια της εγκατάστασης. Για παράδειγμα αναφέρω το <a href="https://fedoraproject.org/">Fedora Linux</a>, που χρησιμοποιώ προσωπικά, στο οποίο ενεργοποιώντας την αντίστοιχη επιλογή στην εγκατάσταση:</li>
+</ol>
+<p><img alt="fedora-installation" src="fedora_encrypt.png" /></p>
+<p>Μου ζητάει κατά την εκκίνηση να βάλω το passphrase που έχω επιλέξει:</p>
+<p><img alt="fedora-decrypt" src="fedora_decrypt.png" /></p>
+<p>(Να θυμάστε πως το passphrase δεν είναι password. Το σημαντικό δεν είναι να είναι δύσκολο, αλλά μεγάλο. Χρησιμοποιήστε πχ. έναν στίχο από αγαπημένο σας ποίημα όχι haiku :P).</p>
+<ol>
+<li>
+<p>Αν θέλετε να εξαφανίσετε ίχνη που έχετε ήδη στον δίσκο σας και να κάνετε μια καθαρή εγκατάσταση, γράψτε καταρχήν σε ένα cdάκι ένα <a href="http://en.wikipedia.org/wiki/Livecd">LiveCD</a>. Μας κάνει και το Fedora Linux, αλλά γιατί κάτι τόσο απλό μας κάνει και κάτι σαν το <a href="http://www.slax.org/">slax</a>. Ξεκίνηστε τον υπολογιστή σας μ' αυτό και όταν τελειώσει η εκκίνηση ανοίξτε ένα τερματικό και γράψτε την εντολή:</p>
+<p>dd if=/dev/urandom of=/dev/sda</p>
+</li>
+</ol>
+<p>όπου sda είναι ο 1ο δίσκος, sdb ο 2ος, κοκ. Η παραπάνω διαδικασία γεμίζει με τυχαία δεδομένα τον δίσκο και είνα καλό να προηγηθεί ακόμα και αν κρυπτογραφήσετε τον δίσκο σας. Να είστε όπως προετοιμασμένοι πως θα πάρει αρκετοί ώρα (10-24h) ανάλογα με την χωρητικότητα του δίσκου.</p></content>
+      <pubDate>2010-03-24 15:17:50</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Running Fedora</title>
+      <link href="https://www.roussos.cc/2010/03/12/running-fedora/"/>
+      <content type="html"><p><img alt="fedora" src="fedora_graphic.png" /></p>
+<p>I always like to test distributions but due to lack of time i rarely do it :) I'm using <a href="http://www.gentoo.org/">Gentoo</a> for quite some time now (and <a href="http://www.debian.org/">Debian</a> on some machines I administrate), but i wanted a more desktop-oriented distribution, at least for my netbook where Gentoo compile-all philosophy was not the best way to go.</p>
+<p>I have to admit that my first thought was Ubuntu. Maybe because I'm already using an <a href="http://en.wikipedia.org/wiki/Apt-get">apt-get</a> distro and it seemed like the obvious choice. But who am I kidding? I'm an active member of Greek FOSS Communtiy, so the existence, and more important the quality and activities, of the community that inevitably grows around a distribution is very important thing to me. So I was looking for a desktop-oriented distribution with bleeding-edge technologies and vivid community. And the only name that came up to my mind was <a href="https://fedoraproject.org/">Fedora</a>!</p>
+<p>I first <a href="https://twitter.com/comzeradd/status/9186810365">installed it on my netbook</a>, where I also had the ability to test Moblin (on Fedora it's just a 'yum install @moblin-desktop' away :)) and I was so pleased by the performance that I have already <a href="https://twitter.com/comzeradd/status/9870283547">Fedorized my Desktop</a>! Did i said anything about the community? I was impressed by the quality of Fedora community last year on <a href="http://fosdem.org/2010/">Fosdem</a> and <a href="http://twitter.com/comzeradd/status/8718398909">that impression was enhanced this year</a> by Fedora's participation on the biggest FOSS European Conference. Besides that, over the last 1-2 years i have met some members of the Greek Fedora Community, the Greek Fedora Ambassadors, and i have to admit that it's one of the most active and vivid community in Greece. Being willing to contribute, as i already do in many ways for FOSS in general with mostly advocating activities, I have already apply for <a href="http://fedoraproject.org/wiki/Ambassadors">Fedora Ambassador</a> and hoping to find the time to be more involved and active inside Fedora ecosystem.</p>
+<p>PS. for those wondering, Gentoo (and secondly Debian) will still be my first choice when it comes to Systems Administration, but it was time i move over to a new Desktop Distribution.</p></content>
+      <pubDate>2010-03-12 11:33:40</pubDate>
+    </entry>
+  
+    <entry>
+      <title>vim as a password manager</title>
+      <link href="https://www.roussos.cc/2009/07/12/vim-as-a-password-manager/"/>
+      <content type="html"><p>this is a small post for the technique i 'm currently using to save my passwords, implemented on vim. i added these two lines at my ~/.vimrc file: </p>
+<pre><code>map &lt;F12&gt; &lt;Esc&gt;:%!gpg --decrypt 2&gt;/dev/null&lt;CR&gt;&lt;CR&gt;&lt;C-l&gt;
+map &lt;S-F12&gt; &lt;Esc&gt;:%!gpg --encrypt --armor --recipient mymail@mail.com&lt;CR&gt;&lt;CR&gt;&lt;C-l&gt;
+</code></pre>
+<p>these settings map two shortcuts (f12 and shift+f12) that encrypt and decrypt a plain text file respectively using gpg. it is importand to note that the file is  stored on disk only in the encrypted state. so the decrypted state of the file never touches the disk (paranoid exception: there is always the possibility that the memory space holding the file is on swap). so no special password manager software needed. no extra master passphrase. just my gpg one.</p></content>
+      <pubDate>2009-07-12 14:21:16</pubDate>
+    </entry>
+  
+    <entry>
+      <title>greek coding camp 2009</title>
+      <link href="https://www.roussos.cc/2009/07/08/greek-coding-camp-2009/"/>
+      <content type="html"><p><a href="http://www.flickr.com/photos/comzeradd/3698416485/"><img alt="hackers in action" src="http://farm4.static.flickr.com/3185/3698416485_9978045ea6.jpg" /></a></p>
+<p>diary post for the <a href="http://greek-coding-camp.wikidot.com/">greek coding camp 2009</a> that took place at <a href="http://www.mapwire.net/s/35.23082734284668/23.68180274963379/09/">paleochora</a> (chania, crete, greece) for 5 days (4-7 july 2009).</p>
+<p>day 1 (4/7)</p>
+<p>we reached the island at 5.30 in the morning. we made a stop to enjoy the local hospitality with a rich breakfast and an hour of sleep. we travelled by car (about 1.30h) to the camping (paleochora) and we set up our tents.</p>
+<p>first thing to do is share the <a href="http://greek-coding-camp.wikidot.com/subject">projects</a>:
+- OpenOffice Templates translation
+- OpenOffice greek numbered lists
+- OpenOffice greek build testing
+- <a href="http://transifex.org/">Transifex</a> work-flow support
+- Letterscript for greek final "s" bug</p>
+<p>lunch break with greek <a href="http://en.wikipedia.org/wiki/Mousaka">mousaka</a> and <a href="http://en.wikipedia.org/wiki/Tsikoudia">tsikoudia</a> :D</p>
+<p>personally i was more interested on openoffice projects and especially the <a href="http://greek-coding-camp.wikidot.com/openoffice-3-1-1-testing-build">greek build testing</a>.</p>
+<p>day ended with a quick visit at the cold sea and a few glass of wine. </p>
+<p>day 2 (5/7)</p>
+<p>day started with some network problems. it seems that some lady rested her bag over the router, so it got warm beyond accepted limits :P</p>
+<p>two more new guys arrives, so during lunch break we had some great conversations.</p>
+<p>after some installation problems we managed to install the latest release candidate on <a href="http://bacharakis.com/">cmpachar</a>'s fedora laptop and on ubuntu virtualbox installation on my netbook. thanx to ntua we had access to a (12g ram, 16 core cpu) fast machine, so we also compiled openoffice straight from the subversion.</p>
+<p>day 3 (6/7)</p>
+<p>early waking. some of us did a nice conversation about <a href="http://en.wikipedia.org/wiki/Lost_%28TV_series%29">lost</a> and its <a href="http://www.timelooptheory.com/the_timeline.html">timeline</a> :D</p>
+<p>later we had a sort seminar-like conversation about pgp essentials and gpg usage. just to convince everyone who didn't have a key to sign ours :P </p>
+<p>later at night we visited the near by village and we were enlightened by <a href="http://houtouridis.blogspot.com/">hoo2</a> about rubick cube solution mind algorithms.</p>
+<p>day 4 (7/7)</p>
+<p>day began with openoffice testing again. cmpachar did a great job there.</p>
+<p>a new page added to the event wiki, since we managed to convience <a href="http://greek-coding-camp.wikidot.com/littlemary">a young user</a> for the benefits of free software (<a href="http://games.kde.org/game.php?game=ktuberling">potato guy</a> really helped on this one).</p>
+<p><a href="http://www.flickr.com/photos/comzeradd/3699249082/"><img alt="playing potato guy" src="http://farm3.static.flickr.com/2437/3699249082_9d2cb21b37.jpg" /></a></p>
+<p>highlights: openoffice greek build testing completed for the greek build by <a href="http://bacharakis.com/">cmpachar</a> and me, <a href="http://dimitris.glezos.com/">glezos</a> and <a href="http://twitter.com/andy_lupo">alupo</a> completed the transifex task, <a href="http://twitter.com/eliaschr">elias</a> and <a href="http://twitter.com/sonic2000gr">manolis</a> translated openoffice templates to greek, pantelis and <a href="http://houtouridis.blogspot.com/">hoo2</a> almost finished adding usb dsl modems support at the network manager.</p>
+<p>totally 16 hackers joined the greek coding camp. we had great fun, combining swimming at the <a href="http://en.wikipedia.org/wiki/Libyan_Sea">libyan sea</a> and <a href="http://en.wikipedia.org/wiki/Tsikoudia">tsikoudia</a> with coding. i hope this will be a new event series in greece, so we can terrorize every greek camping with our geek conversations and habits :D</p></content>
+      <pubDate>2009-07-08 01:48:53</pubDate>
+    </entry>
+  
+    <entry>
+      <title>working inside libre software ecosystem (aka love and marriage)</title>
+      <link href="https://www.roussos.cc/2009/06/02/working-inside-libre-software-ecosystem/"/>
+      <content type="html"><p>i have to admit that  i'm really excited lately. it's great combining my interests with my job and working on something that i love doing.</p>
+<p>three weeks ago i started working for a non-profit corporation (<a href="http://eellak.gr">eellak.gr</a>) that aims in promoting and advocating free software to greek society. it consists of the majority of greek universities and research institutes (and hopefully <a href="http://hellug.gr">hellug</a> in a few months).</p>
+<p>my job is about organizing operational tasks and supervising projects, based on my technical skills and activity inside the greek libre software community.  additionally i sysadmin corporation's infrastructures.</p>
+<p>till now the job is very interesting and fulfilling but also very demanding. i hope i'll meet the standards :)</p>
+<p><img alt="eellak" src="eellak.png" /></p></content>
+      <pubDate>2009-06-02 09:33:50</pubDate>
+    </entry>
+  
+    <entry>
+      <title>2nd fosscomm</title>
+      <link href="https://www.roussos.cc/2009/05/12/2nd-fosscomm/"/>
+      <content type="html"><p><a href="http://www.flickr.com/photos/comzeradd/3522055691/"><img alt="gentoo presentation" src="http://farm4.static.flickr.com/3256/3522055691_a000b9dfbd.jpg" /></a></p>
+<p>Back in athens after a great weekend at larisa, where the <a href="http://fosscomm.gr/">2nd fosscomm</a> (greek foss communities conference) took place. Most presentations had a great interest and workshops where the new addition of this year event. I had the chance to participate in two presentations. On saturday along with <a href="http://twitter.com/kranidiotis">kranidiotis</a> we talked about the role that hellug can play inside the greek foss community and on sunday along with tampakrap we made a brief presentation of <a href="http://www.gentoo.org/">gentoo linux project</a> and <a href="http://gentoo-el.org/">gentoo greek community</a>. Additionally, the greek gentoo community organized a workshop about gentoo installation process, with wired leading this one and the rest of us helping the participants (who were unexpected a lot).</p>
+<p>I think the best thing in these kind of events is the fact that we have the chance to meet again all the greek free software hackers and talk (or flame :P) you can see my photo set from fosscomm on my flickr <a href="http://www.flickr.com/photos/comzeradd/sets/72157617998326634/">here</a>.</p></content>
+      <pubDate>2009-05-12 23:21:35</pubDate>
+    </entry>
+  
+    <entry>
+      <title>speed up firefox</title>
+      <link href="https://www.roussos.cc/2009/04/23/speed-firefox/"/>
+      <content type="html"><p>firefox 3 features <a href="http://support.mozilla.com/en-US/kb/Smart+Location+Bar">an awesome address</a> bar that helps you search through your history (and bookmarks) by just typing a word or phrase that's part of either the url or the title. the problem is that if you keep the browsing history for a long time (lime me) the address bar search process becomes very slow. a cool solution is to place the ~/.mozilla folder on ram (which is a lot faster than disk). i already have /tmp on ram, so i made a symbolic link ~/.mozilla pointing to /tmp/mozilla. and then i use the script below in order to save/restore the contents of mozilla folder: </p>
+<pre><code>#!/bin/bash
+
+if [ $# -lt 1 ]; then
+    echo "usage: ff_sync.sh save/restore"
+    exit 0
+fi
+
+action=$1
+
+if [ "$action" = "save" ]; then
+    size=`du -xs /home/user/.mozilla/ | awk '{print $1}'`
+    digits=`expr length $size`
+    if [ $digits -gt 4 ]; then
+        rsync -avi --delete /home/user/.mozilla/ /home/user/.mozilla_save/
+    else
+        echo 'no!'
+        exit 0
+    fi
+fi
+
+if [ "$action" = "restore" ]; then
+    mkdir -p /tmp/mozilla\
+    rsync -avi --delete /home/user/.mozilla_save/ /home/user/.mozilla/
+fi
+</code></pre>
+<p>all i have to do is run this script with the appropriate option when booting/halting the pc. on gentoo you have /etc/conf.d/local.start and /etc/conf.d/local.stop for this kind of things. and i have to say that i'm really impressed. firefox speed  improved amazingly. and i mean firefox overall speed, not just the address bar ;)</p></content>
+      <pubDate>2009-04-23 11:48:38</pubDate>
+    </entry>
+  
+    <entry>
+      <title>my new laptop</title>
+      <link href="https://www.roussos.cc/2007/12/01/my-new-laptop/"/>
+      <content type="html"><p>i wanted a small (12'' at most) and lightweight laptop. my old one (an hp) had some issues with its monitor so i decided to use it as a desktop pc with external tft, keyboard and mouse. besides that it weights 3.70kgs!</p>
+<p>i didn't want to spent much money so i searched around ebay for a nice offer. i found some vaios and a cool toshiba tablet, but after some unsuccessful bids i decided to search for a mac! so now i have a ibook g4 :) it arrived just yesterday after paying 70€ to greek customs (aggrrr).</p>
+<p>processor: powerpc
+ram: 768MB
+hard drive: 30GB
+screen size: 11.8''
+wireless net: broadcom 4320</p>
+<p><img alt="ibook" src="ibook1.jpg" /></p>
+<p>i only saw mac os once and for 10'' since i already started installing linux. gentoo of course :) so here are the short steps:</p>
+<p><img alt="ibook" src="ibook2.jpg" /></p>
+<ol>
+<li>
+<p>boot with the gentoo install cd for ppc</p>
+</li>
+<li>
+<p>re-partition the disk with mac-fdisk</p>
+<p>/dev/hda1: Apple_partition_map
+/dev/hda2: Apple_bootstrap
+/dev/hda3: swap
+/dev/hda4: root filesystem</p>
+</li>
+<li>
+<p>create the filesystems</p>
+<p>mkfs.ext3 /dev/hda4
+mkswap /dev/hda3
+swapon /dev/hda3</p>
+<p>mount /dev/hda4 /mnt/gentoo</p>
+</li>
+<li>
+<p>download and install stage3 and portage 5. set the compile options at make.conf</p>
+<p>CHOST="powerpc-unknown-linux-gnu"
+CFLAGS="-O2 -mcpu=7450 -mtune=G4 -maltivec -mabi=altivec \
+  -fno-strict-aliasing -pipe -mpowerpc-gfxopt -fomit-frame-pointer"
+CXXFLAGS="${CFLAGS} -fpermissive"</p>
+</li>
+<li>
+<p>mount proc and dev and chroot</p>
+<p>mount -t proc none /mnt/gentoo/proc
+mount -o bind /dev /mnt/gentoo/dev
+chroot /mnt/gentoo /bin/bash
+env-update
+source /etc/profile</p>
+</li>
+<li>
+<p>update portage</p>
+<p>emerge --sync</p>
+</li>
+<li>
+<p>download and compile kernel (gentoo-sources) 9. configure fstab</p>
+<p>/dev/hda4     /        ext3     noatime     0 1
+/dev/hda3     none     swap     sw          0 0</p>
+</li>
+<li>
+<p>install the bootlader yaboot</p>
+<p>exit
+mount -o bind /dev /mnt/gentoo/dev
+mount -o bind /sys /mnt/gentoo/sys
+chroot /mnt/gentoo /bin/bash
+/usr/sbin/env-update &amp;&amp; source /etc/profile</p>
+<p>emerge yaboot
+exit</p>
+<p>yabootconfig --chroot /mnt/gentoo</p>
+</li>
+<li>
+<p>reboot</p>
+<p>exit
+umount /mnt/gentoo/proc /mnt/gentoo/dev /mnt/gentoo/sys /mnt/gentoo
+reboot</p>
+</li>
+</ol>
+<p>wireless worked with the bcm43xx module and soundcard with snd_powermac. i still have to fix: suspend and 3button mouse emulation, but i guess they won't take me long :)</p>
+<p><img alt="ibook" src="ibook3.png" /></p></content>
+      <pubDate>2007-12-01 00:04:54</pubDate>
+    </entry>
+  
+    <entry>
+      <title>the distro of my dreams</title>
+      <link href="https://www.roussos.cc/2007/09/24/the-distro-of-my-dreams/"/>
+      <content type="html"><p>i am was a slackware user for the last 5-6 years and i had the feeling that time has came for a change!</p>
+<p>i never was bothered by the lack of a package management system, but i always wanted an automated way of <code>./configure &amp;&amp; make &amp;&amp; make install</code> applications. I am trying to have control of what is installed to my system and so what i did was using makepkg utility to create slack packages. but that was surely not enough. i needed that to be more elegant.</p>
+<p>besides that there is another thing that a slack user really deny to admit. we they can defend almost any flame attack but one: that slackware development is handed by one person. sure many people of the community help him with patches or bug report but if he is busy or <a href="http://science.slashdot.org/article.pl?sid=04/11/16/1846207">sick</a> then a year or more may pass until stable release comes out. additionally one brain can always make a mistake on package compilations or a wrong judgement on apps selection...</p>
+<p>half of my linux mates' choice is debian, mostly because of its huge community and its package management system. i always respected debian apt-get system but i also find it a little tight and restrictive. being a slack user my first priority is freedom of movements inside my box and as i already mentioned i don't bother compiling my apps (so as to use my specific configure flags).</p>
+<p>you may have already guessed it. i chose the distro that keeps the very best of slack features (freedom, custom made packages, speed) and the very best of debian features (package system with dependency check, huge community).</p>
+<p>i 'm actually writing this post from my first <a href="http://en.wikipedia.org/wiki/Gentoo_Linux">gentoo</a> installation and i have to say that i 'm already thrilled! i have built up a system meeting my needs (and my needs only) and i 'm enjoying the sense of freedom that <a href="http://gentoo-wiki.com/FAQ_USE_Flags">use flags</a> give me and the speed boost. (i never expected i 'll find a faster distro than slackware).</p>
+<p>i 'll be back later with further details. for now i 'm just going to get lost in this excellent gentoo documentation project: it's own <a href="http://gentoo-wiki.com/Main_Page">wiki</a>...</p></content>
+      <pubDate>2007-09-24 23:43:50</pubDate>
+    </entry>
+  
+    <entry>
+      <title>zaurus</title>
+      <link href="https://www.roussos.cc/2007/05/17/zaurus/"/>
+      <content type="html"><p>i 'm nothing like a gadget maniac, but i couldn 't resist... i 'm writting this post from my recently purchased handheld: a <a href="http://en.wikipedia.org/wiki/Zaurus">sharp zaurus sl-c1000 (akita)</a>.</p>
+<p><img alt="zaurus" src="zaurus.jpg" /></p>
+<p>it came with <a href="http://qpe.sourceforge.net/">qtopia</a> installed. although its a very convinient enviroment for normal pdas, it 's kind of limited for zaurus. so very few <a href="http://www.zaurususergroup.org/">zaurus users</a> keep qtopia more than a week. i kept it 2 days, before i install <a href="http://gpe.linuxtogo.org/">gpe</a>. i kept it another 2 days and then decided to switch to <a href="http://www.pdaxrom.org/">pdaxrom</a>, as i found it more customizable, and being a slackware user, that 's my major criterion.</p>
+<p>pdaxrom is an almost full gnu/linux, that comes with <a href="http://matchbox-project.org/">matchbox</a> window manager. it crossed my mind to switch it over to <a href="http://fluxbox.sourceforge.net/">fluxbox</a>, my regular window manager in my "normal" pc, but i think that matchbox way of manipulating desktop is more useful when it comes to small screens.</p>
+<p>that 's all for now. i m going out, on a war driving session... :) but i 'm closing this post with the uname output:</p>
+<pre><code>Linux stalker 2.4.20 #1 Sat, 25 Mar 2006 14:11:16 +0000 armv5tel unknown
+</code></pre></content>
+      <pubDate>2007-05-17 23:37:14</pubDate>
+    </entry>
+  
+    <entry>
+      <title>csound</title>
+      <link href="https://www.roussos.cc/2007/04/17/opensource, music/"/>
+      <content type="html"><p>one of the things that occupy much of my time (besides women) is music. i don't mean listening to my favourite musicians. i mean (computer aided) music synthesis.</p>
+<p>the reason that i'm mentioning all these is to talk about my (almost) exclusive synthesis tool. It's free (as free speech) and many people refer to it as a programming language more than a tool.</p>
+<p>so <a href="http://csounds.com/">csound</a> (written in c) is the compiler and <em>csd</em> is the source file. every <em>csd</em> file has 3 parts:
+<em> <em>options</em>: command line options for the compilation</em> <em>orchestra</em>: the track structure (instruments)
+* <em>score</em>: the way (duration &amp; other attributes) instruments are played</p>
+<p>i'll be back with more info about all these in future posts. For now just enjoy a small track of electronic music by luis maurette.</p>
+<p>the track contains three instruments:</p>
+<pre><code>instr   106 ; NOISE
+ idur   =       p3
+ iamp   =       ampdb(p4)
+ ifrq   =       cpspch(p5)
+ iatk   =       p6
+ irel   =       p7
+ iflut1 =       p8
+ iflut2 =       p9
+ iharm  =       p10
+ kenv   linen   iamp,iatk, idur, irel
+ asig1  buzz    iamp, ifrq, iharm, 2
+ kenv2  line    iflut1, p3, iflut2
+ ktick  oscil   50, kenv2*.1, 1
+ alfo   oscil   10, 1*ktick, 1
+ afil   tone    asig1, 1000*alfo
+ out        afil
+endin
+
+instr   206 ; NOISE
+ idur   =       p3
+ iamp   =       ampdb(p4)
+ iamp2  =       ampdb(p5)
+ ifrq1  =       cpspch(p6)
+ ifrq2  =       cpspch(p7)
+ iatk   =       p8
+ irel   =       p9
+ iflut1 =       p10
+ iflut2 =       p11
+ iharm  =       p12
+ kfrenv line    ifrq1, idur, ifrq2
+ kamp   line    iamp, idur, iamp2
+ kenv   linen   kamp,iatk, idur, irel
+ asig1  buzz    kamp, kfrenv, iharm, 2
+ kenv2  line    iflut1, p3, iflut2
+ ktick  oscil   50, kenv2*.1, 1
+ alfo   oscil   10, 1*ktick, 1
+ afil   tone    asig1, 1000*alfo
+ out        afil
+endin
+
+instr   108 ; FM
+ idur   =       p3
+ iamp   =       ampdb(p4)
+ ifrq   =       cpspch(p5)
+ ifun   =       p6
+ iatk   =       p7
+ irel   =       p8
+ icar   =       p9
+ imod   =       p10
+ index  =       p11
+ irep   =       p12
+ kenv   linseg  0, iatk, 1, irel, 0
+ kenv2  oscil   iamp, 1/idur*irep, ifun
+ asig1  foscil  kenv, ifrq, icar, imod, index, ifun
+ out        asig1*kenv2
+endin
+</code></pre>
+<p>if you don't believe me... compile it :)</p>
+<p>you can also find a vim syntax highlighting package for vim. is this open source music or what?</p></content>
+      <pubDate>2007-04-17 23:31:59</pubDate>
+    </entry>
+  
+    <entry>
+      <title>exit the system</title>
+      <link href="https://www.roussos.cc/2007/02/05/exit-the-system/"/>
+      <content type="html"><p>«It is an inherit property of intelligence that it can jump out of the task which it is performing, and survey what it has done; it is always looking for, and often finding, patterns. Now I said that an intelligence can jump out of its task, but that does not mean that it always will. However, a little prompting will often suffice. For example, a human being who is reading a book may grow sleepy. Instead of continuing to read until the book is finished, he is just as likely to put the book aside and turn off the light. He has stepped "out of the system" and yet it seems the most natural thing in the world to us.</p>
+<p>Or, suppose person A is watching television when person B comes in the room, and shows evident displeasure with the situation. Person A may think he understands the problem, and try to remedy it by exiting the present system (the television program), and flipping the channel knob, looking for a better show. Person B may have a more radical concept of what it is to "exit the system" - namely to turn the television off! Of course, there are cases where only a rare individual will have the vision to perceive a system which governs many peoples' lives, a system which had never before even been recognised as a system; then such people often devote their lives to convincing other people that the system really is there, and that it ought to be exited from!»</p>
+<p><em>~ d. hofstadter ("<a href="http://en.wikipedia.org/wiki/G%C3%B6del%2C_Escher%2C_Bach">godel, escher, bach</a>" - 1979)</em></p>
+<p>5 years before <a href="http://en.wikipedia.org/wiki/Neuromancer">neuromancer</a>, 10 years before <a href="http://en.wikipedia.org/wiki/Ghost_in_the_Shell_(manga)">ghost in the shell</a>, 20 years before <a href="http://en.wikipedia.org/wiki/The_Matrix">matrix</a></p></content>
+      <pubDate>2007-02-05 23:29:06</pubDate>
+    </entry>
+  
+    <entry>
+      <title>filesystem activity</title>
+      <link href="https://www.roussos.cc/2006/12/14/filesystem-activity/"/>
+      <content type="html"><p>so... you 're sitting in front of your pc, but you are not really doing something. in fact you are doing absolutely nothing.</p>
+<p>despite that you can hear from time to time the hard disk spinning up just for a very short period of time.</p>
+<p>don't you have the slightly curiosity to find out why? which process access your hard disk in the background?</p>
+<p>i had that curiosity so here is what i did (i think that it requires kernel&gt;2.6.1):</p>
+<pre><code>cat /proc/sys/vm/block_dump
+</code></pre>
+<p>i got 0. this is a feature that helps you monitor filesystem activity. so i activated it:</p>
+<pre><code>echo 1 &gt; /proc/sys/vm/block_dump
+</code></pre>
+<p>i set the value to 1, so as i can watch which process is making use of the disk. now it should start logging the activity into your syslog files:</p>
+<pre><code>tail -f /var/log/debug
+</code></pre>
+<p>there are two main types of entries that block_flush generates: dirty inodes and block read/writes. dirty inode entries just mean that something altered the inode for that file, most commonly it's due to an update to that files atime (access) or mtime (modification). if you look at the beginning of the output above, you'll see a lot of dirtied library inodes. these are the libraries linked against the tail command that was just executed, so their atime was just updated. the remainder, block reads and writes, are just normal reads and writes to the hard disk.</p>
+<p>of course this procedure generates a lot of filesystem activity, so remember to deactivate it afterwards:</p>
+<pre><code>echo 0 &gt; /proc/sys/vm/block_dump
+</code></pre></content>
+      <pubDate>2006-12-14 23:21:11</pubDate>
+    </entry>
+  
+</feed>

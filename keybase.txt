@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/comzeradd
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.roussos.cc
+  * I am comzeradd (https://keybase.io/comzeradd) on keybase.
+  * I have a public key with fingerprint 6161 4A78 19E5 9D02 7C89  74A5 D759 A12E 10B9 8B4D
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "61614a7819e59d027c8974a5d759a12e10b98b4d",
+            "host": "keybase.io",
+            "key_id": "D759A12E10B98B4D",
+            "uid": "6d523fd67341b152e0840097a4364500",
+            "username": "comzeradd"
+        },
+        "service": {
+            "hostname": "www.roussos.cc",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1398159928,
+    "expire_in": 157680000,
+    "prev": "20ab38c7409e66edc736f2da9c7c8d5f83bcc40ba2b8e15a1ab13553ccb92be5",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGbwMvMwMW46/7HsurlJx4ynj7wJYkhOMzKolopKT+lUsmqWik7FUylZealpxYV
+FGXmlShZKZkZmhmaJJpbGFqmmlqmGBiZJ1tYmpskmqaYm1omGhqlGhokWVokmaQo
+6Shl5BeDdACNSUosTtXLzAeKATnxmSlAURegekdDI1dDAydLCycTF6BcKVjCLMXU
+yDgtxczc2MQwydDUKNXAwsTAwNI80cTYzMTUwACksDi1KC8xNxWoOjk/tyq1KDEl
+RalWRwkoXJaZnApyNMhuqJLy8nK9ovzS4uL8Yr3kZKD2gqL8kvzk/BygXEZJSYEV
+SGtJZQFYbWpSPNSU+KTMvBSg14EaylKLijPz85SsDIEqk0syQcYaGltaGJpaWhpZ
+6CilVhRkFqXGZ4JUmJqbWRgAAcia1DKgkUYGiUnGFsnmJgaWqWZmqSnJ5sZmaUYp
+iZbJwKBLMU2zME5KTjYxSEo0SrJINTRNNExMMjQ2NTVOTk6yNEpKNVUC+aswL1/J
+ygTozMR0oJHFmel5iSWlRalKtZ1MMiwMjFwMbKxMoMhj4OIUgEXppIX8/6u23/ry
+S0Fa9pbbk1O8b66naoZK6DwLvpzkMruA8efi7RzcXbvjFKoY5aWyrNa+vifNt1+M
+ceP7nmfaf4RWWuc9UagxeJRtn2D4ZcvixWlnNv8rCmzZo35Vao+iYPiNHXU7ruu0
+mc2WbZmy5rq72N2OGTk3D/9iPqfr4NGVHRjyN0zr9KlvHt/M4yVS6/NLfi2PLl7w
+1Oe0tcLNp+126ddPKMn6tD7nf82xY1dxtPrqt7/bxUwNdqcI/uKvEW90uHtpl2uI
+DWfo5YkHb0o3FzIzuEUsenhRaen75g2XcwSflbdF9s+dftso/mWYgMHdVonw1lU9
+HSoL/oV0P5Nbe9polcgvZZnf4bGHG4/5tOXt+Xz93ckJMbfivDbdtH33tlMnzPby
+b/2z3zLSbWo0VgUzb57cabQyJNpzL3+t6Quh747v2OJ7mCTs+k9Es835uHvhmb2n
+avlMEm8VBRmkHrwkMm963vGj6m4Lrae+rej9eM9Ec5rhVAf5bzl6Gz/fyV975Nk+
+vsPaOtvvvWcsmvpD5lXeor6yOatnfTFN5F1kHM/t/2iuPN+tazeUi64sbxB9vX++
+Jz+zL1fGxV1L7lVr9u4XMtR853H9679U1ZxnYnPXn2SN8nxyIuSJS4Nx6tzsfW/6
+pW4+7vynoO5lLypiEvY1fXLVY5PPKgu8L65pESjXNOqcvllm3zPbJD6bhG82MVMf
+frPNEcg8BgA=
+=OVXr
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/comzeradd
+
+==================================================================

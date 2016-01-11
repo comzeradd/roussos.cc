@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>Nikos Roussos</author>
+  <title>nikos.roussos &bull; encryption</title>
+  
+    <entry>
+      <title>Multi-End Message and Object Encryption. What?</title>
+      <link href="https://www.roussos.cc/2016/01/05/jabber-omemo/"/>
+      <content type="html"><p>So, many people promoting Signal over Jabber/OTR for its usability and security features (besides all <a href="https://librenet.gr/posts/497875">caveats</a>). Most of these features are offered due the <a href="https://github.com/trevp/axolotl/wiki">Axolotl Ratchet</a> protocol.</p>
+<p>What if this protocol was implemented as an extension to Jabber? This would combine all best things from both worlds. Offline (encrypted) messages, multiple devices, better mobile integration but on the same time decentralized federated service. Well it’s done. Meet <a href="http://conversations.im/omemo/">OMEMO</a>.</p>
+<p><a href="http://conversations.im/">Conversations</a> on Android already supports it, <a href="https://chatsecure.org/blog/chatsecure-conversations-zom/">ChatSecure</a> is implementing it too and tickets are already opened on <a href="https://developer.pidgin.im/ticket/16801">Pidgin</a> and <a href="https://www.mail-archive.com/tor-bugs@lists.torproject.org/msg84721.html">Tor Messenger</a>. <a href="https://gajim.org/">Gajim</a> is currently the only desktop app that supports it (through <a href="https://github.com/kalkin/gajim-omemo/">a plugin</a>), but if you want to have OTR too then Gajim is not an option since <a href="https://github.com/python-otr/gajim-otr">its OTR plugin is unmaintained</a>.</p>
+<p>I’ve been testing Conversations/OMEMO over the last week and it works great. So maybe in a few months we’ll have something truly secure, decentralized and usable to suggest to our friends ;) Or just suggest Conversations to the most brave of your friends.</p>
+<p><img alt="omemo" src="omemo.png" /></p>
+<hr>
+
+<p><em>Comments and reactions on <a href="https://librenet.gr/posts/541037">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/684297833453907968">Twitter</a></em></p></content>
+      <pubDate>2016-01-05 12:41:37</pubDate>
+    </entry>
+  
+</feed>

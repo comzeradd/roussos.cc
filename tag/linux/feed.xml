@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>Nikos Roussos</author>
+  <title>nikos.roussos &bull; linux</title>
+  
+    <entry>
+      <title>my linux history</title>
+      <link href="https://www.roussos.cc/2013/11/05/my-linux-history/"/>
+      <content type="html"><p>Inspired by <a href="http://ebalaskas.gr/blog/2013/11/04/my-history-of-linux/">ebal's post</a>, here is in short my linux history...</p>
+<ul>
+<li>
+<p>1997: Bought my first personal computer. Two months later I install <a href="http://en.wikipedia.org/wiki/Red_Hat_Linux">RedHat 5.2</a>. It was the first (and last) time I bought a Linux distribution from a store. Home broadband was not there yet. It came along with a nice <a href="http://upload.wikimedia.org/wikipedia/en/4/49/Redhat_5.2_box.jpg">book guide</a>, which I still have on my library along with the 5 CDs.</p>
+</li>
+<li>
+<p>2002: Just before RedHat Linux was about to be discontinued, in favor of the Enterprise version and the beginning of the Fedora project, I saw this as an opportunity to try some other distro. After playing around with <a href="http://www.linuxfromscratch.org/">LFS</a> I ended up with <a href="http://www.slackware.com/">Slackeware 8.1</a>. Kept it for several years, learned a lot.</p>
+</li>
+<li>
+<p>2007: Slackare has a very limited package collection, so you inevitable end up installing things manually. So I wanted a way to do this in a more automated way. And the choice was <a href="http://en.wikipedia.org/wiki/Gentoo_Linux">Gentoo Linux</a>. Actually I <a href="/2007/09/24/the-distro-of-my-dreams/">documented</a> that.</p>
+</li>
+<li>
+<p>2010: Over the years there was a significant change on how I dealt with my everyday work. I came to a point where I started to evaluate more the UX aspect of things. I wanted a linux distribution that would just work, but would also be open as a project for contribution. So I <a href="/2010/03/12/running-fedora/">chose</a> to join the <a href="http://fedoraproject.org/">Fedora Project</a> and never looked back. Today, besides being an Ambassador for the project i <a href="/2011/12/08/fedora-developer/">maintain some packages</a> and enjoying being part of such a great community.</p>
+</li>
+</ul></content>
+      <pubDate>2013-11-05 12:17:39</pubDate>
+    </entry>
+  
+</feed>

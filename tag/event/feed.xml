@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>Nikos Roussos</author>
+  <title>nikos.roussos &bull; event</title>
+  
+    <entry>
+      <title>Fedora Flock 2014</title>
+      <link href="https://www.roussos.cc/2014/08/13/fedora-flock-2014/"/>
+      <content type="html"><p><a href="http://www.flocktofedora.com/">Fedora Flock</a> took place last week and this is a log entry for my personal highlights.</p>
+<p><a href="https://www.flickr.com/photos/comzeradd/14671187430" title="Flock 2014 by Nikos Roussos, on Flickr"><img src="https://farm6.staticflickr.com/5575/14671187430_7c5c5ef531_m.jpg" class="txt" width="180" height="240" alt="Flock 2014"></a> Overall the Flock was awesome. The quality of all technical presentations/workshops was really high. It's amazing how many things currently going on at the Fedora community, not just related to our Operation System (the distribution) but also innovative things that we develop or lead that in the long run benefit the whole Free Software community. As always I had the chance to meet, talk and collaborate in person with many Fedorians and that's always motivating for my contribution to the project.</p>
+<p>So here it goes...</p>
+<p><a href="https://fedoraproject.org/wiki/Fedora.next">Fedora.next</a>: This is currently the most important thing happening regarding the distribution. We are about to release Fedora 21 in three different products (Workstation, Cloud, Server) that will make possible to offer a better user experience in each one of these user groups. Some features that pop into my mind: Server product will implement "Server roles" right on the Anaconda installer, so you can quickly deploy (for instance) a mail server. <a href="http://cockpit-project.org/">Cockpit</a> also will land on 21, an awesome server management tool. Cloud product will focus even more on containers (yes that means docker), open source infrastructure (eg. <a href="http://www.openstack.org/">OpenStack</a>) and cloud services (eg. AWS). Workstation product intended for Desktop users and will focus on developers and makers. <a href="http://devassistant.org/">DevAsistant</a> will play a key role to this. It always surprise me to see developers struggle to setup their work environment on Operating Systems that takes hours to do it, for things that it's a few minutes work on Fedora.</p>
+<blockquote class="twitter-tweet" lang="en"><p>People running <a href="https://twitter.com/hashtag/Docker?src=hash">#Docker</a> inside <a href="https://twitter.com/hashtag/Vagrant?src=hash">#Vagrant</a> over OsX. A new level of masochism.</p>&mdash; Nikos Roussos (@comzeradd) <a href="https://twitter.com/comzeradd/statuses/468398793894133760">May 19, 2014</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Docker, docker, docker: <a href="https://twitter.com/adityapatawari">Aditya</a> did a great introductory workshop during Flock. Fedora is definitely the leading platform for Docker. Next release will improve even better Docker's integration.</p>
+<p>Ansible: Another DepOps area where Fedora community has given a lot of time and effort. Again Aditya did an introductory talk, since recently the Infrastructure team migrated <a href="http://infrastructure.fedoraproject.org/cgit/ansible.git">everything</a> from Puppet to Ansbile. The last day <a href="https://twitter.com/kumar_pravin">Praveen</a> did a workshop demonstrating in practice how Ansible can be combined with Jenkins for Continuous Integration.</p>
+<p>Packaging: One way that I contribute to the project is through RPM Packaging, so I tried to participate in most of the relevant talks/workshops. Amita Sharma walked us through the Fedora QA workflow, Jan Zeleny presented the roadmap for RPM and Dnf (the yum replacement), Haïkel Guémar coordinated a review package hackfest and Cole Robinson showed how packagers can utilize Virtualization tools for testing things.</p>
+<p>Communications: New communication and collaboration tools are on the way. This is not directly related to the project, but it's Fedora people who drive the development on these. <a href="https://fedorahosted.org/hyperkitty/">Hyperkitty</a> will be the web interface for the upcoming Mailman3, <a href="https://www.waartaa.com/">Waarta</a> is a web app for IRC/WebRTC and <a href="http://www.glittergallery.net/">Glitter Gallery</a> is a collaboration platform for designers which uses git as backend and SparkleShare as the sync client (I maintain the package for Fedora, so I'm really interested to see how this will go).</p>
+<p>Novena: <a href="https://twitter.com/xobs">Sean Cross</a> gave a keynote speech about the <a href="http://www.kosagi.com/w/index.php?title=Novena_Main_Page">Novena</a> project, the fully Open Source laptop. Still in the beginning, but seems really promising.</p>
+<iframe src="https://www.flickr.com/photos/comzeradd/14842603975/in/set-72157645862758620/player/" width="500" height="383" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe></content>
+      <pubDate>2014-08-13 15:51:54</pubDate>
+    </entry>
+  
+    <entry>
+      <title>mozilla at fosscomm2012</title>
+      <link href="https://www.roussos.cc/2012/05/17/mozilla-fosscomm/"/>
+      <content type="html"><p><a href="http://serres.fosscomm.gr">Fosscomm</a>, the annual conference of the Greek Free Software community, took place last weekend and Mozilla had a big presence with talks and workshops the whole Sunday.</p>
+<p><img src="moz.png" alt="mozilla" class="txt" /> Starting early in the morning, along with <a href="https://reps.mozilla.org/u/pierros/">Pierros</a>, we had the opportunity to talk about "<strong>Firefox on 2012</strong>" and the new features that are developed and will land sometime during this year. We started with a quick summary of the things that came on 2011, as a direct result of rapid release process, and then we got through all the cool new features that are about to come. See the <a href="/presentations/fosscomm2012-firefox%20on%202012.html">Presentation</a> and the <a href="https://hacks.mozilla.org/2012/03/firefox-in-2011-firefox-plans-for-2012/">Firefox Roadmap</a>.</p>
+<p>Right after this I had the opportunity to do a hands-on presentation of all the <strong>Firefox developer tools</strong>, that really help the productivity of a web developer (without any need of 3rd party add-ons). In a nutshell: <a href="https://developer.mozilla.org/en/Using_the_Web_Console">Web Console</a>, <a href="https://developer.mozilla.org/en/Tools/Page_Inspector">Inspector</a>, <a href="https://developer.mozilla.org/en/Tools/Scratchpad">Scratchpad</a>, <a href="https://developer.mozilla.org/en/Tools/Style_Editor">Style Editor</a>.</p>
+<p>Right after it was <a href="https://reps.mozilla.org/u/fredy/">Fredy</a>'s turn to give a hands-on presentation. This time about <strong>Add-Ons</strong> and how you can use the <a href="https://addons.mozilla.org/en-US/developers/builder">SDK Builder</a>. Nice in depth presentation.</p>
+<p>Then we moved to the main conference room where Pierros and Fredy gave a speech about <a href="https://www.mozilla.org/en-US/b2g/">B2G</a>. Seems that a lot of people were aware (or at least fully aware) about this huge project. The presentation ended with a demo of <strong>B2G</strong> running on a smartphone, that really impressed the audience.</p>
+<p>Back to the hands-on presentations with an <strong>Apps &amp; Marketplace</strong> overview by Pierros and Fredy. It was a good opportunity to clarify why web apps are important and <a href="https://hacks.mozilla.org/2012/03/html5-the-difference-between-an-app-and-a-page/">what's the dereference with simple web pages</a>. In the end there was a joint effort to create a web app for Wikipedia, which currently is under review on <a href="https://marketplace.mozilla.org/">Mozilla Marketplace</a>.</p>
+<p><a href="http://www.sealabs.net/seadog/">Giorgos</a> and me did a presentation about "<strong>Identity on the Web</strong>", talking mostly about BrowserID and what changes on the way we identify ourselves on the web sites we need to login or register. We did a quick demo using an <a href="http://theopenphotoproject.org/">OpenPhoto</a> instance and talked a lot about the technical aspects of it. See the <a href="/presentations/fosscomm2012-identity%20on%20the%20web.html">presentation</a> and especially the video on the last slide.</p>
+<p>Last presentation by Giorgos, who did a nice motivating presentation of the <strong>WebDev workflow</strong> he's using on Mozilla, and which steps you have to do in order to contribute.</p>
+<p>Then we moved to the workshop room, where we did a nearly 2h <strong>workshop on B2G</strong> and show in what areas any community member can contribute. I think it was a great overall  presence of Greek Mozillians, we had the chance to talk with many people, and hopefully we'll keep up on the same spirit :)</p></content>
+      <pubDate>2012-05-17 14:20:36</pubDate>
+    </entry>
+  
+    <entry>
+      <title>MozCamp 2011 recap</title>
+      <link href="https://www.roussos.cc/2011/11/16/mozcamp-2011-recap/"/>
+      <content type="html"><p><img src="Mozcamp_2011.png" class="txt" /> This weekend the <a href="https://wiki.mozilla.org/EU_MozCamp_2011/">Mozcamp 2011</a> took place at Berlin. This was actually the first Mozilla event I participated and I really had a great time, meeting a lot of mozillians, exchanging ideas, talking about the future of the web we are to trying to build.</p>
+<p>Some of the highlights of this Mozcamp:</p>
+<p><strong>ReMo project</strong></p>
+<p>Being a Mozilla Rep myself, I should start from this one. If you aren't already aware of what that is, go to the <a href="https://wiki.mozilla.org/ReMo">relevant wiki page</a> and dig around. The Mozcamp was a great chance to get more familiar with the <a href="https://wiki.mozilla.org/ReMo/SIGs">SIGs</a> (Special Interested Groups) inside Mozilla and of course socialize with other Mozilla Reps.</p>
+<p><strong>Mozspaces</strong></p>
+<p>This is fairly new (I think). It's an effort of <a href="https://etherpad.mozilla.org/mozspaces-usage">building spaces</a> all around the globe for Mozillians to meet and work together.</p>
+<p><strong>Mozilla IT</strong></p>
+<p>Wouldn't be nice if the Mozilla IT infrastructure was so open that community members could participate? Check out how you can do it on this <a href="http://people.mozilla.org/~mrz/blog/4.html">blog post</a>.</p>
+<p><strong>Open Web Apps</strong></p>
+<p>I've <a href="/2011/08/05/open-web-apps-its-not-just-the-future-its-also-cool/">written before</a> about that. In Mozcamp I had the chance to see the current state of <a href="https://apps.mozillalabs.com/">open web apps</a> and watch a live demo of the <a href="https://apps.mozillalabs.com/appdir/">apps place</a>.</p>
+<p><strong>Boot to Gecko</strong> One of the hottest Mozilla <a href="https://wiki.mozilla.org/B2G">projects</a> right now. Many WebAPIs have already been implemented and we actually had the chance to see a live demo of phone/sms web apps. So.. <a href="http://arewemobileyet.com/">are we mobile yet?</a></p>
+<p><strong>PDF.js</strong></p>
+<p>Getting HTML5 technologies to their limits. I attended the presentation, and really got impressed by the work been <a href="https://github.com/mozilla/pdf.js">made so far</a>. It's good to know that Adobe Reader it's one of the <a href="https://www.csis.dk/en/csis/news/3321/">most vulnerable programmes</a> on the web.</p>
+<p><strong>Developer engagement &amp; Browser ID</strong></p>
+<p>Great talks by <a href="http://christianheilmann.com/">Christian Heilmann</a>, on how to become an ass kick public speaker (!) and on the current state of <a href="https://browserid.org/">browserid</a>. I learned about a cool tracking page of <a href="https://developer.mozilla.org/en-US/events">Mozilla public speeches</a>, about the browserid <a href="https://wiki.mozilla.org/Engagement/Developer_Engagement/BrowserIDPlan">future plans</a> and discovered a <a href="https://wiki.mozilla.org/Identity/BrowserID/FieldGuide">detailed browserid guide</a>.</p>
+<p><strong>Amo builder</strong></p>
+<p>Finally a great discussion about the new Add-ons Builder (aka <a href="https://wiki.mozilla.org/Jetpack">Jetpack</a>). It seems that the most difficult job there is to convience the old-school add-on developers about the neccessity of migrating to Jetpack. Some benefits: Easier coding (you don't need to know much about XUL), Restartless add-ons, Firefox version independent. <a href="https://addons.mozilla.org/en-US/developers/">Get a ride</a>.</p>
+<p><a href="http://www.flickr.com/photos/comzeradd/6347861402/"><img alt="q&amp;a" src="https://farm7.static.flickr.com/6106/6347861402_3082969cf8.jpg" /></a> more photos: <a href="https://secure.flickr.com/photos/comzeradd/sets/72157628134486968/">mozcamp album</a></p></content>
+      <pubDate>2011-11-16 11:07:03</pubDate>
+    </entry>
+  
+    <entry>
+      <title>Wikimania 2011 Recap</title>
+      <link href="https://www.roussos.cc/2011/08/18/wikimania-2011-recap/"/>
+      <content type="html"><p>Last week I participated on <a href="http://wikimania2011.wikimedia.org/wiki/Main_Page">Wikimania (2-7 August)</a>, the annual event of <a href="http://wikimediafoundation.org/wiki/Home">Wikimedia Foundation</a>. This year the event was held in Haifa of Israel. I joined the event from the beginning starting from the Developers Days, two days before the main event.</p>
+<p><a href="http://www.flickr.com/photos/comzeradd/6001445036/"><img alt="dev room" src="http://farm7.static.flickr.com/6010/6001445036_40b70b2021_m.jpg" /></a></p>
+<p>So this post is about documenting the personal highlights from this event. Starting from the <a href="https://secure.flickr.com/photos/comzeradd/6001445526/in/set-72157627213794851">hackathon</a> that took place on Tuesday and Wednesday. I can totally claim that now I'm feeling more confident of playing with <a href="http://www.mediawiki.org/">Mediawiki</a>'s source code and extensions.</p>
+<p>At the end of these two days there was this awesome <a href="https://secure.flickr.com/photos/comzeradd/6008123000/in/set-72157627213794851">roof party</a> somewhere at Haifa downtown :)</p>
+<p>So some things that got my attention during the whole event, although I'm surely missing something now that I'm writing this post, are:</p>
+<ul>
+<li>
+<p>The <a href="https://secure.wikimedia.org/wikipedia/outreach/wiki/Wikipedia_Ambassador_Program">Wikimedia Ambassadors</a> project. It started as a Campus Ambassadors project, and now they're trying to generalize it. Although it still seems tight to education. <a href="http://www.flickr.com/photos/comzeradd/6008123000/"><img alt="dance" src="http://farm7.static.flickr.com/6128/6008123000_6bdab701b0_m.jpg" /></a> But it's a good thing that they call it Wikimedia and not Wikipedia, because this movement is a lot more than just a digital Encyclopedia. (Actually the Wikimania itself and the people participating is a living proof of that fact.)</p>
+</li>
+<li>
+<p><a href="https://secure.wikimedia.org/wikipedia/en/wiki/Wikipedia:WikiLove">Wikilove</a>. It's cool way of showing your appreciation to a Wikipedia editor. Currently implemented on very few Wikipedias (I think only English and German).</p>
+</li>
+<li>
+<p>Google Translate toolkit. It seems that many people, although they're using Google Translate they're not aware of this feature. Go to the <a href="http://translate.google.com/toolkit/list?hl=en#translations/active">Google Translator Toolkit</a> and hit upload and then Wikpedia article from the tabs. It's not that user friendly, but it's a nice way of translating articles from one Wikipedia to another.</p>
+</li>
+<li>
+<p><a href="https://secure.flickr.com/photos/comzeradd/6028235083/in/set-72157627213794851">Sparklez</a>. Well.. Just hold your breath :) <a href="http://www.flickr.com/photos/comzeradd/6028243977/"><img alt="attitude" src="http://farm7.static.flickr.com/6181/6028243977_88d42b29c4_m.jpg" /></a></p>
+</li>
+<li>
+<p><a href="https://secure.flickr.com/photos/comzeradd/6056383767/in/photostream">Contributors Cheatsheet</a>. That was a nice one. We got it shared during <a href="https://secure.flickr.com/photos/comzeradd/6028782176/in/set-72157627213794851">Sue's speech</a>. It's a really nice aggregation of 10 ways you can contribute to Wikipedia or Mediawiki. I think some Open-Source projects should mimic this cheatsheet.</p>
+</li>
+<li>
+<p>Editors issue. Well this is not a secret. Wikipedia is having problem of increasing its editors. <a href="https://secure.flickr.com/photos/comzeradd/6028243631/in/set-72157627213794851">Jimmy Wells on the closing speech</a> tried to addressed some reasons why this happens. He even implied that he's getting feedback about Wikipedia being "clubby", and too hard for newbies to join the community. See the chart on the photo aside to see why. But Jimmy focused his speech mostly on usability issues. And of course he's right. We don't want just geeks to write on a free digital encyclopedia. He made some (seemed random) suggestions for improvement, but the truth is that Mediawiki needs some serious changes in order to attract more people.</p>
+</li>
+<li>
+<p>Mozilla. It was my first big event as a Mozilla Representative, and I had the chance meeting with <a href="https://secure.flickr.com/photos/comzeradd/6028245563/in/set-72157627213794851">other Mozillians</a> (and <a href="http://www.youtube.com/watch?v=x7b4JiKST-k">have fun</a>). <a href="http://www.flickr.com/photos/comzeradd/6028782380/"><img alt="id" src="http://farm7.static.flickr.com/6135/6028782380_c09ac10805_m.jpg" /></a>But the most interesting part about this this was the feedback we get from Wikimania people about Firefox and how we can help <a href="https://secure.flickr.com/photos/comzeradd/6028238157/in/set-72157627213794851">making better their life or web</a> in general. Besides the fight for an open web and free knowledge share common ground. </p>
+</li>
+</ul>
+<p>So Wikimania was an awesome event. The organizers did a great job. I met a lot of interesting people, especially from the Wikimedia Foundation. (I even had a passionate conversation with a Facebook guy about the value of a <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Diaspora_%28software%29">decentralized Social Networking service</a> :P). And got the chance to take <a href="https://secure.flickr.com/photos/comzeradd/sets/72157627213794851/">a lot of photos</a> :)</p></content>
+      <pubDate>2011-08-18 22:01:58</pubDate>
+    </entry>
+  
+    <entry>
+      <title>fosscomm 2011</title>
+      <link href="https://www.roussos.cc/2011/05/09/fosscomm-2011/"/>
+      <content type="html"><p><a href="http://www.flickr.com/photos/comzeradd/5703130830/"><img alt="fosscomm" src="http://farm6.static.flickr.com/5021/5703130830_783ae0a6af.jpg" /></a>
+[more photos: <a href="http://www.flickr.com/photos/comzeradd/sets/72157626556260779/with/5703130830/">fosscomm2011 album</a>]</p>
+<p>A great <a href="http://patras.fosscomm.gr/">fosscomm</a> (the annual greek foss community conference) took place the weekend at Patra. The organizing committee did a fantastic job, but besides that it seems that the Greek FOSS community has raised the bar of quality holding some very interesting technical presentations.</p>
+<p><strong>I think that fosscomm has transformed from a communities presentation conference to a community gathering/socializing/ideas-exchanging conference. And that's a good thing.</strong></p>
+<p>I had the chance to hold or participate on five presentations/workshops. Three of them were part of the <a href="https://fedoraproject.org/wiki/FAD_Fosscomm_2011">Fedora Activity Day</a>.</p>
+<ul>
+<li><a href="/presentations/roussos-how_to_make_money_from_opensource.pdf">How to make money from Open-Source</a> (along with <a href="https://ebalaskas.gr/blog/?page=about">Evaggelos Balaskas</a>) </li>
+<li>Hackerspace.gr (along with other <a href="http://hackerspace.gr/">hackerspace.gr</a> members)</li>
+<li>Surviving with Gnome 3 (along with <a href="http://pierros.papadeas.gr/">Pierros Papadeas</a>)</li>
+<li><a href="/presentations/roussos-fedora_remixes.pdf">Greek Edu: Building your own Fedora Remix</a> (along with <a href="http://bacharakis.com/">Christos Bacharakis</a>)</li>
+<li><a href="/presentations/roussos-fedora_rpm_workshop.pdf">RPM Packaging workshop</a></li>
+</ul>
+<p>And for those of you who attended fosscomm and wondering what was this strange qr code all over the conference places... just scan it ;)</p>
+<p><img alt="hsgr_qr" src="hsgr_qr.png" /></p></content>
+      <pubDate>2011-05-09 13:40:55</pubDate>
+    </entry>
+  
+    <entry>
+      <title>greek coding camp 2009</title>
+      <link href="https://www.roussos.cc/2009/07/08/greek-coding-camp-2009/"/>
+      <content type="html"><p><a href="http://www.flickr.com/photos/comzeradd/3698416485/"><img alt="hackers in action" src="http://farm4.static.flickr.com/3185/3698416485_9978045ea6.jpg" /></a></p>
+<p>diary post for the <a href="http://greek-coding-camp.wikidot.com/">greek coding camp 2009</a> that took place at <a href="http://www.mapwire.net/s/35.23082734284668/23.68180274963379/09/">paleochora</a> (chania, crete, greece) for 5 days (4-7 july 2009).</p>
+<p>day 1 (4/7)</p>
+<p>we reached the island at 5.30 in the morning. we made a stop to enjoy the local hospitality with a rich breakfast and an hour of sleep. we travelled by car (about 1.30h) to the camping (paleochora) and we set up our tents.</p>
+<p>first thing to do is share the <a href="http://greek-coding-camp.wikidot.com/subject">projects</a>:
+- OpenOffice Templates translation
+- OpenOffice greek numbered lists
+- OpenOffice greek build testing
+- <a href="http://transifex.org/">Transifex</a> work-flow support
+- Letterscript for greek final "s" bug</p>
+<p>lunch break with greek <a href="http://en.wikipedia.org/wiki/Mousaka">mousaka</a> and <a href="http://en.wikipedia.org/wiki/Tsikoudia">tsikoudia</a> :D</p>
+<p>personally i was more interested on openoffice projects and especially the <a href="http://greek-coding-camp.wikidot.com/openoffice-3-1-1-testing-build">greek build testing</a>.</p>
+<p>day ended with a quick visit at the cold sea and a few glass of wine. </p>
+<p>day 2 (5/7)</p>
+<p>day started with some network problems. it seems that some lady rested her bag over the router, so it got warm beyond accepted limits :P</p>
+<p>two more new guys arrives, so during lunch break we had some great conversations.</p>
+<p>after some installation problems we managed to install the latest release candidate on <a href="http://bacharakis.com/">cmpachar</a>'s fedora laptop and on ubuntu virtualbox installation on my netbook. thanx to ntua we had access to a (12g ram, 16 core cpu) fast machine, so we also compiled openoffice straight from the subversion.</p>
+<p>day 3 (6/7)</p>
+<p>early waking. some of us did a nice conversation about <a href="http://en.wikipedia.org/wiki/Lost_%28TV_series%29">lost</a> and its <a href="http://www.timelooptheory.com/the_timeline.html">timeline</a> :D</p>
+<p>later we had a sort seminar-like conversation about pgp essentials and gpg usage. just to convince everyone who didn't have a key to sign ours :P </p>
+<p>later at night we visited the near by village and we were enlightened by <a href="http://houtouridis.blogspot.com/">hoo2</a> about rubick cube solution mind algorithms.</p>
+<p>day 4 (7/7)</p>
+<p>day began with openoffice testing again. cmpachar did a great job there.</p>
+<p>a new page added to the event wiki, since we managed to convience <a href="http://greek-coding-camp.wikidot.com/littlemary">a young user</a> for the benefits of free software (<a href="http://games.kde.org/game.php?game=ktuberling">potato guy</a> really helped on this one).</p>
+<p><a href="http://www.flickr.com/photos/comzeradd/3699249082/"><img alt="playing potato guy" src="http://farm3.static.flickr.com/2437/3699249082_9d2cb21b37.jpg" /></a></p>
+<p>highlights: openoffice greek build testing completed for the greek build by <a href="http://bacharakis.com/">cmpachar</a> and me, <a href="http://dimitris.glezos.com/">glezos</a> and <a href="http://twitter.com/andy_lupo">alupo</a> completed the transifex task, <a href="http://twitter.com/eliaschr">elias</a> and <a href="http://twitter.com/sonic2000gr">manolis</a> translated openoffice templates to greek, pantelis and <a href="http://houtouridis.blogspot.com/">hoo2</a> almost finished adding usb dsl modems support at the network manager.</p>
+<p>totally 16 hackers joined the greek coding camp. we had great fun, combining swimming at the <a href="http://en.wikipedia.org/wiki/Libyan_Sea">libyan sea</a> and <a href="http://en.wikipedia.org/wiki/Tsikoudia">tsikoudia</a> with coding. i hope this will be a new event series in greece, so we can terrorize every greek camping with our geek conversations and habits :D</p></content>
+      <pubDate>2009-07-08 01:48:53</pubDate>
+    </entry>
+  
+    <entry>
+      <title>2nd fosscomm</title>
+      <link href="https://www.roussos.cc/2009/05/12/2nd-fosscomm/"/>
+      <content type="html"><p><a href="http://www.flickr.com/photos/comzeradd/3522055691/"><img alt="gentoo presentation" src="http://farm4.static.flickr.com/3256/3522055691_a000b9dfbd.jpg" /></a></p>
+<p>Back in athens after a great weekend at larisa, where the <a href="http://fosscomm.gr/">2nd fosscomm</a> (greek foss communities conference) took place. Most presentations had a great interest and workshops where the new addition of this year event. I had the chance to participate in two presentations. On saturday along with <a href="http://twitter.com/kranidiotis">kranidiotis</a> we talked about the role that hellug can play inside the greek foss community and on sunday along with tampakrap we made a brief presentation of <a href="http://www.gentoo.org/">gentoo linux project</a> and <a href="http://gentoo-el.org/">gentoo greek community</a>. Additionally, the greek gentoo community organized a workshop about gentoo installation process, with wired leading this one and the rest of us helping the participants (who were unexpected a lot).</p>
+<p>I think the best thing in these kind of events is the fact that we have the chance to meet again all the greek free software hackers and talk (or flame :P) you can see my photo set from fosscomm on my flickr <a href="http://www.flickr.com/photos/comzeradd/sets/72157617998326634/">here</a>.</p></content>
+      <pubDate>2009-05-12 23:21:35</pubDate>
+    </entry>
+  
+</feed>

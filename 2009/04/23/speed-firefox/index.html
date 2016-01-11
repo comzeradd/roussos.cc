@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>nikos.roussos </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/lib/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/static/css/app.css">
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="nikos.roussos">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+
+  </head>
+
+  <body>
+    <div id="wrapper">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p class="avatar">
+              <a href="/">
+                <img src="/static/img/me.jpg" alt="Nikos Roussos" class="avatar img-circle" />
+              </a>
+            </p>
+            <h3 >
+              <a href="/index.html">About</a> &bull;
+              <a href="/blog.html">Blog</a> &bull;
+              <a href="/contact.html">Contact</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 post-title">
+        <h3>
+          <a href="/2009/04/23/speed-firefox/">speed up firefox</a>
+        </h3>
+        <small>
+          
+            <a href="/tag/opensource/">#opensource</a>
+          
+            <a href="/tag/mozilla/">#mozilla</a>
+          
+            <a href="/tag/hack/">#hack</a>
+          
+        </small>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 post">
+        <p>firefox 3 features <a href="http://support.mozilla.com/en-US/kb/Smart+Location+Bar">an awesome address</a> bar that helps you search through your history (and bookmarks) by just typing a word or phrase that's part of either the url or the title. the problem is that if you keep the browsing history for a long time (lime me) the address bar search process becomes very slow. a cool solution is to place the ~/.mozilla folder on ram (which is a lot faster than disk). i already have /tmp on ram, so i made a symbolic link ~/.mozilla pointing to /tmp/mozilla. and then i use the script below in order to save/restore the contents of mozilla folder: </p>
+<pre><code>#!/bin/bash
+
+if [ $# -lt 1 ]; then
+    echo "usage: ff_sync.sh save/restore"
+    exit 0
+fi
+
+action=$1
+
+if [ "$action" = "save" ]; then
+    size=`du -xs /home/user/.mozilla/ | awk '{print $1}'`
+    digits=`expr length $size`
+    if [ $digits -gt 4 ]; then
+        rsync -avi --delete /home/user/.mozilla/ /home/user/.mozilla_save/
+    else
+        echo 'no!'
+        exit 0
+    fi
+fi
+
+if [ "$action" = "restore" ]; then
+    mkdir -p /tmp/mozilla\
+    rsync -avi --delete /home/user/.mozilla_save/ /home/user/.mozilla/
+fi
+</code></pre>
+<p>all i have to do is run this script with the appropriate option when booting/halting the pc. on gentoo you have /etc/conf.d/local.start and /etc/conf.d/local.stop for this kind of things. and i have to say that i'm really impressed. firefox speed  improved amazingly. and i mean firefox overall speed, not just the address bar ;)</p>
+
+        <div class="post-share">
+          Share:
+          <a href="https://sharetodiaspora.github.io/?title=speed up firefox&amp;url=https://www.roussos.cc/2009/04/23/speed-firefox/" target="_blank">
+            <img src="https://sharetodiaspora.github.io/favicon.png" alt="diaspora*"> diaspora*
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    </div>
+
+    <div id="footer" >
+      <div class="container">
+        powered by <a href="https://github.com/comzeradd/monopati" target="_blank">monopati</a> &bull;
+       <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike</a>
+      </div>
+    </div>
+
+    <script src="/static/js/lib/jquery-1.11.2.min.js"></script>
+    <script src="/static/js/lib/bootstrap.min.js"></script>
+    
+    
+  </body>
+</html>
