@@ -1,1 +1,321 @@
-../../../../tag/opensource/feed.xml
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>Nikos Roussos</author>
+  <title>nikos.roussos - opensource</title>
+  <link href="https://www.roussos.cc/feed.xml" rel="self" />
+  <link href="https://www.roussos.cc/" />
+  <updated>2016-01-12T14:38:03Z</updated>
+  
+    <entry>
+      <title>monopati, a minimalistic static content generator</title>
+      <link href="https://www.roussos.cc/2016/01/11/monopati/"/>
+      <content type="html">
+        <![CDATA[
+          <p>I have tried many static content generators in the past. My site/blog is rendered to static since a couple of years ago. So this post is about writing yet another static content generator.</p>
+<p>I have two major requirements. Simplicity and no extra features. All I want is a simple blog and some static pages. So <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> and <a href="http://jinja.pocoo.org/">Jinja</a> should be enough. No fancy features needed. I also wanted this to be so simple that even non-tech people would use it with minimum effort. One of the things that bothers me with most generators is that they render the whole website in another folder, so it's hard to have one repository with both your posts markdown code and the rendered output so you can easily host it (eg. on <a href="https://pages.github.com/">Github pages</a>).</p>
+<p>So I scratched my itch and <a href="https://github.com/comzeradd/monopati">monopati</a>, a minimalistic static content generator, was born. As of today <a href="https://www.roussos.cc">my website</a> is rendered using my own static content generator (with all content on <a href="https://github.com/comzeradd/comzeradd.github.io">version control</a>). I promise to write a post with concrete easy steps on how to deploy your own website/blog using monopati and without paying for any hosting service.</p>
+<p>Feedback and code patches are always welcomed.</p>
+<hr>
+
+<p><em>Comments and reactions on <a href="https://librenet.gr/posts/551310">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/686564094762201089">Twitter</a></em></p>
+        ]]>
+      </content>
+      <published>2016-01-11 17:01:12</published>
+    </entry>
+  
+    <entry>
+      <title>Multi-End Message and Object Encryption. What?</title>
+      <link href="https://www.roussos.cc/2016/01/05/jabber-omemo/"/>
+      <content type="html">
+        <![CDATA[
+          <p>So, many people promoting Signal over Jabber/OTR for its usability and security features (besides all <a href="https://librenet.gr/posts/497875">caveats</a>). Most of these features are offered due the <a href="https://github.com/trevp/axolotl/wiki">Axolotl Ratchet</a> protocol.</p>
+<p>What if this protocol was implemented as an extension to Jabber? This would combine all best things from both worlds. Offline (encrypted) messages, multiple devices, better mobile integration but on the same time decentralized federated service. Well it’s done. Meet <a href="http://conversations.im/omemo/">OMEMO</a>.</p>
+<p><a href="http://conversations.im/">Conversations</a> on Android already supports it, <a href="https://chatsecure.org/blog/chatsecure-conversations-zom/">ChatSecure</a> is implementing it too and tickets are already opened on <a href="https://developer.pidgin.im/ticket/16801">Pidgin</a> and <a href="https://www.mail-archive.com/tor-bugs@lists.torproject.org/msg84721.html">Tor Messenger</a>. <a href="https://gajim.org/">Gajim</a> is currently the only desktop app that supports it (through <a href="https://github.com/kalkin/gajim-omemo/">a plugin</a>), but if you want to have OTR too then Gajim is not an option since <a href="https://github.com/python-otr/gajim-otr">its OTR plugin is unmaintained</a>.</p>
+<p>I’ve been testing Conversations/OMEMO over the last week and it works great. So maybe in a few months we’ll have something truly secure, decentralized and usable to suggest to our friends ;) Or just suggest Conversations to the most brave of your friends.</p>
+<p><img alt="omemo" src="omemo.png" /></p>
+<hr />
+
+<p><em>Comments and reactions on <a href="https://librenet.gr/posts/541037">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/684297833453907968">Twitter</a></em></p>
+        ]]>
+      </content>
+      <published>2016-01-05 12:41:37</published>
+    </entry>
+  
+    <entry>
+      <title>If you care about privacy, Signal is certainly not an option</title>
+      <link href="https://www.roussos.cc/2015/12/05/signal-privacy/"/>
+      <content type="html">
+        <![CDATA[
+          <p>Whisper Systems failed big once again. They just <a href="https://whispersystems.org/blog/signal-desktop/">announced</a> their "Desktop" version of Signal, which is actually a Chrome app.</p>
+<p>So just to get facts straight, this is neither a Desktop nor a Web app. And just like their Android app, you need a Google account to download it.</p>
+<p>Actually this is even worse, because you also need to use Chrome to use this app. <strong>Channeling all your (meta)data through a closed source browser, built &amp; distributed by the biggest tracking ad company.</strong></p>
+<p>If you care about privacy, Signal is certainly not an option.</p>
+<hr />
+
+<p><em>Comments and reactions on <a href="https://librenet.gr/posts/497875">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/673940185692905476">Twitter</a></em></p>
+        ]]>
+      </content>
+      <published>2015-12-05 15:45:08</published>
+    </entry>
+  
+    <entry>
+      <title>post-vacations map editing</title>
+      <link href="https://www.roussos.cc/2015/08/07/post-vacations-map-editing/"/>
+      <content type="html">
+        <![CDATA[
+          <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/comzeradd/20180006889/in/datetaken-public/" title="the view"><img src="https://farm1.staticflickr.com/274/20180006889_6fe3ecbe77_b.jpg" width="1024" height="438" alt="the view"></a></p>
+<p>Greek islands are a great place for summer vacations. This year I visited <a href="https://en.wikipedia.org/wiki/Amorgos">Amorgos</a>, part of the Cyclades island group, and had a short visit at <a href="https://en.wikipedia.org/wiki/Koufonisia">Pano Koufonisi</a>.</p>
+<p>Being in a new place means you need some kind of map to guide you through the endless number of beaches, paths and villages. I've been using <a href="https://www.openstreetmap.org/">OpenStreetMap</a> as a map source for a long time and occasionally I contribute back. OpenStreetMap is a collaborative project to create a free editable map of the world. Many people call it the Wikipedia of maps, and it is in some extent. In contrary with all the major industry map services, which utilize free labor from volunteer contributors and give nothing back, OpenStreetMap data are freely distributed to be used by anyone for any purpose.</p>
+<p>You can find many places where OpenStreetMap has more rich data than other sources or read <a href="http://www.wired.com/2015/05/the-open-source-maps-that-made-rescues-in-nepal-possible/">stories</a> on how targeted mapping on specific incidents saved thousand of lives. But there are also many places where it lacks reliable data. Amorgos (and unfortunately many other Greek islands) is one of these cases.</p>
+<p>During my vacations there I used the only equipment available (my phone) to keep notes that would help me later to enrich OpenStreetMap. I extensivly use <a href="http://osmand.net/">Osmand</a> as my main navigation tool so this was my first option of keeping notes. You can either add favorites to mark any <a href="https://en.wikipedia.org/wiki/Point_of_interest">POIs</a> or use the notes plugin to take photos or record audio notes. Osmand has also an editing plugin that can help you edit data on the fly, but I prefer to do this later. If you are searching for a more simple app <a href="http://wiki.openstreetmap.org/wiki/OSMtracker_%28Android%29">OSMtracker</a> is a better choice, for tracking routes and keeping notes. If you don't have a smartphone during your vacations you can just use paper and pen. <a href="http://fieldpapers.org/">Field Papers</a> will help you print the map area you are interested in and you can keep notes with a pen.</p>
+<p>Getting back home I had many notes and plenty of work to do. OpenStretMap has a great <a href="http://wiki.openstreetmap.org/wiki/ID">in-browser editor</a> and the <a href="http://wiki.openstreetmap.org/wiki/Map_Features">Map Features</a> (really long) wiki page can guide you through the supported map elements. I added/changed around 90 map elements (beaches, paths, roads, buildings, etc) and it took me about an hour. Less than a day later the changes were rendered to the live website and I could feel proud about my contributions :)</p>
+<p>So did you enjoyed your vacations? Now start contributing to OpenStreetMap so more people can enjoy the travel to all the places you visited. Happy mapping :)</p>
+<p><img alt="OSM editing" src="osm-editing.jpg" /></p>
+        ]]>
+      </content>
+      <published>2015-08-07 13:48:52</published>
+    </entry>
+  
+    <entry>
+      <title>Fedora Flock 2014</title>
+      <link href="https://www.roussos.cc/2014/08/13/fedora-flock-2014/"/>
+      <content type="html">
+        <![CDATA[
+          <p><a href="http://www.flocktofedora.com/">Fedora Flock</a> took place last week and this is a log entry for my personal highlights.</p>
+<p><a href="https://www.flickr.com/photos/comzeradd/14671187430" title="Flock 2014 by Nikos Roussos, on Flickr"><img src="https://farm6.staticflickr.com/5575/14671187430_7c5c5ef531_m.jpg" class="txt" width="180" height="240" alt="Flock 2014"></a> Overall the Flock was awesome. The quality of all technical presentations/workshops was really high. It's amazing how many things currently going on at the Fedora community, not just related to our Operation System (the distribution) but also innovative things that we develop or lead that in the long run benefit the whole Free Software community. As always I had the chance to meet, talk and collaborate in person with many Fedorians and that's always motivating for my contribution to the project.</p>
+<p>So here it goes...</p>
+<p><a href="https://fedoraproject.org/wiki/Fedora.next">Fedora.next</a>: This is currently the most important thing happening regarding the distribution. We are about to release Fedora 21 in three different products (Workstation, Cloud, Server) that will make possible to offer a better user experience in each one of these user groups. Some features that pop into my mind: Server product will implement "Server roles" right on the Anaconda installer, so you can quickly deploy (for instance) a mail server. <a href="http://cockpit-project.org/">Cockpit</a> also will land on 21, an awesome server management tool. Cloud product will focus even more on containers (yes that means docker), open source infrastructure (eg. <a href="http://www.openstack.org/">OpenStack</a>) and cloud services (eg. AWS). Workstation product intended for Desktop users and will focus on developers and makers. <a href="http://devassistant.org/">DevAsistant</a> will play a key role to this. It always surprise me to see developers struggle to setup their work environment on Operating Systems that takes hours to do it, for things that it's a few minutes work on Fedora.</p>
+<blockquote class="twitter-tweet" lang="en"><p>People running <a href="https://twitter.com/hashtag/Docker?src=hash">#Docker</a> inside <a href="https://twitter.com/hashtag/Vagrant?src=hash">#Vagrant</a> over OsX. A new level of masochism.</p>&mdash; Nikos Roussos (@comzeradd) <a href="https://twitter.com/comzeradd/statuses/468398793894133760">May 19, 2014</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Docker, docker, docker: <a href="https://twitter.com/adityapatawari">Aditya</a> did a great introductory workshop during Flock. Fedora is definitely the leading platform for Docker. Next release will improve even better Docker's integration.</p>
+<p>Ansible: Another DepOps area where Fedora community has given a lot of time and effort. Again Aditya did an introductory talk, since recently the Infrastructure team migrated <a href="http://infrastructure.fedoraproject.org/cgit/ansible.git">everything</a> from Puppet to Ansbile. The last day <a href="https://twitter.com/kumar_pravin">Praveen</a> did a workshop demonstrating in practice how Ansible can be combined with Jenkins for Continuous Integration.</p>
+<p>Packaging: One way that I contribute to the project is through RPM Packaging, so I tried to participate in most of the relevant talks/workshops. Amita Sharma walked us through the Fedora QA workflow, Jan Zeleny presented the roadmap for RPM and Dnf (the yum replacement), Haïkel Guémar coordinated a review package hackfest and Cole Robinson showed how packagers can utilize Virtualization tools for testing things.</p>
+<p>Communications: New communication and collaboration tools are on the way. This is not directly related to the project, but it's Fedora people who drive the development on these. <a href="https://fedorahosted.org/hyperkitty/">Hyperkitty</a> will be the web interface for the upcoming Mailman3, <a href="https://www.waartaa.com/">Waarta</a> is a web app for IRC/WebRTC and <a href="http://www.glittergallery.net/">Glitter Gallery</a> is a collaboration platform for designers which uses git as backend and SparkleShare as the sync client (I maintain the package for Fedora, so I'm really interested to see how this will go).</p>
+<p>Novena: <a href="https://twitter.com/xobs">Sean Cross</a> gave a keynote speech about the <a href="http://www.kosagi.com/w/index.php?title=Novena_Main_Page">Novena</a> project, the fully Open Source laptop. Still in the beginning, but seems really promising.</p>
+<p class="text-center">
+<iframe src="https://www.flickr.com/photos/comzeradd/14842603975/in/set-72157645862758620/player/" width="500" height="383" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+</p>
+        ]]>
+      </content>
+      <published>2014-08-13 15:51:54</published>
+    </entry>
+  
+    <entry>
+      <title>Setup a home server with Fedora and BeagleBone Black</title>
+      <link href="https://www.roussos.cc/2014/06/23/fedora-beaglebone-black/"/>
+      <content type="html">
+        <![CDATA[
+          <p>Over the last <a href="http://www.roussos.cc/2014/04/30/athens-free-software-monthly-meetups/">Free Software Meetup</a> we discussed about the "build your own home server" movement. This is a long and complex discussion, so most likely it will expand to future meetups. In the meantime I wanted to test BeagleBone Black (BB), as the hardware platform for such a project.</p>
+<p><img src="beagle-fedora.png" alt="fedora on beaglebone black" class="txt" /> I prefer BB over Raspeberry Pi (RaPi) because, despite what many people seem to believe, RaPi <a href="http://en.wikipedia.org/wiki/Raspberry_Pi#Driver_API">is not</a> fully Open Hardware. I also prefer armv7 hardware, since it gives me the option to use a "regular" linux distribution. I have the option for Fedora or Debian instead of Pidora or Raspbian. </p>
+<p>During the meetup we talked a lot about <a href="https://arkos.io/">Arkos</a>, which supports many arm boards and seems like a great choice for administering your home server through a well designed web interface, lowering the technical knowledge threshold for setting up services like file or mail server. I'll get back to Arkos, but at this point I wanted to experiment with a "regular" distribution. So this post is about Fedora and Beaglebone Black.</p>
+<p>Download the <a href="http://fedoraproject.org/en/get-fedora#arm">Fedora ARM image</a> extract it and rename it to <code>fedora-arm.raw</code> so it's easier to follow the steps bellow.</p>
+<p>Flashing Fedora to BB is not that difficult. The tricky part is that Fedora comes with an "initial setup" screen, which requires an hdmi monitor and a keyboard at least on first run so you can set some basic things (like root password). I wanted to do some modifications to the Fedora image, and get through this "initial setup" screen prior to flashing it on the BB. Inspired by <a href="http://ebalaskas.gr/blog/2013/03/25/raspberry-pi-with-archlinux-under-qemu/">Ebal's post</a>, I thought Qemu as a perfect tool for this job.</p>
+<pre><code>sudo yum install qemu-system-arm
+</code></pre>
+<p>With qemu-system-arm tool I can emulate arm and run the image on my laptop. In order to boot the image qemu needs a kernel and what better place of finding a kernel than the image itself. You can either mount the image and copy kernel and initrd out or use libguestfs (kernel and Initrd version will obviously vary on future releases).</p>
+<pre><code>sudo yum install -y libguestfs-tools
+virt-copy-out -a fedora-arm.raw /boot/vmlinuz-3.11.10-301.fc20.armv7hl .
+virt-copy-out -a fedora-arm.raw /boot/initramfs-3.11.10-301.fc20.armv7hl.img .
+</code></pre>
+<p>Finally run it. (you may have to add your user to kvm group)</p>
+<pre><code>sudo usermod -aG kvm username
+newgrp kvm
+qemu-system-arm -machine vexpress-a9 -m 1024 -nographic -net nic -net user \
+ -append "console=ttyAMA0,115200n8 rw root=/dev/mmcblk0p3 rootwait physmap.enabled=0" \
+ -kernel vmlinuz-3.11.10-301.fc20.armv7hl \
+ -initrd initramfs-3.11.10-301.fc20.armv7hl.img \
+ -sd fedora-arm.raw
+</code></pre>
+<p>Booting up I reached to the "initial setup" screen I mentioned before. I created a new user with administrator (aka sudo) privileges. First things I did when finally got a prompt was to disable root account:</p>
+<pre><code>sudo passwd -l root
+</code></pre>
+<p>set a hostname</p>
+<pre><code>vi /etc/sysconfig/network
+</code></pre>
+<p>disable Network Manger</p>
+<pre><code>systemctl disable NetworkManager.service
+</code></pre>
+<p>setup static networking</p>
+<pre><code>echo "
+ HWADDR="D8:D3:85:AE:DD:4C"
+ BOOTPROTO="static"
+ DEVICE="eth0"
+ ONBOOT="yes"
+ IPADDR=192.168.1.2
+ NETMASK=255.255.255.0
+ BROADCAST=192.168.1.255
+ NETWORK=192.168.1.0
+ GATEWAY=192.168.1.1
+"&gt;/etc/sysconfig/network-scripts
+</code></pre>
+<p>add DNS settings</p>
+<pre><code>echo "
+ nameserver 208.67.222.222
+ nameserver 208.67.222.222
+"&gt;/etc/resolv.conf
+</code></pre>
+<p>disable selinux (<a href="http://stopdisablingselinux.com/">sorry Dan</a>)</p>
+<pre><code>setenforce 0
+sed -i s/=enforcing/=disabled/ /etc/selinux/config
+</code></pre>
+<p>Enable ssh</p>
+<pre><code>systemctl enable sshd
+firewall-cmd --permanent --zone=public --add-service=ssh
+</code></pre>
+<p>Fedora image is around 2G. I had a 4G SDcard so I expanded it by 2G</p>
+<pre><code>qemu-img resize fedora-arm.raw +2G
+</code></pre>
+<p>Important to remember that this will expand the image but not the root filesystem inside. Flash it to an SDcard</p>
+<pre><code>dd if=fedora-arm.raw of=/dev/sdX
+</code></pre>
+<p>This a destructive command so make sure that sdX refers to your SDcard and not some disk. Now mount the card and resize the root filesystem, that probably would be on sdX3</p>
+<pre><code>e2fsck -f /dev/sdX3
+resize2fs /dev/sdX3
+</code></pre>
+<p>And that's all. I removed the mini sd from the adapter and inserted it on BB. All that's left is ethernet connection and power. Less than a minute later I was able to ssh to my soon-to-be home server from my laptop.</p>
+        ]]>
+      </content>
+      <published>2014-06-23 13:13:52</published>
+    </entry>
+  
+    <entry>
+      <title>Our privacy is interdependent</title>
+      <link href="https://www.roussos.cc/2014/05/14/our-privacy-is-interdependent/"/>
+      <content type="html">
+        <![CDATA[
+          <p>Last week I gave a presentation at <a href="http://commonsfest.info/">CommonsFest</a> in the spirit of my <a href="http://www.roussos.cc/2014/05/08/free-your-android/">Free Your Android</a> post, trying to educate people on simple steps they can make to have better privacy on their mobile devices.</p>
+<p>A couple of days before my presentation I watched <a href="https://www.youtube.com/watch?v=BBgZyV4iltw">this great speech</a> from Jillian York and Jacob Appelbaum (please go and watch this). At some point Jacob mentions that <em>"our security is interdependent"</em>.</p>
+<p>Few days later Benjamin Mako Hill came to confirm this remark, but with <a href="http://mako.cc/copyrighteous/google-has-most-of-my-email-because-it-has-all-of-yours">real evidence</a>. He analyzed his emails to find out that despite self-hosting his own mail server, 57% of his emails endup on Google's servers. I ran <a href="http://projects.mako.cc/source/?p=gmail-maildir-counter">the code</a> on my emails and I got pretty much the same percentage (and a bit higher if I include all three big providers).</p>
+<p>This was how I ended my presentation (not aware of Benjamin's work at the moment):</p>
+<blockquote>
+<p>"I have made a personal choice not to host my email on Google, Microsoft or Yahoo. But if the majority of my contacts use one of these providers then most of my outgoing emails end up to their servers. It's important to understand that <strong>our privacy depends on the privacy of our social network</strong>."</p>
+</blockquote>
+        ]]>
+      </content>
+      <published>2014-05-14 12:51:29</published>
+    </entry>
+  
+    <entry>
+      <title>Free Your Android</title>
+      <link href="https://www.roussos.cc/2014/05/08/free-your-android/"/>
+      <content type="html">
+        <![CDATA[
+          <p>After all the recent NSA revelations, it's been even more important to use Free Software on our mobile phones. Let me express this in another way: <strong>We should be very careful about what software we use on a device that is always on and in our pocket 24h a day.</strong></p>
+<p>Starting from the very basic thing that makes our smartphone operate, it seems that we don't have many options. So if you are using Iphone or Windows Phone, let me remind you that both of these companies are in the <a href="https://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29#The_slides">infamous NSA slides</a> for giving access to users private data.</p>
+<p>So this post is about Android and my current setup of running only Free Software on my smartphone. I know what you are thinking.. that Google is also part of NSA's "special friends". Android is self-defined as an "Open Source Platform" (AOSP), and pretty much it is since it's released under a mix of Apache and GPL license (although mostly developed behind closed doors). But this isn't what you get when you buy a smartphone. Your device will certainly have preinstalled all of the Google's proprietary stuff (gmail, play, etc) and probably manufacturer and/or vendor applications. Things that you have no idea what they do, besides their "normal" functionality, because we don't have the code to look at.</p>
+<h3>Operating System</h3>
+<p><img src="cyanogenmod.png" alt="" class="txt" /> If you happen to be on <a href="http://redmine.replicant.us/projects/replicant/wiki/ReplicantStatus">Replicant's short list</a> of supported devices then this is the way to go. But since this applies to very few people <a href="http://www.cyanogenmod.org/">CyanogenMod</a> is the next best thing.</p>
+<p>That's the part that is most difficult, since you have to flash your phone with the right CyanogenMod's ROM. The <a href="http://wiki.cyanogenmod.org/w/Devices">instructions on the wiki</a> are very detailed, but I know that this should look like a difficult process to non-geeks. At FSFE we run a campaign on how to <a href="https://fsfe.org/campaigns/android/liberate.en.html">free you Android</a>, so if you ever happen to find out about a "Free your Android" workshop near you location go and people will love to help you.</p>
+<p>Still, if flashing your phone seems too complex skip to the next section, but at least stop using the pre-installed proprietary apps and remove any Google account you may have entered during initial phone setup (a factory reset may help).</p>
+<p>CyanogenMod is not perfect. It contains <a href="https://github.com/CyanogenMod/android_device_semc_iyokan/blob/gingerbread/extract-files.sh">scripts that extract</a> proprietary code necessary for some phone components (eg. camera) to work. The good thing is that these parts are firmware, thus non-executable code. You may also need to tweak it a bit:</p>
+<ul>
+<li>Remove Google analytics from CyanogenMod by flashing <a href="https://github.com/mar-v-in/freecyngn">freecygn</a>.</li>
+<li>Stop CyanogenMod from reporting tethering usage to your provider, by <a href="https://pmf.silvrback.com/fixing-tethering-on-android-kitkat">changing the "tether dun required" setting</a>.</li>
+<li><a href="http://blog.varunkumar.me/2010/09/how-to-change-dns-server-on-android.html">Change DNS settings</a> so that CyanogenMod stops using Google's DNS servers, that has a permanent log policy.</li>
+<li>Choose to fully encrypt your device with a pin (Settings -&gt; Security -&gt; Encrypt phone).</li>
+</ul>
+<h3>Apps</h3>
+<p><img src="fdroid.png" alt="" class="txt" width="130" /> Since we got rid Google apps, one way or another, we need a way to install software to our phone. Free Software. <a href="https://f-droid.org/">F-droid</a> comes to the rescue, an app for accessing software repositories for android and that comes preconfigured with its own repository containing only Free Software apps. Install it and then head over to <a href="https://guardianproject.info/2012/03/15/our-new-f-droid-app-repository/">Guardian project</a> to add its repository to F-droid. I won't provide links for the apps below, since you can easily install them through F-droid.
+<br><br></p>
+<h4>Contacts / Calendar</h4>
+<p><em>DavDroid</em> is an app for synchronizing Contacts and Calendar. It supports both CalDAV and CardDAV, so you will be able to set it with your provider or self hosted service.</p>
+<p><img src="davdroid.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Email</h4>
+<p><em>K9</em> is the ultimate email client for Android. It has all the features you would expect from a mail client. You can combine it with <em>AGP</em> or <em>OpenKeychain</em> for PGP (I prefer the second, since AGP doesn't support subkeys yet).</p>
+<p><img src="k9.png" alt="" class="txt" width="32" /> <img src="apg.png" alt="" class="txt" width="32" /> <img src="keychain.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Browser</h4>
+<p>Well... <em>Firefox</em>. You can add some of the usual privacy Add-ons. <em>Orweb</em> is a browser preconfigured for anonymous access to the web through the Tor network.</p>
+<p><img src="firefox.png" alt="" class="txt" width="32" /> <img src="orweb.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Files / Photos</h4>
+<p>I have an <a href="http://owncloud.org/">Owncloud</a> instance and although I use it mostly for Contacts/Calendar (I prefer <a href="http://sparkleshare.org/">Sparkleshare</a> for files) I find it really handy that my photos can be synced automatically with OwnCloud and accessed directly from my laptop. <a href="http://seafile.com/">Seafile</a> also seems like a great choice, but haven't tested it yet.</p>
+<p><img src="owncloud.png" alt="" class="txt" width="32" /> <img src="seafile.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Maps</h4>
+<p><em>OsmAnd</em> is the best maps android application (yes better than Google maps), mostly due to its great offline feature. Map data come straight from the work of <a href="http://www.openstreetmap.org/">OpenStreetMap</a> contributors. I always install <em>OSMTracker</em> to my phone to be able to contribute myself and GPSLogger to log <a href="http://ridewithgps.com/users/80721">my bike rides</a>.</p>
+<p><img src="osmand.png" alt="" class="txt" width="32" /> <img src="osmtracker.png" alt="" class="txt" width="32" /> <img src="gpslogger.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>News</h4>
+<p><em>TTRSS-Reader</em> is the android version of the well known Free Software RSS reader <a href="http://tt-rss.org/">TinyTinyRSS</a>. It will play along with both self hosted and 3rd party instances. <em>Poche</em> helps saving articles to "Read them later" on a <a href="https://www.wallabag.org/">Wallabag</a> instance.</p>
+<p><img src="ttrssreader.png" alt="" class="txt" width="32" /> <img src="wallabag.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Chat</h4>
+<p>XMPP (Jabber) is the obvious choice for instance messaging. <em>ChatSecure</em> and <em>Xabber</em> are the best android apps for that job. Both support OTR for encrypted communication, but ChatSecure is better on this field since it can be combined with <a href="https://guardianproject.info/apps/keysync/">KeySync</a> and sync your OTR keys with the ones you keep on your desktop client.</p>
+<p><img src="chatsecure.png" alt="" class="txt" width="32" /> <img src="xabber.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Documents / Ebooks</h4>
+<p>I prefer reading on my Kobo, but in case you want an epub reader <em>FBReader</em> will be a good choice. <em>Document Viewer</em> opens pdf documents (plays well with mail attachments).</p>
+<p><img src="fbreader.png" alt="" class="txt" width="32" /> <img src="documentviewer.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>Social / Microblogging</h4>
+<p>I use <em>Twidere</em> for Twitter. Great app. Supports StatusNet too. There is also a <em>Diaspora Webclient</em> app, that seems to just wrap Diaspora's mobile web interface.</p>
+<p><img src="twidere.png" alt="" class="txt" width="32" /> <img src="diaspora.png" alt="" class="txt" width="32" /><br><br></p>
+<h4>VoIP</h4>
+<p>Guardian project has setup an SIP provider (<a href="https://ostel.co/">Ostel.co</a>) that just works, encrypting calls by default (aka <a href="https://en.wikipedia.org/wiki/ZRTP">ZRTP</a>). They suggest <em>CSipSimple</em> for using this android, but I've tried <em>Lumicall</em> and works great.</p>
+<p><img src="lumicall.png" alt="" class="txt" width="32" /> <img src="ostel.png" alt="" class="txt" width="32" /><br><br></p>
+<p><img src="fya.png" alt="" width="120" /> </p>
+<p>All the software I mention here is stuff I use. I'm sure that in some cases you may find alternatives that better suit your needs. So dig deeper to F-droid for more apps and surf through <a href="https://fsfe.org/campaigns/android/liberate.en.html">FSFE's website</a>.</p>
+<p>I currently have an android smartphone that runs 100% Free Software applications. I can't think of missing any functionality so far and I certainly feel more secure ;)</p>
+        ]]>
+      </content>
+      <published>2014-05-08 11:22:03</published>
+    </entry>
+  
+    <entry>
+      <title>Athens Free Software Monthly Meetups</title>
+      <link href="https://www.roussos.cc/2014/04/30/athens-free-software-monthly-meetups/"/>
+      <content type="html">
+        <![CDATA[
+          <p>Just about a month ago <a href="http://www.roussos.cc/2012/03/06/fsfe/">my two years term</a> as FSFE community representative to the General Assembly ended.</p>
+<p>Great experience. I very much enjoyed the whole term and I have nothing but positive to keep. I met some awesome people and got in touch far more deeply with the way that FSFE works. One thing that I struggled sometimes with was to better represent the community. I mean.. the two community members sitting on GA, besides being elected for their will to participate actively at GA's decisions, are also representatives. There were many cases when I felt that I was mostly representing myself, since there was no easy way of knowing what the community feels on a certain issue. In many countries the <a href="https://fsfe.org/about/localteams.en.html">fellowship groups</a> are far more vivid (and bigger) than Greece, so I guess that participating at the local meetups gives the opportunity to discuss these things and interact with (at least the local part of) the community.</p>
+<p>With that in mind I decided that it was about time to start regular local meetups in Athens. We may not be many FSFE <del>fellows</del> members <a href="https://wiki.fsfe.org/groups/Athens">here</a>, but the fellowship meetups were never meant to be only for members. <strong>So the "Athens Free Software Monthly Meetups" were born</strong> (first Wednesday of each month, at local <a href="https://www.hackerspace.gr/">hackerspace</a>). We already had our first on April and the <a href="https://www.hackerspace.gr/wiki/Free_Software_Monthly_Meetup_0514">second one</a> is coming with a "Free Your Android" theme.</p>
+        ]]>
+      </content>
+      <published>2014-04-30 16:45:35</published>
+    </entry>
+  
+    <entry>
+      <title>building and running Popcorn Time from source</title>
+      <link href="https://www.roussos.cc/2014/03/21/building-running-popcorn-time/"/>
+      <content type="html">
+        <![CDATA[
+          <p>If you are not living in a cave then you probably already know everything about <a href="http://en.wikipedia.org/wiki/Popcorn_time">Popcorn Time</a>, so I'll skip any intro. This is a quick guide for building Popcorn Time from source code. Either because you don't want to wait for a new "official" build to get a feature (in my case <a href="https://github.com/popcorn-official/popcorn-app/pull/211">Greek subtitles</a>), or because you just don't trust their binary builds.</p>
+<p>These steps are working perfectly on my system (Fedora), but with small modifications these should also work on any Linux box.</p>
+<h3>Install system dependencies</h3>
+<p><code>sudo yum install nodejs rubygem-compass wget git</code></p>
+<h3>Get the source code</h3>
+<p>Clone from the <a href="https://github.com/popcorn-official/popcorn-app/">repository</a>:</p>
+<p><code>git clone https://github.com/popcorn-official/popcorn-app.git</code></p>
+<p>or if you have a github account you can fork it, if there is any chance you might contribute back to the project.</p>
+<h3>Install project dependencies</h3>
+<p>Popcorn Time is written in javascript so we'll need grunt and the rest of the project dependencies.
+We change into the project directory, that we just pulled with git, so all of these get installed locally under node_modules.</p>
+<pre><code>cd popcorn-app
+npm install grunt-cli bower
+npm install
+</code></pre>
+<h3>Build</h3>
+<p><code>node_modules/grunt-cli/bin/grunt build --platforms=linux64</code></p>
+<p>If everything works you should get a "Done, without errors." message at the end.</p>
+<h3>Install</h3>
+<p>Now let's move the build to a place where we can launch it easily</p>
+<pre><code>sudo cp build/releases/Popcorn-Time/linux64/Popcorn-Time/ /opt/
+sudo ln -s /opt/Popcorn-Time/Popcorn-Time /usr/bin/
+</code></pre>
+<p>and create a Desktop entry</p>
+<pre><code>sudo wget https://avatars0.githubusercontent.com/u/6956202?s=140 -O /usr/share/pixmaps/popcorntime.png
+sudo echo "[Desktop Entry]
+    Name=Popcorn Time
+    Comment=Watch movies in streaming with P2P.
+    Exec=/usr/bin/Popcorn-Time
+    Categories=AudioVideo;
+    StartupNotify=false
+    Type=Application
+    Icon=popcorntime" &gt; /usr/share/applications/popcorn-time.desktop
+</code></pre>
+<p>Popcorn Time now is available as a Desktop shortcut.</p>
+<p><img alt="popcorn time desktop icon" src="popcorndesktop.jpg" /></p>
+<p>All you have to do is prepare some popcorn :)</p>
+<p><img alt="popcorn time screenshot" src="popcornshot.jpg" /></p>
+        ]]>
+      </content>
+      <published>2014-03-21 17:37:19</published>
+    </entry>
+  
+</feed>
