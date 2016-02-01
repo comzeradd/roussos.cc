@@ -4,7 +4,38 @@
   <title>nikos.roussos - opensource</title>
   <link href="https://www.roussos.cc/feed.xml" rel="self" />
   <link href="https://www.roussos.cc/" />
-  <updated>2016-01-18T11:54:41Z</updated>
+  <updated>2016-02-01T10:53:32Z</updated>
+  
+    <entry>
+      <title>Fighting Passive Surveillance should be our top priority</title>
+      <link href="https://www.roussos.cc/2016/02/01/passive-surveillance/"/>
+      <content type="html">
+        <![CDATA[
+          <p><img alt="massive" src="massive.jpg" /></p>
+<h4><strong>Post-Snowden</strong></h4>
+<p>We definitely live in a different world since Snowden leaks, but for some people nothing has changed. We always knew that certain individuals are targeted by local or international law enforcement agencies. In some cases they even have a legal way of doing this. If you work on certain fields or operate as an activist in political issues, you always assumed or knew that your communications are monitored. We may have better knowledge on the way the do it, or which things they have broken and which not yet. But essentially nothing is new about this on the post-Snowden world.</p>
+<p>What Snowden leaks actually changed, what we learned from the documents, is that there is a vast ongoing process of massive passive surveillance and data collection. <strong>It doesn't matter if you are considered important. It doesn't matter if you have something to hide or not. All of your communications are monitored, stored and analyzed.</strong> This is what changed. This is what we learned.</p>
+<p>Let me pause my thoughts for a moment and share a controversial story...</p>
+<h4><strong>Mobile email encryption</strong></h4>
+<p>Would you store your private PGP key to your mobile smartphone? Many (most?) hackers/geeks would easily answer in a negative way. Mobile phones have two major security implications that our laptops (usually) don't.</p>
+<ul>
+<li>
+<p>Physical security. It's more easy to lose your phone, or for someone to steal it. It's a comparatively smaller device, usually carried away in your pocket. And once you lose it, all keys stored there should be considered compromised (which is a big problem on its own, since PGP doesn't offer <a href="https://en.wikipedia.org/wiki/Forward_secrecy">Forward Secrecy</a>).</p>
+</li>
+<li>
+<p>More than one operating system. Even if you have taken <a href="https://www.roussos.cc/2014/05/08/free-your-android/">all measures</a> to secure your operating system, the problem is that your phone runs also a second operating system. The "radio" OS running on your baseband chip. It's a complete proprietary black box, that you don't know what it does. You don't even know if it's isolated from your "smart" operating system.</p>
+</li>
+</ul>
+<p>On a side note, mobile operating systems have a security advantage that almost all modern desktop operating systems (even most major linux distributions) lack. All applications are sandboxed. So even if you are running a malicious application (you know, like <a href="http://www.theregister.co.uk/2014/01/27/leaking_smartphone_apps_nsa_gchq/">Angry Birds</a>) it may do various unwanted things regarding your personal mobile usage (eg. track location) but it can't easily steal your PGP private key stored inside <a href="https://www.openkeychain.org/about/">OpenKeyChain</a>'s isolated storage. Not many desktop operating systems can protect you from a malicious application getting access to your <code>.gnupg</code> or <code>.ssh</code> folder.</p>
+<p>So, although these two points are completely valid and indeed mobile smartphones are less secure, we have to realize that this is where most users read their emails. In many cases, a mobile phone is the only device people read their emails. Many people have come to cryptoparties, and after getting in touch with the complete lack of usability that comes with the standard pgp gui stack (Thunderbird + Enigmail), they ask how the can do the same things on their mobile. Most hackers would react (or even deny to help) exactly because of the reasons mentioned above. Let me clear up the dilemma a bit: Most people have two options to choose. Either use email encryption on their mobile phone or don't use encryption at all. And <strong>unfortunately most hackers fail to see that for most people the threat model is passive surveillance</strong>.</p>
+<h4><strong>Threat Model</strong></h4>
+<p>Not all people are trying to protect from the same things or the same type of adversaries. Not all people have the same <a href="https://ssd.eff.org/en/glossary/threat-model">Threat Model</a>.</p>
+<p>I was very pleased to see Werner Koch presenting at <a href="https://events.ccc.de/congress/2015/wiki/Main_Page">32c3</a> this year about the current status of <a href="https://gnupg.org/">GnuPG</a>, where he mentioned that the focus from now on is the passive surveillance threat model. <strong>Building tools that focus on the passive surveillance threat model, means that usability and encryption by default is top priority.</strong></p>
+<p>I have participated and co-organized many <a href="https://www.cryptoparty.in/athens">Cryptoparties</a>, <a href="http://wiki.fsfe.org/groups/Athens">Free Software Meetups</a>, and related crypto/privacy events/workshops. And I believe that the passive surveillance threat model should also be our focus. Yes, sometimes we need to quickly determine if a person has a different threat model (eg. journalists), but most people participating in these kind of events are not targets (at least not NSA targets). We know that they collect everything, we know that <a href="http://www.theregister.co.uk/2016/01/27/nsa_loves_it_when_you_use_pgp/">they love pgp</a> because it's rarely used and stands out. <strong>Let's make their job more difficult. Encrypt all things by default. Let's start  from fighting against massive passive surveillance.</strong></p>
+        ]]>
+      </content>
+      <published>2016-02-01 11:01:52</published>
+    </entry>
   
     <entry>
       <title>Ο σκοταδισμός της πνευματικής ιδιοκτησίας</title>
@@ -321,19 +352,6 @@ resize2fs /dev/sdX3
         ]]>
       </content>
       <published>2014-05-08 11:22:03</published>
-    </entry>
-  
-    <entry>
-      <title>Athens Free Software Monthly Meetups</title>
-      <link href="https://www.roussos.cc/2014/04/30/athens-free-software-monthly-meetups/"/>
-      <content type="html">
-        <![CDATA[
-          <p>Just about a month ago <a href="http://www.roussos.cc/2012/03/06/fsfe/">my two years term</a> as FSFE community representative to the General Assembly ended.</p>
-<p>Great experience. I very much enjoyed the whole term and I have nothing but positive to keep. I met some awesome people and got in touch far more deeply with the way that FSFE works. One thing that I struggled sometimes with was to better represent the community. I mean.. the two community members sitting on GA, besides being elected for their will to participate actively at GA's decisions, are also representatives. There were many cases when I felt that I was mostly representing myself, since there was no easy way of knowing what the community feels on a certain issue. In many countries the <a href="https://fsfe.org/about/localteams.en.html">fellowship groups</a> are far more vivid (and bigger) than Greece, so I guess that participating at the local meetups gives the opportunity to discuss these things and interact with (at least the local part of) the community.</p>
-<p>With that in mind I decided that it was about time to start regular local meetups in Athens. We may not be many FSFE <del>fellows</del> members <a href="https://wiki.fsfe.org/groups/Athens">here</a>, but the fellowship meetups were never meant to be only for members. <strong>So the "Athens Free Software Monthly Meetups" were born</strong> (first Wednesday of each month, at local <a href="https://www.hackerspace.gr/">hackerspace</a>). We already had our first on April and the <a href="https://www.hackerspace.gr/wiki/Free_Software_Monthly_Meetup_0514">second one</a> is coming with a "Free Your Android" theme.</p>
-        ]]>
-      </content>
-      <published>2014-04-30 16:45:35</published>
     </entry>
   
 </feed>
