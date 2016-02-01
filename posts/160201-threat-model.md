@@ -35,3 +35,7 @@ Not all people are trying to protect from the same things or the same type of ad
 I was very pleased to see Werner Koch presenting at [32c3](https://events.ccc.de/congress/2015/wiki/Main_Page) this year about the current status of [GnuPG](https://gnupg.org/), where he mentioned that the focus from now on is the passive surveillance threat model. **Building tools that focus on the passive surveillance threat model, means that usability and encryption by default is top priority.**
 
 I have participated and co-organized many [Cryptoparties](https://www.cryptoparty.in/athens), [Free Software Meetups](http://wiki.fsfe.org/groups/Athens), and related crypto/privacy events/workshops. And I believe that the passive surveillance threat model should also be our focus. Yes, sometimes we need to quickly determine if a person has a different threat model (eg. journalists), but most people participating in these kind of events are not targets (at least not NSA targets). We know that they collect everything, we know that [they love pgp](http://www.theregister.co.uk/2016/01/27/nsa_loves_it_when_you_use_pgp/) because it's rarely used and stands out. **Let's make their job more difficult. Encrypt all things by default. Let's start  from fighting against massive passive surveillance.**
+
+<hr>
+
+*Comments and reactions on [Diaspora](https://librenet.gr/posts/582762) or [Twitter](https://twitter.com/comzeradd/status/694082702815989760)*

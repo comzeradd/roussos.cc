@@ -210,3 +210,13 @@ section {
 .home-footer > div > a {
     color: #ccc !important;
 }
+
+
+
+/* Places
+==================== */
+
+#map {
+    width:100%;
+    height: 400px;
+}
