@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %} &bull; Places{% endblock title %}
+
+{% block css %}
+  <link rel="stylesheet" href="/static/css/lib/mapbox.css">
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <p>
+      This is a map diary of the places I've been. Major cities, airports and hackerspaces.
+    </p>
+
+    <p>
+      <strong>Cities:</strong> Athens, Istanbul, Milano, Bistrita, Vienna, Prague, Warsaw, Zurich,
+      Stuttgart, Berlin, Hamburg, Malmo, Amsterdam, Antwerp, Brussels, Paris, London, Sheffield,
+      Barcelona, Madrid, Badajoz, Lisbon, Montreal, Quebec City, Ottawa, Vancouver, Whistler,
+      New York, Charleston, Orlando, Portland, Singapore.
+    </p>
+
+    <p>
+      <strong>Airports:</strong> ATH, IOA, SKG, AXD, HER, IST, OTP, CLJ, VIE, MXP, WAW, MUC, FRA, SXF, TXL, STR, HAM,
+      GVA, ZRH, CPH, BCN, MAD, BJZ, LIS, CDG, BRU, AMS, LCY, LHR, LGW, MAN, YUL, YYZ, YVR, EWR,
+      PHL, CLT, CHS, MCO, SFO, PDX, SIN
+    </p>
+
+    <p>
+      <strong>Hackerspaces:</strong> Hackerspace.gr, P2P Lab, Metalab, C-base, NYC Resistor, Hackerspace SG.
+    </p>
+
+    <p id="map"></p>
+
+  </div>
+{% endblock %}
+
+
+{% block javascript %}
+  <script src="/static/js/lib/mapbox.js"></script>
+  <script src="/static/js/places.js"></script>
+{% endblock javascript %}
