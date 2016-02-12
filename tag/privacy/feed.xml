@@ -6,7 +6,48 @@
   <link href="https://www.roussos.cc/" />
   <icon>https://www.roussos.cc/favicon.ico</icon>
   <logo>https://www.roussos.cc/static/img/</logo>
-  <updated>2016-02-11T22:43:50Z</updated>
+  <updated>2016-02-12T15:19:51Z</updated>
+  
+    <entry>
+      <title>Will you be my cryptovalentine?</title>
+      <link href="https://www.roussos.cc/2016/02/12/cryptovalentine/"/>
+      <content type="html">
+        <![CDATA[
+          <p><img alt="cryptovalentine" src="cryptolove.jpg" /></p>
+<blockquote>
+<p>Roses are red, violets are blue; I use free software to encrypt my online communication and so should you.</p>
+</blockquote>
+<p>Over the last few year Free Software Foundation Europe runs a campaign called <a href="https://fsfe.org/campaigns/ilovefs/2016/">"I love Free Software Day"</a>. It's an opportunity to share your appreciation (or love) with the developers of your favorite Free Software project. So after you are done reading this post, <strong>choose your favorite project and send its developer(s) an appreciation email</strong>.</p>
+<p>Last year <a href="http://zakkkko.com/">Zak Rogoff </a>, had a great similar idea. On <a href="https://www.fsf.org/blogs/community/will-you-be-my-cryptovalentine">a post he wrote</a> he suggested we use the Valentine's Day as an opportunity to use Free Software in order to setup secure and private communications with our significant other.</p>
+<blockquote>
+<p>Ask someone you like -- romantically or otherwise -- to be your cryptovalentine. If they say yes (yikes, nervous!) use the free program GnuPG to set up private and encrypted communication with them.</p>
+</blockquote>
+<p>Last year this was like a late new year's resolution for me. I didn't want to stick to GnuPG or just set the tools up. I wanted to make sure that all forms of communication are secure and private. This is how I (partially) did it. This is focused on mobile communications, because that is what we almost exclusively use for communicating when online.</p>
+<h4><strong>Email</strong></h4>
+<p>The first thing that comes to mind is email and the obvious choice of GnuPG. And specifically <a href="https://www.openkeychain.org/about/">OpenKeyChain</a> and K9. And it's of course the first thing I did. If you are thinking "GPG keys on mobile? Are you sure?", then you have a <a href="https://www.roussos.cc/2016/02/01/passive-surveillance/">different threat model</a> in mind.</p>
+<p>OpenKeyChain has made major steps over the last couple of years in terms of usability. It's easy even to generate a new key directly on your phone and easily fetch your contacts keys from keyservers or import them. It's also easy to connect it with the K9 mail client.</p>
+<p>Despite all improvements I'm not completely satisfied with the end result at the moment. There is one thing that can really ruin everything. There is no way currently to configure K9 to encrypt all outgoing emails by default if a key is present. That can lead to accidentally replying to an encrypted email in plain text, or just forget to tick the encryption mode when composing a new email. Good thing is that K9 doesn't quote an encrypted email as unencrypted text when replying, which makes emails look ugly but at least it saves you from leaking data by mistake. There is also the issue of PGP/Mime support, but that' not relevant to the communication model I'm describing here. Both ends will use PGP inline, so you'll be ok.</p>
+<h4><strong>Chat</strong></h4>
+<p>The obvious decentralized choice would be Jabber with OTR. Many things have changed over the last couple of years. Apps like WhatsApp or Telegram have become really popular. Both of course are not to be considered secure. Source code is not completely open and free and both are centralized which gives one entity the knowledge of the entire social graph. But these apps created a usability precedence. People expect easy registration, even if that requires giving away their phone number and, even worse, their entire addressbook. And people also expect that this will work flawlessly on mobile, where connection can sometimes be flaky. Jabber with OTR fails on both. For the communication model I'm describing here registration issues are not important. But being able to communicate over mobile networks is really important.</p>
+<p>Surprisingly many people on the free and open source camp started using (and promoting) Signal, which is indeed better that the two previous options of WhatsApp and Telegram, since the whole stack is completely free and open source. But it keeps all the other problems mentioned above (centralized, addressbook access, etc). I have <a href="https://www.roussos.cc/2015/12/05/signal-privacy/">written about this</a> in details before and <a href="https://twitter.com/moxie/status/644551336843870208">Signal's attitude</a> shows that things can only get worse.</p>
+<p>So where does this leave us? Signal's protocol, <a href="https://github.com/trevp/axolotl/wiki">Axolotl Ratchet</a>, is really well designed. What if this could work on top of Jabber? Then we would have the best things of both worlds. That's what <a href="https://www.roussos.cc/2016/01/05/jabber-omemo/">OMEMO does</a>.</p>
+<p>So my choice was the <a href="https://conversations.im/">Conversations</a> app using Jabber along with OMEMO encryption. I have to admit this turn out to work far better than I expected. <strong>You set the encryption once and then you forget about it. It just works.</strong> All communications are encrypted by default. Offline messages just work. You don't have to worry if the other end is online at the moment. No need to terminate or re-establish encryption sessions (sounds familiar OTR friends?). This worked so good that we actually replaced email communications. I mean, think about it. Most of the emails we exchange during the day are short texts. The only reason we were using email was because it gives the feeling of asynchronous non-urgent communication. But if you have a chat application that online presence doesn't really matters then you already have this.</p>
+<h4><strong>SMS</strong></h4>
+<p>We rarely use the mobile telephony network to chat, and since we started using Jabber/OMEMO, this became even more rare. But just for these rare cases, here is what I did and suggest.</p>
+<p>Signal started as TextSecure and it used to support the SMS network too. At some point they decided to drop SMS support for <a href="https://whispersystems.org/blog/the-new-textsecure/">various reasons</a>. Then a free software team forked it and kept just the SMS part (it's Axolotl Ratchet again) and dropped all Google dependencies to create <a href="http://smssecure.org/">SMSSecure</a>. Similar to what I mentioned above, you setup the encryption once and then you forget it. I set this up months ago and all SMS we have exchanged since are encrypted. The app of course works as a regular SMS app, so you just make it your default one and use it for regular plain text SMS messages for the rest of your not-so-brave contacts. At least you'll have encrypted local storage for your sms messages, something that most sms apps don't offer.</p>
+<h4><strong>Voice</strong></h4>
+<p>This is the most difficult one, and the one we haven't yet completely achieve. It's not easy to encrypt phone calls and still keep using the traditional mobile network of your carrier. So the next best thing is to do it over the data network. Again usability is important here. So SIP was not my first option. Many apps have come into life over the last couple of years, but most of them are still not mature enough. For instance <a href="https://tox.chat/">Tox</a> is nice, but the mobile client lacks voice calls at the moment and their core protocol is not designed with mobile usage in mind, which leads to battery drainage.</p>
+<p>Another similar approach is the <a href="https://ring.cx/">Ring</a>. It's also at its early days, but recently the mobile client added voice calls. We started using it over the last month, but it's still early to judge it. If you are interested in the technical details see the <a href="http://ftp.fau.de/fosdem/2016/k1105/building-a-peer-to-peer-network-for-real-time-communication.mp4">core developers presentation</a> at this year's Fosdem.</p>
+<h4><strong>Video</strong></h4>
+<p>Weirdly enough this is something we solved long before the voice communications. Video is something you explicitly choose to do, so you don't have so many requirements in terms of integration with the rest of the phone operating system. We use <a href="https://en.wikipedia.org/wiki/WebRTC">WebRTC</a>. Encryption is mandatory for WebRTC, using <a href="https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security">DTLS</a> and it's P2P. You can find many services out there, some completely Free and Open Source (so you can set it up on your own if you don't trust them), and a few also offer private rooms.</p>
+<p>Another option (still WebRTC) is <a href="https://www.mozilla.org/en-US/firefox/hello/">Firefox Hello</a>. I've been using Hello from the first day it was released and works great. The only problem is that you can initiate a call only from a Desktop Firefox. But a few months back Hello offered the option to create a room, give it an alias to make it more recognizable than a hash and bookmark it. So if both ends have this unique url they can initiate a video call directly from Firefox mobile.</p>
+<p>Whatever WebRTC option you choose remember that this works through your browser. I have test this only on Firefox, but it should work on other browsers too with no extra plugin. Just use a browser that it's Free and Open Source. Otherwise <a href="https://twitter.com/comzeradd/status/653535902950682624">you shouldn't trust it</a> for your communications.</p>
+<h4><strong>Now it's your turn</strong></h4>
+<p>All apps mentioned here are available on <a href="https://f-droid.org/">F-droid</a>, so it's not that hard to get started. Remember, <a href="https://www.roussos.cc/2014/05/14/our-privacy-is-interdependent/">our privacy is interdependent</a>. It's not enough to secure your devices only. What better way to start than this? Ask your significant other or someone you like, romantically or otherwise, to be your cryptovalentine. You don't have to use the specific tools I mention here. I urge you to use only Free / Open Source software and decentralized services. And remember this is just the beginning. After you succeed, spread this know-how to the rest of your friends.</p>
+        ]]>
+      </content>
+      <published>2016-02-12 15:01:23</published>
+    </entry>
   
     <entry>
       <title>Fighting Passive Surveillance should be our top priority</title>
@@ -170,66 +211,6 @@ resize2fs /dev/sdX3
         ]]>
       </content>
       <published>2014-05-14 12:51:29</published>
-    </entry>
-  
-    <entry>
-      <title>Free Your Android</title>
-      <link href="https://www.roussos.cc/2014/05/08/free-your-android/"/>
-      <content type="html">
-        <![CDATA[
-          <p>After all the recent NSA revelations, it's been even more important to use Free Software on our mobile phones. Let me express this in another way: <strong>We should be very careful about what software we use on a device that is always on and in our pocket 24h a day.</strong></p>
-<p>Starting from the very basic thing that makes our smartphone operate, it seems that we don't have many options. So if you are using Iphone or Windows Phone, let me remind you that both of these companies are in the <a href="https://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29#The_slides">infamous NSA slides</a> for giving access to users private data.</p>
-<p>So this post is about Android and my current setup of running only Free Software on my smartphone. I know what you are thinking.. that Google is also part of NSA's "special friends". Android is self-defined as an "Open Source Platform" (AOSP), and pretty much it is since it's released under a mix of Apache and GPL license (although mostly developed behind closed doors). But this isn't what you get when you buy a smartphone. Your device will certainly have preinstalled all of the Google's proprietary stuff (gmail, play, etc) and probably manufacturer and/or vendor applications. Things that you have no idea what they do, besides their "normal" functionality, because we don't have the code to look at.</p>
-<h3>Operating System</h3>
-<p><img src="cyanogenmod.png" alt="" class="txt" /> If you happen to be on <a href="http://redmine.replicant.us/projects/replicant/wiki/ReplicantStatus">Replicant's short list</a> of supported devices then this is the way to go. But since this applies to very few people <a href="http://www.cyanogenmod.org/">CyanogenMod</a> is the next best thing.</p>
-<p>That's the part that is most difficult, since you have to flash your phone with the right CyanogenMod's ROM. The <a href="http://wiki.cyanogenmod.org/w/Devices">instructions on the wiki</a> are very detailed, but I know that this should look like a difficult process to non-geeks. At FSFE we run a campaign on how to <a href="https://fsfe.org/campaigns/android/liberate.en.html">free you Android</a>, so if you ever happen to find out about a "Free your Android" workshop near you location go and people will love to help you.</p>
-<p>Still, if flashing your phone seems too complex skip to the next section, but at least stop using the pre-installed proprietary apps and remove any Google account you may have entered during initial phone setup (a factory reset may help).</p>
-<p>CyanogenMod is not perfect. It contains <a href="https://github.com/CyanogenMod/android_device_semc_iyokan/blob/gingerbread/extract-files.sh">scripts that extract</a> proprietary code necessary for some phone components (eg. camera) to work. The good thing is that these parts are firmware, thus non-executable code. You may also need to tweak it a bit:</p>
-<ul>
-<li>Remove Google analytics from CyanogenMod by flashing <a href="https://github.com/mar-v-in/freecyngn">freecygn</a>.</li>
-<li>Stop CyanogenMod from reporting tethering usage to your provider, by <a href="https://pmf.silvrback.com/fixing-tethering-on-android-kitkat">changing the "tether dun required" setting</a>.</li>
-<li><a href="http://blog.varunkumar.me/2010/09/how-to-change-dns-server-on-android.html">Change DNS settings</a> so that CyanogenMod stops using Google's DNS servers, that has a permanent log policy.</li>
-<li>Choose to fully encrypt your device with a pin (Settings -&gt; Security -&gt; Encrypt phone).</li>
-</ul>
-<h3>Apps</h3>
-<p><img src="fdroid.png" alt="" class="txt" width="130" /> Since we got rid Google apps, one way or another, we need a way to install software to our phone. Free Software. <a href="https://f-droid.org/">F-droid</a> comes to the rescue, an app for accessing software repositories for android and that comes preconfigured with its own repository containing only Free Software apps. Install it and then head over to <a href="https://guardianproject.info/2012/03/15/our-new-f-droid-app-repository/">Guardian project</a> to add its repository to F-droid. I won't provide links for the apps below, since you can easily install them through F-droid.
-<br><br></p>
-<h4>Contacts / Calendar</h4>
-<p><em>DavDroid</em> is an app for synchronizing Contacts and Calendar. It supports both CalDAV and CardDAV, so you will be able to set it with your provider or self hosted service.</p>
-<p><img src="davdroid.png" alt="" class="txt" width="32" /><br><br></p>
-<h4>Email</h4>
-<p><em>K9</em> is the ultimate email client for Android. It has all the features you would expect from a mail client. You can combine it with <em>AGP</em> or <em>OpenKeychain</em> for PGP (I prefer the second, since AGP doesn't support subkeys yet).</p>
-<p><img src="k9.png" alt="" class="txt" width="32" /> <img src="apg.png" alt="" class="txt" width="32" /> <img src="keychain.png" alt="" class="txt" width="32" /><br><br></p>
-<h4>Browser</h4>
-<p>Well... <em>Firefox</em>. You can add some of the usual privacy Add-ons. <em>Orweb</em> is a browser preconfigured for anonymous access to the web through the Tor network.</p>
-<p><img src="firefox.png" alt="" class="txt" width="32" /> <img src="orweb.png" alt="" class="txt" width="32" /><br><br></p>
-<h4>Files / Photos</h4>
-<p>I have an <a href="http://owncloud.org/">Owncloud</a> instance and although I use it mostly for Contacts/Calendar (I prefer <a href="http://sparkleshare.org/">Sparkleshare</a> for files) I find it really handy that my photos can be synced automatically with OwnCloud and accessed directly from my laptop. <a href="http://seafile.com/">Seafile</a> also seems like a great choice, but haven't tested it yet.</p>
-<p><img src="owncloud.png" alt="" class="txt" width="32" /> <img src="seafile.png" alt="" class="txt" width="32" /><br><br></p>
-<h4>Maps</h4>
-<p><em>OsmAnd</em> is the best maps android application (yes better than Google maps), mostly due to its great offline feature. Map data come straight from the work of <a href="http://www.openstreetmap.org/">OpenStreetMap</a> contributors. I always install <em>OSMTracker</em> to my phone to be able to contribute myself and GPSLogger to log <a href="http://ridewithgps.com/users/80721">my bike rides</a>.</p>
-<p><img src="osmand.png" alt="" class="txt" width="32" /> <img src="osmtracker.png" alt="" class="txt" width="32" /> <img src="gpslogger.png" alt="" class="txt" width="32" /><br><br></p>
-<h4>News</h4>
-<p><em>TTRSS-Reader</em> is the android version of the well known Free Software RSS reader <a href="http://tt-rss.org/">TinyTinyRSS</a>. It will play along with both self hosted and 3rd party instances. <em>Poche</em> helps saving articles to "Read them later" on a <a href="https://www.wallabag.org/">Wallabag</a> instance.</p>
-<p><img src="ttrssreader.png" alt="" class="txt" width="32" /> <img src="wallabag.png" alt="" class="txt" width="32" /><br><br></p>
-<h4>Chat</h4>
-<p>XMPP (Jabber) is the obvious choice for instance messaging. <em>ChatSecure</em> and <em>Xabber</em> are the best android apps for that job. Both support OTR for encrypted communication, but ChatSecure is better on this field since it can be combined with <a href="https://guardianproject.info/apps/keysync/">KeySync</a> and sync your OTR keys with the ones you keep on your desktop client.</p>
-<p><img src="chatsecure.png" alt="" class="txt" width="32" /> <img src="xabber.png" alt="" class="txt" width="32" /><br><br></p>
-<h4>Documents / Ebooks</h4>
-<p>I prefer reading on my Kobo, but in case you want an epub reader <em>FBReader</em> will be a good choice. <em>Document Viewer</em> opens pdf documents (plays well with mail attachments).</p>
-<p><img src="fbreader.png" alt="" class="txt" width="32" /> <img src="documentviewer.png" alt="" class="txt" width="32" /><br><br></p>
-<h4>Social / Microblogging</h4>
-<p>I use <em>Twidere</em> for Twitter. Great app. Supports StatusNet too. There is also a <em>Diaspora Webclient</em> app, that seems to just wrap Diaspora's mobile web interface.</p>
-<p><img src="twidere.png" alt="" class="txt" width="32" /> <img src="diaspora.png" alt="" class="txt" width="32" /><br><br></p>
-<h4>VoIP</h4>
-<p>Guardian project has setup an SIP provider (<a href="https://ostel.co/">Ostel.co</a>) that just works, encrypting calls by default (aka <a href="https://en.wikipedia.org/wiki/ZRTP">ZRTP</a>). They suggest <em>CSipSimple</em> for using this android, but I've tried <em>Lumicall</em> and works great.</p>
-<p><img src="lumicall.png" alt="" class="txt" width="32" /> <img src="ostel.png" alt="" class="txt" width="32" /><br><br></p>
-<p><img src="fya.png" alt="" width="120" /> </p>
-<p>All the software I mention here is stuff I use. I'm sure that in some cases you may find alternatives that better suit your needs. So dig deeper to F-droid for more apps and surf through <a href="https://fsfe.org/campaigns/android/liberate.en.html">FSFE's website</a>.</p>
-<p>I currently have an android smartphone that runs 100% Free Software applications. I can't think of missing any functionality so far and I certainly feel more secure ;)</p>
-        ]]>
-      </content>
-      <published>2014-05-08 11:22:03</published>
     </entry>
   
 </feed>

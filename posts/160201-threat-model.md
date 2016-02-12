@@ -7,7 +7,6 @@ files: massive.jpg
 
 ![massive](massive.jpg)
 
-
 #### **Post-Snowden**
 
 We definitely live in a different world since Snowden leaks, but for some people nothing has changed. We always knew that certain individuals are targeted by local or international law enforcement agencies. In some cases they even have a legal way of doing this. If you work on certain fields or operate as an activist in political issues, you always assumed or knew that your communications are monitored. We may have better knowledge on the way the do it, or which things they have broken and which not yet. But essentially nothing is new about this on the post-Snowden world.
