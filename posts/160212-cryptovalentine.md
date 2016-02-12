@@ -60,3 +60,7 @@ Whatever WebRTC option you choose remember that this works through your browser.
 #### **Now it's your turn**
 
 All apps mentioned here are available on [F-droid](https://f-droid.org/), so it's not that hard to get started. Remember, [our privacy is interdependent](https://www.roussos.cc/2014/05/14/our-privacy-is-interdependent/). It's not enough to secure your devices only. What better way to start than this? Ask your significant other or someone you like, romantically or otherwise, to be your cryptovalentine. You don't have to use the specific tools I mention here. I urge you to use only Free / Open Source software and decentralized services. And remember this is just the beginning. After you succeed, spread this know-how to the rest of your friends.
+
+<hr>
+
+*Comments and reactions on [Diaspora](https://librenet.gr/posts/601875) or [Twitter](https://twitter.com/comzeradd/status/698135511437803520)*
