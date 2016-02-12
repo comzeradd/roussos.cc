@@ -110,6 +110,7 @@ def generate_posts():
             author=cfg['author'],
             sitename=cfg['sitename'],
             license=cfg['license'],
+            rooturl=cfg['rooturl'],
             logo=cfg['logo'],
             content=content,
             images=images,
