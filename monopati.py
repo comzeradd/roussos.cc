@@ -159,6 +159,8 @@ def generate_archive(posts, tag_set):
         html = tpl.render(dict(
             sitename=cfg['sitename'],
             title='blog: #{0}'.format(tag),
+            license=cfg['license'],
+            logo=cfg['logo'],
             posts=post_list
         ))
         tagpath = path.join('tag', tag)
