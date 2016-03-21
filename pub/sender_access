@@ -30,7 +30,6 @@ web@access.gr           REJECT
 acdnet@acd.gr REJECT
 newsletter@acd.gr REJECT
 newsletter@acdnews.eu REJECT
-newsletter@acdnews.eu REJECT
 sofo123@acn.gr* REJECT
 info@action.gr REJECT
 floras@adagonismos.gr REJECT
@@ -130,7 +129,6 @@ sales@capital.net.gr REJECT
 newsletter@casinovipclass.co REJECT
 Cosmos-Marketing@cbs.gr REJECT
 no-reply@centronet.gr REJECT
-info@cheapis.gr REJECT
 info@cheapis.gr REJECT
 info@cityu.gr REJECT
 superadmin@cityu.gr REJECT
@@ -285,10 +283,8 @@ info@getthedeal.gr REJECT
 noreply@ghotels.gr REJECT
 news@gifts4business.gr REJECT
 info@glampedakis.gr REJECT
-info@glampedakis.gr REJECT
 newsletter@glampedakis.gr REJECT
 newsletter@globaleco.gr REJECT
-*@globalgreece.gr REJECT
 addshops@gmail.com REJECT
 afisorama@gmail.com REJECT
 akazoo.gr@gmail.com REJECT
@@ -326,14 +322,11 @@ healthycoffeegr@gmail.com REJECT
 hobbystasgr@gmail.com REJECT
 hobystas@gmail.com REJECT
 hoovar45@gmail.com REJECT
-hoovar45@gmail.com REJECT
-horohronoslive3@gmail.com REJECT
 horohronoslive3@gmail.com REJECT
 ilektrola30@gmail.com REJECT
 inmekoe@gmail.com REJECT
 introntv.customer@gmail.com REJECT
 iraklistavlikos316@gmail.com REJECT
-irisalta@gmail.com REJECT
 irisalta@gmail.com REJECT
 iTsecureSolutions@gmail.com REJECT
 j.cholakova@gmail.com REJECT
@@ -349,7 +342,6 @@ mybet@gmail.com REJECT
 news.matsecurity@gmail.com REJECT
 newstyletravel@gmail.com REJECT
 nikforty@gmail.com REJECT
-noreplygr@gmail.com REJECT
 noreplygr@gmail.com REJECT
 offirler@gmail.com REJECT
 oriflame.koropi@gmail.com REJECT
@@ -373,7 +365,6 @@ sinisfero.3@gmail.com REJECT
 sinisfero@gmail.com REJECT
 smartsarr@gmail.com REJECT
 stsnews1@gmail.com REJECT
-supertzak@gmail.com REJECT
 tagliresort@gmail.com REJECT
 texnikografeio@gmail.com REJECT
 trioniko@gmail.com REJECT
@@ -479,7 +470,6 @@ tindo@interversion.com REJECT
 secom@ip-com.gr REJECT
 info@isbfinance.gr REJECT
 doldem@ism.com.br REJECT
-sales@i-systems.eu REJECT
 security.solutions@i-systems.gr REJECT
 education@itec.edu REJECT
 section.ouest@itsmf.fr REJECT
@@ -545,7 +535,6 @@ author@mariagousiou.gr REJECT
 no-reply@marketbeast.gr REJECT
 newsletter@mascot.gr REJECT
 info@masterdeal.com REJECT
-no-reply@masterdeal.com REJECT
 no-reply@masterdeal.com REJECT
 noreply@masterdeal.com REJECT
 elena@masterlingua.gr REJECT
@@ -684,14 +673,11 @@ info@pheme.gr REJECT
 j.samos@playcity.gr REJECT
 plaza24@plaza24.com REJECT
 specialoffer@plaza-resort.com REJECT
-club@plus4u.gr REJECT
 theofanis.giotis@pmi-greece-chapter.org REJECT
 news@pnpshop.gr REJECT
 sales@pnpshop.gr REJECT
 info@polemikos-typos.gr REJECT
-monosi@polimonotiki.gr REJECT
-news@polimonotiki.gr REJECT
-polimonotiki@polimonotiki.gr REJECT
+polimonotiki.gr REJECT
 news@polispress.gr REJECT
 info@poofomania.gr REJECT
 gossip247@portalnewsletters.com REJECT
@@ -802,11 +788,9 @@ info@tsomokos.gr REJECT
 dimitris@typofos.gr REJECT
 info@upmate.gr REJECT
 info@usb111.com REJECT
-info@usb111.com REJECT
 jspincel@virgilio.it REJECT
 hellashostsales@virginmedia.com REJECT
 ozon@vitaaction.gr REJECT
-newsletter@viva.gr REJECT
 newsletter@vivatickets.gr REJECT
 custom1@vivodinet.gr REJECT
 symboul@vivodinet.gr REJECT
@@ -867,7 +851,6 @@ intron302@yahoo.gr REJECT
 jfkamar@yahoo.gr REJECT
 johnovios@yahoo.gr REJECT
 kaimaktsalan2010@yahoo.gr REJECT
-kartes500@yahoo.gr REJECT
 listamemail*@yahoo.gr REJECT
 mkosyntagma@yahoo.gr REJECT
 propsgr@yahoo.gr REJECT
@@ -879,7 +862,6 @@ vasilis_pap01@yahoo.gr REJECT
 kalogera.katerina@ymail.com REJECT
 info@youdietmail.com REJECT
 info@yourbaby.gr REJECT
-noreply@yourbestfriend.gr REJECT
 noreply@yourbestfriend.gr REJECT
 dopala@yourspecialagent.com REJECT
 lacon@youtell.gr REJECT
@@ -901,9 +883,8 @@ agonas.periodiko@gmail.com      REJECT
 info@intelbusinessoffers.eu     REJECT
 bikramb@caretek.ca              REJECT
 newsletter3@verticom.co         REJECT
-*@quality-seminars.com REJECT
-*@dailynews.gr REJECT
-*@globalgreece.gr REJECT
+quality-seminars.com REJECT
+dailynews.gr REJECT
 globalgreece@cyta.gr REJECT
 grglobal@otenet.gr REJECT
 supertzak@gmail.com REJECT
@@ -922,7 +903,6 @@ mail@webservicesgreece.com REJECT
 news@e.seesmic.com REJECT
 *@badmoney.gr REJECT
 *@goldendeals.gr REJECT
-monosi@polimonotiki.gr REJECT
 *@64free.gr REJECT
 *@newslett.eu REJECT
 *@greenoffice.gr REJECT
@@ -930,7 +910,6 @@ beautypassclub@gmail.com REJECT
 butchers15@rotatekstil.com REJECT
 noreply@likeartnews.gr REJECT
 *@hatpeople.gr REJECT
-deals@ekdromi.gr REJECT
 *@likeartnews.gr REJECT
 news@linkedin.com REJECT
 tmiasrena@gmail.com REJECT
@@ -971,15 +950,12 @@ manyattacllusnde@yahoo.com REJECT
 elcmag@elculture.gr REJECT
 katherinetrammell@rocketmail.com REJECT
 *@tenteschaniotis.gr REJECT
-info@helenco.gr REJECT
-info@diormail.gr REJECT
 *@banksnewslet.eu REJECT
 doinakis@gmail.com REJECT
 *@musicmirror.gr REJECT
 gregarios@tutmes.com.br REJECT
 newsletter@arttravel.gr REJECT
 *@vipnewsletter.gr REJECT
-salesprivelife@gmail.com REJECT
 info@hotsoft.gr REJECT
 *@greeksinternational.com REJECT
 *@stopsmoke.eu REJECT
@@ -1001,7 +977,6 @@ doris.patras@greekseo.net REJECT
 *@e-olympicstore.info REJECT
 *@ekdotikeathenon.gr REJECT
 hello@crowdpolicy.org REJECT
-club@plus4u.gr REJECT
 *@thedugout.net REJECT
 *@nonmultiplexcinema.com REJECT
 jboyle@psdschools.org REJECT
@@ -1017,7 +992,6 @@ un.info1@usa.com REJECT
 *@supergold.gr REJECT
 *@AirTouch.gr REJECT
 *@locsul.com REJECT
-sales@i-systems.eu REJECT
 info@supdate.eu REJECT
 salesplaywood@gmail.com REJECT
 *@badoo.com REJECT
@@ -1033,7 +1007,6 @@ info@mindradio.gr REJECT
 osintaxidiotis@arttravel.gr REJECT
 *@mailanodikiporeia.gr REJECT
 *@qstudios.gr REJECT
-salesadameve@gmail.com REJECT
 *@bcps.k12.md.us REJECT
 *@eyclub.gr REJECT
 *@lucacurci.com REJECT
@@ -1042,7 +1015,6 @@ salesadameve@gmail.com REJECT
 *@kingcoupon.gr REJECT
 akisdendrinos2@yahoo.gr REJECT
 invitations@linkedin.com REJECT
-kartes500@yahoo.gr REJECT
 *@goldentraveller.com REJECT
 *@nafplionetnews.eu REJECT
 *@ecopowermarket.gr REJECT
@@ -1053,12 +1025,10 @@ blacklist_from	listmaster@sed.gr REJECT
 *@ergasiatora.gr REJECT
 *@aircosmos.eu REJECT
 *@smartavenue.gr REJECT
-akisdendrinos2@yahoo.gr REJECT
 *@parkareto.gr REJECT
 *@vipnews.gr REJECT
 *@business-life-training.com REJECT
 *@apn.gr REJECT
-sales.lesfemmes@gmail.com REJECT
 *@enc.gr REJECT
 *@medisense.gr REJECT
 newsletter@gpoint.gr REJECT
@@ -1090,7 +1060,7 @@ npapast@media.uoa.gr REJECT
 fhdtdg@cyta.gr REJECT
 jaigurudev1008@gmail.com REJECT
 op986f@otenet.gr REJECT
-info@GLOBALGREECE.GR REJECT
+gloablgreece.gr REJECT
 *qcplnet.com REJECT
 apple.id@aol.com REJECT
 newsletter@seminaria.gr REJECT
