@@ -6,14 +6,14 @@
   <link href="https://www.roussos.cc/" />
   <icon>https://www.roussos.cc/favicon.ico</icon>
   <logo>https://www.roussos.cc/static/img/</logo>
-  <updated>2016-02-25T22:51:01Z</updated>
+  <updated>2016-03-22T13:49:53Z</updated>
   
     <entry>
       <title>Will you be my cryptovalentine?</title>
       <link href="https://www.roussos.cc/2016/02/12/cryptovalentine/"/>
       <content type="html">
         <![CDATA[
-          <p><img alt="cryptovalentine" src="cryptolove.jpg" /></p>
+          <p><img alt="cryptovalentine" src="/2016/02/12/cryptovalentine/cryptolove.jpg" /></p>
 <blockquote>
 <p>Roses are red, violets are blue; I use free software to encrypt my online communication and so should you.</p>
 </blockquote>
@@ -57,7 +57,7 @@
       <link href="https://www.roussos.cc/2016/02/01/passive-surveillance/"/>
       <content type="html">
         <![CDATA[
-          <p><img alt="massive" src="massive.jpg" /></p>
+          <p><img alt="massive" src="/2016/02/01/passive-surveillance/massive.jpg" /></p>
 <h4><strong>Post-Snowden</strong></h4>
 <p>We definitely live in a different world since Snowden leaks, but for some people nothing has changed. We always knew that certain individuals are targeted by local or international law enforcement agencies. In some cases they even have a legal way of doing this. If you work on certain fields or operate as an activist in political issues, you always assumed or knew that your communications are monitored. We may have better knowledge on the way the do it, or which things they have broken and which not yet. But essentially nothing is new about this on the post-Snowden world.</p>
 <p>What Snowden leaks actually changed, what we learned from the documents, is that there is a vast ongoing process of massive passive surveillance and data collection. <strong>It doesn't matter if you are considered important. It doesn't matter if you have something to hide or not. All of your communications are monitored, stored and analyzed.</strong> This is what changed. This is what we learned.</p>
@@ -95,7 +95,7 @@
 <p>What if this protocol was implemented as an extension to Jabber? This would combine all best things from both worlds. Offline (encrypted) messages, multiple devices, better mobile integration but on the same time decentralized federated service. Well it’s done. Meet <a href="http://conversations.im/omemo/">OMEMO</a>.</p>
 <p><a href="http://conversations.im/">Conversations</a> on Android already supports it, <a href="https://chatsecure.org/blog/chatsecure-conversations-zom/">ChatSecure</a> is implementing it too and tickets are already opened on <a href="https://developer.pidgin.im/ticket/16801">Pidgin</a> and <a href="https://www.mail-archive.com/tor-bugs@lists.torproject.org/msg84721.html">Tor Messenger</a>. <a href="https://gajim.org/">Gajim</a> is currently the only desktop app that supports it (through <a href="https://github.com/kalkin/gajim-omemo/">a plugin</a>), but if you want to have OTR too then Gajim is not an option since <a href="https://github.com/python-otr/gajim-otr">its OTR plugin is unmaintained</a>.</p>
 <p>I’ve been testing Conversations/OMEMO over the last week and it works great. So maybe in a few months we’ll have something truly secure, decentralized and usable to suggest to our friends ;) Or just suggest Conversations to the most brave of your friends.</p>
-<p><img alt="omemo" src="omemo.png" /></p>
+<p><img alt="omemo" src="/2016/01/05/jabber-omemo/omemo.png" /></p>
 <hr />
 
 <p><em>Comments and reactions on <a href="https://librenet.gr/posts/541037">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/684297833453907968">Twitter</a></em></p>

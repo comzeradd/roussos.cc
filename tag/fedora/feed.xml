@@ -6,7 +6,7 @@
   <link href="https://www.roussos.cc/" />
   <icon>https://www.roussos.cc/favicon.ico</icon>
   <logo>https://www.roussos.cc/static/img/</logo>
-  <updated>2016-02-25T22:51:01Z</updated>
+  <updated>2016-03-22T13:49:53Z</updated>
   
     <entry>
       <title>Fedora Flock 2014</title>
@@ -40,7 +40,7 @@
       <content type="html">
         <![CDATA[
           <p>Over the last <a href="http://www.roussos.cc/2014/04/30/athens-free-software-monthly-meetups/">Free Software Meetup</a> we discussed about the "build your own home server" movement. This is a long and complex discussion, so most likely it will expand to future meetups. In the meantime I wanted to test BeagleBone Black (BB), as the hardware platform for such a project.</p>
-<p><img src="beagle-fedora.png" alt="fedora on beaglebone black" class="txt" /> I prefer BB over Raspeberry Pi (RaPi) because, despite what many people seem to believe, RaPi <a href="http://en.wikipedia.org/wiki/Raspberry_Pi#Driver_API">is not</a> fully Open Hardware. I also prefer armv7 hardware, since it gives me the option to use a "regular" linux distribution. I have the option for Fedora or Debian instead of Pidora or Raspbian. </p>
+<p><img src="/2014/06/23/fedora-beaglebone-black/beagle-fedora.png" alt="fedora on beaglebone black" class="txt" /> I prefer BB over Raspeberry Pi (RaPi) because, despite what many people seem to believe, RaPi <a href="http://en.wikipedia.org/wiki/Raspberry_Pi#Driver_API">is not</a> fully Open Hardware. I also prefer armv7 hardware, since it gives me the option to use a "regular" linux distribution. I have the option for Fedora or Debian instead of Pidora or Raspbian. </p>
 <p>During the meetup we talked a lot about <a href="https://arkos.io/">Arkos</a>, which supports many arm boards and seems like a great choice for administering your home server through a well designed web interface, lowering the technical knowledge threshold for setting up services like file or mail server. I'll get back to Arkos, but at this point I wanted to experiment with a "regular" distribution. So this post is about Fedora and Beaglebone Black.</p>
 <p>Download the <a href="http://fedoraproject.org/en/get-fedora#arm">Fedora ARM image</a> extract it and rename it to <code>fedora-arm.raw</code> so it's easier to follow the steps bellow.</p>
 <p>Flashing Fedora to BB is not that difficult. The tricky part is that Fedora comes with an "initial setup" screen, which requires an hdmi monitor and a keyboard at least on first run so you can set some basic things (like root password). I wanted to do some modifications to the Fedora image, and get through this "initial setup" screen prior to flashing it on the BB. Inspired by <a href="http://ebalaskas.gr/blog/2013/03/25/raspberry-pi-with-archlinux-under-qemu/">Ebal's post</a>, I thought Qemu as a perfect tool for this job.</p>
