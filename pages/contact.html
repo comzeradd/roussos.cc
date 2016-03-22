@@ -29,7 +29,7 @@
                 <pre><code>gpg --keyserver hkps://keys.fedoraproject.org --recv-key 0xD759A12E10B98B4D</code></pre>
                 <br><br>
                 or https:
-                <pre><code>wget https://www.roussos.cc/roussos-pgp.txt<br>gpg --import roussos-pgp.txt<br>rm -f roussos-pgp.txt</code></pre>
+                <pre><code>wget https://www.roussos.cc/pub/roussos-pgp.txt<br>gpg --import roussos-pgp.txt<br>rm -f roussos-pgp.txt</code></pre>
               </div>
             </div>
           </div>
@@ -42,10 +42,10 @@
       <div class="lead">instant messaging</div>
 
       <div class="contact-section">
-        <div><img src="/static/img/email.svg" title="xmpp (jabber)" /></div>
+        <div><img src="/static/img/jabber.svg" title="xmpp (jabber)" /></div>
         <div>
           otr:
-          <a data-toggle="modal" data-target="#OTRModal" href="#">CDEA2FB1 645AE45C 96D620A4 7C8558A1 0A6002D0</a>
+          <a data-toggle="modal" data-target="#OTRModal" href="#">1EEDD397 D851BB1D 0A655732 B1A775AD 38F65B1B</a>
         </div>
 
         <!-- OTRModal -->
@@ -58,34 +58,10 @@
               </div>
               <div class="modal-body">
                 to verify you can either trust https:
-                <pre><code>wget https://www.roussos.cc/roussos-otr.txt<br>cat roussos-otr.txt<br>rm -f roussos-otr.txt</code></pre>
+                <pre><code>wget https://www.roussos.cc/pub/roussos-otr.txt<br>cat roussos-otr.txt<br>rm -f roussos-otr.txt</code></pre>
                 <br><br>
                 or use my pgp public key:<br>
-                <pre><code>wget https://www.roussos.cc/roussos-otr.asc<br>gpg --verify &lt; roussos-otr.asc<br>rm -f roussos-otr.asc</code></pre>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          omemo:
-          <a data-toggle="modal" data-target="#OMEMOModal" href="#">05D2D34D E7393BA7 345B716A 24C6A0CA 5527ADFE 2F48D3E4 5FE6C68F 557D6568 3A</a>
-        </div>
-
-        <!-- OMEMOModal -->
-        <div class="modal fade" id="OMEMOModal" tabindex="-1" role="dialog" aria-labelledby="OMEMO" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="OMEMOModalLabel">OMEMO</h4>
-              </div>
-              <div class="modal-body">
-                to verify you can either trust https:
-                <pre><code>wget https://www.roussos.cc/roussos-omemo.txt<br>cat roussos-omemo.txt<br>rm -f roussos-omemo.txt</code></pre>
-                <br><br>
-                or use my pgp public key:<br>
-                <pre><code>wget https://www.roussos.cc/roussos-omemo.asc<br>gpg --verify &lt; roussos-omemo.asc<br>rm -f roussos-omemo.asc</code></pre>
+                <pre><code>wget https://www.roussos.cc/pub/roussos-otr.txt.asc<br>gpg --verify &lt; roussos-otr.txt.asc<br>rm -f roussos-otr.txt.asc</code></pre>
               </div>
             </div>
           </div>
