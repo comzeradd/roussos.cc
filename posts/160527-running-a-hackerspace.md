@@ -64,3 +64,7 @@ Sharing your knowledge around a specific technology or tool freely is not enough
 #### **Remember, do-ocracy**
 
 I hope it's obvious after this post that building and running a hackerspace is a collective effort. Find the people who share the same vision as you and build a hackerspace. Don't wait for someone else to do it. Or if you are a lucky, join an existing one that already runs by that vision. It's not that hard. After all, the only thing we want to do is change the world. How hard can it be?
+
+<hr>
+
+*Comments and reactions on [Diaspora](https://librenet.gr/posts/762787) or [Twitter](https://twitter.com/comzeradd/status/736135175692783616)*
