@@ -15,6 +15,6 @@ I’ve been testing Conversations/OMEMO over the last week and it works great. S
 
 ![omemo](omemo.png)
 
-<hr />
+<hr>
 
 *Comments and reactions on [Diaspora](https://librenet.gr/posts/541037) or [Twitter](https://twitter.com/comzeradd/status/684297833453907968)*

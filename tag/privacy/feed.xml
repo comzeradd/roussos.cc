@@ -6,7 +6,7 @@
   <link href="https://www.roussos.cc/" />
   <icon>https://www.roussos.cc/favicon.ico</icon>
   <logo>https://www.roussos.cc/static/img/</logo>
-  <updated>2016-03-22T13:49:53Z</updated>
+  <updated>2016-05-27T12:58:47Z</updated>
   
     <entry>
       <title>Will you be my cryptovalentine?</title>
@@ -96,7 +96,7 @@
 <p><a href="http://conversations.im/">Conversations</a> on Android already supports it, <a href="https://chatsecure.org/blog/chatsecure-conversations-zom/">ChatSecure</a> is implementing it too and tickets are already opened on <a href="https://developer.pidgin.im/ticket/16801">Pidgin</a> and <a href="https://www.mail-archive.com/tor-bugs@lists.torproject.org/msg84721.html">Tor Messenger</a>. <a href="https://gajim.org/">Gajim</a> is currently the only desktop app that supports it (through <a href="https://github.com/kalkin/gajim-omemo/">a plugin</a>), but if you want to have OTR too then Gajim is not an option since <a href="https://github.com/python-otr/gajim-otr">its OTR plugin is unmaintained</a>.</p>
 <p>I’ve been testing Conversations/OMEMO over the last week and it works great. So maybe in a few months we’ll have something truly secure, decentralized and usable to suggest to our friends ;) Or just suggest Conversations to the most brave of your friends.</p>
 <p><img alt="omemo" src="/2016/01/05/jabber-omemo/omemo.png" /></p>
-<hr />
+<hr>
 
 <p><em>Comments and reactions on <a href="https://librenet.gr/posts/541037">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/684297833453907968">Twitter</a></em></p>
         ]]>
@@ -197,23 +197,6 @@ resize2fs /dev/sdX3
         ]]>
       </content>
       <published>2014-06-23 13:13:52</published>
-    </entry>
-  
-    <entry>
-      <title>Our privacy is interdependent</title>
-      <link href="https://www.roussos.cc/2014/05/14/our-privacy-is-interdependent/"/>
-      <content type="html">
-        <![CDATA[
-          <p>Last week I gave a presentation at <a href="http://commonsfest.info/">CommonsFest</a> in the spirit of my <a href="http://www.roussos.cc/2014/05/08/free-your-android/">Free Your Android</a> post, trying to educate people on simple steps they can make to have better privacy on their mobile devices.</p>
-<p>A couple of days before my presentation I watched <a href="https://www.youtube.com/watch?v=BBgZyV4iltw">this great speech</a> from Jillian York and Jacob Appelbaum (please go and watch this). At some point Jacob mentions that <em>"our security is interdependent"</em>.</p>
-<p>Few days later Benjamin Mako Hill came to confirm this remark, but with <a href="http://mako.cc/copyrighteous/google-has-most-of-my-email-because-it-has-all-of-yours">real evidence</a>. He analyzed his emails to find out that despite self-hosting his own mail server, 57% of his emails endup on Google's servers. I ran <a href="http://projects.mako.cc/source/?p=gmail-maildir-counter">the code</a> on my emails and I got pretty much the same percentage (and a bit higher if I include all three big providers).</p>
-<p>This was how I ended my presentation (not aware of Benjamin's work at the moment):</p>
-<blockquote>
-<p>"I have made a personal choice not to host my email on Google, Microsoft or Yahoo. But if the majority of my contacts use one of these providers then most of my outgoing emails end up to their servers. It's important to understand that <strong>our privacy depends on the privacy of our social network</strong>."</p>
-</blockquote>
-        ]]>
-      </content>
-      <published>2014-05-14 12:51:29</published>
     </entry>
   
 </feed>
