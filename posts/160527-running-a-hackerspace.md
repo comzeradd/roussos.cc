@@ -52,7 +52,7 @@ Same happens with hackability. Remember the Hackerspace definition as it stands 
 
 > Hackerspaces are community-operated physical places, where people share their interest in tinkering with technology, meet and work on their projects, and learn from each other.
 
-So again the important thing here is that you tikner/hack things. Many people have misinterpret this into thinking that since there is no mention of Open Source or Free Software in that definition then these things are not important. Again, these are the requirements. **In order to hack something, you should be granted the freedom to study and change it. Access to the source code is a prerequisite for this.** For those who prefer graphical representations:
+So again the important thing here is that you tinker/hack things. Many people have misinterpret this into thinking that since there is no mention of Open Source or Free Software in that definition then these things are not important. Again, these are the requirements. **In order to hack something, you should be granted the freedom to study and change it. Access to the source code is a prerequisite for this.** For those who prefer graphical representations:
 
 ![hackability](hackability.png)
 
