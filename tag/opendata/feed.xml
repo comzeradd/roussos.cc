@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>Nikos Roussos</author>
-  <title>nikos.roussos - openstreetmap</title>
+  <title>nikos.roussos - opendata</title>
   <link href="https://www.roussos.cc/feed.xml" rel="self" />
   <link href="https://www.roussos.cc/" />
   <icon>https://www.roussos.cc/favicon.ico</icon>
@@ -42,24 +42,6 @@
         ]]>
       </content>
       <published>2016-07-12 11:31:23</published>
-    </entry>
-  
-    <entry>
-      <title>post-vacations map editing</title>
-      <link href="https://www.roussos.cc/2015/08/07/post-vacations-map-editing/"/>
-      <content type="html">
-        <![CDATA[
-          <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/comzeradd/20180006889/in/datetaken-public/" title="the view"><img src="https://farm1.staticflickr.com/274/20180006889_6fe3ecbe77_b.jpg" width="1024" height="438" alt="the view"></a></p>
-<p>Greek islands are a great place for summer vacations. This year I visited <a href="https://en.wikipedia.org/wiki/Amorgos">Amorgos</a>, part of the Cyclades island group, and had a short visit at <a href="https://en.wikipedia.org/wiki/Koufonisia">Pano Koufonisi</a>.</p>
-<p>Being in a new place means you need some kind of map to guide you through the endless number of beaches, paths and villages. I've been using <a href="https://www.openstreetmap.org/">OpenStreetMap</a> as a map source for a long time and occasionally I contribute back. OpenStreetMap is a collaborative project to create a free editable map of the world. Many people call it the Wikipedia of maps, and it is in some extent. In contrary with all the major industry map services, which utilize free labor from volunteer contributors and give nothing back, OpenStreetMap data are freely distributed to be used by anyone for any purpose.</p>
-<p>You can find many places where OpenStreetMap has more rich data than other sources or read <a href="http://www.wired.com/2015/05/the-open-source-maps-that-made-rescues-in-nepal-possible/">stories</a> on how targeted mapping on specific incidents saved thousand of lives. But there are also many places where it lacks reliable data. Amorgos (and unfortunately many other Greek islands) is one of these cases.</p>
-<p>During my vacations there I used the only equipment available (my phone) to keep notes that would help me later to enrich OpenStreetMap. I extensivly use <a href="http://osmand.net/">Osmand</a> as my main navigation tool so this was my first option of keeping notes. You can either add favorites to mark any <a href="https://en.wikipedia.org/wiki/Point_of_interest">POIs</a> or use the notes plugin to take photos or record audio notes. Osmand has also an editing plugin that can help you edit data on the fly, but I prefer to do this later. If you are searching for a more simple app <a href="http://wiki.openstreetmap.org/wiki/OSMtracker_%28Android%29">OSMtracker</a> is a better choice, for tracking routes and keeping notes. If you don't have a smartphone during your vacations you can just use paper and pen. <a href="http://fieldpapers.org/">Field Papers</a> will help you print the map area you are interested in and you can keep notes with a pen.</p>
-<p>Getting back home I had many notes and plenty of work to do. OpenStretMap has a great <a href="http://wiki.openstreetmap.org/wiki/ID">in-browser editor</a> and the <a href="http://wiki.openstreetmap.org/wiki/Map_Features">Map Features</a> (really long) wiki page can guide you through the supported map elements. I added/changed around 90 map elements (beaches, paths, roads, buildings, etc) and it took me about an hour. Less than a day later the changes were rendered to the live website and I could feel proud about my contributions :)</p>
-<p>So did you enjoyed your vacations? Now start contributing to OpenStreetMap so more people can enjoy the travel to all the places you visited. Happy mapping :)</p>
-<p><img alt="OSM editing" src="/2015/08/07/post-vacations-map-editing/osm-editing.jpg" /></p>
-        ]]>
-      </content>
-      <published>2015-08-07 13:48:52</published>
     </entry>
   
 </feed>
