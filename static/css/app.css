@@ -147,8 +147,8 @@ img.txt {
 ==================== */
 
 .home-bg {
-    height: 1300px;
-    width: 2000px;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     z-index: -9999;
     position: fixed;
