@@ -1,5 +1,5 @@
 title: post-vacations map editing
-date: 2015-08-07 13:48:52 
+date: 2015-08-07 13:48:52
 slug: post-vacations-map-editing
 tags: openstreetmap, opensource
 files: osm-editing.jpg

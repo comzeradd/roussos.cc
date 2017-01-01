@@ -43,3 +43,7 @@ The result is a nice coffee drink, less acidic and full of flavors compared to o
 Enjoy!
 
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/comzeradd/30398329052/in/album-72157675593290325/" title="Enjoy"><img src="https://c5.staticflickr.com/6/5727/30398329052_38eff01593_c.jpg" width="800" height="534" alt="Enjoy"></a>
+
+<hr>
+
+*Comments and reactions on [Diaspora](https://librenet.gr/posts/601875) or [Twitter](https://twitter.com/comzeradd/status/698135511437803520)*
