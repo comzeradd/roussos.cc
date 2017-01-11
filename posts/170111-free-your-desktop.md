@@ -54,3 +54,7 @@ I use [Shotwell](https://wiki.gnome.org/Apps/Shotwell) as a photo library tool, 
 ### Utilities
 
 A few tools, that don't fall under any of the above categories, but I think I should mention. [Electrum](https://electrum.org/), as my Bitcoin wallet. [OnionShare](https://onionshare.org/), for easily sharing files over Tor. [Syncthing](https://syncthing.net/), for syncing files between different machines. [Liferea](http://lzone.de/liferea/), as an RSS/Atom Feed reader.
+
+<hr>
+
+*Comments and reactions on [Diaspora](https://librenet.gr/posts/1125422) and [Twitter](https://twitter.com/comzeradd/status/819146994501451776)*.

@@ -6,7 +6,7 @@
   <link href="https://www.roussos.cc/" />
   <icon>https://www.roussos.cc/favicon.ico</icon>
   <logo>https://www.roussos.cc/static/img/</logo>
-  <updated>2017-01-11T13:30:38Z</updated>
+  <updated>2017-01-11T13:41:03Z</updated>
   
     <entry>
       <title>Free your Desktop (or the tools I use)</title>
@@ -24,9 +24,9 @@
 <h3>Browser</h3>
 <p><a href="https://www.mozilla.org/firefox/">Firefox</a> is by far the most feature-full and secure Open Source browser we have. I use it either on the stable or the <a href="https://www.mozilla.org/firefox/developer/">Developers Edition</a> form. I also regularly use the <a href="https://www.torproject.org/">Tor Browser</a>.</p>
 <h3>Communication</h3>
-<p>When it comes to email clients I have to say that I'm not very satisfied with the current state. Most of them use the same UI metaphors all mail clients had 20 years ago. Most current efforts to fix that are focused around webmail clients, which is fine, but on the same time they lack most advanced features, like encryption or usable search. So at the moment I'm mostly using <a href="https://www.mozilla.org/thunderbird/">Thunderbird</a> as my primary email client and experiment regularly with a few more. That includes <a href="https://www.mailpile.is/">Mailpile</a>, <a href="http://www.rainloop.net/">Rainloop</a> and <a href="https://wiki.gnome.org/Apps/Geary">Geary</a>.</p>
+<p>When it comes to email clients I have to say that I'm not very satisfied with the current state. Most of them use the same UI metaphors all mail clients had 20 years ago. Most current efforts to fix that are focused around webmail clients. Which is fine, but on the same time they lack most advanced features, like encryption or usable search. So at the moment I'm mostly using <a href="https://www.mozilla.org/thunderbird/">Thunderbird</a> as my primary email client and experiment regularly with a few more. That includes <a href="https://www.mailpile.is/">Mailpile</a>, <a href="http://www.rainloop.net/">Rainloop</a> and <a href="https://wiki.gnome.org/Apps/Geary">Geary</a>.</p>
 <p>For Instant Messaging I switched to <a href="https://coy.im/">CoyIM</a> lately for Jabber and you can also <a href="https://www.roussos.cc/contact.html">find me</a> on <a href="https://ricochet.im/">Ricochet</a>.</p>
-<p>Most people will consider Calendar part of communication apps. I hate Thunderbird's calendar capabilities and I never believed that Calendar should always be attached to an email client. So I use Gnome's own <a href="https://wiki.gnome.org/Apps/Calendar">Calendar app</a> for that.</p>
+<p>Most people will consider Calendar part of communication apps. I dislike Thunderbird's calendar capabilities and I never believed that Calendar should always be attached to an email client. So I use Gnome's own <a href="https://wiki.gnome.org/Apps/Calendar">Calendar app</a> for that.</p>
 <h3>Documents</h3>
 <p>I hate the concept of Word Processor, as much as I hate the overloaded interface these apps come with, or these .doc and .odt attachments with plain text that you could easily write on any simple text editor. Although my default text editor is <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>, I use <a href="https://github.com/retext-project/retext">ReText</a> to write blog posts like this one. Not very happy with its UI, but I use it till I find a better Markdown editor. I keep notes on <a href="https://wiki.gnome.org/Apps/Bijiben">Bijiben</a>. Clean UI and the most wanted feature of auto-save when it comes to keeping notes.</p>
 <h3>Development</h3>
@@ -38,6 +38,9 @@
 <p>I use <a href="https://wiki.gnome.org/Apps/Shotwell">Shotwell</a> as a photo library tool, but I'm still looking for something better here. For editing the choices are the obvious ones. <a href="https://www.gimp.org/">Gimp</a> for bitmap, <a href="https://inkscape.org/en/">Inkscape</a> for vector and <a href="http://www.darktable.org/">Darktable</a> for raw photos.</p>
 <h3>Utilities</h3>
 <p>A few tools, that don't fall under any of the above categories, but I think I should mention. <a href="https://electrum.org/">Electrum</a>, as my Bitcoin wallet. <a href="https://onionshare.org/">OnionShare</a>, for easily sharing files over Tor. <a href="https://syncthing.net/">Syncthing</a>, for syncing files between different machines. <a href="http://lzone.de/liferea/">Liferea</a>, as an RSS/Atom Feed reader.</p>
+<hr>
+
+<p><em>Comments and reactions on <a href="https://librenet.gr/posts/1125422">Diaspora</a> and <a href="https://twitter.com/comzeradd/status/819146994501451776">Twitter</a></em>.</p>
         ]]>
       </content>
       <published>2017-01-11 13:37:00</published>
