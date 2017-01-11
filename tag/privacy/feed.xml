@@ -6,7 +6,7 @@
   <link href="https://www.roussos.cc/" />
   <icon>https://www.roussos.cc/favicon.ico</icon>
   <logo>https://www.roussos.cc/static/img/</logo>
-  <updated>2017-01-02T10:43:55Z</updated>
+  <updated>2017-01-11T13:30:38Z</updated>
   
     <entry>
       <title>33c3 notes</title>
@@ -179,23 +179,6 @@ Mind fuck presentation. AI, Cellular Automata and more.</li>
         ]]>
       </content>
       <published>2016-01-05 12:41:37</published>
-    </entry>
-  
-    <entry>
-      <title>If you care about privacy, Signal is certainly not an option</title>
-      <link href="https://www.roussos.cc/2015/12/05/signal-privacy/"/>
-      <content type="html">
-        <![CDATA[
-          <p>Whisper Systems failed big once again. They just <a href="https://whispersystems.org/blog/signal-desktop/">announced</a> their "Desktop" version of Signal, which is actually a Chrome app.</p>
-<p>So just to get facts straight, this is neither a Desktop nor a Web app. And just like their Android app, you need a Google account to download it.</p>
-<p>Actually this is even worse, because you also need to use Chrome to use this app. <strong>Channeling all your (meta)data through a closed source browser, built &amp; distributed by the biggest tracking ad company.</strong></p>
-<p>If you care about privacy, Signal is certainly not an option.</p>
-<hr />
-
-<p><em>Comments and reactions on <a href="https://librenet.gr/posts/497875">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/673940185692905476">Twitter</a></em></p>
-        ]]>
-      </content>
-      <published>2015-12-05 15:45:08</published>
     </entry>
   
 </feed>
