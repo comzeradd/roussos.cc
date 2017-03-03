@@ -46,13 +46,13 @@
 
     <!-- Email -->
     <section>
-      <div class="lead">email</div>
+      <div class="lead"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> email</div>
 
       <div class="contact-section">
         <div><img src="/static/img/email.svg" alt="Email"></div>
         <div>
           pgp:
-          <a data-toggle="modal" data-target="#PGPModal" href="#">61614A78 19E59D02 7C8974A5 D759A12E 10B98B4D</a>
+          <code data-toggle="modal" data-target="#PGPModal" href="#">61614A78 19E59D02 7C8974A5 D759A12E 10B98B4D</code>
         </div>
 
         <!-- PGPModal -->
@@ -78,50 +78,60 @@
 
     <!-- IM -->
     <section>
-      <div class="lead">instant messaging</div>
+      <div class="lead"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> instant messaging</div>
 
       <div class="contact-section">
-        <div>jabber:<img src="/static/img/jabber.svg" title="xmpp (jabber)" /></div>
+        <div>jabber: <img src="/static/img/jabber.svg" title="xmpp (jabber)" /></div>
         <div>
           otr:
-          <a data-toggle="modal" data-target="#OTRModal" href="#">1EEDD397 D851BB1D 0A655732 B1A775AD 38F65B1B</a>
-        </div>
-
-        <!-- OTRModal -->
-        <div class="modal fade" id="OTRModal" tabindex="-1" role="dialog" aria-labelledby="OTR" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="OTRModalLabel">OTR</h4>
-              </div>
-              <div class="modal-body">
-                to verify you can either trust https:
-                <pre><code>wget https://www.roussos.cc/pub/roussos-otr.txt<br>cat roussos-otr.txt<br>rm -f roussos-otr.txt</code></pre>
-                <br><br>
-                or use my pgp public key:<br>
-                <pre><code>wget https://www.roussos.cc/pub/roussos-otr.txt.asc<br>gpg --verify &lt; roussos-otr.txt.asc<br>rm -f roussos-otr.txt.asc</code></pre>
-              </div>
-            </div>
-          </div>
+          <code>39BAFA4D AC08DCAA 758CD477 872B79ED 9A4D4928</code>
         </div>
       </div>
 
       <div class="contact-section">
-        <div>&nbsp;</div>
-        <div>ricochet:72hodldd5enqt72h</div>
+        <div>signal: +3...40</div>
+        <div>
+          safety number:
+          <code>68967 50541 22788 18142 14586 71939</code>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <div>ricochet: 72hodldd5enqt72h</div>
+      </div>
+
+      <div class="contact-section">
+        <div>smssecure: +3...40</div>
+        <div>
+          safety number:
+          <code>059e1f 6e16f6 9f5908 b22e40 89fdf9 667fab d3ff39 1d8fbc 462e36 efc489 b66843</code>
+        </div>
       </div>
     </section>
 
     <!-- Donate -->
     <section>
-      <div class="lead">donate</div>
+      <div class="lead"><span class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span> donate</div>
 
       <div class="contact-section">
-        If you value my work, please donate to
-        <a href="https://www.hackerspace.gr" target="_blank">Hackerspace.gr</a>.<br>
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=P8WSQXEJBXQ7G" target="_blank">Paypal</a><br>
-        Bitcoin: 19x3tczRmQAy5grGxSkVmLU7gNisgT8voZ
+        If you value my work, please donate to this bitcoin wallet:
+        <code data-toggle="modal" data-target="#BitcoinModal" href="#">1Dsp4z36pQHCvPF3UkgSRXVEBLRf2bH8cV</code>
+
+        <!-- BitcoinModal -->
+        <div class="modal fade" id="BitcoinModal" tabindex="-1" role="dialog" aria-labelledby="Bitcoin" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="BitcoinModalLabel">Bitcoin</h4>
+              </div>
+              <div class="modal-body text-center">
+                <img src="/static/img/bitcoin.png" alt="bitcoin"><br>
+                <code data-toggle="modal" data-target="#BitcoinModal" href="#">1Dsp4z36pQHCvPF3UkgSRXVEBLRf2bH8cV</code>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>

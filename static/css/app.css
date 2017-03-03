@@ -149,6 +149,10 @@ img.txt {
     margin-bottom: 10px;
 }
 
+.lead .glyphicon {
+    font-size: 0.6em;
+}
+
 .post-title {
     margin-top: -10px;
     margin-bottom: 20px;
@@ -205,7 +209,11 @@ img.txt {
 }
 
 .contact-section {
-    padding: 0px 10px 0px 10px;
+    padding: 0 10px 15px 10px;
+}
+
+.contact-section code {
+    cursor: pointer;
 }
 
 section {
