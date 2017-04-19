@@ -1,5 +1,5 @@
 title: Free Your Android
-date: 2014-05-08 11:22:03 
+date: 2014-05-08 11:22:03
 type: post
 slug: free-your-android
 tags: opensource, android, fsfe, privacy
@@ -91,8 +91,10 @@ Guardian project has setup an SIP provider ([Ostel.co](https://ostel.co/)) that 
 
 <img src="lumicall.png" alt="" class="txt" width="32" /> <img src="ostel.png" alt="" class="txt" width="32" /><br><br>
 
-<img src="fya.png" alt="" width="120" /> 
+<img src="fya.png" alt="" width="120" />
 
 All the software I mention here is stuff I use. I'm sure that in some cases you may find alternatives that better suit your needs. So dig deeper to F-droid for more apps and surf through [FSFE's website](https://fsfe.org/campaigns/android/liberate.en.html).
 
 I currently have an android smartphone that runs 100% Free Software applications. I can't think of missing any functionality so far and I certainly feel more secure ;)
+
+<small>*(this post was traslated in [Russian](http://softdroid.net/svobodnyy-android))*</small>
