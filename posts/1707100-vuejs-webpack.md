@@ -101,4 +101,4 @@ Or build it for production:
 
 <hr>
 
-*Comments and reactions on [Diaspora]() and [Twitter]()*.
+*Comments and reactions on [Diaspora](https://librenet.gr/posts/1411069) and [Twitter](https://twitter.com/comzeradd/status/884465700743520257)*.

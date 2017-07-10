@@ -6,7 +6,7 @@
   <link href="https://www.roussos.cc/" />
   <icon>https://www.roussos.cc/favicon.ico</icon>
   <logo>https://www.roussos.cc/static/img/</logo>
-  <updated>2017-07-10T20:32:36Z</updated>
+  <updated>2017-07-10T20:37:22Z</updated>
   
     <entry>
       <title>Building a minimal single page application with Vue.js + Webpack</title>
@@ -91,7 +91,7 @@ export default class Api {
 <p><img alt="33c3" src="/2017/07/10/vuejs-webpack/vuejs.jpg" /></p>
 <hr>
 
-<p><em>Comments and reactions on <a href="">Diaspora</a> and <a href="">Twitter</a></em>.</p>
+<p><em>Comments and reactions on <a href="https://librenet.gr/posts/1411069">Diaspora</a> and <a href="https://twitter.com/comzeradd/status/884465700743520257">Twitter</a></em>.</p>
         ]]>
       </content>
       <published>2017-07-10 20:27:00</published>
