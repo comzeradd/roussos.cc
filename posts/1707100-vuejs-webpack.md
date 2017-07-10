@@ -1,4 +1,4 @@
-title: Build a minimal single page application with Vue.js + Webpack
+title: Building a minimal single page application with Vue.js + Webpack
 date: 2017-07-10 20:27:00
 slug: vuejs-webpack
 tags: opensource, mozilla, frontend
@@ -98,3 +98,7 @@ Or build it for production:
     npm run build
 
 ![33c3](vuejs.jpg)
+
+<hr>
+
+*Comments and reactions on [Diaspora]() and [Twitter]()*.
