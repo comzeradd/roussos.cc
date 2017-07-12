@@ -74,7 +74,7 @@
 <p>This post is about what I learned during one of these days with a bonus of something I built with that. For quite some time now I'm using <a href="https://bower.io/">Bower</a> and <a href="http://gulpjs.com/">Gulp</a> for frontend package management and I'm very happy with these tools. But since javascript tools landscape is constantly changing I wanted to get a more deep understanding of <a href="https://webpack.js.org/">Webpack</a> too. Even Bower's official website suggests it these days!</p>
 <p>"Learn by making" is a mindset very common at Mozilla, so I wanted to build something in the process and as a test-bed for trying out Webpack. So I decided to build a minimal reusable single page application, that can be really useful for all these times you just want to build a simple static website and you catch yourself doing the same stuff over and over again.</p>
 <p>I picked <a href="https://vuejs.org/">Vue.js</a> as the framework for this app. You can find many excellent blog posts out there on why Vue.js, instead of Angular or React. My personal take on a nutshell, is that Vue.js has the easiest learning curve, especially for people who code in JS but never touched a framework before. It has top-quality documentation, great community and its design principles and simplicity make your code really clean and readable, which make it easier for other people to get involved and contribute. No need to code ugly and bloated .jsx files with custom html entities (hey React!).</p>
-<p>You can browse the <a href="https://github.com/comzeradd/vuejs-spa">complete source code</a>. If you are new to Vue.js navigate through the project to get familiar with the code structure. See how breaking out your application into components make it more clean and easy to understand and maintain. I intentionally added some css on some components to showcase how easily you can use js, html and css inside the same component.</p>
+<p>You can browse the <a href="https://gitlab.com/comzeradd/vuejs-spa">complete source code</a>. If you are new to Vue.js navigate through the project to get familiar with the code structure. See how breaking out your application into components make it more clean and easy to understand and maintain. I intentionally added some css on some components to showcase how easily you can use js, html and css inside the same component.</p>
 <p>Check out the webpack configuration file. I tried to keep it as simple as possible. We have an entry javascript file to declare our app and dependencies and output file to bundle everything.</p>
 <pre><code>entry: './src/app.js',
 output: {
@@ -146,6 +146,7 @@ export default class Api {
 <pre><code>npm run build
 </code></pre>
 <p><img alt="33c3" src="/2017/07/10/vuejs-webpack/vuejs.jpg" /></p>
+<p>Or just see the <a href="https://comzeradd.gitlab.io/vuejs-spa/">demo</a>.</p>
 <hr>
 
 <p><em>Comments and reactions on <a href="https://librenet.gr/posts/1411069">Diaspora</a> and <a href="https://twitter.com/comzeradd/status/884465700743520257">Twitter</a></em>.</p>

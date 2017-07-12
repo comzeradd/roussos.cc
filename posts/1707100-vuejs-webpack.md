@@ -13,7 +13,7 @@ This post is about what I learned during one of these days with a bonus of somet
 
 I picked [Vue.js](https://vuejs.org/) as the framework for this app. You can find many excellent blog posts out there on why Vue.js, instead of Angular or React. My personal take on a nutshell, is that Vue.js has the easiest learning curve, especially for people who code in JS but never touched a framework before. It has top-quality documentation, great community and its design principles and simplicity make your code really clean and readable, which make it easier for other people to get involved and contribute. No need to code ugly and bloated .jsx files with custom html entities (hey React!).
 
-You can browse the [complete source code](https://github.com/comzeradd/vuejs-spa). If you are new to Vue.js navigate through the project to get familiar with the code structure. See how breaking out your application into components make it more clean and easy to understand and maintain. I intentionally added some css on some components to showcase how easily you can use js, html and css inside the same component.
+You can browse the [complete source code](https://gitlab.com/comzeradd/vuejs-spa). If you are new to Vue.js navigate through the project to get familiar with the code structure. See how breaking out your application into components make it more clean and easy to understand and maintain. I intentionally added some css on some components to showcase how easily you can use js, html and css inside the same component.
 
 Check out the webpack configuration file. I tried to keep it as simple as possible. We have an entry javascript file to declare our app and dependencies and output file to bundle everything.
 
@@ -52,18 +52,18 @@ Now check index.html. That's our app. Really.
       <link rel="shortcut icon" href="./src/assets/img/favicon.ico">
     </head>
     <body>
-    
+
       <div id="app"></div>
-    
+
       <script src="/dist/bundle.js"></script>
-    
+
     </body>
     </html>
 
 Browsing through `src` folder you'll notice an `api` folder. I added a dummy json file and [axios](https://github.com/mzabriskie/axios), to give you an idea on how you could utilize an external API for your app's content.
 
     import axios from 'axios';
-    
+
     export default class Api {
         static getItems() {
             return axios.get('/items.json');
@@ -98,6 +98,8 @@ Or build it for production:
     npm run build
 
 ![33c3](vuejs.jpg)
+
+Or just see the [demo](https://comzeradd.gitlab.io/vuejs-spa/).
 
 <hr>
 
