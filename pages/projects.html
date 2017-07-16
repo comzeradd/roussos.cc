@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %} &bull; Projects{% endblock title %}
+
+{% block content %}
+  <div class="container">
+    <section>
+      This is a list of projects I develop or/and contribute.
+      For a more realtime contribution feed you can check my
+      <a href="https://gitlab.com/comzeradd/" target="_blank">Gitlab</a> and
+      <a href="https://github.com/comzeradd/" target="_blank">Github</a> profiles.
+    </section>
+
+    <section>
+      <strong>Personal</strong>
+
+      <div>
+        <a href="https://gitlab.com/comzeradd/monopati" target="_blank">monopati</a>: a minimalistic static content generator.
+      </div>
+
+      <div>
+        <a href="https://gitlab.com/comzeradd/vuejs-spa" target="_blank">vuejs-minimal-spa</a>: a minimal single page application with vue.js.
+      </div>
+
+      <div>
+        <a href="https://gitlab.com/comzeradd/funky-mailman" target="_blank">funky-mailman</a>: a mailman theme.
+      </div>
+    </section>
+
+    <section>
+      <strong>Mozilla</strong> - <a href="" target="_blank" class="details">mozilla.org</a>
+
+      <p class="details">
+        Full Stack Engineer at Participation Systems, part of the Open Innovation team.
+      </p>
+
+      <div>
+        <a href="https://github.com/mozilla/mozillians" target="_blank">mozillians</a>: a directory of all mozilla contributors.
+      </div>
+
+      <div>
+        <a href="https://github.com/mozilla-iam/sso-dashboard" target="_blank">sso-dashboard</a>: a single sign-on dashboard.
+      </div>
+
+      <div>
+        <a href="https://github.com/mozilla/coss" target="_blank">coss</a>: community support software.
+      </div>
+
+      <div>
+        <a href="https://github.com/mozilla/remo" target="_blank">remo</a>: mozilla reps portal.
+      </div>
+
+      <div>
+        <a href="https://github.com/mozilla/mozmoderator" target="_blank">mozmoderator</a>: moderator app.
+      </div>
+
+      <div>
+        <a href="https://github.com/mozilla/activate.mozilla.community" target="_blank">activate</a>: a contribution opportunities dashboard.
+      </div>
+    </section>
+
+    <section>
+      <strong>Libre Space Foundation</strong> - <a href="" target="_blank" class="details">libre.space</a>
+
+      <p class="details">
+        Founder and member of the Board. We won the
+        <a href="https://hackaday.com/2014/11/13/satnogs-wins-the-2014-hackaday-prize/" target="_blank" class="details">Hackaday prize</a>
+        and we put a satellite in to
+        <a href="http://hackaday.com/2017/04/19/flying-the-first-open-source-satellite/" target="_blank">orbit</a>.
+      </p>
+
+      <div>
+        <a href="https://github.com/satnogs/satnogs-network" target="_blank">satnogs-network</a>: global management network for satellite ground stations.
+      </div>
+
+      <div>
+        <a href="https://github.com/satnogs/satnogs-db" target="_blank">satnogs-db</a>: satellite transmitters and telemetry db.
+      </div>
+
+      <div>
+        <a href="https://upsat.gr/" target="_blank">upsat</a>: the first open source satellite (cubesat).
+      </div>
+    </section>
+
+    <section>
+      <strong>Fedora Project</strong> - <a href="" target="_blank" class="details">fedoraproject.org</a>
+
+      <p class="details">
+        Member of the Developers/Packagers group.
+      </p>
+
+      <div>
+        <a href="https://admin.fedoraproject.org/pkgdb/packager/comzeradd/" target="_blank">packages</a>: pkgdb list of maintained packages.
+      </div>
+    </section>
+
+    <section>
+      <strong>Athens Hackerspace</strong> - <a href="" target="_blank" class="details">hackerspace.gr</a>
+
+      <p>
+        Founder and active operator. A magical place in the physical world.
+      </p>
+
+      <div>
+        <a href="https://github.com/hsgr/panopticon" target="_blank">panopticon</a>: hackerspace.gr website.
+      </div>
+    </section>
+
+    <section>
+      <strong>Initiatives</strong>
+
+      <p class="details">
+        Other groups and initiatives that I participate or just contribute.
+      </p>
+
+      <div>
+        <a href="http://fsfe.org/" target="_blank">Free Software Foundation Europe</a>: general assembly member.
+      </div>
+
+      <div>
+        <a href="https://commons.gr/" target="_blank">Greek Commons Alliance</a>: a platform for all commons and p2p projects.
+      </div>
+
+      <div>
+        <a href="https://www.cryptoparty.in/" target="_blank">Cryptoparty</a>: running workshops, mostly in athens.
+      </div>
+
+      <div>
+        <a href="http://osmfoundation.org/" target="_blank">Open Street Map Foundation</a>: contributor and occassionaly running workshops.
+      </div>
+    </section>
+
+  </div>
+{% endblock %}
+
+
+{% block javascript %}
+  <script src="/static/js/lib/mapbox.js"></script>
+  <script src="/static/js/places.js"></script>
+{% endblock javascript %}
