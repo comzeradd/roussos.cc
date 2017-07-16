@@ -1,0 +1,13 @@
+image: alpine
+
+pages:
+  stage: deploy
+  script:
+  - mkdir public
+  - cp -r static 20* category pub *.html *.ico *.txt *.xml public
+  - cp static/css/app.css public/static/css/
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
