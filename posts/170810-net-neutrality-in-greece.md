@@ -42,4 +42,4 @@ files: netflix.jpg
 
 <hr>
 
-*Σχόλια στο [Twitter](https://twitter.com/comzeradd/status/895927210070114304) και στο [Facebook](https://www.facebook.com/comzeradd/posts/2031221597107646).*
+*Σχόλια και παρατηρήσεις σε [Twitter](https://twitter.com/comzeradd/status/895927210070114304), [Diaspora](https://librenet.gr/posts/1474891) και [Facebook](https://www.facebook.com/comzeradd/posts/2031221597107646).*
