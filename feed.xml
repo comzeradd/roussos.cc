@@ -6,7 +6,43 @@
   <link href="https://www.roussos.cc/" />
   <icon>https://www.roussos.cc/favicon.ico</icon>
   <logo>https://www.roussos.cc/static/img/me.jpg</logo>
-  <updated>2017-07-16T17:25:16Z</updated>
+  <updated>2017-08-11T10:59:25Z</updated>
+  
+    <entry>
+      <title>Διαδικτυακή Ουδετερότητα και η κατάσταση στην Ελλάδα</title>
+      <link href="https://www.roussos.cc/2017/08/11/net-neutrality-in-greece/"/>
+      <content type="html">
+        <![CDATA[
+          <blockquote>
+<p><strong>Net Neutrality (Διαδικτυακή Ουδετερότητα):</strong> είναι η αρχή πως όλοι οι πάροχοι internet (ISPs) και οι κυβερνητικές αρχές που ρυθμίζουν το internet, πρέπει να αντιμετωπίζουν και να διαχειρίζονται όλα τα δεδομένα ισότιμα. Χωρίς να κάνουν διακρίσεις ή να έχουν διαφορετικές χρεώσεις ανάλογα με τον χρήστη, το περιεχόμενο, το website, την εφαρμογή ή την υπηρεσία.</p>
+</blockquote>
+<p>Υπάρχουν πολλοί λόγοι που η παραβίαση αυτής της αρχής δεν είναι πολύ καλή ιδέα. Το <a href="https://en.wikipedia.org/wiki/Net_neutrality">σχετικό άρθρο</a> της Wikipedia είναι υπερπλήρες και θα ήταν άσκοπο να προσπαθήσω να το αναπαράγω εδώ. Για την καλύτερη ανάγνωση αυτού του post, ας μείνουμε προς το παρόν στο κομμάτι του αθέμιτου ανταγωνισμού. Αν ένας πάροχος προκρίνει συγκεκριμένες υπηρεσίες, είτε αντιμετωπίζοντας κατά προτεραιότητα το traffic που προέρχεται από/προς αυτές είτε χρεώνοντας πιο φτηνά, τότε τι τύχη και απήχηση μπορεί να έχουν ανταγωνιστικές και εναλλακτικές υπηρεσίες;</p>
+<p>Διεθνώς υπάρχουν αρκετές προσπάθειες παράκαμψης και παραβίασης αυτής της αρχής. Όπως είναι εύκολο να μαντέψει κανείς, κυρίως απ' τους "μεγάλους" παίχτες της αγοράς, καθώς αυτοί είναι που εν δυνάμει επωφελούνται περισσότερο. Αν οι πάροχοι αντιμετωπίσουν κατά προτεραιότητα το traffic που αφορά το Facebook τι πιθανότητες επιτυχίας έχει μια εναλλακτική πλατφόρμα; Το παράδειγμα αυτό είναι υπαρκτό, και αφορά το <a href="https://en.wikipedia.org/wiki/Facebook_Zero">Facebook Zero</a> που παρέχει δωρεάν πρόσβαση στο Facebook (και στην Ελλάδα). Δυστυχώς και το Wikimedia Foundation έχει κάνει το ίδιο λάθος με το <a href="https://en.wikipedia.org/wiki/Wikipedia_Zero">Wikipedia Zero</a>. Το Facebook μάλιστα το πήγε κι ένα βήμα παραπέρα, δημιουργώντας το πρόγραμμα <a href="https://en.wikipedia.org/wiki/Free_Basics">Free Basics</a> που παρέχει δωρεάν πρόσβαση σε αρκετά sites δωρεάν. Η Mitchell Baker, chairwoman του Mozilla, <a href="https://blog.lizardwrangler.com/2015/05/06/zero-rating-and-the-open-internet/">εξηγεί αρκετά καλά</a> γιατί το λεγόμενο "Zero Rating" δεν βοηθάει στην εξάπλωση του διαδικτύου σε αναπτυσσόμενες χώρες.</p>
+<p>Στις ΗΠΑ το θέμα πήρε διαστάσεις πριν από δύο χρόνια (και συνεχίσει να απασχολεί τις αρμόδιες αρχές) καθώς ακόμα και οι πάροχοι περιεχομένου πιέζουν για άρση του net neutrality ώστε να χρεώνουν τις υπηρεσίες για "πιο γρήγορες" γραμμές. Οι πάροχοι βασίζουν την άποψη αυτή στο πνεύμα ενός οικονομικού φιλελευθερισμού και στην ελευθερία να υιοθετούν όποιο business model θέλουν για τις υπηρεσίες που παρέχουν. Έστω κι αν κάτι τέτοιο οδηγήσει σε πιο αργό Internet για την πλειοψηφία των χρηστών ή στην δημιουργία (ή εδραίωση) μονοπολίων σε διάφορους τομείς διαδικτυακών υπηρεσιών. Το θέμα στις ΗΠΑ είναι τόσο σημαντικό και σε κρίσιμο στάδιο που ακόμα κι ο John Oliver έχει <a href="https://www.youtube.com/watch?v=fpbOEoRrHyU">αφιερώσει</a> αρκετό χρόνο στο θέμα.</p>
+<p>Παρακάτω είναι ένα γράφημα με την ταχύτητα του Netflix μέσω του παρόχου Comcast, κατά τη διάρκεια των διαπραγματεύσεων μεταξύ των δύο εταιρειών για την παροχή μεγαλύτερων ταχυτήτων στη Netflix. Είναι αρκετά εύκολο να καταλάβει κανείς πως η "βύθιση" στην ταχύτητα συνέπεσε με τις διαπραγματεύσεις, ως μέσο πίεσης προς τη Netflix.</p>
+<p><img alt="netflix-comcast" src="/2017/08/11/net-neutrality-in-greece/netflix.jpg" /></p>
+<p>Αυτός είναι και ο λόγος που αντίστοιχοι κανόνες υπάρχουν ώστε να μην επιτρέπουν τους παρόχους περιεχομένου να είναι και πάροχοι δικτύου. Ώστε να μην μπορούν να προκρίνουν τις δικές τους υπηρεσίες περιεχομένου έναντι του ανταγωνισμού. Κανόνας ο οποίος επίσης δεν τηρείται στην Ελλάδα. Όλοι οι μεγάλοι πάροχοι internet διαθέτουν και αντίστοιχες υπηρεσίες internet-tv, ενώ ακόμα και στο εκτός internet τηλεοπτικό τοπίο ο πάροχος του δικτύου (Digea) πρακτικά ελέγχεται από συγκεκριμένα κανάλια (πάροχοι περιεχομένου).</p>
+<p>Αφορμή για το παρόν κείμενο ήταν η πρόσφατη διαφήμιση της Vodafone που έτυχε να δω για το πρόγραμμα PASS, το οποίο παρέχει μειωμένες χρεώσεις σε κάποιες πολύ γνωστές υπηρεσίες (ενδεικτικά: Facebook, Instagram, Twitter, Snapchat, LinkedIn, Pinterest). Δεν είναι η πρώτη φορά που η αρχή της διαδικτυακής ουδετερότητας παραβιάζεται στην Ελλάδα. Έχει γράψει <a href="http://www.kathimerini.gr/849910/opinion/epikairothta/politikh/h-prostasia-ths-oydeterothtas-toy-diadiktyoy">σχετικό άρθρο</a> κι ο Διομήδης Σπινέλλης. To Zero Facebook είχε υιοθετηθεί κι απ' τους τρεις παρόχους κινητής τηλεφωνίας και η Cosmote φαίνεται να είναι η μόνη που το διατηρεί ακόμα σε συγκεκριμένα προγράμματα. Η Cosmote επίσης είχε προνομιακή διαχείριση του Spotify για περίπου δύο χρόνια (η συνεργασία έχει σταματήσει πια). Αλλά το παράδειγμα της Vodafone νομίζω είναι το πιο ηχηρό και απροκάλυπτο παράδειγμα παραβίασης του net neutrality που είχαμε ως τώρα.</p>
+<h4>IANAL: I'm not a Laywer.</h4>
+<p>Υπάρχουν νομικοί που έχουν περισσότερες γνώσεις και μεγαλύτερη εξειδίκευση από μένα για το νομικό κομμάτι της ιστορίας. Οπότε δεν θα μπω στη διαδικασία να ισχυριστώ αν πέρα όλων των άλλων υπάρχει και θέμα νομιμότητας στα συγκεκριμένα προγράμματα. Θα παραθέσω μερικές παραπομπές και ελπίζω πως υπάρχουν νομικοί εκεί έξω που μπορούν να ασχοληθούν σε περισσότερο βάθος με το θέμα.</p>
+<ul>
+<li><a href="http://eur-lex.europa.eu/legal-content/EL/TXT/HTML/?uri=CELEX:32015R2120&amp;from=en">Κανονισμός 2015/2120</a>, του Ευρωπαϊκού Κοινοβουλίου και του Συμβουλίου</li>
+<li><a href="http://www.eett.gr/opencms/opencms/admin/News_new/news_0507.html">Ενημέρωση της ΕΕΤΤ</a> για την παραπάνω οδηγία και την υιοθέτησή της.</li>
+<li><a href="https://ec.europa.eu/commission/commissioners/2014-2019/oettinger/blog/net-neutrality-single-rulebook-single-digital-market_en">Σχετικό άρθρο</a> της Commission.</li>
+</ul>
+<p>Αντιγράφω απ' το άρθρο της ΕΕΤΤ:</p>
+<blockquote>
+<p>την ισότιμη διαχείριση από τους παρόχους του συνόλου της κίνησης στο Διαδίκτυο χωρίς διακρίσεις ή χρεώσεις ανάλογα με το χρήστη, το περιεχόμενο, το διαδικτυακό τόπο, την πλατφόρμα, την εφαρμογή, τον τύπο εξοπλισμού ή τον τρόπο επικοινωνίας.</p>
+</blockquote>
+<p>Στα δικά μου μάτια το παραπάνω απόσπασμα φαίνεται να έρχεται σε αντίθεση με τις συγκεκριμένες πρακτικές των ελληνικών παρόχων διαδικτύου. Θα παρέμβει άραγε η ΕΕΤΤ στη συγκεκριμένη περίπτωση;</p>
+<p>Χτες έκανα το παρακάτω tweet, αλλά μέχρι στιγμής δεν υπάρχει κάποιο σχόλιο απ' τη Vodafone</p>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="el" dir="ltr">Το <a href="https://twitter.com/Vodafone_GR">@Vodafone_GR</a> PASS χρεώνοντας προνομιακά εμπορικές υπηρεσίες παραβιάζει κανόνες διαδικτυακής ουδετερότητας ΕΕ &amp; ΕΕΤΤ.<a href="https://twitter.com/hashtag/NetNeautrality?src=hash">#NetNeautrality</a></p>&mdash; Nikos Roussos (@comzeradd) <a href="https://twitter.com/comzeradd/status/895573234879311876">August 10, 2017</a></blockquote>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        ]]>
+      </content>
+      <published>2017-08-11 11:57:00</published>
+    </entry>
   
     <entry>
       <title>Building a minimal single page application with Vue.js + Webpack</title>
@@ -88,7 +124,7 @@ export default class Api {
 <p>Or build it for production:</p>
 <pre><code>npm run build
 </code></pre>
-<p><img alt="33c3" src="/2017/07/10/vuejs-webpack/vuejs.jpg" /></p>
+<p><img alt="vuejs" src="/2017/07/10/vuejs-webpack/vuejs.jpg" /></p>
 <p>Or just see the <a href="https://comzeradd.gitlab.io/vuejs-spa/">demo</a>.</p>
 <hr>
 
@@ -478,23 +514,6 @@ Mind fuck presentation. AI, Cellular Automata and more.</li>
         ]]>
       </content>
       <published>2016-01-18 11:21:37</published>
-    </entry>
-  
-    <entry>
-      <title>monopati, a minimalistic static content generator</title>
-      <link href="https://www.roussos.cc/2016/01/11/monopati/"/>
-      <content type="html">
-        <![CDATA[
-          <p>I have tried many static content generators in the past. My site/blog is rendered to static since a couple of years ago. So this post is about writing yet another static content generator.</p>
-<p>I have two major requirements. Simplicity and no extra features. All I want is a simple blog and some static pages. So <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> and <a href="http://jinja.pocoo.org/">Jinja</a> should be enough. No fancy features needed. I also wanted this to be so simple that even non-tech people would use it with minimum effort. One of the things that bothers me with most generators is that they render the whole website in another folder, so it's hard to have one repository with both your posts markdown code and the rendered output so you can easily host it (eg. on <a href="https://pages.github.com/">Github pages</a>).</p>
-<p>So I scratched my itch and <a href="https://github.com/comzeradd/monopati">monopati</a>, a minimalistic static content generator, was born. As of today <a href="https://www.roussos.cc">my website</a> is rendered using my own static content generator (with all content on <a href="https://github.com/comzeradd/comzeradd.github.io">version control</a>). I promise to write a post with concrete easy steps on how to deploy your own website/blog using monopati and without paying for any hosting service.</p>
-<p>Feedback and code patches are always welcomed.</p>
-<hr>
-
-<p><em>Comments and reactions on <a href="https://librenet.gr/posts/551310">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/686564094762201089">Twitter</a></em></p>
-        ]]>
-      </content>
-      <published>2016-01-11 17:01:12</published>
     </entry>
   
 </feed>

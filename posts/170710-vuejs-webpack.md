@@ -97,7 +97,7 @@ Or build it for production:
 
     npm run build
 
-![33c3](vuejs.jpg)
+![vuejs](vuejs.jpg)
 
 Or just see the [demo](https://comzeradd.gitlab.io/vuejs-spa/).
 
