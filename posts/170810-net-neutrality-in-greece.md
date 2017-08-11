@@ -39,3 +39,7 @@ files: netflix.jpg
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="el" dir="ltr">Το <a href="https://twitter.com/Vodafone_GR">@Vodafone_GR</a> PASS χρεώνοντας προνομιακά εμπορικές υπηρεσίες παραβιάζει κανόνες διαδικτυακής ουδετερότητας ΕΕ &amp; ΕΕΤΤ.<a href="https://twitter.com/hashtag/NetNeautrality?src=hash">#NetNeautrality</a></p>&mdash; Nikos Roussos (@comzeradd) <a href="https://twitter.com/comzeradd/status/895573234879311876">August 10, 2017</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<hr>
+
+*Σχόλια στο [Twitter](https://twitter.com/comzeradd/status/895927210070114304)*.
