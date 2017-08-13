@@ -4,7 +4,7 @@ pages:
   stage: deploy
   script:
   - mkdir public
-  - cp -r static 20* category pub *.html *.ico *.txt *.xml public
+  - cp -r static 20* category tag pub *.html *.ico *.txt *.xml public
   artifacts:
     paths:
     - public
