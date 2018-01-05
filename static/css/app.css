@@ -86,6 +86,7 @@ a.text-muted {
 
 blockquote {
     border-left: 5px solid lightgray;
+    font-style: italic;
 }
 
 .twitter-tweet-rendered {
