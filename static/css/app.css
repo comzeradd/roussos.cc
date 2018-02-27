@@ -244,3 +244,12 @@ section {
     width:100%;
     height: 400px;
 }
+
+
+/* Music
+==================== */
+
+.album {
+    margin-top: 10px;
+    text-align: center;
+}
