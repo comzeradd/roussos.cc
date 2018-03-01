@@ -89,6 +89,10 @@ blockquote {
     font-style: italic;
 }
 
+.content {
+    margin-top: 20px;
+}
+
 .twitter-tweet-rendered {
     margin: auto;
 }
@@ -250,6 +254,19 @@ section {
 ==================== */
 
 .album {
-    margin-top: 10px;
-    text-align: center;
+    margin-bottom: 30px;
+}
+
+img.cover {
+    display: block;
+    max-width: 100%;
+}
+
+.album p.title {
+    font-weight: bold;
+}
+
+.album p.links {
+    font-size: .8em;
+    padding-top: 10px;
 }
