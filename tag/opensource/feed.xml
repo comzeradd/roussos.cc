@@ -6,7 +6,68 @@
   <link href="https://www.roussos.cc/" />
   <icon>https://www.roussos.cc/favicon.ico</icon>
   <logo>https://www.roussos.cc/static/img/</logo>
-  <updated>2018-03-02T00:32:41Z</updated>
+  <updated>2018-03-05T17:53:23Z</updated>
+  
+    <entry>
+      <title>Encrypted cloud backups with Duplicity and GPG</title>
+      <link href="https://www.roussos.cc/2018/03/05/duplicity-gpg-dropbox/"/>
+      <content type="html">
+        <![CDATA[
+          <h3>why</h3>
+<p>You already do regular offline backups right? If not, pause reading. Go buy an external drive, encrypt it with LUKS and backup your files. Now, welcome back.</p>
+<p>I wanted a way to backup my (important) files on <s>the cloud</s> someone else's computer. I have two main reasons for that. First of all, I want to have a backup outside the premises of my home. Sometimes accidents happen, or someone could just break in or raid my place and take my backups. Of course these are encrypted but I'd have lost access to my files. Another reason is that I want to be able to access my files from any device (not necessarily mine) and from anywhere in the world.</p>
+<p>In this example I'm using Dropbox as an example of cloud storage. You can replace Dropbox with almost any commercial or not cloud storage service out there, your self-hosted VPS, etc. I chose Dropbox for this example for its simplicity and popularity, but also to emphasize one more aspect. If you trust encryption, which happens at your end, then you don't need to trust the storage provider. At least not in terms of security. You would still need to trust the reliability of whatever endpoint you choose. Dropbox in that scenario is as good as your self-hosted server.</p>
+<h3>the backup script</h3>
+<p>The basic ingredients are <a href="http://duplicity.nongnu.org/">Duplicity</a> and GnuPG. I'll insert here the backup script and then I'll explain in detail how this works and what things you need to customize.</p>
+<pre><code>#!/usr/bin/env bash
+set -e
+
+# Dropbox configuration variables
+DROPBOX_FOLDER="mybackup"
+export DPBX_ACCESS_TOKEN=""
+export PASSPHRASE=""
+
+# Folders to backup
+MY_PRECIOUS="/precious"
+SECRET_DATA="/data/secret"
+
+# Remove files older than 60 days from Dropbox
+duplicity remove-older-than 60D --force dpbx://${DROPBOX_FOLDER}
+# Sync everything to Dropbox
+duplicity --include=${MY_PRECIOUS} --include=${SECRET_DATA} --exclude='**' / dpbx://${DROPBOX_FOLDER}
+# Cleanup failures
+duplicity cleanup --force dpbx://${DROPBOX_FOLDER}
+
+unset DPBX_ACCESS_TOKEN
+unset PASSPHRASE
+</code></pre>
+<p>Duplicity has a very simple interface that can be summarized with this line:</p>
+<pre><code>duplicity [source] [destination]
+</code></pre>
+<p>You can provide one source and one destination, but you can use the <code>--include</code> and <code>--exclude</code> options to customize things. One important thing to remember is that the more left is such an option the bigger precedence it has. Here is our main backup line:</p>
+<pre><code>duplicity --include=${MY_PRECIOUS} --include=${SECRET_DATA} --exclude='**' / dpbx://${DROPBOX_FOLDER}
+</code></pre>
+<p>So reading this line from right to left can help you better understand what it actually does. We instruct Duplicity that our destination is a Dropbox folder. We want to back everything (<code>/</code>), but then we exclude everything (<code>'**'</code>) and include only the two folders we want in this case. A simpler example would be to backup our home directory and exclude specific folders. That would look like this:</p>
+<pre><code>duplicity --exclude=${NOT_THIS_FOLDER} --exclude=${TMP_FOLDER} /home/myuser dpbx://${DROPBOX_FOLDER}
+</code></pre>
+<p>Anything that starts with a <code>$</code> sign is a variable, so we set everything in the beginning of the script and unset the sensitive things at the end.</p>
+<p>Duplicity has certain name convetions for things. So <code>DPBX_ACCESS_TOKEN</code> is the Dropbox token (see below) and <code>PASSPHRASE</code> is the encryption key. It will use GPG to do the encryption and since we provide a passphrase and not a key fingerprint it will use symmetric encryption. You can of course use your PGP key if you want, but as I already mentioned I want to be able to fetch and decrypt the backup from anywhere. That means that I may not have access to my PGP key.</p>
+<h3>Dropbox</h3>
+<p>The nice thing about this workflow is that you don't need to run any Dropbox related code to your machine. All you need is go to Dropbox developers portal and <a href="https://www.dropbox.com/developers/apps/create">create a new app</a>. Choose to create an "App folder" kind of app and pick a name, as shown in the screenshot below.</p>
+<p><img alt="dropbox create app" src="/2018/03/05/duplicity-gpg-dropbox/dpbx-create_app.jpg" /></p>
+<p>On the next screen all you need to do is generate an access token. It's the string you need to use on the <code>DPBX_ACCESS_TOKEN</code> variable of your backup script. And that's it!</p>
+<p><img alt="dropbox generate key" src="/2018/03/05/duplicity-gpg-dropbox/dpbx-gen_key.jpg" /></p>
+<h3>Final bits</h3>
+<ol>
+<li>Pick a really really long passphrase.</li>
+<li>Adjust your backup script permissions to make it accessible only to your eyes. </li>
+<li>Duplicity does incremental backups, so you can just cron the script to run daily, weekly or whatever fits your needs.</li>
+<li>Let it run a few times and then try to restore your files. Backups that don't restore properly are useless.</li>
+</ol>
+        ]]>
+      </content>
+      <published>2018-03-05 17:57:00</published>
+    </entry>
   
     <entry>
       <title>Διαδικτυακή Ουδετερότητα και η κατάσταση στην Ελλάδα</title>
@@ -386,40 +447,6 @@ Mind fuck presentation. AI, Cellular Automata and more.</li>
         ]]>
       </content>
       <published>2016-02-12 15:01:23</published>
-    </entry>
-  
-    <entry>
-      <title>Fighting Passive Surveillance should be our top priority</title>
-      <link href="https://www.roussos.cc/2016/02/01/passive-surveillance/"/>
-      <content type="html">
-        <![CDATA[
-          <p><img alt="massive" src="/2016/02/01/passive-surveillance/massive.jpg" /></p>
-<h4><strong>Post-Snowden</strong></h4>
-<p>We definitely live in a different world since Snowden leaks, but for some people nothing has changed. We always knew that certain individuals are targeted by local or international law enforcement agencies. In some cases they even have a legal way of doing this. If you work on certain fields or operate as an activist in political issues, you always assumed or knew that your communications are monitored. We may have better knowledge on the way the do it, or which things they have broken and which not yet. But essentially nothing is new about this on the post-Snowden world.</p>
-<p>What Snowden leaks actually changed, what we learned from the documents, is that there is a vast ongoing process of massive passive surveillance and data collection. <strong>It doesn't matter if you are considered important. It doesn't matter if you have something to hide or not. All of your communications are monitored, stored and analyzed.</strong> This is what changed. This is what we learned.</p>
-<p>Let me pause my thoughts for a moment and share a controversial story...</p>
-<h4><strong>Mobile email encryption</strong></h4>
-<p>Would you store your private PGP key to your mobile smartphone? Many (most?) hackers/geeks would easily answer in a negative way. Mobile phones have two major security implications that our laptops (usually) don't.</p>
-<ul>
-<li>
-<p>Physical security. It's more easy to lose your phone, or for someone to steal it. It's a comparatively smaller device, usually carried away in your pocket. And once you lose it, all keys stored there should be considered compromised (which is a big problem on its own, since PGP doesn't offer <a href="https://en.wikipedia.org/wiki/Forward_secrecy">Forward Secrecy</a>).</p>
-</li>
-<li>
-<p>More than one operating system. Even if you have taken <a href="https://www.roussos.cc/2014/05/08/free-your-android/">all measures</a> to secure your operating system, the problem is that your phone runs also a second operating system. The "radio" OS running on your baseband chip. It's a complete proprietary black box, that you don't know what it does. You don't even know if it's isolated from your "smart" operating system.</p>
-</li>
-</ul>
-<p>On a side note, mobile operating systems have a security advantage that almost all modern desktop operating systems (even most major linux distributions) lack. All applications are sandboxed. So even if you are running a malicious application (you know, like <a href="http://www.theregister.co.uk/2014/01/27/leaking_smartphone_apps_nsa_gchq/">Angry Birds</a>) it may do various unwanted things regarding your personal mobile usage (eg. track location) but it can't easily steal your PGP private key stored inside <a href="https://www.openkeychain.org/about/">OpenKeyChain</a>'s isolated storage. Not many desktop operating systems can protect you from a malicious application getting access to your <code>.gnupg</code> or <code>.ssh</code> folder.</p>
-<p>So, although these two points are completely valid and indeed mobile smartphones are less secure, we have to realize that this is where most users read their emails. In many cases, a mobile phone is the only device people read their emails. Many people have come to cryptoparties, and after getting in touch with the complete lack of usability that comes with the standard pgp gui stack (Thunderbird + Enigmail), they ask how the can do the same things on their mobile. Most hackers would react (or even deny to help) exactly because of the reasons mentioned above. Let me clear up the dilemma a bit: Most people have two options to choose. Either use email encryption on their mobile phone or don't use encryption at all. And <strong>unfortunately most hackers fail to see that for most people the threat model is passive surveillance</strong>.</p>
-<h4><strong>Threat Model</strong></h4>
-<p>Not all people are trying to protect from the same things or the same type of adversaries. Not all people have the same <a href="https://ssd.eff.org/en/glossary/threat-model">Threat Model</a>.</p>
-<p>I was very pleased to see Werner Koch presenting at <a href="https://events.ccc.de/congress/2015/wiki/Main_Page">32c3</a> this year about the current status of <a href="https://gnupg.org/">GnuPG</a>, where he mentioned that the focus from now on is the passive surveillance threat model. <strong>Building tools that focus on the passive surveillance threat model, means that usability and encryption by default is top priority.</strong></p>
-<p>I have participated and co-organized many <a href="https://www.cryptoparty.in/athens">Cryptoparties</a>, <a href="http://wiki.fsfe.org/groups/Athens">Free Software Meetups</a>, and related crypto/privacy events/workshops. And I believe that the passive surveillance threat model should also be our focus. Yes, sometimes we need to quickly determine if a person has a different threat model (eg. journalists), but most people participating in these kind of events are not targets (at least not NSA targets). We know that they collect everything, we know that <a href="http://www.theregister.co.uk/2016/01/27/nsa_loves_it_when_you_use_pgp/">they love pgp</a> because it's rarely used and stands out. <strong>Let's make their job more difficult. Encrypt all things by default. Let's start  from fighting against massive passive surveillance.</strong></p>
-<hr>
-
-<p><em>Comments and reactions on <a href="https://librenet.gr/posts/582762">Diaspora</a> or <a href="https://twitter.com/comzeradd/status/694082702815989760">Twitter</a></em></p>
-        ]]>
-      </content>
-      <published>2016-02-01 11:01:52</published>
     </entry>
   
 </feed>
