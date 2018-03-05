@@ -53,7 +53,7 @@ So reading this line from right to left can help you better understand what it a
 
 Anything that starts with a `$` sign is a variable, so we set everything in the beginning of the script and unset the sensitive things at the end.
 
-Duplicity has certain name convetions for things. So `DPBX_ACCESS_TOKEN` is the Dropbox token (see below) and `PASSPHRASE` is the encryption key. It will use GPG to do the encryption and since we provide a passphrase and not a key fingerprint it will use symmetric encryption. You can of course use your PGP key if you want, but as I already mentioned I want to be able to fetch and decrypt the backup from anywhere. That means that I may not have access to my PGP key.
+Duplicity has certain name conventions for things. So `DPBX_ACCESS_TOKEN` is the Dropbox token (see below) and `PASSPHRASE` is the encryption key. It will use GPG to do the encryption and since we provide a passphrase and not a key fingerprint it will use symmetric encryption. You can of course use your PGP key if you want, but as I already mentioned I want to be able to fetch and decrypt the backup from anywhere. That means that I may not have access to my PGP key.
 
 ### Dropbox
 
@@ -65,12 +65,33 @@ On the next screen all you need to do is generate an access token. It's the stri
 
 ![dropbox generate key](dpbx-gen_key.jpg)
 
+### Let it run
+
+Duplicity does incremental backups, so you can just cron the script to run daily, weekly or whatever fits your needs. For instance you can do a symbolic link to your `/etc/cron.daily` or if you prefer <s>hipster</s> modern tools you can use systemd timer.
+
+### Restore
+
+Let it run a few times and then try to restore your files. Backups that don't restore properly are useless. You can selectively restore specific files, but I'll let that to you as homework. To restore everything:
+
+    #!/usr/bin/env bash
+    set -e
+
+    # Dropbox configuration variables
+    RESTORE_FOLDER="mybackup"
+    export DPBX_ACCESS_TOKEN=""
+    export PASSPHRASE=""
+
+    # Restore
+    duplicity dpbx://${DROPBOX_FOLDER} ${RESTORE_FOLDER}
+
+    unset DPBX_ACCESS_TOKEN
+    unset PASSPHRASE
+
+
 ### Final bits
 
 1. Pick a really really long passphrase.
-2. Adjust your backup script permissions to make it accessible only to your eyes. 
-3. Duplicity does incremental backups, so you can just cron the script to run daily, weekly or whatever fits your needs.
-4. Let it run a few times and then try to restore your files. Backups that don't restore properly are useless.
+2. Adjust your backup script permissions to make it accessible only to your eyes.
 
 <hr>
 
