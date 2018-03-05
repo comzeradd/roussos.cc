@@ -15,7 +15,7 @@
 # See the file 'LICENSE' for more information.
 
 
-from os import path, listdir, makedirs, mkdir
+from os import path, listdir, makedirs, mkdir, makedirs
 import sys
 import yaml
 import time
@@ -175,10 +175,7 @@ def generate_archive(posts, tag_set):
             posts=post_list
         ))
         tagpath = path.join('tag', tag)
-        try:
-            mkdir(tagpath)
-        except OSError:
-            pass
+        makedirs(tagpath)
         with open('{0}/index.html'.format(tagpath), 'w') as file:
             file.write(html)
 

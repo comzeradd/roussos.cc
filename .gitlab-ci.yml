@@ -1,8 +1,9 @@
-image: alpine
+image: python:3-alpine
 
 pages:
-  stage: deploy
   script:
+  - pip install -r requirements.txt
+  - ./monopati.py
   - mkdir public
   - cp -r static 20* category tag pub *.html *.ico *.txt *.xml public
   artifacts:
