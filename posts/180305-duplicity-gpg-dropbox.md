@@ -72,4 +72,6 @@ On the next screen all you need to do is generate an access token. It's the stri
 3. Duplicity does incremental backups, so you can just cron the script to run daily, weekly or whatever fits your needs.
 4. Let it run a few times and then try to restore your files. Backups that don't restore properly are useless.
 
+<hr>
 
+*Comments and reactions on [Diaspora](https://librenet.gr/posts/1787179) and [Twitter](https://twitter.com/comzeradd/status/970703206165643264)*.
