@@ -55,7 +55,7 @@ Anything that starts with a `$` sign is a variable, so we set everything in the 
 
 Duplicity has certain name conventions for things. So `DPBX_ACCESS_TOKEN` is the Dropbox token (see below) and `PASSPHRASE` is the encryption key. It will use GPG to do the encryption and since we provide a passphrase and not a key fingerprint it will use symmetric encryption. You can of course use your PGP key if you want, but as I already mentioned I want to be able to fetch and decrypt the backup from anywhere. That means that I may not have access to my PGP key.
 
-### Dropbox
+### dropbox
 
 The nice thing about this workflow is that you don't need to run any Dropbox related code to your machine. All you need is go to Dropbox developers portal and [create a new app](https://www.dropbox.com/developers/apps/create). Choose to create an "App folder" kind of app and pick a name, as shown in the screenshot below.
 
@@ -65,11 +65,11 @@ On the next screen all you need to do is generate an access token. It's the stri
 
 ![dropbox generate key](dpbx-gen_key.jpg)
 
-### Let it run
+### let it run
 
 Duplicity does incremental backups, so you can just cron the script to run daily, weekly or whatever fits your needs. For instance you can do a symbolic link to your `/etc/cron.daily` or if you prefer <s>hipster</s> modern tools you can use systemd timer.
 
-### Restore
+### restore
 
 Let it run a few times and then try to restore your files. Backups that don't restore properly are useless. You can selectively restore specific files, but I'll let that to you as homework. To restore everything:
 
@@ -88,7 +88,7 @@ Let it run a few times and then try to restore your files. Backups that don't re
     unset PASSPHRASE
 
 
-### Final bits
+### final bits
 
 1. Pick a really really long passphrase.
 2. Adjust your backup script permissions to make it accessible only to your eyes.
