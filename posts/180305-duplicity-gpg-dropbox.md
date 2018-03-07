@@ -95,4 +95,4 @@ Let it run a few times and then try to restore your files. Backups that don't re
 
 <hr>
 
-*Comments and reactions on [Diaspora](https://librenet.gr/posts/1787179) and [Twitter](https://twitter.com/comzeradd/status/970703206165643264)*.
+*Comments and reactions on [Diaspora](https://librenet.gr/posts/1787179), [Twitter](https://twitter.com/comzeradd/status/970703206165643264) and [Lobsters](https://lobste.rs/s/qu8ix4/encrypted_cloud_backups_with_duplicity)*.
