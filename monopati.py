@@ -175,7 +175,10 @@ def generate_archive(posts, tag_set):
             posts=post_list
         ))
         tagpath = path.join('tag', tag)
-        makedirs(tagpath)
+        try:
+            makedirs(tagpath)
+        except FileExistsError:
+            pass
         with open('{0}/index.html'.format(tagpath), 'w') as file:
             file.write(html)
 
