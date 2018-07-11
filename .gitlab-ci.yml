@@ -5,7 +5,7 @@ pages:
   - pip install -r requirements.txt
   - ./monopati.py
   - mkdir public
-  - cp -r static 20* category tag pub *.html *.ico *.txt *.xml public
+  - cp -r .well-known static 20* category tag pub *.html *.ico *.txt *.xml public
   artifacts:
     paths:
     - public
