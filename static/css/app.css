@@ -235,10 +235,16 @@ section {
     color: #000;
 }
 
-.home-footer > div > a {
-    color: #ccc !important;
+.social a {
+    text-shadow: 1px 1px 1px black;
+    margin-right: 10px;
 }
 
+.social .section::after {
+	content: "|";
+	display: inline-block;
+	padding-left: 10px;
+}
 
 
 /* Places
@@ -264,6 +270,10 @@ img.cover {
 
 .album p.title {
     font-weight: bold;
+}
+
+.album p.desc {
+    font-size: 0.9em;
 }
 
 .album p.links {
