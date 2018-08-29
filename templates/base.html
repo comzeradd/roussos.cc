@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>{{ sitename }}{% block title %}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="{{ sitename }}">
+    <meta name="flattr:id" content="me35r1">
     <meta property="og:site_name" content="{{ sitename }}">
     {% block meta %}
       <meta property="og:title" content="{{ sitename }}">
@@ -12,6 +12,7 @@
       <meta property="og:url" content="{{ rooturl }}{{ link }}">
       <meta property="og:image" content="{{ rooturl }}static/img/{{ logo }}">
     {% endblock %}
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="{{ sitename }}">
     <link rel="stylesheet" href="/static/css/lib/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/lib/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/static/css/lib/fork-awesome.min.css">
