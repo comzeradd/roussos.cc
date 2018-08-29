@@ -137,6 +137,10 @@ img.txt {
     padding: 20px 0px;
 }
 
+.home #footer {
+    display: none;
+}
+
 .avatar {
     margin: auto;
     max-width: 120px;
