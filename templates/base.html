@@ -51,10 +51,12 @@
 
     </div>
 
-    <div id="footer" {% block footer %}{% endblock %}>
+    <div id="footer">
       <div class="container">
-        powered by <a href="https://github.com/comzeradd/monopati" target="_blank">monopati</a> &bull;
-       {{ license }}
+        {% block footer %}
+          powered by <a href="https://github.com/comzeradd/monopati" target="_blank">monopati</a> &bull;
+          {{ license }}
+        {% endblock %}
       </div>
     </div>
 

@@ -229,12 +229,6 @@ section {
     margin-bottom: 30px;
 }
 
-.home-footer {
-    background: transparent !important;
-    border-top: none !important;
-    color: #000;
-}
-
 .social a {
     text-shadow: 1px 1px 1px black;
     margin-right: 10px;
