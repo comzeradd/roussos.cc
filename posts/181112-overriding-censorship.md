@@ -107,3 +107,7 @@ files: doh-firefox.jpg, free-speech-conditions.jpg, router-dns.jpg, edppi-pricei
     dig +short @1.1.1.1 gamatotv.me
     104.27.172.177
     104.27.173.177
+
+<hr>
+
+*Comments and reactions on [Mastodon](https://libretooth.gr/@comzeradd/101057372755768712), [Diaspora](https://librenet.gr/posts/2113817), [Twitter](https://twitter.com/comzeradd/status/1061905669828288513).
