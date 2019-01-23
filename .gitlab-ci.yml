@@ -3,8 +3,8 @@ image: python:3-alpine
 pages:
   script:
   - pip install monopati
-  - monopati.py
-  - cp -r static extras/. public
+  - monopati render
+  - cp -r extras/. public
   artifacts:
     paths:
     - public
