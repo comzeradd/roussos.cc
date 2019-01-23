@@ -13,9 +13,8 @@
       <meta property="og:image" content="{{ rooturl }}static/img/{{ logo }}">
     {% endblock %}
     <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="{{ sitename }}">
-    <link rel="stylesheet" href="/static/lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/lib/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="/static/lib/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="/static/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/lib/fork-awesome/css/fork-awesome.min.css">
     <link rel="stylesheet" href="/static/css/app.css">
     {% block css %}{% endblock %}
     <link rel="shortcut icon" href="/favicon.ico">
@@ -30,10 +29,10 @@
           <div class="col-md-12 text-center">
             <p class="avatar">
               <a href="/">
-                <img src="/static/img/{{ logo }}" alt="{{ author }}" class="avatar img-circle" />
+                <img src="/static/img/{{ logo }}" alt="{{ author }}" class="avatar rounded-circle" />
               </a>
             </p>
-            <h3 {% block toplinks %}{% endblock %}>
+            <h3 class="top-links">
               <a href="/index.html">About</a> &bull;
               <a href="/blog.html">Blog</a> &bull;
               <a href="/projects.html">Projects</a> &bull;
@@ -60,8 +59,6 @@
       </div>
     </div>
 
-    <script src="/static/lib/js/jquery-1.11.2.min.js"></script>
-    <script src="/static/lib/js/bootstrap.min.js"></script>
     {% block javascript %}
     {% endblock javascript %}
   </body>

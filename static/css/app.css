@@ -84,9 +84,20 @@ a.text-muted {
     color: #555;
 }
 
+h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
 blockquote {
     border-left: 5px solid lightgray;
     font-style: italic;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+blockquote p {
+    margin-bottom: 0;
 }
 
 .content {
@@ -195,7 +206,7 @@ img.txt {
     margin-bottom: 20px;
 }
 
-.home-top-links > a {
+.home .top-links > a {
     color: #ccc;
 }
 
@@ -242,15 +253,6 @@ section {
 	content: "|";
 	display: inline-block;
 	padding-left: 10px;
-}
-
-
-/* Places
-==================== */
-
-#map {
-    width:100%;
-    height: 400px;
 }
 
 
