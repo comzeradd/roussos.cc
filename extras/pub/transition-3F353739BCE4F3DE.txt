@@ -1,0 +1,30 @@
+Date: 25/01/2019
+
+Time for a key rotation.
+
+old key:
+
+pub   rsa4096/0xD759A12E10B98B4
+      Key fingerprint = 61614A78 19E59D02 7C8974A5 D759A12E 10B98B4D
+
+new key:
+
+pub   ed25519/0x3F353739BCE4F3DE
+      Key fingerprint = 0A42F419 4D19DA71 11A1BA09 3F353739 BCE4F3DE
+
+To fetch and import the new key:
+
+  wget -q -O- https://roussos.cc/pub/roussos-pgp.asc | gpg --import -
+
+Or using a public key server:
+
+  gpg --recv-key 0x3F353739BCE4F3DE
+
+It's also available through Web Key Discovery:
+
+  gpg --auto-key-locate wkd --locate-keys nikos@roussos.cc
+
+If you already have my old key, I'd appreciate you certifying
+my new one. You can verify that the new one is signed by the old one:
+
+  gpg --check-sigs 0x3F353739BCE4F3DE
