@@ -18,14 +18,16 @@
 
         <!-- PGPModal -->
         <div class="modal fade" id="PGPModal" tabindex="-1" role="dialog" aria-labelledby="PGP" aria-hidden="true">
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="PGPModalLabel">PGP</h4>
+                <h5 class="modal-title" id="PGPModalLabel">PGP</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
               <div class="modal-body">
-                <pre><code>wget https://roussos.cc/pub/roussos-pgp.txt<br>gpg --import roussos-pgp.txt<br>rm -f roussos-pgp.txt</code></pre>
+                <code>wget -q -O- https://roussos.cc/pub/roussos-pgp.txt | gpg --import -</code>
               </div>
             </div>
           </div>
@@ -79,8 +81,10 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="FaircoinModalLabel">Faircoin</h4>
+                <h5 class="modal-title" id="FaircoinModalLabel">Faircoin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
               <div class="modal-body text-center">
                 <img src="/static/img/faircoin.png" alt="bitcoin"><br>

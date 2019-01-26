@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Date: 25/01/2019
 
 Time for a key rotation.
@@ -14,7 +17,7 @@ pub   ed25519/0x3F353739BCE4F3DE
 
 To fetch and import the new key:
 
-  wget -q -O- https://roussos.cc/pub/roussos-pgp.asc | gpg --import -
+  wget -q -O- https://roussos.cc/pub/roussos-pgp.txt | gpg --import -
 
 Or using a public key server:
 
@@ -28,3 +31,10 @@ If you already have my old key, I'd appreciate you certifying
 my new one. You can verify that the new one is signed by the old one:
 
   gpg --check-sigs 0x3F353739BCE4F3DE
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQQKQvQZTRnacRGhugk/NTc5vOTz3gUCXExfugAKCRA/NTc5vOTz
+3ikxAP9IKpZ5KMlbwRlFpP9QZwzdtkUIfmlfrYHjuITgB3lLIgD/SPvFrjdcPcib
+FlpeCULIYYcHbYHB+8i0C03zigRHOQk=
+=mi29
+-----END PGP SIGNATURE-----
