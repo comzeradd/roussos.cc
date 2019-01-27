@@ -240,6 +240,31 @@ img.txt {
     cursor: pointer;
 }
 
+textarea.code {
+    width: 100%;
+    min-height: 400px;
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+
+@keyframes fade {
+    0% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+.highlight {
+    animation: fade 4s ease-in 1;
+}
+
+.copied {
+    visibility: hidden;
+}
+
 section {
     margin-bottom: 30px;
 }
