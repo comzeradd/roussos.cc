@@ -36,3 +36,6 @@ files: censorshipmachine.jpg
 
 Βοήθησε να ενημερωθούν καλύτερα για τους κινδύνους της οδηγίας. Αν σε βοηθάει στην επικοινωνία, μπορείς να χρησιμοποιήσεις όσα αποσπάσματα επιθυμείς απ' το παρόν κείμενο είτε ακόμα και ολόκληρο το κείμενο.
 
+<hr>
+
+*Comments and reactions on [Mastodon](https://libretooth.gr/@comzeradd/101697033952998203), [Diaspora](https://librenet.gr/posts/2262072), [Twitter](https://twitter.com/comzeradd/status/1102844413791924226).
