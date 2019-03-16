@@ -76,114 +76,114 @@ a {
 a:hover,
 a:active,
 a:visited {
-    color: #f06;
-    text-decoration: underline;
+  color: #f06;
+  text-decoration: underline;
 }
 
 a.text-muted {
-    color: #555;
+  color: #555;
 }
 
 h1, h2, h3 {
-	margin-top: 20px;
-	margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 blockquote {
-    border-left: 5px solid lightgray;
-    font-style: italic;
-    padding: 10px 20px;
-    margin: 0;
+  border-left: 5px solid lightgray;
+  font-style: italic;
+  padding: 10px 20px;
+  margin: 0;
 }
 
 blockquote p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 li {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .content {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .twitter-tweet-rendered {
-    margin: auto;
+  margin: auto;
 }
 
 img.txt {
-    float: left;
-    padding: 10px 10px 10px 0px;
-    display: block;
+  float: left;
+  padding: 10px 10px 10px 0px;
+  display: block;
 }
 
 .post img {
-    display: block;
-    margin: auto;
-    max-width: 100%;
+  display: block;
+  margin: auto;
+  max-width: 100%;
 }
 
 .post h4 {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .post p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .post p:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #wrapper {
-    height: auto;
-    min-height: 100%;
-    margin-bottom: -60px;
-    padding-bottom: 80px;
+  height: auto;
+  min-height: 100%;
+  margin-bottom: -60px;
+  padding-bottom: 80px;
 }
 
 #footer {
-    font-size: 0.8em;
-    background: #E6E6E6 none repeat scroll 0% 0%;
-    border-top: 1px solid #DDD;
-    height: 60px;
-    text-align: center;
-    padding: 20px 0px;
+  font-size: 0.8em;
+  background: #E6E6E6 none repeat scroll 0% 0%;
+  border-top: 1px solid #DDD;
+  height: 60px;
+  text-align: center;
+  padding: 20px 0px;
 }
 
 .home #footer {
-    display: none;
+  display: none;
 }
 
 .avatar {
-    margin: auto;
-    max-width: 120px;
-    margin-top: 20px;
+  margin: auto;
+  max-width: 120px;
+  margin-top: 20px;
 }
 
 .home-bio {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: -20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -20px;
 }
 
 .lead {
-    padding-left: 10px;
-    margin-bottom: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
 }
 
 .lead .glyphicon {
-    font-size: 0.6em;
+  font-size: 0.6em;
 }
 
 .post-title {
-    margin-top: -10px;
-    margin-bottom: 20px;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 .details {
-    font-size: .9em;
+  font-size: .9em;
 }
 
 
@@ -191,91 +191,91 @@ img.txt {
 ==================== */
 
 .home-bg {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    z-index: -9999;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    margin: 0px;
-    padding: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -9999;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .home-box {
-    color: #FFF;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.6);
-    margin: auto;
-    margin-bottom: 20px;
+  color: #FFF;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .home .top-links > a {
-    color: #ccc;
+  color: #ccc;
 }
 
 .post-share {
-    border-top: 1px solid lightgray;
-    padding-top: 10px;
-    font-style: italic;
+  border-top: 1px solid lightgray;
+  padding-top: 10px;
+  font-style: italic;
 }
 
 .post-share > a {
-    padding: 3px 4px 2px;
-    background-color: #fafafa;
-    border: 1px solid #ddd;
-    font-size: 0.9em;
-    color: #222;
-    text-decoration: none;
-    font-style: normal;
+  padding: 3px 4px 2px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  font-size: 0.9em;
+  color: #222;
+  text-decoration: none;
+  font-style: normal;
 }
 
 .post-share > a > img {
-    border: 0px solid;
-    display: inline-block;
-    vertical-align: text-top;
+  border: 0px solid;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
 .contact-section {
-    padding: 0 10px 15px 10px;
+  padding: 0 10px 15px 10px;
 }
 
 .contact-section code {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 textarea.code {
-    width: 100%;
-    min-height: 400px;
-    font-size: 0.8rem;
-    font-family: monospace;
+  width: 100%;
+  min-height: 400px;
+  font-size: 0.8rem;
+  font-family: monospace;
 }
 
 @keyframes fade {
-    0% {
-        visibility: visible;
-    }
+  0% {
+    visibility: visible;
+  }
 
-    100% {
-        visibility: hidden;
-    }
+  100% {
+    visibility: hidden;
+  }
 }
 
 .highlight {
-    animation: fade 4s ease-in 1;
+  animation: fade 4s ease-in 1;
 }
 
 .copied {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 section {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .social a {
-    text-shadow: 1px 1px 1px black;
-    margin-right: 10px;
+  text-shadow: 1px 1px 1px black;
+  margin-right: 10px;
 }
 
 .social .section::after {
@@ -289,28 +289,28 @@ section {
 ==================== */
 
 .music h3 {
-    margin-bottom: 20px;
-    border-bottom: 1px solid lightgray;
+  margin-bottom: 20px;
+  border-bottom: 1px solid lightgray;
 }
 
 .album {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 img.cover {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .album p.title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .album p.desc {
-    font-size: 0.9em;
+  font-size: 0.9em;
 }
 
 .album p.links {
-    font-size: .8em;
-    padding-top: 10px;
+  font-size: .8em;
+  padding-top: 10px;
 }
