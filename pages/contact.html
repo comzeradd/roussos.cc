@@ -2,71 +2,32 @@
 
 {% block title %} &bull; Contact{% endblock title %}
 
+{% block body_class %}contact{% endblock %}
+
 {% block content %}
   <div class="container">
 
     <!-- Email -->
     <section>
-      <div class="lead"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> email</div>
+      <h3>email</h3>
 
       <div class="contact-section">
-        <div><img src="/static/img/email.svg" alt="Email"></div>
+        <div><img src="/static/img/contact/email.svg" alt="email"></div>
         <div>
-          pgp:
-          <code data-toggle="modal" data-target="#PGPModal" href="#">0A42F419 4D19DA71 11A1BA09 3F353739 BCE4F3DE</code>
-        </div>
-
-        <!-- PGPModal -->
-        <div class="modal fade" id="PGPModal" tabindex="-1" role="dialog" aria-labelledby="PGP" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="PGPModalLabel">
-                  PGP
-                  <a href="#" id="copy" data-target="pgpkey" data-toggle="tooltip" data-placement="top" title="copy"><i class="fa fa-files-o" aria-hidden="true"></i></a>
-                  <span id="copied-pgpkey" class="badge badge-secondary ml-1 d-inline-block copied" role="alert">copied</span>
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-<textarea class="code" id="pgpkey">-----BEGIN PGP PUBLIC KEY BLOCK-----
-mDMEXExD0BYJKwYBBAHaRw8BAQdANJEpMJweaB3fecaGQDuHGMUlgFItyPypwfmR
-E3M2qUm0Ik5pa29zIFJvdXNzb3MgPGNvbXplcmFkZEBmc2ZlLm9yZz6IlgQTFgoA
-PgIbAwUJBCvfAAULCQgHAwUVCgkICwUWAgMBAAIeAQIXgBYhBApC9BlNGdpxEaG6
-CT81Nzm85PPeBQJcTERUAAoJED81Nzm85PPeSksA/2zO4A5uwylVLFhsCDgem0Bd
-Up3RoSbnvwZfBIBCbUdkAP40LUhWVBWP2gRpxeoCNjoam6iLccKe3iEh8yZYLJ6A
-DbQgTmlrb3MgUm91c3NvcyA8bmlrb3NAcm91c3Nvcy5jYz6ImQQTFgoAQQIbAwUJ
-BCvfAAULCQgHAwUVCgkICwUWAgMBAAIeAQIXgBYhBApC9BlNGdpxEaG6CT81Nzm8
-5PPeBQJcTERUAhkBAAoJED81Nzm85PPeJKcA+gPQG+gW+xxf4OrGLgAFfSL5Yg89
-dtmtTfr64fxLxTAOAP0T+0Z9zjhJrO1BuqKHNmPDl6T/a8zXqVGqcX9mKbJaDLQs
-Tmlrb3MgUm91c3NvcyA8bmlrb3Mucm91c3Nvc0BncmVlbnBlYWNlLm9yZz6IlgQT
-FgoAPhYhBApC9BlNGdpxEaG6CT81Nzm85PPeBQJcTEQ5AhsDBQkEK98ABQsJCAcD
-BRUKCQgLBRYCAwEAAh4BAheAAAoJED81Nzm85PPe1r4BAM0ReQf/wrWQ/0wP/0Zg
-keNyc3o54uGZ8UcyBZd2l7+QAP9PkWK4Zi+OGu6g602rmlCUuV2uG4QoufA9aEyo
-PLnADLg4BFxMQ9ASCisGAQQBl1UBBQEBB0DwynBem+6rlhIdNpx/dBRiZwbUloaG
-+l8C0zASF3H8DQMBCAeIfgQYFgoAJhYhBApC9BlNGdpxEaG6CT81Nzm85PPeBQJc
-TEPQAhsMBQkEK98AAAoJED81Nzm85PPetSgA/Rs0skMHhW8LUx0r/rXOlMcXy5Mt
-WmlmANdhs2DBMBeDAQDZynoU1LMHHhOV1wf610ZPxbEnTBOzToTtwJbnhjKNCg==
-=HoAT
------END PGP PUBLIC KEY BLOCK-----</textarea>
-              </div>
-            </div>
-          </div>
+          pgp: <a href="/pub/roussos-pgp.txt" target="_blank"><code>0A42F419 4D19DA71 11A1BA09 3F353739 BCE4F3DE</code></a>
         </div>
       </div>
     </section>
 
     <!-- IM -->
     <section>
-      <div class="lead"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> instant messaging</div>
+      <h3>instant messaging</h3>
 
       <div class="contact-section">
-        <div>jabber: <img src="/static/img/jabber.svg" title="xmpp (jabber)" /></div>
+        <div>jabber: <img src="/static/img/contact/jabber.svg" alt="jabber"></div>
         <div>
           otr:
-          <code>39BAFA4D AC08DCAA 758CD477 872B79ED 9A4D4928</code>
+          <a href="/pub/roussos-otr.txt" target="_blank"><code>39BAFA4D AC08DCAA 758CD477 872B79ED 9A4D4928</code></a>
         </div>
       </div>
 
@@ -74,7 +35,7 @@ WmlmANdhs2DBMBeDAQDZynoU1LMHHhOV1wf610ZPxbEnTBOzToTtwJbnhjKNCg==
         <div>signal: +3...40</div>
         <div>
           safety number:
-          <code>31190 97952 13907 87932 31121 23586</code>
+          <code>53754 69339 60543 81331 73480 13252</code>
         </div>
       </div>
 
@@ -85,36 +46,18 @@ WmlmANdhs2DBMBeDAQDZynoU1LMHHhOV1wf610ZPxbEnTBOzToTtwJbnhjKNCg==
 
     <!-- Donate -->
     <section>
-      <div class="lead"><span class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span> donate</div>
+      <h3>donate</h3>
 
       <div class="contact-section">
         If you value my work, we can buy me a coffee or a beer through:
         <div>
-          <a data-toggle="modal" data-target="#FaircoinModal" href="#">faircoin</a>
+          <a href="/pub/faircoin.png" target="_blank">faircoin</a>
         </div>
         <div>
           <a href="https://liberapay.com/comzeradd/" target="_blank">liberapay</a>
         </div>
         <div>
           <a href="https://www.paypal.me/comzeradd" target="_blank">paypal</a>
-        </div>
-
-        <!-- FaircoinModal -->
-        <div class="modal fade" id="FaircoinModal" tabindex="-1" role="dialog" aria-labelledby="Faircoin" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="FaircoinModalLabel">Faircoin</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="/static/img/faircoin.png" alt="bitcoin"><br>
-                <code data-toggle="modal" data-target="#FaircoinModal" href="#">fM9aLT4XMfNChBF2Zk23rKcjrwHvBA5KCE</code>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

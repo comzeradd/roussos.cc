@@ -24,46 +24,42 @@
   <body class="{% block body_class %}{% endblock %}">
     <div id="wrapper">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p class="avatar">
-              <a href="/">
-                <img src="/static/img/{{ logo }}" alt="{{ author }}" class="avatar rounded-circle" />
-              </a>
-            </p>
-            <h3 class="top-links">
-              <a href="/index.html">About</a> &bull;
-              <a href="/blog.html">Blog</a> &bull;
-              <a href="/projects.html">Projects</a> &bull;
-              <a href="/music.html">Music</a> &bull;
-              <a href="/places.html">Places</a> &bull;
-              <a href="/contact.html">Contact</a>
-            </h3>
-          </div>
-        </div>
-      </div>
+      <header role="heading">
+        <h1 class="title">
+          Nikos Roussos
+        </h1>
 
-      <div class="content">
+        <div class="avatar">
+          <a href="/">
+            <img src="/static/img/{{ logo }}" alt="{{ author }}" class="rounded-circle">
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="/">about</a></li>
+          <li><a href="/blog.html" class="blog">blog</a></li>
+          <li><a href="/projects.html" class="projects">projects</a></li>
+          <li><a href="/music.html" class="music">music</a></li>
+          <li><a href="/places.html" class="places">places</a></li>
+          <li><a href="/readings.html" class="readings">readings</a></li>
+          <li><a href="/contact.html" class="contact">contact</a></li>
+        </ul>
+      </header>
+
+      <main role="main" class="content">
         {% block content %}{% endblock content %}
-      </div>
+      </main>
 
     </div>
 
-    <div id="footer">
+    <footer>
       <div class="container">
         {% block footer %}
           powered by <a href="https://github.com/comzeradd/monopati" target="_blank">monopati</a> &bull;
           {{ license }}
         {% endblock %}
       </div>
-    </div>
+    </footer>
 
-    <script src="/static/lib/jquery/dist/jquery.min.js"></script>
-    <script src="/static/lib/popper.js/dist/umd/popper.min.js"></script>
-    <script src="/static/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/static/js/app.js"></script>
-    {% block javascript %}
-    {% endblock javascript %}
   </body>
 </html>

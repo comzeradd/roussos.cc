@@ -2,9 +2,10 @@
 
 {% block title %} &bull; blog{% endblock title %}
 
+{% block body_class %}blog{% endblock %}
+
 {% block content %}
   <div class="container">
-    <p class="lead">{{ title }}</p>
 
     <table class="table table-responsive">
       {% for post in posts %}

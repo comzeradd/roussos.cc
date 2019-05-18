@@ -2,32 +2,46 @@
 
 {% block title %} &bull; Places{% endblock title %}
 
+{% block body_class %}places{% endblock %}
+
 {% block content %}
   <div class="container">
-    <p>
+    <p class="lead">
       This is a map diary of the places I've been. Major cities, airports and hackerspaces.
     </p>
 
-    <p>
-      <strong>Major Cities:</strong> Athens, Istanbul, Milano, Bistrita, Vienna, Prague, Warsaw, Zurich,
-      Stuttgart, Berlin, Hamburg, Copenhagen, Malmo, Oslo, Bergen, Trondheim, Amsterdam, Antwerp, Brussels,
-      Paris, London, Sheffield, Edinburgh, Dublin, Barcelona, Madrid, Badajoz, Lisbon, Montreal, Quebec City, Ottawa,
-      Vancouver, Whistler, New York, Charleston, Orlando, Portland, San Francisco, Mountain View, Hilo, Honolulu,
-      Singapore.
-    </p>
+    <section>
+      <h3>Major Cities</h3>
 
-    <p>
-      <strong>Airports:</strong> ATH, IOA, SKG, AXD, HER, IST, OTP, CLJ, VIE, MXP, WAW, MUC, FRA, SXF, TXL, STR, HAM,
-      GVA, ZRH, CPH, OSL, TRD, BCN, MAD, BJZ, LIS, CDG, BRU, AMS, LCY, LHR, LGW, MAN, EDI, DUB, YUL, YYZ, YVR, EWR,
-      PHL, CLT, CHS, MCO, SFO, SJC, PDX, KOA, HNL, SIN
-    </p>
+      <p>
+        Athens, Istanbul, Milano, Bistrita, Vienna, Prague, Warsaw, Zurich,
+        Stuttgart, Berlin, Hamburg, Copenhagen, Malmo, Oslo, Bergen, Trondheim, Amsterdam, Antwerp, Brussels,
+        Paris, London, Sheffield, Edinburgh, Dublin, Barcelona, Madrid, Badajoz, Lisbon, Montreal, Quebec City, Ottawa,
+        Vancouver, Whistler, New York, Charleston, Orlando, Portland, San Francisco, Mountain View, Hilo, Honolulu,
+        Singapore.
+      </p>
+    </section>
 
-    <p>
-      <strong>Hackerspaces:</strong> Hackerspace.gr, Lamdaspace, P2P Lab, Metalab, C-base, Labitat, TOG, NYC Resistor, Hackerspace SG.
-    </p>
+    <section>
+      <h3>Airports</h3>
 
-    <p>
-      <img src="/static/img/flights.jpg" alt="flights" class="img-fluid">
+      <p>
+        ATH, IOA, SKG, AXD, HER, IST, OTP, CLJ, VIE, MXP, WAW, MUC, FRA, SXF, TXL, STR, HAM,
+        GVA, ZRH, CPH, OSL, TRD, BCN, MAD, BJZ, LIS, CDG, BRU, AMS, LCY, LHR, LGW, MAN, EDI, DUB, YUL, YYZ, YVR, EWR,
+        PHL, CLT, CHS, MCO, SFO, SJC, PDX, KOA, HNL, SIN
+      </p>
+    </section>
+
+    <section>
+      <h3>Hackerspaces</h3>
+
+      <p>
+        Hackerspace.gr, Lamdaspace, P2P Lab, Metalab, C-base, Labitat, TOG, NYC Resistor, Hackerspace SG.
+      </p>
+    </section>
+
+    <p class="mt-5">
+      <img src="/static/img/places/flights.jpg" alt="flights" class="img-fluid">
     </p>
 
   </div>
