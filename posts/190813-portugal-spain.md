@@ -21,7 +21,7 @@ Stayed at `Porto`. Walked through the old town, took a boat taxi across the rive
 
 #### day 3
 
-Drove towards Valladolid, crossed the borders through `Miranda do Douro`.
+Drove towards `Valladolid`, crossed the borders through `Miranda do Douro`.
 
 #### day 4
 
