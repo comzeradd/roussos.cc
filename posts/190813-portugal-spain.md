@@ -41,7 +41,7 @@ Went for swimming to `Platja de Gava`. Back to Barcelona for the Sonar festival.
 
 #### day 8
 
-Went to Sonar festival and the drove towards `Valencia`.
+Went to Sonar festival and then drove towards `Valencia`.
 
 #### day 9
 
