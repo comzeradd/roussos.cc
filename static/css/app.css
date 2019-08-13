@@ -129,6 +129,19 @@ img.txt {
   display: block;
 }
 
+pre,
+code {
+  background-color: #f6f8fa;
+  line-height: 1.45;
+  font-size: 0.9rem;
+  padding: 5px;
+  color: #e83e8c;
+}
+
+pre > code {
+  padding: 0;
+}
+
 /* Header
 ==================== */
 
