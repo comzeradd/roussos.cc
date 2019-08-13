@@ -82,7 +82,7 @@ Stayed at Lisbon. In the afternoon drove towards Porto airport. Did a stop at `A
 <p>
   <a data-flickr-embed="true" href="https://www.flickr.com/photos/comzeradd/albums/72157710282131877"
      title="Portugal &amp; Spain road trip">
-    <img src="/2019/08/13/portugal-spain/basque.jpg" width="100%" height="534" alt="Portugal &amp; Spain road trip">
+    <img src="https://live.staticflickr.com/65535/48519225062_ed0ca5ab77_c.jpg" width="100%" height="534" alt="Portugal &amp; Spain road trip">
   </a>
 </p>
 
