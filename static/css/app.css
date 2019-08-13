@@ -335,13 +335,13 @@ footer {
   color: var(--bg-color);
 }
 
-.social .section::after {
-	content: "|";
-	display: inline-block;
-	padding-left: 10px;
+.social-last::after {
+  content: "|";
+  display: inline-block;
+  padding-left: 10px;
 }
 
-.social a.section:hover::after {
+.social a.social-last:hover::after {
   color: var(--primary-color);
 }
 
