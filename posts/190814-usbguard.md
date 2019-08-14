@@ -3,6 +3,7 @@ date: 2019-08-14 13:57:00
 slug: usbguard
 tags: opensource, security
 files: badusb.jpg
+status: draft
 ---
 
 ![badusb](badusb.jpg)
