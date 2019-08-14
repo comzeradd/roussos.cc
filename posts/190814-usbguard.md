@@ -1,5 +1,5 @@
 title: Blocking untrusted USB devices
-date: 2019-08-14 12:57:00
+date: 2019-08-14 13:57:00
 slug: usbguard
 tags: opensource, security
 files: badusb.jpg
