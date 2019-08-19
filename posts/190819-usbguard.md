@@ -112,3 +112,7 @@ And you use the id number in the beginning of each line in order to interact wit
     usbguard remove-rule <id>
 
 And remember, there is no such thing as [absolute security](https://xkcd.com/538/). It all comes down to your [Threat model](https://ssd.eff.org/en/glossary/threat-model).
+
+<hr>
+
+*Comments and reactions on [Mastodon](https://libretooth.gr/@comzeradd/102642480309495265), [Diaspora](https://librenet.gr/posts/2479827), [Twitter](https://twitter.com/comzeradd/status/1163352092230205440) and [Lobsters](https://lobste.rs/s/itnef7/blocking_untrusted_usb_devices)*.
