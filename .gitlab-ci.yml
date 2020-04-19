@@ -2,6 +2,7 @@ image: python:3-alpine
 
 pages:
   script:
+  - apk add zlib-dev libjpeg-turbo-dev gcc musl-dev
   - pip install monopati sigal
   - monopati render
   - sigal build
