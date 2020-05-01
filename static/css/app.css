@@ -394,6 +394,10 @@ img.cover {
   object-fit: cover;
 }
 
+.book {
+  margin-bottom: 10px;
+}
+
 li.article {
   list-style-type: none;
   font-size: 0.9rem;

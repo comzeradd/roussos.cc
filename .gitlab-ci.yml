@@ -2,7 +2,7 @@ image: python:3-alpine
 
 pages:
   script:
-  - pip install monopati
+  - pip install --upgrade git+https://github.com/comzeradd/monopati.git
   - monopati render
   - cp -r extras/. public
   - cd public/category/libre/feed/atom/
