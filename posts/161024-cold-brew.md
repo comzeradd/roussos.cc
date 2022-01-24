@@ -2,19 +2,20 @@ title: My Cold Brew recipe
 date: 2016-10-23 21:31:00
 slug: cold-brew
 tags: life, diy
+files: cold_brew-1.jpg, cold_brew-2.jpg, cold_brew-3.jpg, cold_brew-4.jpg, cold_brew-5.jpg
 ---
 
 Cold brew is my favorite type of iced coffee. In the spirit of diy I usually brew my own homemade stuff. And in the spirit of open sourcing everything I thought it would be nice to document my personal "recipe".
 
 Searching around you'll find many different ways of making cold brew and the truth is that there is no right or wrong way of doing it (well... except some very wrong ways of doing it). This kind of brewing is fairly new and different people follow different rules. Especially when it comes to the coffee-water ratio. You should experiment with different ratios and find what's more suitable to you, in terms of flavor and caffeine amount. This is just what tastes good for me.
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/comzeradd/30428064031/in/album-72157675593290325/" title="Coffee"><img src="https://c8.staticflickr.com/6/5498/30428064031_55ed0981ac_c.jpg" width="800" height="534" alt="Coffee"></a>
+![Coffee Grind](cold_brew-2.jpg)
 
 #### **Coffee Grind**
 
 You need coarsely ground coffee. More coarse than you'd grind for filter coffee. If you have your own grinder you should be able to achieve that easily. I avoid brewing more than 100g each time. Otherwise I'd need a really big bottle to store it when it's ready. So use your scale wisely. Depending on the kind of bottles or jars you have (and your fridge can hold) you may end up with a different amount of coffee to use. You'll have a better way of deciding this by the time you end up reading this post.
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/comzeradd/30514622495/in/album-72157675593290325/" title="Weight"><img src="https://c8.staticflickr.com/6/5700/30514622495_92e5f2468f_c.jpg" width="800" height="520" alt="Weight"></a>
+![Coffee Scale](cold_brew-3.jpg)
 
 #### **Brew Process**
 
@@ -24,7 +25,7 @@ So fill in water and stir it good. You can find alternative ways for that specif
 
 You can either leave it on room temperature for 12h or put in the fridge for the next 24h. I prefer the latter, slowing down the brewing process. It's important to stir the coffee another 2-3 times during these 24 hours.
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/comzeradd/30427946381/in/album-72157675593290325/" title="Jar"><img src="https://c6.staticflickr.com/9/8567/30427946381_d74d80424a_c.jpg" width="800" height="511" alt="Jar"></a>
+![Coffee Brewing](cold_brew-4.jpg)
 
 #### **Filtering**
 
@@ -32,7 +33,7 @@ I filter directly to a bottle, using a filter paper (like the ones I'd use for f
 
 Once you filter it all, you store the bottle inside your fridge again.
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/comzeradd/30514700775/in/album-72157675593290325/" title="Filtering"><img src="https://c8.staticflickr.com/6/5781/30514700775_03a59e2c74_c.jpg" width="800" height="534" alt="Filtering"></a>
+![Coffee Filtering](cold_brew-1.jpg)
 
 #### **Enjoy**
 
@@ -42,8 +43,8 @@ The result is a nice coffee drink, less acidic and full of flavors compared to o
 
 Enjoy!
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/comzeradd/30398329052/in/album-72157675593290325/" title="Enjoy"><img src="https://c5.staticflickr.com/6/5727/30398329052_38eff01593_c.jpg" width="800" height="534" alt="Enjoy"></a>
+![Coffee Enjoy](cold_brew-5.jpg)
 
 <hr>
 
-*Comments and reactions on [Diaspora](https://librenet.gr/posts/601875) or [Twitter](https://twitter.com/comzeradd/status/698135511437803520)*
+*Comments and reactions on [Twitter](https://twitter.com/comzeradd/status/698135511437803520)*
