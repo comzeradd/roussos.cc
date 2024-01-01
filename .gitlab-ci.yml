@@ -3,8 +3,9 @@ image: python:3-alpine
 pages:
   script:
   - apk add git
-  - pip install --upgrade git+https://github.com/comzeradd/monopati.git
+  - pip install monopati sigal
   - monopati render
+  - sigal build
   - cp -r extras/. public
   - cd public/category/libre/feed/atom/
   - ln -s ../../../../tag/opensource/feed.xml index.html
