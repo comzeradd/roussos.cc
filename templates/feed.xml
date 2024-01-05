@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <author>{{ author }}</author>
   <title>{{ sitename }}{{ tagtitle }}</title>
   <link href="{{ rooturl }}feed.xml" rel="self" />
   <link href="{{ rooturl }}" />
