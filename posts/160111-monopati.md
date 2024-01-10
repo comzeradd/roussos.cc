@@ -1,4 +1,4 @@
-title: monopati, a minimalistic static content generator
+title: Monopati, a minimalistic static content generator
 date: 2016-01-11 17:01:12
 slug: monopati
 tags: opensource

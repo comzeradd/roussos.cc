@@ -1,4 +1,4 @@
-title: ο φαύλος κύκλος της "ανάπτυξης"
+title: Ο φαύλος κύκλος της "ανάπτυξης"
 date: 2010-01-25 20:57:00
 post_type: post
 slug: o-favlos-kiklos-tis-anaptixis

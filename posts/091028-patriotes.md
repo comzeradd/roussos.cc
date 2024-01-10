@@ -1,4 +1,4 @@
-title: πατριώτες
+title: Πατριώτες
 date: 2009-10-28 11:07:31
 slug: patriotes
 post_type: post

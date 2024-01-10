@@ -19,17 +19,17 @@ Check out my full Popcorn Maker presentation below and the full [photo album](ht
 <iframe src="http://www.rvl.io/comzeradd/make-popcorn/embed" height="420" width="576" allowfullscreen="" frameborder="0" scrolling="no"></iframe>
 <br />
 
-On the front wall of the Medialab Prado (the host venue) there was a 15-meter wide LED facade displaying processing.js artworks. A special [online editor](http://programalaplaza.medialab-prado.es/) was created for people to submit "code" for this installation. Below is my simple humble contribution (inspired by [similar music scene](https://www.youtube.com/watch?v=H4Kgzn3tDQU) from a favorite movie :P). 
-    
+On the front wall of the Medialab Prado (the host venue) there was a 15-meter wide LED facade displaying processing.js artworks. A special [online editor](http://programalaplaza.medialab-prado.es/) was created for people to submit "code" for this installation. Below is my simple humble contribution (inspired by [similar music scene](https://www.youtube.com/watch?v=H4Kgzn3tDQU) from a favorite movie :P).
+
     void setup() {
-      size(192, 157); 
-      background(0); 
+      size(192, 157);
+      background(0);
       frameRate(7);
-    
+
       noStroke();
       colorMode(HSB); //HSB mode to have beautiful random colors
     }
-    
+
     void draw () {
       x = Math.round(random(192)/16);
       y = Math.round(random(160)/16);

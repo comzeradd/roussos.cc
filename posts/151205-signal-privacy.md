@@ -2,6 +2,7 @@ title: If you care about privacy, Signal is certainly not an option
 date: 2015-12-05 15:45:08
 slug: signal-privacy
 tags: privacy, opensource
+status: draft
 ---
 
 Whisper Systems failed big once again. They just [announced](https://whispersystems.org/blog/signal-desktop/) their "Desktop" version of Signal, which is actually a Chrome app.

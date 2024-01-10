@@ -1,4 +1,4 @@
-title: filesystem activity
+title: Filesystem activity
 date: 2006-12-14 23:21:11
 type: post
 slug: filesystem-activity

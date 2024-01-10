@@ -1,4 +1,4 @@
-title: το θρυμματισμένο παράθυρο
+title: Το θρυμματισμένο παράθυρο
 date: 2009-05-31 03:03:06
 slug: to-thrimatismeno-parathiro
 post_type: post

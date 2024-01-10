@@ -1,4 +1,4 @@
-title: το τείχος του βερολίνου και άλλα τείχη
+title: Το τείχος του βερολίνου και άλλα τείχη
 date: 2010-02-01 20:57:08
 slug: to-teixos-tou-verolinou
 post_type: post

@@ -3,6 +3,7 @@ date: 2016-01-05 12:41:37
 slug: jabber-omemo
 tags: privacy, opensource, encryption
 files: omemo.png
+status: draft
 ---
 
 So, many people promoting Signal over Jabber/OTR for its usability and security features (besides all [caveats](https://librenet.gr/posts/497875)). Most of these features are offered due the [Axolotl Ratchet](https://github.com/trevp/axolotl/wiki) protocol.

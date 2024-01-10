@@ -3,6 +3,7 @@ date: 2010-09-19 18:50:38
 slug: fudcon-emea-2010-zurich
 post_type: post
 tags: opensource, fedora, events
+status: draft
 ---
 
 [FUDCon EMEA 2010](http://fedoraproject.org/wiki/FUDCon:Zurich_2010) has just finished. It was the first international Fedora event i participated and I really enjoyed it. It was really nice meeting and talking with people from the Fedora community and getting to know more about the Fedora community mentality.

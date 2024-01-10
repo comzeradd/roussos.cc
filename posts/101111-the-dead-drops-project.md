@@ -1,4 +1,4 @@
-title: the Dead Drops project
+title: The Dead Drops project
 date: 2010-11-11 10:27:32
 slug: the-dead-drops-project
 post_type: post

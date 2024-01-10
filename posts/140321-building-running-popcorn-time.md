@@ -1,4 +1,4 @@
-title: building and running Popcorn Time from source
+title: Βuilding and running Popcorn Time from source
 date: 2014-03-21 17:37:19
 type: post
 slug: building-running-popcorn-time
@@ -30,7 +30,7 @@ We change into the project directory, that we just pulled with git, so all of th
     cd popcorn-app
     npm install grunt-cli bower
     npm install
-    
+
 ###Build
 
 `node_modules/grunt-cli/bin/grunt build --platforms=linux64`

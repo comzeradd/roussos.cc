@@ -39,5 +39,3 @@ Great talks by [Christian Heilmann](http://christianheilmann.com/), on how to be
 **Amo builder**
 
 Finally a great discussion about the new Add-ons Builder (aka [Jetpack](https://wiki.mozilla.org/Jetpack)). It seems that the most difficult job there is to convience the old-school add-on developers about the neccessity of migrating to Jetpack. Some benefits: Easier coding (you don't need to know much about XUL), Restartless add-ons, Firefox version independent. [Get a ride](https://addons.mozilla.org/en-US/developers/).
-
-[![q&a](https://farm7.static.flickr.com/6106/6347861402_3082969cf8.jpg)](http://www.flickr.com/photos/comzeradd/6347861402/) more photos: [mozcamp album](https://secure.flickr.com/photos/comzeradd/sets/72157628134486968/)

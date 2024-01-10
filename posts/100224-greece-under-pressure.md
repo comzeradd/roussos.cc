@@ -1,11 +1,11 @@
-title: greece under pressure
+title: Greece under pressure
 date: 2010-02-24 20:00:23
 slug: greece-under-pressure
 post_type: post
 tags: political, greek
 ---
 
-Τελικά υπάρχουν λεφτά; Μεταφράζω απ' το [marxist.com](http://www.marxist.com/) που [συγκέντρωσε](http://www.marxist.com/bankruptcy-threatens-greece-sacrifice-capitalism.htm) κάποια στοιχεία: 
+Τελικά υπάρχουν λεφτά; Μεταφράζω απ' το [marxist.com](http://www.marxist.com/) που [συγκέντρωσε](http://www.marxist.com/bankruptcy-threatens-greece-sacrifice-capitalism.htm) κάποια στοιχεία:
 
   * 67.5% του συνόλου των φορολογικών εσόδων το 2009 πήγαν κυρίως σε τοπικές και διεθνείς τράπεζες και γενικώς σε παρασιτικούς παράγοντες της οικονομίας, κάτοχοι των κρατικών ομολόγων και εντόκων γραμματίων του Δημοσίου, οι οποίοι έχουν δανείσει χρήματα στο κράτος.
   * Το ποσό των 28 δις. ευρώ που δόθηκαν ως πακέτο σωτηρίας στις τράπεζες, ισούται με το 12.4% του δημόσιου ελλείματος, που θα μπορούσαν να χρησιμοποιηθούν για να αγοραστούν οι τράπεζες.

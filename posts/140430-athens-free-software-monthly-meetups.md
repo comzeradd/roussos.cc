@@ -1,8 +1,9 @@
 title: Athens Free Software Monthly Meetups
-date: 2014-04-30 16:45:35 
+date: 2014-04-30 16:45:35
 type: post
 slug: athens-free-software-monthly-meetups
 tags: opensource, fsfe
+status: draft
 ---
 
 Just about a month ago [my two years term](http://www.roussos.cc/2012/03/06/fsfe/) as FSFE community representative to the General Assembly ended.

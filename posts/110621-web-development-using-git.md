@@ -3,6 +3,7 @@ date: 2011-06-21 11:03:17
 slug: web-development-using-git
 type: post
 tags: opensource, webdev
+status: draft
 ---
 
 I think that the title says everything. This post describes how I'm using git for version controlling my web apps.
@@ -33,7 +34,7 @@ It's a good convention to create the bare repository with .git extension, if you
 **Local Repo**
 
 Now let's setup our local repository:
-  
+
     cd /home/me/dev/
     git clone ssh://mydomain.net/var/www/myproject.git
 

@@ -1,4 +1,4 @@
-title: working inside libre software ecosystem (aka love and marriage)
+title: Working inside libre software ecosystem (aka love and marriage)
 date: 2009-06-02 09:33:50
 slug: working-inside-libre-software-ecosystem
 post_type: post

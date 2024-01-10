@@ -3,6 +3,7 @@ date: 2010-11-16 00:29:26
 slug: istanbul
 post_type: post
 tags: life, travel
+status: draft
 ---
 
 [![the canal](http://farm2.static.flickr.com/1317/5161226118_6ea2c52d16.jpg)](http://www.flickr.com/photos/comzeradd/5161226118/) ** the canal**

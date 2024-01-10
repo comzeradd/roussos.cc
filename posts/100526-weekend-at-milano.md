@@ -1,9 +1,10 @@
-title: weekend at milano
+title: Weekend at milano
 date: 2010-05-26 11:16:42
 slug: weekend-at-milano
 status: publish
 post_type: post
 tags: life, travel
+status: draft
 ---
 
 [![passing by](http://farm5.static.flickr.com/4071/4636375000_6f6a1700b4.jpg)](http://www.flickr.com/photos/comzeradd/4636375000/) ** passing by**

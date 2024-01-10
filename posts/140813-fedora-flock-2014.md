@@ -5,7 +5,7 @@ slug: fedora-flock-2014
 tags: opensource, fedora, event
 ---
 
-[Fedora Flock](http://www.flocktofedora.com/) took place last week and this is a log entry for my personal highlights.
+Fedora Flock took place last week and this is a log entry for my personal highlights.
 
 <a href="https://www.flickr.com/photos/comzeradd/14671187430" title="Flock 2014 by Nikos Roussos, on Flickr"><img src="https://farm6.staticflickr.com/5575/14671187430_7c5c5ef531_m.jpg" class="txt" width="180" height="240" alt="Flock 2014"></a> Overall the Flock was awesome. The quality of all technical presentations/workshops was really high. It's amazing how many things currently going on at the Fedora community, not just related to our Operation System (the distribution) but also innovative things that we develop or lead that in the long run benefit the whole Free Software community. As always I had the chance to meet, talk and collaborate in person with many Fedorians and that's always motivating for my contribution to the project.
 

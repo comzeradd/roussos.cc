@@ -3,6 +3,7 @@ date: 2017-07-10 20:27:00
 slug: vuejs-webpack
 tags: opensource, mozilla, frontend
 files: vuejs.jpg
+status: draft
 ---
 
 At Mozilla's Participation Systems team we have this [Small Uncontrolled Experiment](http://verraes.net/2014/10/small-controlled-experiments-revisited/), called Turing Day. What we do, is use one day in our two weeks sprint to work freely on stuff that are not directly connected to our projects and products. Hack stuff, learn new things and technologies, "sharp our saw" in order to increase our efficiency.

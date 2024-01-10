@@ -1,4 +1,4 @@
-title: greek coding camp 2009
+title: Greek coding camp 2009
 date: 2009-07-08 01:48:53
 slug: greek-coding-camp-2009
 post_type: post
@@ -24,7 +24,7 @@ lunch break with greek [mousaka](http://en.wikipedia.org/wiki/Mousaka) and [tsik
 
 personally i was more interested on openoffice projects and especially the [greek build testing](http://greek-coding-camp.wikidot.com/openoffice-3-1-1-testing-build).
 
-day ended with a quick visit at the cold sea and a few glass of wine. 
+day ended with a quick visit at the cold sea and a few glass of wine.
 
 day 2 (5/7)
 
@@ -38,7 +38,7 @@ day 3 (6/7)
 
 early waking. some of us did a nice conversation about [lost](http://en.wikipedia.org/wiki/Lost_%28TV_series%29) and its [timeline](http://www.timelooptheory.com/the_timeline.html) :D
 
-later we had a sort seminar-like conversation about pgp essentials and gpg usage. just to convince everyone who didn't have a key to sign ours :P 
+later we had a sort seminar-like conversation about pgp essentials and gpg usage. just to convince everyone who didn't have a key to sign ours :P
 
 later at night we visited the near by village and we were enlightened by [hoo2](http://houtouridis.blogspot.com/) about rubick cube solution mind algorithms.
 
@@ -47,8 +47,6 @@ day 4 (7/7)
 day began with openoffice testing again. cmpachar did a great job there.
 
 a new page added to the event wiki, since we managed to convience [a young user](http://greek-coding-camp.wikidot.com/littlemary) for the benefits of free software ([potato guy](http://games.kde.org/game.php?game=ktuberling) really helped on this one).
-
-[![playing potato guy](http://farm3.static.flickr.com/2437/3699249082_9d2cb21b37.jpg)](http://www.flickr.com/photos/comzeradd/3699249082/)
 
 highlights: openoffice greek build testing completed for the greek build by [cmpachar](http://bacharakis.com/) and me, [glezos](http://dimitris.glezos.com/) and [alupo](http://twitter.com/andy_lupo) completed the transifex task, [elias](http://twitter.com/eliaschr) and [manolis](http://twitter.com/sonic2000gr) translated openoffice templates to greek, pantelis and [hoo2](http://houtouridis.blogspot.com/) almost finished adding usb dsl modems support at the network manager.
 

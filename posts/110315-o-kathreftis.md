@@ -1,4 +1,4 @@
-title: ο καθρέφτης απέναντι μας
+title: Ο καθρέφτης απέναντι μας
 date: 2011-03-15 12:27:36
 slug: o-kathreftis
 type: post

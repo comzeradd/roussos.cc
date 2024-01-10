@@ -1,5 +1,5 @@
-title: my linux history
-date: 2013-11-05 12:17:39 
+title: Μy linux history
+date: 2013-11-05 12:17:39
 type: post
 slug: my-linux-history
 tags: opensource, fedora, gentoo, linux

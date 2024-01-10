@@ -1,4 +1,4 @@
-title: ευρωεκλογές 2009
+title: Ευρωεκλογές 2009
 date: 2009-06-09 13:50:23
 slug: euroekloges-2009
 post_type: post

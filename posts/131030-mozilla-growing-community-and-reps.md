@@ -1,8 +1,9 @@
 title: Mozilla growing community (and reps)
-date: 2013-10-30 13:27:03 
+date: 2013-10-30 13:27:03
 type: post
 slug: mozilla-growing-community-and-reps
 tags: opensource, mozilla
+status: draft
 ---
 
 [![champions of the web](http://farm4.staticflickr.com/3712/10136415166_51b1cfa6c0.jpg)](http://www.flickr.com/photos/dougbelshaw/10136415166/)

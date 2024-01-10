@@ -1,4 +1,4 @@
-title: μονοπάτι
+title: Μονοπάτι
 date: 2009-05-07 00:16:06
 slug: monopati
 type: post

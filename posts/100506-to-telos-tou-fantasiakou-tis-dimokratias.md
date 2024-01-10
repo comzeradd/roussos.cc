@@ -1,4 +1,4 @@
-title: το τέλος του φαντασιακού της δημοκρατίας
+title: Tο τέλος του φαντασιακού της δημοκρατίας
 date: 2010-05-06 14:07:54
 slug: to-telos-tou-fantasiakou-tis-dimokratias
 post_type: post

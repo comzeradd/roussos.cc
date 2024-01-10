@@ -1,4 +1,4 @@
-title: πολιτικές προτεραιότητες
+title: Πολιτικές προτεραιότητες
 date: 2010-03-01 20:57:04
 slug: politikes-proteraiotites
 post_type: post

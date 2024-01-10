@@ -1,4 +1,4 @@
-title: ο μύθος της "ελεύθερης αγοράς"
+title: Ο μύθος της "ελεύθερης αγοράς"
 date: 2010-02-15 20:57:21
 slug: o-mithos-tis-eleftheris-agoras
 post_type: post

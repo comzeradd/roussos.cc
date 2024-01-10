@@ -1,4 +1,4 @@
-title: the distro of my dreams
+title: The distro of my dreams
 date: 2007-09-24 23:43:50
 slug: the-distro-of-my-dreams
 type: post

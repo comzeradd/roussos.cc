@@ -1,4 +1,4 @@
-title: οικονομική κρίση
+title: Οικονομική κρίση
 date: 2009-07-14 15:52:34
 slug: oikonomiki-krisi
 post_type: post

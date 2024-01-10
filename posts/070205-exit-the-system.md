@@ -1,4 +1,4 @@
-title: exit the system
+title: Exit the system
 date: 2007-02-05 23:29:06
 slug: exit-the-system
 type: post

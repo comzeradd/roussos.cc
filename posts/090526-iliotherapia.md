@@ -1,4 +1,4 @@
-title: ηλιοθεραπεία
+title: Ηλιοθεραπεία
 date: 2009-05-26 00:07:53
 slug: iliotherapia
 post_type: post

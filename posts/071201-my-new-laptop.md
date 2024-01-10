@@ -1,4 +1,4 @@
-title: my new laptop
+title: My new laptop
 date: 2007-12-01 00:04:54
 slug: my-new-laptop
 type: post

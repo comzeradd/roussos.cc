@@ -1,4 +1,4 @@
-title: κατάληψη
+title: Κατάληψη
 date: 2013-01-25 11:21:33
 slug: katalipsi
 type: post

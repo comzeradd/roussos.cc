@@ -1,4 +1,4 @@
-title: mozilla at fosscomm2012
+title: Μozilla at fosscomm2012
 date: 2012-05-17 14:20:36
 slug: mozilla-fosscomm
 type: post

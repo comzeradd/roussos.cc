@@ -1,4 +1,4 @@
-title: do something
+title: Do something
 date: 2018-01-05 12:57:00
 slug: do-something
 tags: political, life, greek

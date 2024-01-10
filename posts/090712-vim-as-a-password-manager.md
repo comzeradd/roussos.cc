@@ -1,11 +1,11 @@
-title: vim as a password manager
+title: Vim as a password manager
 date: 2009-07-12 14:21:16
 slug: vim-as-a-password-manager
 post_type: post
 tags: opensource, hack
 ---
 
-this is a small post for the technique i 'm currently using to save my passwords, implemented on vim. i added these two lines at my ~/.vimrc file: 
+this is a small post for the technique i 'm currently using to save my passwords, implemented on vim. i added these two lines at my ~/.vimrc file:
 
     map <F12> <Esc>:%!gpg --decrypt 2>/dev/null<CR><CR><C-l>
     map <S-F12> <Esc>:%!gpg --encrypt --armor --recipient mymail@mail.com<CR><CR><C-l>

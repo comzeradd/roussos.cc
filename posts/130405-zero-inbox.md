@@ -1,4 +1,4 @@
-title: zero inbox
+title: Ζero inbox
 date: 2013-04-05 19:00:53
 slug: zero-inbox
 post_type: post
@@ -7,7 +7,7 @@ tags: opensource
 
 After many years of drowning in unread emails, I changed the way I deal with my mailbox. I managed to have 0 unread emails (most of the times) and being more productive on dealing with emails and real tasks.
 
-Here is how I did it: 
+Here is how I did it:
 
   * **Your mailbox is not a task management tool.** Most likely you have plenty of unread emails. I guess that most of them are not really unread. You've opened them, read them and then marked them again as unread because they include an action that you don't want to deal with at the moment. Postponing it's ok. Having your tasks living inside your mailbox is not. Choose a task management tool. It may be your email's client embedded task management, it may be a dedicated tool, a [hipster pda](https://en.wikipedia.org/wiki/Hipster_pda), or just a .txt file on a <del>dropbox/</del>[owncloud](https://owncloud.org/)/[sparkleshare](http://sparkleshare.org/) folder. Create a task. If this involves replying to the initial email, don't worry. It will be there waiting for you.
   * **Archive.** Create an Archive folder where you move all the emails that you want to keep. Emails that you think are important and you may need them in the future. On your filter folders leave only emails for current stuff and on-going discussions. It's easier to have to search only one folder when you're looking something from the past.

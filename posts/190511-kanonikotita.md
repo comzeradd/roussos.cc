@@ -1,4 +1,4 @@
-title: κανονικότητα
+title: Κανονικότητα
 date: 2019-05-11 15:48:00
 slug: kanonikotita
 tags: life, greek

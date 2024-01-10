@@ -1,11 +1,11 @@
-title: book meme
+title: Book meme
 date: 2008-11-15 11:46:10
 slug: book-meme
 type: post
 tags: reading, life
 ---
 
-i read it somewhere and i liked the idea :) 
+i read it somewhere and i liked the idea :)
 
 * grab the nearest book.
 * open it to page 56.

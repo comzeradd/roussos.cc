@@ -1,4 +1,4 @@
-title: το πολιτικό κόστος
+title: Το πολιτικό κόστος
 date: 2011-06-30 15:08:58
 slug: to-politiko-kostos
 type: post
