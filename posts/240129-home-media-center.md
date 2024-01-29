@@ -3,6 +3,7 @@ date: 2024-01-29 16:27:00
 slug: home-media-center
 tags: opensource, guide
 files: jellyfin.jpg
+comments: https://libretooth.gr/@comzeradd/111839596632083685
 ---
 
 ![jellyfin](jellyfin.jpg)
