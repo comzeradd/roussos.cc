@@ -291,6 +291,7 @@ Some post-installation configuration to make everything work together:
 
 - As mentioned above, make sure to adjust "URL base" and use the location path configured in Nginx (eg. `/sonarr` for Sonarr) in all the applications.
 - Whatever torrent client you choose, make sure to configure it for both Radarr and Sonarr as a Download Client under their Settings options.
+- On Transmission, you can choose "Require Encryption" in Preferences &gt; Peers &gt; Encryption mode. You will probably lose some peers, but you'll prevent your ISP from knowing what content you are downloading.
 - After you add some torrent trackers to Jackett, you would also need to configure Indexers under Settings options in both Sonarr and Radarr. You should copy the Torznab feed from Jackett and its API key to make it work.
 - For subtitles, you need first to add some Providers in Bazarr Settings options. And then create at least one Language Profile under Languages, so that Bazarr knows what languages to look for.
 - Both Sonarr and Radarr support importing existing media files and they provide some on-screen instructions on how to structure your files in a way they understand.
