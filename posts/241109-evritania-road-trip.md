@@ -3,6 +3,7 @@ date: 2024-11-09 14:01:00
 slug: evritania-road-trip
 tags: life, travel
 files: evritania-karpenisi-time-lapse.mp4, evritania-karpenisi.jpg, evritania-road.jpg, evritania-moni.jpg, evritania-black-cave.jpg, evritania-mikro.jpg, evritania-megdova.jpg, evritania-kremasta.jpg, evritania-krikello.jpg, evritania-fourna.jpg
+comments: https://libretooth.gr/@comzeradd/113452834035791716
 ---
 
 This is a travel post to document the recent road trip to [Evritania](https://en.wikipedia.org/wiki/Evrytania).
