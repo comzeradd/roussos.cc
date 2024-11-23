@@ -1,6 +1,5 @@
 version: STSv1
 mode: enforce
-mx: mxext1.mailbox.org
-mx: mxext2.mailbox.org
-mx: mxext3.mailbox.org
+mx: mx01.mail.icloud.com
+mx: mx02.mail.icloud.com
 max_age: 86400
