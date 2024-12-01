@@ -62,22 +62,22 @@
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-size: 18px;
-    line-height: 1.4;
-    font-family:'ClearSans';
-    background-color: var(--bg-color);
+  font-size: 18px;
+  line-height: 1.4;
+  font-family:'ClearSans';
+  background-color: var(--bg-color);
 }
 
 .container {
-    max-width: 800px;
+  max-width: 800px;
 }
 
 a {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 a:hover,
@@ -209,7 +209,8 @@ h1.title {
 .music a.music,
 .places a.places,
 .readings a.readings,
-.contact a.contact {
+.contact a.contact,
+.photos a.photos {
   color: black;
 }
 
@@ -358,7 +359,8 @@ footer {
   margin-bottom: 30px;
 }
 
-section h3 {
+section h3,
+.photos .album-title h3 {
   margin-bottom: 10px;
   margin-top: 30px;
   border-bottom: 1px solid lightgray;
@@ -428,4 +430,45 @@ li.article::before {
 .album p.links {
   font-size: .8em;
   padding-top: 10px;
+}
+
+/* Photos
+==================== */
+body.photos {
+  margin-bottom: 0;
+  color: var(--fg-color);
+}
+
+.photos #container {
+  padding: 0 2em;
+}
+
+.photos header {
+  margin-bottom: 0;
+}
+
+.photos header h1 {
+  display: block;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.photos .album-title h3 {
+  margin-right: 35px;
+}
+
+.photos footer,
+.photos .nav-links {
+  margin-left: calc(-50vw - -50%);
+  width: 100vw;
+}
+
+.photos footer p {
+  color: #212529;
+  font-style: normal;
+}
+
+.photos footer a {
+  color: var(--primary-color);
 }

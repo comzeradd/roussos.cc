@@ -1,0 +1,23 @@
+{
+  "input": "/work/photos/",
+  "output": "/work/public/photos/",
+  "thumb-size": 200,
+  "small-size": 500,
+  "large-size": 1200,
+  "photo-quality": 93,
+  "video-format": "mp4",
+  "video-quality": "85",
+  "photo-download": "copy",
+  "photo-preview": "copy",
+  "video-download": "resize",
+  "cleanup": true,
+  "concurrency": 2,
+  "sort-albums-by": "start-date",
+  "sort-albums-direction": "desc",
+  "sort-media-by": "date",
+  "sort-media-direction": "asc",
+  "theme": "cards",
+  "title": "photos",
+  "embed-exif": true,
+  "footer": "powered by <a href='https://thumbsup.github.io/' target='blank'>thumbsup</a> &bull; <a href='https://creativecommons.org/licenses/by-sa/4.0/'>Creative Commons Attribution-ShareAlike</a>"
+}
