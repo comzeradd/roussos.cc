@@ -12,7 +12,7 @@ pages:
   - ln -s ../../../../tag/opensource/feed.xml index.html
   - cd ../../../../../
   - wget --recursive --no-parent https://${PHOTOS_URI}
-  - mv /${PHOTO_URI} photos/
+  - mv ${PHOTOs_URI} photos/
   - CHECK=$(du -sb photos/ | cut -f1); if [ "$CHECK" -lt 500000 ]; then exit 1; fi;
   - thumbsup --config thumbsup.json --theme-style static/css/app.css
   - ./bin/photos-theme.sh
