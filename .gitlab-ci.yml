@@ -3,7 +3,7 @@ image: ubuntu:24.04
 pages:
   script:
   - apt update
-  - DEBIAN_FRONTEND=noninteractive apt install -y wget git python3 python3-pip nodejs npm libgomp1 zopfli libpng-dev libjpeg-turbo8 libwebp-dev libtiff-dev liblcms2-2 x265 libde265-0 libheif1 ffmpeg libexif12 imagemagick graphicsmagick gifsicle zip
+  - DEBIAN_FRONTEND=noninteractive apt install -y wget git python3 python3-pip nodejs npm libgomp1 zopfli libpng-dev libjpeg-turbo8 libwebp-dev libtiff-dev liblcms2-2 x265 libde265-0 libheif1 ffmpeg dcraw exiftool libexif12 imagemagick graphicsmagick gifsicle zip
   - pip install --break-system-packages monopati
   - npm install -g thumbsup
   - monopati render
