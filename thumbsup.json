@@ -1,6 +1,6 @@
 {
-  "input": "/work/photos/",
-  "output": "/work/public/photos/",
+  "input": "photos/",
+  "output": "public/photos/",
   "thumb-size": 200,
   "small-size": 500,
   "large-size": 1200,
