@@ -12,7 +12,7 @@
   "video-download": "resize",
   "cleanup": true,
   "concurrency": 2,
-  "sort-albums-by": "start-date",
+  "sort-albums-by": "end-date",
   "sort-albums-direction": "desc",
   "sort-media-by": "date",
   "sort-media-direction": "asc",
