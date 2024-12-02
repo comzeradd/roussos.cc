@@ -16,6 +16,7 @@
   "sort-albums-direction": "desc",
   "sort-media-by": "date",
   "sort-media-direction": "asc",
+  "album-previews": "random",
   "theme": "cards",
   "title": "photos",
   "embed-exif": true,
